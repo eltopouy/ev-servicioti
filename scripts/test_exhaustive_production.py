@@ -531,7 +531,7 @@ def run_exhaustive_tests():
         # ---------------------------------------------------------------------
         # TEST 12: Metadatos XMP y EXIF Oficiales de ServicioTI en Archivos WebP
         # ---------------------------------------------------------------------
-        print("▶ [Test 12/12] Verificando Inyección de Metadatos Oficiales ServicioTI...")
+        print("▶ [Test 12/15] Verificando Inyección de Metadatos Oficiales ServicioTI...")
         sample_img = BASE_DIR / "assets" / "img" / "byd-seagull-surf" / "01-vista-isometrica-frontal-3-4-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp"
         assert sample_img.exists(), "La imagen de prueba debe existir"
 
@@ -549,10 +549,103 @@ def run_exhaustive_tests():
             assert "ServicioTI" in xmp_str
             print("  ✔ Metadatos XMP UTF-8 nativos con autoría y copyright verificados en disco.")
 
+        # ---------------------------------------------------------------------
+        # TEST 13: Selector de Marcas con Logos, Visibilidad y Filtrado de Tesla
+        # ---------------------------------------------------------------------
+        print("▶ [Test 13/15] Verificando Selector de Marcas y Filtrado Instantáneo de Tesla...")
+        p_brand = browser.new_page()
+        p_brand.goto(FILE_URL, wait_until="networkidle")
+
+        # Verificar presencia de la barra de marcas
+        brand_bar = p_brand.locator("#brand-pills-bar")
+        assert brand_bar.is_visible(), "La barra de marcas oficiales debe ser visible"
+        pills_count = brand_bar.locator(".brand-pill").count()
+        print(f"  Marcas en barra horizontal de filtrado: {pills_count}")
+        assert pills_count >= 20, f"Se esperaban >= 20 marcas en la barra, hay {pills_count}"
+
+        # Filtrar por Tesla
+        tesla_pill = brand_bar.locator("button[data-brand='Tesla']")
+        assert tesla_pill.is_visible(), "La píldora de Tesla debe estar visible y destacada"
+        tesla_pill.click()
+        p_brand.wait_for_timeout(300)
+
+        tesla_cards = p_brand.locator("#catalog-grid > div")
+        tesla_count = tesla_cards.count()
+        print(f"  Modelos Tesla renderizados con un solo clic: {tesla_count}")
+        assert tesla_count == 6, f"Se esperaban exactamente 6 modelos Tesla en Uruguay, hay {tesla_count}"
+
+        # Verificar que el botón de reseteo muestre Tesla
+        reset_label = p_brand.locator("#active-brand-label").inner_text()
+        assert "Tesla" in reset_label, f"El botón de reseteo debe indicar Tesla, tiene '{reset_label}'"
+
+        # Quitar filtro de Tesla
+        p_brand.locator("#brand-filter-reset-container button").click()
+        p_brand.wait_for_timeout(300)
+        assert p_brand.locator("#catalog-grid > div").count() >= 97
+        print("  ✔ Selector de marcas y acceso instantáneo a autos Tesla aprobados.\n")
+
+        # ---------------------------------------------------------------------
+        # TEST 14: Verificación Rigurosa de Fotos Reales de BYD T3 (Furgón Utilitario)
+        # ---------------------------------------------------------------------
+        print("▶ [Test 14/15] Verificando Fotos Oficiales Auténticas de BYD T3 Furgón...")
+        t3_dir = BASE_DIR / "assets" / "img" / "byd-t3"
+        assert t3_dir.exists(), "La carpeta de fotos de BYD T3 debe existir"
+        t3_files = list(t3_dir.glob("*.webp"))
+        print(f"  Imágenes WebP oficiales de BYD T3 en disco: {len(t3_files)}")
+        assert len(t3_files) >= 8, f"Se esperaban al menos 8 archivos de BYD T3, hay {len(t3_files)}"
+
+        # Verificar que la foto #1 sea del furgón real y tenga metadatos
+        t3_hero = t3_dir / "01-vista-isometrica-frontal-3-4-byd-t3-furgon-utilitario-el-auto-electrico-ev-servicioti-uruguay.webp"
+        assert t3_hero.exists(), "La foto hero de BYD T3 debe existir"
+        with Image.open(t3_hero) as t3_im:
+            assert t3_im.size == (1200, 900), f"Dimensiones deben ser 1200x900 (4:3), son {t3_im.size}"
+            t3_xmp = t3_im.info.get("xmp", b"")
+            if isinstance(t3_xmp, bytes):
+                t3_xmp_str = t3_xmp.decode("utf-8", errors="ignore")
+            else:
+                t3_xmp_str = str(t3_xmp)
+            assert "byd t3" in t3_xmp_str.lower(), "El XMP debe contener BYD T3"
+            assert "furg" in t3_xmp_str.lower(), "El XMP debe especificar furgón"
+        print("  ✔ Fotos oficiales de BYD T3 furgón comercial 100% verificadas (ómnibus eliminado).\n")
+
+        # ---------------------------------------------------------------------
+        # TEST 15: Arquitectura Profunda de Baterías y Año de Origen en Modal
+        # ---------------------------------------------------------------------
+        print("▶ [Test 15/15] Verificando Arquitectura Profunda de Baterías en Modal...")
+        # Abrir Tesla Model 3 RWD (CATL LFP 60 kWh)
+        p_brand.evaluate("openVehicleModal('tesla-model-3-rwd')")
+        p_brand.wait_for_timeout(400)
+
+        bat_tipo = p_brand.locator("#spec-bat-tipo").inner_text()
+        bat_quimica = p_brand.locator("#spec-bat-quimica").inner_text()
+        bat_fab = p_brand.locator("#spec-bat-fabricante").inner_text()
+        bat_volt = p_brand.locator("#spec-bat-voltaje").inner_text()
+        bat_anio = p_brand.locator("#spec-bat-anio").inner_text()
+        logo_large = p_brand.locator("#modal-brand-logo")
+
+        print(f"  [Tesla Model 3 RWD] Tipo: {bat_tipo} | Química: {bat_quimica}")
+        print(f"  Fabricante celdas: {bat_fab} | Voltaje: {bat_volt} | Año: {bat_anio}")
+        assert "LFP" in bat_tipo, "Tesla Model 3 RWD debe tener batería LFP"
+        assert "CATL" in bat_fab, "Fabricante de celdas debe ser CATL"
+        assert "2023" in bat_anio, "Año de origen debe ser 2023"
+        assert "tesla-logo" in (logo_large.get_attribute("src") or ""), "Debe mostrar el logo oficial de Tesla"
+
+        # Abrir BYD Seagull Surf (Blade LiFePO4 FinDreams)
+        p_brand.evaluate("openVehicleModal('byd-seagull-surf')")
+        p_brand.wait_for_timeout(400)
+        byd_tipo = p_brand.locator("#spec-bat-tipo").inner_text()
+        byd_fab = p_brand.locator("#spec-bat-fabricante").inner_text()
+        print(f"  [BYD Seagull Surf] Tipo: {byd_tipo} | Fabricante: {byd_fab}")
+        assert "LFP" in byd_tipo
+        assert "FinDreams" in byd_fab or "Blade" in byd_fab
+        p_brand.close()
+
+        print("  ✔ Arquitectura técnica profunda de baterías, año de origen y logos aprobados.\n")
+
         browser.close()
 
     print("\n=====================================================================")
-    print("🎉 ¡TODOS LOS 12 TESTS DE PRODUCCIÓN PASARON CON ÉXITO ABSOLUTO (100%)!")
+    print("🎉 ¡TODOS LOS 15 TESTS DE PRODUCCIÓN PASARON CON ÉXITO ABSOLUTO (100%)!")
     print("=====================================================================")
 
 if __name__ == "__main__":

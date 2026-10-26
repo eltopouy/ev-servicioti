@@ -210,6 +210,28 @@
         </div>
       </div>
 
+      <!-- Selector Horizontal de Marcas con Logos Oficiales (Acceso directo a Tesla, BYD, Volvo, Farizon, etc.) -->
+      <div class="space-y-2 bg-neutral-50 p-3 sm:p-4 rounded-xl border border-line">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <span class="text-sm">🏷️</span>
+            <span class="text-xs font-bold text-neutral-900 font-editorial uppercase tracking-wide">Filtrar por Marca Oficial Homologada:</span>
+            <span class="text-[11px] text-muted hidden sm:inline">Acceda directamente a cada fabricante</span>
+          </div>
+          <div id="brand-filter-reset-container" class="hidden">
+            <button onclick="filterByBrand('todas')" class="text-[11px] font-semibold text-rose-700 hover:text-rose-900 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-2.5 py-1 rounded flex items-center gap-1.5 transition shadow-2xs">
+              <span>✕ Quitar filtro:</span>
+              <span id="active-brand-label" class="font-bold underline"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tira deslizable de Marcas con Logos nítidos -->
+        <div class="flex gap-2 overflow-x-auto pb-1 pt-1 scroll-smooth snap-x items-center touch-pan-x" id="brand-pills-bar" style="scrollbar-width: thin;">
+          <!-- Generado dinámicamente con logos de marcas oficiales -->
+        </div>
+      </div>
+
       <!-- Barra de búsqueda interna en el blog/catálogo y selector de modo de vista -->
       <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
         <div class="max-w-md flex-1">
@@ -584,16 +606,19 @@
   <div id="vehicle-modal" class="fixed inset-0 bg-neutral-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
     <div class="bg-white border border-neutral-900 rounded-xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl flex flex-col my-auto">
       
-      <!-- Modal Header -->
+      <!-- Modal Header con Logo Oficial y Badge -->
       <div class="p-4 sm:p-6 border-b border-line flex items-start justify-between bg-neutral-50 sticky top-0 z-10">
         <div class="flex items-center gap-3">
           <div class="relative shrink-0">
             <img id="modal-circular-badge" src="" alt="Badge Oficial" class="w-12 h-12 rounded-full border border-neutral-300 object-cover shadow-sm">
-            <img id="modal-brand-logo" src="" alt="Logo Oficial" class="w-5 h-5 rounded-full bg-white p-0.5 border border-line absolute -bottom-1 -right-1 shadow-xs object-contain">
+          </div>
+          <div id="modal-brand-logo-container" class="bg-white px-2 py-1 rounded-lg border border-neutral-200 shadow-2xs shrink-0 flex items-center justify-center h-12 min-w-[60px] max-w-[100px]">
+            <img id="modal-brand-logo" src="" alt="Logo Oficial" class="max-h-8 max-w-full object-contain">
           </div>
           <div>
             <div class="flex items-center gap-2 flex-wrap">
-              <span class="text-[10px] uppercase font-mono tracking-wider text-muted block" id="modal-brand">MARCA</span>
+              <span class="text-xs uppercase font-mono tracking-wider font-bold text-neutral-900" id="modal-brand">MARCA</span>
+              <span id="modal-year-origin-chip" class="text-[10px] font-mono bg-neutral-100 text-neutral-700 px-2 py-0.5 rounded border border-neutral-200"></span>
               <span id="modal-brand-instagram-container"></span>
             </div>
             <h3 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-950" id="modal-title">Modelo del Vehículo</h3>
@@ -714,6 +739,48 @@
 
         </div>
 
+        <!-- Arquitectura de Batería, Química y Tecnología Eléctrica -->
+        <div class="bg-gradient-to-br from-neutral-50 via-emerald-50/20 to-neutral-50 border border-emerald-200 rounded-xl p-4 sm:p-5 space-y-3 shadow-xs">
+          <div class="flex items-center justify-between border-b border-emerald-200/80 pb-2">
+            <div class="flex items-center gap-2">
+              <span class="text-base">🔋</span>
+              <h4 class="font-bold font-editorial text-sm text-neutral-950 uppercase tracking-wide">
+                Arquitectura de Batería & Sistema de Alto Voltaje
+              </h4>
+            </div>
+            <span id="modal-battery-badge" class="text-[10px] font-mono bg-emerald-100 text-emerald-900 border border-emerald-300 px-2 py-0.5 rounded font-bold">
+              Alta Densidad Energética
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs text-neutral-800">
+            <div class="bg-white p-3 rounded-lg border border-neutral-200 shadow-2xs">
+              <span class="text-[10px] text-muted uppercase font-mono block">Tipo de Batería</span>
+              <b class="text-xs font-bold text-neutral-950 block mt-0.5" id="spec-bat-tipo">-</b>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-neutral-200 shadow-2xs">
+              <span class="text-[10px] text-muted uppercase font-mono block">Química de Celdas</span>
+              <b class="text-xs font-bold text-neutral-950 block mt-0.5" id="spec-bat-quimica">-</b>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-neutral-200 shadow-2xs">
+              <span class="text-[10px] text-muted uppercase font-mono block">Fabricante / Celdas</span>
+              <b class="text-xs font-bold text-neutral-950 block mt-0.5" id="spec-bat-fabricante">-</b>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-neutral-200 shadow-2xs">
+              <span class="text-[10px] text-muted uppercase font-mono block">Gestión Térmica</span>
+              <b class="text-xs font-bold text-neutral-950 block mt-0.5" id="spec-bat-refrig">-</b>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-neutral-200 shadow-2xs">
+              <span class="text-[10px] text-muted uppercase font-mono block">Arquitectura de Voltaje</span>
+              <b class="text-xs font-bold text-neutral-950 block mt-0.5" id="spec-bat-voltaje">-</b>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-neutral-200 shadow-2xs">
+              <span class="text-[10px] text-muted uppercase font-mono block">Año de Origen</span>
+              <b class="text-xs font-bold text-neutral-950 block mt-0.5" id="spec-bat-anio">-</b>
+            </div>
+          </div>
+        </div>
+
         <!-- Atributos adicionales de importación -->
         <div id="modal-extra-specs" class="bg-neutral-50 p-4 rounded-lg border border-line text-xs space-y-1.5 text-neutral-700">
           <!-- Detalles adicionales dinámicos -->
@@ -803,6 +870,7 @@
   <script>
     let appData = { vehicles: [], market_listings: [], news: [], chargers: [] };
     let currentFilter = 'todos';
+    let currentBrandFilter = 'todas';
     let currentViewMode = 'photo';
     let leafletMap = null;
 
@@ -834,12 +902,98 @@
       }
 
       renderTopSalesShowcase();
+      renderBrandPills();
       renderNews();
       renderCatalog();
       renderMarket(appData.market_listings || []);
       initMap();
       initTCOCalculator();
       updateCalculator();
+    }
+
+    function renderBrandPills() {
+      const container = document.getElementById('brand-pills-bar');
+      if (!container || !appData.vehicles) return;
+
+      const counts = {};
+      const brandLogos = {};
+      appData.vehicles.forEach(v => {
+        const b = v.marca;
+        counts[b] = (counts[b] || 0) + 1;
+        if (v.brand_logo_url && !brandLogos[b]) {
+          brandLogos[b] = v.brand_logo_url;
+        }
+      });
+
+      // Ordenar marcas: Tesla y BYD siempre al inicio para máxima accesibilidad, luego por cantidad
+      const sortedBrands = Object.keys(counts).sort((a, b) => {
+        if (a === 'Tesla') return -1;
+        if (b === 'Tesla') return 1;
+        if (a === 'BYD') return -1;
+        if (b === 'BYD') return 1;
+        return counts[b] - counts[a];
+      });
+
+      const totalCount = appData.vehicles.length;
+
+      let html = `
+        <button onclick="filterByBrand('todas')" class="brand-pill px-3 py-1.5 rounded-lg border text-xs font-semibold flex items-center gap-1.5 shrink-0 transition ${currentBrandFilter === 'todas' ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm' : 'bg-white text-neutral-800 border-line hover:border-black'}" data-brand="todas">
+          <span>🌟</span>
+          <span>Todas</span>
+          <span class="text-[10px] font-mono opacity-80">(${totalCount})</span>
+        </button>
+      `;
+
+      sortedBrands.forEach(brand => {
+        const logo = brandLogos[brand] || `assets/img/logos/${brand.toLowerCase().replace(/[\s\/]+/g, '-')}-logo.webp`;
+        const isTesla = (brand === 'Tesla');
+        const count = counts[brand];
+        const isActive = (currentBrandFilter.toLowerCase() === brand.toLowerCase());
+
+        let btnClass = isActive 
+          ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm' 
+          : (isTesla ? 'bg-amber-50 text-neutral-950 border-amber-300 hover:border-amber-500 shadow-2xs font-bold' : 'bg-white text-neutral-800 border-line hover:border-neutral-900');
+
+        html += `
+          <button onclick="filterByBrand('${brand}')" class="brand-pill px-2.5 py-1 rounded-lg border text-xs font-semibold flex items-center gap-2 shrink-0 transition ${btnClass}" data-brand="${brand}">
+            <span class="w-5 h-5 rounded bg-white p-0.5 border border-neutral-200 flex items-center justify-center shrink-0 overflow-hidden">
+              <img src="${logo}" alt="${brand}" class="max-w-full max-h-full object-contain">
+            </span>
+            <span>${isTesla ? '⚡ ' : ''}${brand}</span>
+            <span class="text-[10px] font-mono opacity-75">(${count})</span>
+          </button>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function filterByBrand(brand) {
+      currentBrandFilter = brand;
+      const resetContainer = document.getElementById('brand-filter-reset-container');
+      const activeLabel = document.getElementById('active-brand-label');
+
+      if (brand !== 'todas') {
+        if (resetContainer) resetContainer.classList.remove('hidden');
+        if (activeLabel) activeLabel.textContent = brand;
+      } else {
+        if (resetContainer) resetContainer.classList.add('hidden');
+      }
+
+      document.querySelectorAll('.brand-pill').forEach(btn => {
+        const b = btn.dataset.brand;
+        const isActive = (b.toLowerCase() === brand.toLowerCase());
+        const isTesla = (b === 'Tesla');
+        if (isActive) {
+          btn.className = 'brand-pill px-2.5 py-1 rounded-lg border text-xs font-semibold flex items-center gap-2 shrink-0 transition bg-neutral-900 text-white border-neutral-900 shadow-sm';
+        } else if (isTesla) {
+          btn.className = 'brand-pill px-2.5 py-1 rounded-lg border text-xs font-semibold flex items-center gap-2 shrink-0 transition bg-amber-50 text-neutral-950 border-amber-300 hover:border-amber-500 shadow-2xs font-bold';
+        } else {
+          btn.className = 'brand-pill px-2.5 py-1 rounded-lg border text-xs font-semibold flex items-center gap-2 shrink-0 transition bg-white text-neutral-800 border-line hover:border-neutral-900';
+        }
+      });
+
+      renderCatalog();
     }
 
     function renderTopSalesShowcase() {
@@ -980,12 +1134,20 @@
         } else if (currentFilter !== 'todos') {
           matchesCategory = (v.tipo === currentFilter);
         }
+
+        let matchesBrand = true;
+        if (currentBrandFilter !== 'todas') {
+          matchesBrand = (v.marca.toLowerCase() === currentBrandFilter.toLowerCase());
+        }
+
         const matchesText = !q || 
           v.marca.toLowerCase().includes(q) || 
           v.modelo.toLowerCase().includes(q) || 
           (v.version && v.version.toLowerCase().includes(q)) ||
-          v.tipo.toLowerCase().includes(q);
-        return matchesCategory && matchesText;
+          v.tipo.toLowerCase().includes(q) ||
+          (v.bateria_tipo && v.bateria_tipo.toLowerCase().includes(q)) ||
+          (v.bateria_fabricante && v.bateria_fabricante.toLowerCase().includes(q));
+        return matchesCategory && matchesBrand && matchesText;
       });
 
       // En la visualización principal los más vendidos siempre encabezan la lista
@@ -1007,6 +1169,10 @@
         list = list.filter(v => v.tipo === currentFilter);
       }
 
+      if (currentBrandFilter !== 'todas') {
+        list = list.filter(v => v.marca.toLowerCase() === currentBrandFilter.toLowerCase());
+      }
+
       // En la visualización principal siempre se priorizan los más vendidos en el top
       list = [...list].sort((a, b) => {
         const rankA = a.es_top_ventas ? (a.ventas_rank || 99) : 999;
@@ -1021,7 +1187,15 @@
     function renderCatalogWithList(list) {
       const grid = document.getElementById('catalog-grid');
       if (!list || list.length === 0) {
-        grid.innerHTML = `<div class="col-span-3 py-12 text-center text-muted text-sm">No se encontraron vehículos que coincidan con la búsqueda.</div>`;
+        grid.innerHTML = `
+          <div class="col-span-1 md:col-span-2 lg:col-span-3 py-12 text-center text-muted space-y-3">
+            <span class="text-4xl block">🔍</span>
+            <p class="text-sm font-editorial text-neutral-800 font-bold">No se encontraron vehículos que coincidan con los filtros aplicados.</p>
+            <button onclick="filterByBrand('todas'); filterCatalog('todos');" class="text-xs bg-neutral-900 text-white px-3 py-1.5 rounded font-semibold hover:bg-neutral-800 transition">
+              Restablecer todos los filtros
+            </button>
+          </div>
+        `;
         return;
       }
 
@@ -1034,6 +1208,8 @@
         const imgClass = isPixel 
           ? 'w-full h-full object-contain image-pixelated p-4 group-hover:scale-110 transition duration-300' 
           : 'w-full h-full object-cover group-hover:scale-105 transition duration-300';
+
+        const batTipoSimple = v.bateria_tipo ? v.bateria_tipo.split('(')[0].trim() : 'Litio';
 
         return `
         <div onclick="openVehicleModal('${v.id}')" class="bg-white rounded-lg border ${v.es_top_ventas ? 'border-amber-300 shadow-amber-100' : 'border-line'} p-4 space-y-3 hover:border-neutral-900 transition flex flex-col justify-between cursor-pointer group shadow-sm hover:shadow-md">
@@ -1055,18 +1231,20 @@
               </div>
             ` : ''}
 
-            <div class="flex items-start gap-2.5">
+            <div class="flex items-start gap-3">
               <div class="relative shrink-0 mt-0.5">
-                <img src="${badgeSrc}" alt="Badge ${v.marca} ${v.modelo}" class="w-9 h-9 rounded-full border border-neutral-300 object-cover shadow-xs">
-                ${v.brand_logo_url ? `<img src="${v.brand_logo_url}" alt="Logo ${v.marca}" class="w-4 h-4 rounded-full bg-white p-0.5 border border-line absolute -bottom-1 -right-1 shadow-xs object-contain">` : ''}
+                <img src="${badgeSrc}" alt="Badge ${v.marca} ${v.modelo}" class="w-10 h-10 rounded-full border border-neutral-300 object-cover shadow-xs">
               </div>
               <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between gap-1">
-                  <div class="text-[11px] uppercase font-mono tracking-wider text-muted truncate">${v.marca}</div>
+                <div class="flex items-center justify-between gap-1 mb-1">
+                  <div class="flex items-center gap-1.5 min-w-0 flex-wrap">
+                    ${v.brand_logo_url ? `<img src="${v.brand_logo_url}" alt="Logo ${v.marca}" class="h-5 max-w-[70px] object-contain bg-white px-1 py-0.5 rounded border border-neutral-200 shrink-0 shadow-2xs">` : ''}
+                    <span class="text-xs uppercase font-mono tracking-wider font-bold text-neutral-800 truncate">${v.marca}</span>
+                    ${v.anio_origen ? `<span class="text-[9px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.2 rounded border border-neutral-200 shrink-0">Año ${v.anio_origen}</span>` : ''}
+                  </div>
                   ${v.brand_instagram_handle ? `
                     <a href="${v.brand_instagram_url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="text-[10px] font-mono font-medium text-pink-700 bg-pink-50 hover:bg-pink-100 border border-pink-200 px-1.5 py-0.5 rounded flex items-center gap-1 transition shrink-0" title="Ver Instagram Oficial en Uruguay">
                       <svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                      ${v.brand_instagram_handle}
                     </a>
                   ` : ''}
                 </div>
@@ -1076,8 +1254,15 @@
             </div>
 
             <div class="grid grid-cols-2 gap-2 text-xs py-2 border-y border-line text-neutral-700">
-              <div><span class="text-muted block text-[10px]">Autonomía:</span> <b>${v.autonomia_km} km</b></div>
-              <div><span class="text-muted block text-[10px]">Batería:</span> <b>${v.bateria_kwh} kWh</b></div>
+              <div>
+                <span class="text-muted block text-[10px]">Autonomía:</span> 
+                <b>${v.autonomia_km} km</b>
+              </div>
+              <div>
+                <span class="text-muted block text-[10px]">Batería:</span> 
+                <b>${v.bateria_kwh} kWh</b>
+                <span class="text-[10px] text-emerald-800 font-mono block truncate font-medium">${batTipoSimple}</span>
+              </div>
             </div>
 
             <div class="text-xs text-neutral-600 space-y-1">
@@ -1128,6 +1313,12 @@
         } else {
           brandLogoImg.classList.add('hidden');
         }
+      }
+
+      // Año de origen en el header
+      const yearChip = document.getElementById('modal-year-origin-chip');
+      if (yearChip) {
+        yearChip.textContent = v.anio_origen ? `Año ${v.anio_origen}` : '';
       }
 
       // Instagram Oficial en el Header
@@ -1242,6 +1433,30 @@
       document.getElementById('spec-trunk').textContent = v.capacidad_baul_l ? `${v.capacidad_baul_l} L` : '-';
       document.getElementById('spec-warranty-car').textContent = v.garantia_vehiculo || '-';
       document.getElementById('spec-warranty-battery').textContent = v.garantia_bateria || '-';
+
+      // Arquitectura de Batería & Propulsión de Alto Voltaje en el Modal
+      const elBatTipo = document.getElementById('spec-bat-tipo');
+      if (elBatTipo) elBatTipo.textContent = v.bateria_tipo || 'Batería de Iones de Litio';
+
+      const elBatQuimica = document.getElementById('spec-bat-quimica');
+      if (elBatQuimica) elBatQuimica.textContent = v.bateria_quimica || 'Química estándar de litio de alta densidad';
+
+      const elBatFab = document.getElementById('spec-bat-fabricante');
+      if (elBatFab) elBatFab.textContent = v.bateria_fabricante || 'Fabricante Homologado';
+
+      const elBatRefrig = document.getElementById('spec-bat-refrig');
+      if (elBatRefrig) elBatRefrig.textContent = v.bateria_refrigeracion || 'Gestión térmica inteligente';
+
+      const elBatVolt = document.getElementById('spec-bat-voltaje');
+      if (elBatVolt) elBatVolt.textContent = v.bateria_voltaje || 'Arquitectura de alto voltaje';
+
+      const elBatAnio = document.getElementById('spec-bat-anio');
+      if (elBatAnio) elBatAnio.textContent = v.anio_origen ? `${v.anio_origen} (Lanzamiento en origen)` : 'En plaza comercial';
+
+      const elBatBadge = document.getElementById('modal-battery-badge');
+      if (elBatBadge) {
+        elBatBadge.textContent = v.bateria_quimica ? v.bateria_quimica.split(' ')[0] : '100% Eléctrico';
+      }
 
       // Enlace oficial
       const officialBtn = document.getElementById('modal-official-link');
