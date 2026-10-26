@@ -125,7 +125,7 @@ class MetadataImageService:
                         buf,
                         format="WEBP",
                         quality=calidad,
-                        method=6,
+                        method=4,
                         exif=exif,
                         xmp=xmp_xml.encode("utf-8")
                     )
