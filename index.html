@@ -123,19 +123,6 @@
 </head>
 <body class="bg-paper text-ink min-h-screen flex flex-col antialiased selection:bg-neutral-900 selection:text-white">
 
-  <!-- Barra Superior Minimalista -->
-  <div class="border-b border-line text-xs text-muted py-2 px-4">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-        <span class="font-medium text-neutral-800">Montevideo, Uruguay</span>
-        <span class="text-neutral-300">•</span>
-        <span>Publicación Oficial de ServicioTI</span>
-      </div>
-      <div class="font-mono text-neutral-500">https://ev.servicioti.com.uy</div>
-    </div>
-  </div>
-
   <!-- Cabecera de Revista (Masthead) -->
   <header class="border-b-2 border-neutral-900 bg-white sticky top-0 z-40">
     <div class="max-w-6xl mx-auto px-4 py-4 sm:py-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
@@ -163,16 +150,18 @@
 
     <!-- SECCIÓN 1: CRÓNICAS Y LANZAMIENTOS -->
     <section id="cronicas" class="space-y-6">
-      <div class="border-b border-neutral-900 pb-2 flex items-baseline justify-between">
-        <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
-          Crónicas & Novedades
-        </h2>
+      <div class="border-b-2 border-neutral-900 pb-2 flex items-baseline justify-between">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+            Crónicas & Novedades
+          </h2>
+          <p class="text-xs text-muted mt-0.5">Informes técnicos, cobertura de mercado y análisis oficial de ServicioTI</p>
+        </div>
         <span class="text-xs uppercase tracking-wider text-muted font-mono" id="news-count">Cargando...</span>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-7 space-y-4" id="featured-article"></div>
-        <div class="lg:col-span-5 space-y-6 divide-y divide-line" id="secondary-articles"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch" id="cronicas-grid">
+        <!-- Renderizado dinámico de todas las crónicas editoriales con título arriba, galería deslizable horizontal con el dedo (4 fotos), crónica abajo y botón leer crónica completa -->
       </div>
     </section>
 
@@ -203,7 +192,7 @@
           <div class="flex items-center gap-2">
             <span class="text-xl">🏆</span>
             <div>
-              <h3 class="text-base sm:text-lg font-bold font-editorial text-amber-300">
+              <h3 class="text-base sm:text-lg font-bold font-editorial text-white">
                 Líderes de Ventas en Uruguay — Ranking Oficial de Empadronamiento (ACAU / SUCIVE)
               </h3>
               <p class="text-[11px] text-neutral-400">
@@ -211,7 +200,7 @@
               </p>
             </div>
           </div>
-          <span class="text-[10px] font-mono uppercase bg-amber-400/20 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded self-start sm:self-auto">
+          <span class="text-[10px] font-mono uppercase bg-neutral-800 text-neutral-200 border border-neutral-700 px-2.5 py-0.5 rounded self-start sm:self-auto">
             Datos Oficiales de Plaza
           </span>
         </div>
@@ -497,6 +486,19 @@
     </div>
   </footer>
 
+  <!-- Barra Inferior Oficial ServicioTI (Reubicada desde cabecera superior) -->
+  <div class="border-t border-line text-xs text-muted py-3 px-4 bg-neutral-50">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+        <span class="font-medium text-neutral-800">Montevideo, Uruguay</span>
+        <span class="text-neutral-300">•</span>
+        <span>Publicación Oficial de ServicioTI</span>
+      </div>
+      <div class="font-mono text-neutral-500">https://ev.servicioti.com.uy</div>
+    </div>
+  </div>
+
   <!-- Lógica de Aplicación -->
   <script>
     let appData = { vehicles: [], market_listings: [], news: [], chargers: [] };
@@ -593,47 +595,63 @@
 
     function renderNews() {
       const news = appData.news || [];
-      document.getElementById('news-count').textContent = `${news.length} crónicas`;
+      const countEl = document.getElementById('news-count');
+      if (countEl) countEl.textContent = `${news.length} crónicas`;
 
-      if (news.length === 0) return;
+      const grid = document.getElementById('cronicas-grid');
+      if (!grid || news.length === 0) return;
 
-      const main = news[0];
-      const featEl = document.getElementById('featured-article');
-      featEl.innerHTML = `
-        <article class="space-y-3">
-          ${main.imagen_portada ? `<img src="${main.imagen_portada}" alt="${main.titulo}" class="w-full h-72 sm:h-96 object-cover rounded-lg border border-line">` : ''}
-          <div class="flex items-center gap-2 text-xs font-mono text-muted uppercase">
-            <span class="text-accent font-semibold">${main.marcas_mencionadas || 'Plaza Uruguay'}</span>
-            <span>•</span>
-            <span>Crónica Editorial</span>
+      grid.innerHTML = news.map(item => {
+        const galeria = (item.galeria && item.galeria.length > 0) ? item.galeria : [item.imagen_portada];
+        const imagesHtml = galeria.map((img, idx) => `
+          <div class="shrink-0 snap-start w-56 sm:w-64 h-38 sm:h-44 rounded-lg overflow-hidden border border-line bg-neutral-100 shadow-xs relative group/img">
+            <img src="${img}" alt="${item.titulo} - Fotografía ${idx + 1}" loading="lazy" class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-300">
+            <span class="absolute bottom-1.5 right-1.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono px-1.5 py-0.5 rounded">${idx + 1}/${galeria.length}</span>
           </div>
-          <h3 class="text-2xl sm:text-3xl font-bold font-editorial leading-tight text-neutral-950">
-            ${main.titulo}
-          </h3>
-          <p class="text-sm text-neutral-600 leading-relaxed">
-            ${main.resumen}
-          </p>
-          <a href="${main.url}" target="_blank" class="inline-block text-xs uppercase tracking-wider font-semibold text-neutral-900 hover:text-accent border-b border-neutral-900 hover:border-accent pb-0.5 transition">
-            Leer crónica completa →
-          </a>
-        </article>
-      `;
+        `).join('');
 
-      const secEl = document.getElementById('secondary-articles');
-      secEl.innerHTML = news.slice(1, 6).map(item => `
-        <article class="pt-4 first:pt-0 space-y-2">
-          <span class="text-[11px] font-mono text-muted uppercase tracking-wider">${item.marcas_mencionadas || 'Novedades'}</span>
-          <h4 class="text-lg font-bold font-editorial text-neutral-900 leading-snug hover:text-accent transition">
-            <a href="${item.url}" target="_blank">${item.titulo}</a>
-          </h4>
-          <p class="text-xs text-neutral-600 line-clamp-2 leading-relaxed">
-            ${item.resumen}
-          </p>
-          <a href="${item.url}" target="_blank" class="text-xs text-neutral-800 font-medium hover:underline inline-block pt-1">
-            Ver detalle →
-          </a>
-        </article>
-      `).join('');
+        return `
+          <article class="bg-white border border-line rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between space-y-4 hover:border-neutral-900 transition-colors">
+            <div class="space-y-3">
+              <!-- Categoría / Marcas -->
+              <div class="flex items-center justify-between text-xs font-mono text-muted uppercase">
+                <span class="text-accent font-semibold tracking-wider">${item.marcas_mencionadas || 'Plaza Uruguay'}</span>
+                <span class="text-[11px] text-neutral-400">ServicioTI Editorial</span>
+              </div>
+
+              <!-- Título arriba -->
+              <h3 class="text-xl sm:text-2xl font-bold font-editorial text-neutral-950 leading-snug hover:text-accent transition">
+                <a href="${item.url}" target="_blank">${item.titulo}</a>
+              </h3>
+
+              <!-- Galería de por lo menos 4 imágenes desplazable horizontalmente con el dedo hacia la derecha -->
+              <div class="space-y-1.5">
+                <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory py-1 touch-pan-x" style="scrollbar-width: thin;">
+                  ${imagesHtml}
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-neutral-400 font-mono px-0.5">
+                  <span>📸 ${galeria.length} fotos oficiales</span>
+                  <span class="text-neutral-500 font-medium flex items-center gap-1"><span>Deslizar con el dedo</span> <span class="text-sm">→</span></span>
+                </div>
+              </div>
+
+              <!-- Crónica de la editorial abajo de la imagen -->
+              <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed pt-1">
+                ${item.resumen}
+              </p>
+            </div>
+
+            <!-- Leer crónica completa -->
+            <div class="pt-3 border-t border-line flex items-center justify-between">
+              <a href="${item.url}" target="_blank" class="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold text-neutral-900 hover:text-accent transition group">
+                <span>Leer crónica completa</span>
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+              <span class="text-[10px] font-mono text-neutral-400">Montevideo · Edición Oficial</span>
+            </div>
+          </article>
+        `;
+      }).join('');
     }
 
     function filterCatalog(category) {

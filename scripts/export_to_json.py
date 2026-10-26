@@ -72,7 +72,15 @@ def export_db_to_json():
 
     # 3. Noticias / Crónicas
     cursor.execute("SELECT * FROM news_articles ORDER BY fecha_publicacion DESC")
-    news = [dict(row) for row in cursor.fetchall()]
+    raw_news = [dict(row) for row in cursor.fetchall()]
+    news = []
+    for n in raw_news:
+        n_dict = dict(n)
+        try:
+            n_dict["galeria"] = json.loads(n_dict.get("galeria_json") or "[]")
+        except Exception:
+            n_dict["galeria"] = []
+        news.append(n_dict)
 
     # 4. Cargadores públicos UTE Mueve
     cursor.execute("SELECT * FROM charging_stations")

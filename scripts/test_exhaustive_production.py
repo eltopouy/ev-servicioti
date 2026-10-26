@@ -78,6 +78,7 @@ def run_exhaustive_tests():
         # ---------------------------------------------------------------------
         page = browser.new_page()
         page.goto(FILE_URL, wait_until="networkidle")
+        page.wait_for_selector("#top-sales-cards > div", timeout=10000)
         print("▶ [Test 1/12] Verificando Showcase de Líderes de Ventas ACAU...")
 
         top_cards = page.locator("#top-sales-cards > div")
@@ -325,19 +326,32 @@ def run_exhaustive_tests():
         print("  ✔ Radar de precios y ofertas aprobado.\n")
 
         # ---------------------------------------------------------------------
-        # TEST 9: Crónicas y Novedades Editoriales
+        # TEST 9: Crónicas y Novedades Editoriales con Galerías Deslizables de 4 Fotos
         # ---------------------------------------------------------------------
-        print("▶ [Test 9/12] Verificando Crónicas Editoriales...")
-        feat_article = page.locator("#featured-article")
-        assert feat_article.is_visible()
-        feat_title = feat_article.locator("h3").inner_text()
-        print(f"  Crónica Principal de Portada: '{feat_title}'")
-        assert len(feat_title) > 10
+        print("▶ [Test 9/12] Verificando Crónicas Editoriales con Galerías Deslizables...")
+        cronicas = page.locator("#cronicas-grid article")
+        assert cronicas.count() >= 6, f"Se esperaban >= 6 crónicas editoriales, hay {cronicas.count()}"
+        
+        # Verificar cada crónica individualmente
+        for i in range(cronicas.count()):
+            article = cronicas.nth(i)
+            title = article.locator("h3").inner_text()
+            images = article.locator("img")
+            img_count = images.count()
+            assert img_count >= 4, f"Crónica {i+1} ('{title}') tiene {img_count} fotos, se requerían al menos 4"
+            leer_link = article.locator("a:has-text('Leer crónica completa')")
+            assert leer_link.count() > 0, f"Crónica {i+1} debe tener enlace 'Leer crónica completa'"
+            print(f"  Crónica {i+1}: '{title[:45]}...' -> {img_count} fotos en carrusel swipeable OK")
 
-        sec_articles = page.locator("#secondary-articles article")
-        assert sec_articles.count() >= 4, f"Se esperaban >= 4 crónicas secundarias, hay {sec_articles.count()}"
-        print(f"  Crónicas Secundarias: {sec_articles.count()} artículos")
-        print("  ✔ Sección editorial aprobada.\n")
+        # Verificar color blanco en título de líderes de ventas
+        top_sales_title = page.locator("#top-sales-showcase h3")
+        assert "text-white" in (top_sales_title.get_attribute("class") or ""), "El título de líderes de ventas debe ser text-white"
+
+        # Verificar que la barra ServicioTI está al final de la página (no en la parte superior)
+        subbar = page.locator("body > div.border-t.border-line:has-text('Publicación Oficial de ServicioTI')")
+        assert subbar.count() > 0, "La barra oficial ServicioTI debe estar ubicada abajo del todo"
+
+        print("  ✔ Sección editorial con carruseles swipeables y estilos aprobados.\n")
 
         # ---------------------------------------------------------------------
         # TEST 10: Integridad de 0 Imágenes Rotas en Todo el DOM

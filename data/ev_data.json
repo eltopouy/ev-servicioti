@@ -7945,7 +7945,14 @@
       "marcas_mencionadas": "BYD • SADAR",
       "imagen_portada": "assets/img/byd-seagull-surf/01-vista-isometrica-frontal-3-4-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
       "contenido_html": "<p>Crónica de análisis sobre el fenómeno de penetración de BYD en Uruguay.</p>",
-      "fecha_registro": "2026-10-26 12:18:03"
+      "fecha_registro": "2026-10-26 12:18:03",
+      "galeria_json": "[\"assets/img/byd-seagull-surf/01-vista-isometrica-frontal-3-4-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-seagull-surf/02-vista-trasera-opticas-porton-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-seagull-surf/03-interior-tablero-consola-cockpit-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-seagull-surf/04-perfil-lateral-carroceria-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/byd-seagull-surf/01-vista-isometrica-frontal-3-4-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/byd-seagull-surf/02-vista-trasera-opticas-porton-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/byd-seagull-surf/03-interior-tablero-consola-cockpit-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/byd-seagull-surf/04-perfil-lateral-carroceria-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp"
+      ]
     },
     {
       "id": "cronica-chevrolet-ultium-uruguay",
@@ -7957,7 +7964,14 @@
       "marcas_mencionadas": "Chevrolet • General Motors",
       "imagen_portada": "assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
       "contenido_html": "<p>Análisis del arribo de la plataforma Ultium de Chevrolet a Uruguay.</p>",
-      "fecha_registro": "2026-10-26 12:18:03"
+      "fecha_registro": "2026-10-26 12:18:03",
+      "galeria_json": "[\"assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-blazer-ev/02-vista-trasera-opticas-porton-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-equinox-ev/01-vista-isometrica-frontal-3-4-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-equinox-ev/02-vista-trasera-opticas-porton-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/chevrolet-blazer-ev/02-vista-trasera-opticas-porton-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/chevrolet-equinox-ev/01-vista-isometrica-frontal-3-4-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/chevrolet-equinox-ev/02-vista-trasera-opticas-porton-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp"
+      ]
     },
     {
       "id": "cronica-volvo-ex30-uruguay",
@@ -7969,7 +7983,14 @@
       "marcas_mencionadas": "Volvo • Danissa",
       "imagen_portada": "assets/img/volvo-ex30/01-vista-isometrica-frontal-3-4-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
       "contenido_html": "<p>Análisis exhaustivo del Volvo EX30 en el mercado nacional.</p>",
-      "fecha_registro": "2026-10-26 12:18:03"
+      "fecha_registro": "2026-10-26 12:18:03",
+      "galeria_json": "[\"assets/img/volvo-ex30/01-vista-isometrica-frontal-3-4-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/volvo-ex30/02-vista-trasera-opticas-porton-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/volvo-ex30/03-interior-tablero-consola-cockpit-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/volvo-ex30/04-perfil-lateral-carroceria-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/volvo-ex30/01-vista-isometrica-frontal-3-4-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/volvo-ex30/02-vista-trasera-opticas-porton-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/volvo-ex30/03-interior-tablero-consola-cockpit-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/volvo-ex30/04-perfil-lateral-carroceria-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp"
+      ]
     },
     {
       "id": "cronica-red-ute-mueve-expansion",
@@ -7981,7 +8002,14 @@
       "marcas_mencionadas": "UTE Mueve • Infraestructura",
       "imagen_portada": "assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
       "contenido_html": "<p>Informe técnico sobre la red nacional de cargadores rápidos de UTE.</p>",
-      "fecha_registro": "2026-10-26 12:18:03"
+      "fecha_registro": "2026-10-26 12:18:03",
+      "galeria_json": "[\"assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/geely-panda-mini-ev/01-vista-isometrica-frontal-3-4-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chery-eq1/01-vista-isometrica-frontal-3-4-chery-eq1-little-ant-pequena-hormiga-lfp-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-dolphin-gs/01-vista-isometrica-frontal-3-4-byd-dolphin-gs-ev-e-platform-3-0-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/geely-panda-mini-ev/01-vista-isometrica-frontal-3-4-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/chery-eq1/01-vista-isometrica-frontal-3-4-chery-eq1-little-ant-pequena-hormiga-lfp-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/byd-dolphin-gs/01-vista-isometrica-frontal-3-4-byd-dolphin-gs-ev-e-platform-3-0-auto-electrico-ev-servicioti-uruguay.webp"
+      ]
     },
     {
       "id": "cronica-micromovilidad-ebikes-motos",
@@ -7993,7 +8021,14 @@
       "marcas_mencionadas": "Loop Bikes • VoltBike • Sunra",
       "imagen_portada": "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
       "contenido_html": "<p>Investigación sobre el auge de las bicicletas y motos eléctricas en el área metropolitana.</p>",
-      "fecha_registro": "2026-10-26 12:18:03"
+      "fecha_registro": "2026-10-26 12:18:03",
+      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/trek-allant-plus-7/01-vista-isometrica-frontal-3-4-trek-allant-7-gen-2-motor-bosch-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/trek-allant-plus-7/01-vista-isometrica-frontal-3-4-trek-allant-7-gen-2-motor-bosch-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp"
+      ]
     },
     {
       "id": "cronica-beneficios-fiscales-sucive",
@@ -8005,7 +8040,14 @@
       "marcas_mencionadas": "SUCIVE • DGI • Movilidad",
       "imagen_portada": "assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
       "contenido_html": "<p>Guía de incentivos y costos operativos comparativos para Uruguay.</p>",
-      "fecha_registro": "2026-10-26 12:18:03"
+      "fecha_registro": "2026-10-26 12:18:03",
+      "galeria_json": "[\"assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/baw-pony-ev/01-vista-isometrica-frontal-3-4-baw-pony-ev-citycar-3-puertas-13-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/baw-l7-bagel-ev/01-vista-isometrica-frontal-3-4-baw-l7-bagel-ev-hatchback-5-puertas-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/trike-cargo-light-500/01-vista-isometrica-frontal-3-4-cabina-trike-cargo-light-gt-500-kg-utilitario-urbano-12-triciclo-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/baw-pony-ev/01-vista-isometrica-frontal-3-4-baw-pony-ev-citycar-3-puertas-13-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/baw-l7-bagel-ev/01-vista-isometrica-frontal-3-4-baw-l7-bagel-ev-hatchback-5-puertas-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/trike-cargo-light-500/01-vista-isometrica-frontal-3-4-cabina-trike-cargo-light-gt-500-kg-utilitario-urbano-12-triciclo-electrico-ev-servicioti-uruguay.webp"
+      ]
     }
   ],
   "chargers": [

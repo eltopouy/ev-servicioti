@@ -107,6 +107,7 @@ def init_db():
         resumen TEXT,
         marcas_mencionadas TEXT,
         imagen_portada TEXT,
+        galeria_json TEXT DEFAULT '[]',
         contenido_html TEXT,
         fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP
     );

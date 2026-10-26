@@ -1,0 +1,32 @@
+{
+  "byd-seagull-surf": {
+    "status": "success",
+    "file": "assets/img/byd-seagull-surf/pixel-art-16bit-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
+    "model": "BYD Seagull Surf",
+    "timestamp": 697696.0761122
+  },
+  "byd-yuan-pro": {
+    "status": "success",
+    "file": "assets/img/byd-yuan-pro/pixel-art-16bit-byd-yuan-pro-ev-380-suv-auto-electrico-ev-servicioti-uruguay.webp",
+    "model": "BYD Yuan Pro",
+    "timestamp": 697779.1179376
+  },
+  "dongfeng-nammi-box": {
+    "status": "success",
+    "file": "assets/img/dongfeng-nammi-box/pixel-art-16bit-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
+    "model": "Dongfeng Nammi",
+    "timestamp": 697823.6297398
+  },
+  "volvo-ex30": {
+    "status": "success",
+    "file": "assets/img/volvo-ex30/pixel-art-16bit-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
+    "model": "Volvo EX30",
+    "timestamp": 697874.6177645
+  },
+  "geely-panda-mini-ev": {
+    "status": "success",
+    "file": "assets/img/geely-panda-mini-ev/pixel-art-16bit-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp",
+    "model": "Geely Panda Mini EV",
+    "timestamp": 697916.7360145
+  }
+}

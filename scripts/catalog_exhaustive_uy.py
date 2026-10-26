@@ -2823,6 +2823,41 @@ def poblar_catalogo_completo():
         r = cursor.fetchone()
         return r["imagen_oficial_url"] if r else ""
 
+    def get_vehicle_gallery(vid):
+        cursor.execute("SELECT galeria_json FROM vehicles WHERE id = ?", (vid,))
+        row = cursor.fetchone()
+        if row and row["galeria_json"]:
+            try:
+                return json.loads(row["galeria_json"])
+            except Exception:
+                return []
+        return []
+
+    # Obtener fotos auténticas de catálogo para las galerías de cada crónica
+    byd_gal = get_vehicle_gallery("byd-seagull-surf")[:4]
+    chevy_gal = (get_vehicle_gallery("chevrolet-blazer-ev")[:2] + get_vehicle_gallery("chevrolet-equinox-ev")[:2])
+    if len(chevy_gal) < 4:
+        chevy_gal = get_vehicle_gallery("chevrolet-blazer-ev")[:4]
+    volvo_gal = get_vehicle_gallery("volvo-ex30")[:4]
+    ute_gal = [
+        get_vehicle_img("dongfeng-nammi-box"),
+        get_vehicle_img("geely-panda-mini-ev"),
+        get_vehicle_img("chery-eq1"),
+        get_vehicle_img("byd-dolphin-gs")
+    ]
+    micro_gal = [
+        get_vehicle_img("loop-bikes-slim-pro"),
+        get_vehicle_img("sunra-hawk-3000"),
+        get_vehicle_img("trek-allant-plus-7"),
+        get_vehicle_img("sunra-miku-super")
+    ]
+    fiscal_gal = [
+        get_vehicle_img("jac-e-js1"),
+        get_vehicle_img("baw-pony-ev"),
+        get_vehicle_img("baw-l7-bagel-ev"),
+        get_vehicle_img("trike-cargo-light-500")
+    ]
+
     cronicas = [
         (
             "cronica-byd-liderazgo-2026",
@@ -2833,6 +2868,7 @@ def poblar_catalogo_completo():
             "El segmento de hatchbacks urbanos eléctricos supera el 60% de penetración de ventas en Montevideo y el interior. Analizamos por qué la arquitectura Blade LFP y el costo por kilómetro con tarifa triple horario de UTE están transformando la plaza uruguaya.",
             "BYD • SADAR",
             get_vehicle_img("byd-seagull-surf"),
+            json.dumps(byd_gal, ensure_ascii=False),
             "<p>Crónica de análisis sobre el fenómeno de penetración de BYD en Uruguay.</p>"
         ),
         (
@@ -2844,6 +2880,7 @@ def poblar_catalogo_completo():
             "Chevrolet consolida su ofensiva eléctrica nacional con potencias de hasta 565 CV en modo WOW, plataformas modulares Ultium y autonomías que superan holgadamente los 500 km en ruta.",
             "Chevrolet • General Motors",
             get_vehicle_img("chevrolet-blazer-ev"),
+            json.dumps(chevy_gal, ensure_ascii=False),
             "<p>Análisis del arribo de la plataforma Ultium de Chevrolet a Uruguay.</p>"
         ),
         (
@@ -2855,6 +2892,7 @@ def poblar_catalogo_completo():
             "Con autonomías homologadas de hasta 476 km y aceleración de superdeportivo en su versión Twin Motor de 428 CV, el modelo nórdico redefine el estándar entre diseño minimalista, seguridad integral y eficiencia energética en las rutas uruguayas.",
             "Volvo • Danissa",
             get_vehicle_img("volvo-ex30"),
+            json.dumps(volvo_gal, ensure_ascii=False),
             "<p>Análisis exhaustivo del Volvo EX30 en el mercado nacional.</p>"
         ),
         (
@@ -2866,6 +2904,7 @@ def poblar_catalogo_completo():
             "La red nacional de carga pública supera los 300 puntos operativos desde Colonia hasta el Chuy. Guía práctica para planificar viajes interdepartamentales utilizando los conectores CCS2 y GB/T en las rutas nacionales 1, 2, 8 y 9.",
             "UTE Mueve • Infraestructura",
             get_vehicle_img("dongfeng-nammi-box"),
+            json.dumps(ute_gal, ensure_ascii=False),
             "<p>Informe técnico sobre la red nacional de cargadores rápidos de UTE.</p>"
         ),
         (
@@ -2877,6 +2916,7 @@ def poblar_catalogo_completo():
             "Marcas nacionales como Loop Bikes y VoltBike, junto a Sunra y Yadea, impulsan la micromovilidad eléctrica en la Rambla de Montevideo y Ciudad Vieja con costos de recarga inferiores a $5 por trayecto de 30 km.",
             "Loop Bikes • VoltBike • Sunra",
             get_vehicle_img("loop-bikes-slim-pro"),
+            json.dumps(micro_gal, ensure_ascii=False),
             "<p>Investigación sobre el auge de las bicicletas y motos eléctricas en el área metropolitana.</p>"
         ),
         (
@@ -2888,14 +2928,15 @@ def poblar_catalogo_completo():
             "Exoneración de IMESI, reducciones tributarias para empresas mediante proyectos COMAP y descuentos sustanciales en la patente de rodados departamental hacen que la amortización de un EV se alcance en tiempo récord.",
             "SUCIVE • DGI • Movilidad",
             get_vehicle_img("jac-e-js1"),
+            json.dumps(fiscal_gal, ensure_ascii=False),
             "<p>Guía de incentivos y costos operativos comparativos para Uruguay.</p>"
         )
     ]
 
     for cr in cronicas:
         cursor.execute("""
-        INSERT INTO news_articles (id, medio, titulo, url, fecha_publicacion, resumen, marcas_mencionadas, imagen_portada, contenido_html)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO news_articles (id, medio, titulo, url, fecha_publicacion, resumen, marcas_mencionadas, imagen_portada, galeria_json, contenido_html)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, cr)
 
     conn.commit()
