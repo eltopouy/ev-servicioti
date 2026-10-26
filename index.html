@@ -270,75 +270,70 @@
       <div class="border-b-2 border-neutral-900 pb-2 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
         <div>
           <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
-            Calculadora de Consumo & Ahorro
+            Simulador de Costo Total (TCO), Patente & Seguros
           </h2>
-          <p class="text-xs text-muted mt-1">Comparativa oficial UTE (Tarifas Plan Inteligente y Triple Horario) vs Combustibles Regulados (MIEM / URSEA / ANCAP)</p>
+          <p class="text-xs text-muted mt-1">Cálculo integral antes de comprar: Energía UTE + Patente SUCIVE (3% sin IVA) + Seguro BSE (15% bonif.) + Service Oficial por Marca</p>
         </div>
         <span class="text-[11px] font-mono bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-1 rounded self-start sm:self-auto font-medium">
-          ✓ Tarifas Vigentes: Octubre 2026
+          ✓ Normativa SUCIVE & BSE: Vigente 2026
         </span>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Calculadora Interactiva Multifactor -->
-        <div class="lg:col-span-7 bg-neutral-50 p-5 sm:p-6 rounded-xl border border-line space-y-5 shadow-xs">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <!-- Columna Izquierda: Parámetros del Vehículo y Conductor -->
+        <div class="lg:col-span-5 bg-neutral-50 p-5 rounded-xl border border-line space-y-4 shadow-xs">
           
-          <!-- Encabezado de la calculadora -->
-          <div class="flex items-center justify-between border-b border-line pb-3">
+          <div class="flex items-center justify-between border-b border-line pb-2.5">
             <div>
-              <h3 class="text-base sm:text-lg font-bold font-editorial text-neutral-950">
-                Simulador de Ahorro Energético
+              <h3 class="text-base font-bold font-editorial text-neutral-950">
+                1. Selección de Vehículo
               </h3>
-              <p class="text-[11px] text-muted">Ajuste su kilometraje mensual, tipo de combustible y horario de recarga en UTE</p>
+              <p class="text-[11px] text-muted">Elija cualquier modelo del catálogo oficial para cotizar sus costos reales</p>
             </div>
-            <span class="text-xl">⚡</span>
+            <span class="text-xl">🚗</span>
           </div>
 
-          <!-- Selector 1: Tipo de Combustible Fósil a Comparar -->
+          <!-- Selector de Vehículo con Buscador / Agrupado -->
           <div class="space-y-1.5">
             <label class="block text-xs font-semibold text-neutral-800">
-              1. Seleccione combustible a comparar (Precios Oficiales MIEM / ANCAP):
+              Modelo a cotizar:
             </label>
-            <div class="grid grid-cols-3 gap-2 text-xs" id="calc-fuel-options">
-              <button type="button" onclick="setCalcOption('fuel', 'nafta_super_95')" id="btn-fuel-nafta_super_95" class="calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-neutral-900 bg-white font-bold text-neutral-950 shadow-xs">
-                <span>⛽ Nafta Súper 95</span>
-                <span class="text-[10px] font-mono text-neutral-500 font-normal mt-0.5">$90,45 / L</span>
-              </button>
-              <button type="button" onclick="setCalcOption('fuel', 'nafta_premium_97')" id="btn-fuel-nafta_premium_97" class="calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700">
-                <span>⛽ Premium 97</span>
-                <span class="text-[10px] font-mono text-neutral-500 font-normal mt-0.5">$93,10 / L</span>
-              </button>
-              <button type="button" onclick="setCalcOption('fuel', 'gasoil_50s')" id="btn-fuel-gasoil_50s" class="calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700">
-                <span>🛢️ Gasoil 50-S</span>
-                <span class="text-[10px] font-mono text-neutral-500 font-normal mt-0.5">$62,79 / L</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Selector 2: Tarifa Eléctrica de UTE -->
-          <div class="space-y-1.5">
-            <div class="flex items-center justify-between">
-              <label class="text-xs font-semibold text-neutral-800">
-                2. Tarifa eléctrica UTE de recarga:
-              </label>
-              <span class="text-[10px] text-emerald-700 font-medium">Recomendado: Carga nocturna</span>
-            </div>
-            <select id="calc-ute-tariff" onchange="setCalcOption('tariff', this.value)" class="w-full text-xs p-2.5 bg-white border border-line rounded-lg font-medium text-neutral-900 focus:outline-none focus:border-neutral-900">
-              <option value="ute_valle_trt" selected>🌙 UTE Plan Inteligente — Valle Nocturno 00 a 07 hs ($2,44 / kWh) [Más económica]</option>
-              <option value="ute_llano_trt">☀️ UTE Plan Inteligente — Llano Diurno / Fin de Semana ($5,17 / kWh)</option>
-              <option value="ute_doble_fuera_punta">⚡ UTE Tarifa Doble Horario — Fuera de Punta ($4,61 / kWh)</option>
-              <option value="ute_residencial_simple">🏠 UTE Tarifa Residencial Simple Plana ($8,20 / kWh)</option>
-              <option value="ute_mueve_publico">🔋 Red Pública UTE Mueve — Carga Rápida DC en Ruta ($11,80 / kWh)</option>
+            <select id="calc-vehicle-select" onchange="setCalcVehicle(this.value)" class="w-full text-xs p-2.5 bg-white border border-line rounded-lg font-medium text-neutral-900 focus:outline-none focus:border-neutral-900 shadow-xs">
+              <!-- Opciones dinámicas de los 93 vehículos -->
             </select>
-            <p id="calc-tariff-desc" class="text-[11px] text-neutral-500 italic px-0.5">
-              Tarifa Horario Valle de UTE: diseñada para programar la recarga nocturna mientras duermes con mínimo costo.
-            </p>
           </div>
 
-          <!-- Selector 3: Slider de Kilometraje Mensual con Promedio de Montevideo -->
-          <div class="space-y-2 pt-1">
+          <!-- Chip de Información del Vehículo Seleccionado -->
+          <div id="calc-selected-vehicle-chip" class="bg-white p-3 rounded-lg border border-line flex items-center gap-3 shadow-2xs">
+            <img id="calc-v-thumb" src="" alt="Vehículo seleccionado" class="w-14 h-14 object-cover rounded border border-neutral-200 shrink-0">
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center justify-between">
+                <span id="calc-v-brand" class="text-[10px] uppercase font-mono tracking-wider text-muted font-bold">BYD</span>
+                <span id="calc-v-type" class="text-[9px] bg-neutral-100 text-neutral-700 px-1.5 py-0.2 rounded font-mono uppercase">Auto</span>
+              </div>
+              <h4 id="calc-v-name" class="text-sm font-bold font-editorial text-neutral-950 truncate">Seagull Surf</h4>
+              <div class="flex items-center gap-3 text-xs mt-0.5">
+                <span id="calc-v-price" class="font-extrabold text-neutral-900">USD $21.990</span>
+                <span class="text-neutral-300">•</span>
+                <span id="calc-v-bat" class="text-neutral-600 font-mono text-[11px]">43,2 kWh</span>
+                <span class="text-neutral-300">•</span>
+                <span id="calc-v-range" class="text-emerald-700 font-semibold font-mono text-[11px]">405 km</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presets rápidos Top Líderes de Ventas -->
+          <div class="space-y-1 pt-1">
+            <span class="text-[10px] text-muted font-mono uppercase block">Accesos rápidos líderes de ventas:</span>
+            <div class="flex flex-wrap gap-1.5" id="calc-quick-leaders">
+              <!-- Botones rápidos renderizados dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Parámetros del Conductor -->
+          <div class="border-t border-line pt-3 space-y-3">
             <div class="flex items-center justify-between text-xs">
-              <span class="font-semibold text-neutral-800">3. Recorrido mensual promedio:</span>
+              <span class="font-semibold text-neutral-800">2. Recorrido mensual promedio:</span>
               <div class="flex items-center gap-1.5">
                 <span id="slider-val" class="font-mono font-bold text-sm text-neutral-950 bg-white border border-line px-2 py-0.5 rounded">1.200 km</span>
                 <span class="text-[10px] text-muted font-mono">(~40 km/día)</span>
@@ -347,78 +342,238 @@
             
             <input type="range" id="slider-km" min="200" max="4500" step="50" value="1200" oninput="updateCalculator()" class="w-full accent-neutral-950 cursor-pointer">
 
-            <!-- Presets rápidos -->
-            <div class="flex items-center justify-between text-[11px] text-neutral-500 pt-0.5">
-              <button type="button" onclick="setPresetKm(800)" class="hover:text-black underline">800 km (Uso Ligero)</button>
-              <button type="button" onclick="setPresetKm(1200)" class="font-bold text-emerald-800 bg-emerald-100/70 px-1.5 py-0.5 rounded border border-emerald-300">★ 1.200 km (Promedio Montevideo)</button>
-              <button type="button" onclick="setPresetKm(2000)" class="hover:text-black underline">2.000 km (Metropolitano)</button>
-              <button type="button" onclick="setPresetKm(3000)" class="hover:text-black underline">3.000 km (Intensivo)</button>
+            <div class="flex items-center justify-between text-[11px] text-neutral-500">
+              <button type="button" onclick="setPresetKm(800)" class="hover:text-black underline">800 km</button>
+              <button type="button" onclick="setPresetKm(1200)" class="font-bold text-emerald-800 bg-emerald-100/70 px-1.5 py-0.5 rounded border border-emerald-300">★ 1.200 km (Montevideo)</button>
+              <button type="button" onclick="setPresetKm(2000)" class="hover:text-black underline">2.000 km</button>
+              <button type="button" onclick="setPresetKm(3000)" class="hover:text-black underline">3.000 km</button>
             </div>
           </div>
 
-          <!-- Cuadrícula de Resultados -->
-          <div class="grid grid-cols-2 gap-3 pt-3 border-t border-line">
-            <div class="bg-white p-3.5 rounded-lg border border-line flex flex-col justify-between">
-              <div>
-                <span class="text-[11px] text-muted block" id="calc-fuel-label">Gasto Combustión (Nafta Súper)</span>
-                <span class="text-xl font-bold font-editorial text-neutral-900 mt-1 block" id="calc-nafta">$8.683 UYU</span>
-              </div>
-              <span class="text-[10px] font-mono text-neutral-400 mt-1.5" id="calc-fuel-cost-km">$7,24 por km</span>
+          <!-- Tarifa UTE de Recarga -->
+          <div class="space-y-1.5 border-t border-line pt-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-semibold text-neutral-800">
+                3. Tarifa eléctrica UTE de recarga:
+              </label>
+              <span class="text-[10px] text-emerald-700 font-medium">Recomendado: Valle</span>
             </div>
+            <select id="calc-ute-tariff" onchange="setCalcOption('tariff', this.value)" class="w-full text-xs p-2 bg-white border border-line rounded-lg font-medium text-neutral-900 focus:outline-none focus:border-neutral-900">
+              <option value="ute_valle_trt" selected>🌙 UTE Plan Inteligente — Valle Nocturno ($2,44 / kWh) [Más económica]</option>
+              <option value="ute_llano_trt">☀️ UTE Plan Inteligente — Llano Diurno ($5,17 / kWh)</option>
+              <option value="ute_doble_fuera_punta">⚡ UTE Doble Horario — Fuera de Punta ($4,61 / kWh)</option>
+              <option value="ute_residencial_simple">🏠 UTE Residencial Simple Plana ($8,20 / kWh)</option>
+              <option value="ute_mueve_publico">🔋 Red Pública UTE Mueve DC en Ruta ($11,80 / kWh)</option>
+            </select>
+          </div>
 
-            <div class="bg-white p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/20 flex flex-col justify-between">
-              <div>
-                <span class="text-[11px] text-emerald-800 block" id="calc-ute-label">Gasto Eléctrico (UTE Valle)</span>
-                <span class="text-xl font-bold font-editorial text-emerald-700 mt-1 block" id="calc-ute">$440 UYU</span>
-              </div>
-              <span class="text-[10px] font-mono text-emerald-600 mt-1.5" id="calc-ute-cost-km">$0,37 por km</span>
+          <!-- Combustible a Comparar -->
+          <div class="space-y-1.5 border-t border-line pt-3">
+            <label class="block text-xs font-semibold text-neutral-800">
+              4. Combustible fósil comparativo (Precios Oficiales MIEM / ANCAP):
+            </label>
+            <div class="grid grid-cols-3 gap-1.5 text-xs" id="calc-fuel-options">
+              <button type="button" onclick="setCalcOption('fuel', 'nafta_super_95')" id="btn-fuel-nafta_super_95" class="calc-opt-btn p-1.5 rounded-lg border text-center transition flex flex-col justify-between border-neutral-900 bg-white font-bold text-neutral-950 shadow-xs">
+                <span>⛽ Súper 95</span>
+                <span class="text-[9px] font-mono text-neutral-500 font-normal mt-0.5">$90,45/L</span>
+              </button>
+              <button type="button" onclick="setCalcOption('fuel', 'nafta_premium_97')" id="btn-fuel-nafta_premium_97" class="calc-opt-btn p-1.5 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700">
+                <span>⛽ Premium 97</span>
+                <span class="text-[9px] font-mono text-neutral-500 font-normal mt-0.5">$93,10/L</span>
+              </button>
+              <button type="button" onclick="setCalcOption('fuel', 'gasoil_50s')" id="btn-fuel-gasoil_50s" class="calc-opt-btn p-1.5 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700">
+                <span>🛢️ Gasoil 50-S</span>
+                <span class="text-[9px] font-mono text-neutral-500 font-normal mt-0.5">$62,79/L</span>
+              </button>
             </div>
           </div>
 
-          <!-- Tarjeta de Ahorro Destacada -->
-          <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white p-4 rounded-xl shadow-sm space-y-1 text-center">
-            <span class="text-xs uppercase tracking-wider font-semibold opacity-90 block">
-              Ahorro Mensual Neto Directo
-            </span>
-            <div class="text-3xl sm:text-4xl font-black font-editorial tracking-tight" id="calc-saving">
-              $8.243 UYU
+          <!-- Opciones Normativas: Patente y Seguro -->
+          <div class="grid grid-cols-2 gap-2 border-t border-line pt-3 text-xs">
+            <div>
+              <label class="block text-[11px] font-semibold text-neutral-800 mb-1">Pago Patente SUCIVE:</label>
+              <select id="calc-patente-mode" onchange="setCalcOption('patente_mode', this.value)" class="w-full text-xs p-1.5 bg-white border border-line rounded">
+                <option value="contado" selected>Contado Enero (-20%)</option>
+                <option value="cuotas">6 Cuotas en fecha (-10%)</option>
+              </select>
             </div>
-            <div class="text-[11px] font-mono opacity-90 pt-0.5 flex items-center justify-center gap-3">
+            <div>
+              <label class="block text-[11px] font-semibold text-neutral-800 mb-1">Póliza Seguro BSE:</label>
+              <select id="calc-seguro-mode" onchange="setCalcOption('seguro_mode', this.value)" class="w-full text-xs p-1.5 bg-white border border-line rounded">
+                <option value="todo_riesgo" selected>Todo Riesgo (15% bonif.)</option>
+                <option value="terceros">Terceros Completo</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Cuadrícula Resumen Energético Directo -->
+          <div class="grid grid-cols-2 gap-2.5 pt-2 border-t border-line text-xs">
+            <div class="bg-white p-2.5 rounded-lg border border-line">
+              <span class="text-[10px] text-muted block" id="calc-fuel-label">Combustión Directa</span>
+              <span class="text-base font-bold font-editorial text-neutral-900 block mt-0.5" id="calc-nafta">$8.683 UYU</span>
+              <span class="text-[9px] font-mono text-neutral-400" id="calc-fuel-cost-km">$7,24 por km</span>
+            </div>
+            <div class="bg-white p-2.5 rounded-lg border border-emerald-200 bg-emerald-50/20">
+              <span class="text-[10px] text-emerald-800 block" id="calc-ute-label">Recarga UTE</span>
+              <span class="text-base font-bold font-editorial text-emerald-700 block mt-0.5" id="calc-ute">$440 UYU</span>
+              <span class="text-[9px] font-mono text-emerald-600" id="calc-ute-cost-km">$0,37 por km</span>
+            </div>
+          </div>
+
+          <!-- Tarjeta Ahorro Energético Directo -->
+          <div class="bg-emerald-700 text-white p-2.5 rounded-lg text-center space-y-0.5 shadow-2xs">
+            <span class="text-[10px] uppercase tracking-wider font-semibold opacity-90 block">Ahorro Energético Neto Mensual</span>
+            <div class="text-xl font-black font-editorial" id="calc-saving">$8.243 UYU</div>
+            <div class="text-[10px] font-mono opacity-90 flex items-center justify-center gap-2">
               <span id="calc-annual-saving">Proyección anual: <b>$98.916 UYU</b></span>
               <span>•</span>
-              <span id="calc-percentage-saving"><b>95%</b> de ahorro directo</span>
+              <span id="calc-percentage-saving"><b>95%</b> ahorro</span>
             </div>
-          </div>
-
-          <!-- Nota al pie con transparencia metodológica y precios oficiales -->
-          <div class="text-[10px] text-neutral-500 font-mono flex flex-col sm:flex-row items-center justify-between gap-1 border-t border-line pt-2">
-            <span>Fuente: Precios máximos de venta al público fijados por MIEM/URSEA y tarifario UTE.</span>
-            <span class="text-neutral-400">Actualizado mensualmente de oficio</span>
           </div>
 
         </div>
 
-        <div class="lg:col-span-6 space-y-4">
-          <div class="p-4 border border-line rounded-lg bg-white">
-            <h4 class="text-base font-bold font-editorial text-neutral-900">Patente SUCIVE Reducida al 3%</h4>
-            <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
-              En Uruguay los vehículos 100% eléctricos cero kilómetro pagan una alícuota anual del 3% sobre el valor de mercado sin IVA, frente al 5% que abonan los vehículos tradicionales a combustión. Se aplica de oficio en Montevideo y Canelones.
+        <!-- Columna Derecha: Balance TCO y Ahorro Integral -->
+        <div class="lg:col-span-7 space-y-4">
+          
+          <!-- Encabezado de Resultados -->
+          <div class="bg-neutral-900 text-white p-4 rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div>
+              <span class="text-[10px] font-mono text-amber-300 uppercase tracking-wider font-bold">Balance Comparativo Mensual & Anual</span>
+              <h3 class="text-xl sm:text-2xl font-bold font-editorial text-white">
+                Costo Total de Propiedad (TCO)
+              </h3>
+            </div>
+            <div class="text-right self-end sm:self-auto">
+              <span class="text-[11px] text-neutral-300 block">Ahorro Anual Neto Estimado:</span>
+              <span id="tco-annual-saving-hero" class="text-2xl font-black font-editorial text-emerald-400">$142.800 UYU</span>
+            </div>
+          </div>
+
+          <!-- Cuadrícula Bilateral Lado a Lado -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Columna Eléctrico -->
+            <div class="bg-emerald-50/40 border-2 border-emerald-500 rounded-xl p-4 space-y-3 shadow-xs">
+              <div class="flex items-center justify-between border-b border-emerald-200 pb-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">⚡</span>
+                  <span class="font-bold font-editorial text-sm text-emerald-950 uppercase" id="tco-ev-title">Vehículo Eléctrico</span>
+                </div>
+                <span class="text-[10px] font-mono bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded font-bold">100% EV</span>
+              </div>
+
+              <!-- Desglose de Rubros -->
+              <div class="space-y-2 text-xs text-neutral-700">
+                <div class="flex justify-between items-center py-1 border-b border-emerald-100">
+                  <span class="text-neutral-600">Recarga UTE (<span id="tco-ev-ute-label">Valle</span>):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ev-ute">$440</b>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-emerald-100">
+                  <span class="text-neutral-600">Patente SUCIVE (3% sin IVA):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ev-patente">$1.100</b>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-emerald-100">
+                  <span class="text-neutral-600">Seguro BSE (15% bonif.):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ev-seguro">$2.420</b>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-emerald-100">
+                  <span class="text-neutral-600">Service Oficial prorrateado:</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ev-service">$369</b>
+                </div>
+              </div>
+
+              <!-- Total Eléctrico -->
+              <div class="pt-2 border-t-2 border-emerald-300 flex justify-between items-end">
+                <div>
+                  <span class="text-[10px] uppercase font-mono tracking-wider text-emerald-800 font-bold block">Gasto Mensual</span>
+                  <span class="text-2xl font-black font-editorial text-emerald-950" id="tco-ev-monthly">$4.329 UYU</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[10px] text-emerald-700 block">Presupuesto Anual:</span>
+                  <b class="text-sm font-bold text-emerald-900 font-mono" id="tco-ev-annual">$51.948 UYU</b>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna Combustión Fósil -->
+            <div class="bg-neutral-100/60 border border-neutral-300 rounded-xl p-4 space-y-3 shadow-xs">
+              <div class="flex items-center justify-between border-b border-neutral-300 pb-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">⛽</span>
+                  <span class="font-bold font-editorial text-sm text-neutral-900 uppercase">Equivalente Combustión</span>
+                </div>
+                <span class="text-[10px] font-mono bg-neutral-200 text-neutral-800 px-2 py-0.5 rounded font-bold">Nafta / Diésel</span>
+              </div>
+
+              <!-- Desglose de Rubros -->
+              <div class="space-y-2 text-xs text-neutral-700">
+                <div class="flex justify-between items-center py-1 border-b border-neutral-200">
+                  <span class="text-neutral-600">Combustible (<span id="tco-ice-fuel-label">Súper 95</span>):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ice-fuel">$8.683</b>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-neutral-200">
+                  <span class="text-neutral-600">Patente SUCIVE (5% sin IVA):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ice-patente">$1.833</b>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-neutral-200">
+                  <span class="text-neutral-600">Seguro Tradicional (sin bonif.):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ice-seguro">$2.847</b>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-neutral-200">
+                  <span class="text-neutral-600">Service Tradicional (aceite/filtros):</span>
+                  <b class="text-neutral-950 font-mono" id="tco-ice-service">$1.230</b>
+                </div>
+              </div>
+
+              <!-- Total Combustión -->
+              <div class="pt-2 border-t-2 border-neutral-400 flex justify-between items-end">
+                <div>
+                  <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-600 font-bold block">Gasto Mensual</span>
+                  <span class="text-2xl font-black font-editorial text-neutral-900" id="tco-ice-monthly">$14.593 UYU</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[10px] text-neutral-500 block">Presupuesto Anual:</span>
+                  <b class="text-sm font-bold text-neutral-800 font-mono" id="tco-ice-annual">$175.116 UYU</b>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Banner de Retorno de Inversión y Ahorro Acumulado -->
+          <div class="bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-800 text-white p-4 sm:p-5 rounded-xl shadow-md space-y-2">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-500/80 pb-2.5">
+              <div>
+                <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-200 font-bold">Ahorro Anual Neto Consolidado</span>
+                <div class="text-3xl sm:text-4xl font-black font-editorial tracking-tight" id="tco-net-saving">
+                  $123.168 UYU / año
+                </div>
+              </div>
+              <div class="bg-black/30 backdrop-blur-xs px-3 py-1.5 rounded-lg border border-white/20 text-center sm:text-right">
+                <span class="text-[10px] text-emerald-200 uppercase font-mono block">Economía Mensual</span>
+                <b class="text-lg font-editorial text-emerald-300 font-black" id="tco-monthly-saving">+$10.264 UYU / mes</b>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-[11px] text-emerald-100 font-mono">
+              <div>• <b>70% menor costo</b> de rodaje mensual</div>
+              <div>• <b>66% menos patente</b> SUCIVE</div>
+              <div>• <b>60% a 80% menos</b> en mantenimiento</div>
+            </div>
+          </div>
+
+          <!-- Datos Oficiales de Postventa y Taller Oficial de la Marca -->
+          <div class="bg-white p-4 rounded-xl border border-line space-y-2 text-xs">
+            <div class="flex items-center justify-between border-b border-line pb-1.5">
+              <span class="font-bold text-neutral-900 font-editorial">Pauta de Mantenimiento Oficial de la Marca en Uruguay:</span>
+              <span class="text-[10px] font-mono text-emerald-700 font-semibold" id="tco-service-interval-badge">Cada 20.000 km</span>
+            </div>
+            <p class="text-neutral-600 leading-relaxed text-[11px]" id="tco-service-info-text">
+              Taller Oficial: SADAR S.A. — Red Rapide Portones, Punta Carretas y Car One.
             </p>
           </div>
 
-          <div class="p-4 border border-line rounded-lg bg-white">
-            <h4 class="text-base font-bold font-editorial text-neutral-900">Bonificación del 15% en BSE</h4>
-            <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
-              El Banco de Seguros del Estado otorga un 15% de bonificación en pólizas integrales para automóviles y utilitarios eléctricos, contemplando la reposición de la batería de alto voltaje.
-            </p>
-          </div>
-
-          <div class="p-4 border border-line rounded-lg bg-white">
-            <h4 class="text-base font-bold font-editorial text-neutral-900">Asistencia de Autonomía en Carretera</h4>
-            <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
-              Compañías como SURA ofrecen auxilio mecánico con grúa de plataforma plana hasta el punto de carga más próximo en caso de agotamiento completo de la batería en rutas nacionales.
-            </p>
-          </div>
         </div>
       </div>
     </section>
@@ -549,6 +704,44 @@
           <!-- Detalles adicionales dinámicos -->
         </div>
 
+        <!-- Mantenimiento Oficial, Patente SUCIVE y Seguro BSE -->
+        <div id="modal-tco-section" class="bg-gradient-to-br from-neutral-50 to-emerald-50/30 p-4 sm:p-5 rounded-xl border border-emerald-200/80 space-y-3.5 text-xs shadow-xs">
+          <div class="flex items-center justify-between border-b border-emerald-200/60 pb-2">
+            <div class="flex items-center gap-2">
+              <span class="text-base">🛡️</span>
+              <h4 class="font-bold font-editorial text-sm text-neutral-950 uppercase tracking-wide">
+                Costos de Mantenimiento & Propiedad (Montevideo e Interior)
+              </h4>
+            </div>
+            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-mono px-2 py-0.5 rounded font-bold border border-emerald-300">
+              Datos Oficiales
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-neutral-800">
+            <div class="bg-white p-3 rounded-lg border border-line">
+              <span class="text-[10px] text-muted uppercase font-mono block">Patente SUCIVE (3% sin IVA)</span>
+              <b class="text-sm font-bold text-neutral-900 block mt-0.5" id="modal-patente-val">$0 UYU / año</b>
+              <span class="text-[10px] text-emerald-700" id="modal-patente-desc">20% desc. pago contado</span>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-line">
+              <span class="text-[10px] text-muted uppercase font-mono block">Seguro BSE Todo Riesgo</span>
+              <b class="text-sm font-bold text-neutral-900 block mt-0.5" id="modal-seguro-val">$0 UYU / año</b>
+              <span class="text-[10px] text-emerald-700">15% bonificación verde VE</span>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-line">
+              <span class="text-[10px] text-muted uppercase font-mono block">Service Oficial de Marca</span>
+              <b class="text-sm font-bold text-neutral-900 block mt-0.5" id="modal-service-val">USD $0</b>
+              <span class="text-[10px] text-neutral-500" id="modal-service-freq">Cada 20.000 km</span>
+            </div>
+          </div>
+
+          <div class="space-y-1.5 pt-1 text-[11px] text-neutral-700">
+            <div><b class="text-neutral-900">Talleres Oficiales Autorizados:</b> <span id="modal-taller-val">-</span></div>
+            <div><b class="text-neutral-900">Tareas en Service Oficial:</b> <span id="modal-service-tasks" class="text-neutral-600">-</span></div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Modal Footer con Enlace Oficial al Fabricante -->
@@ -630,6 +823,7 @@
       renderCatalog();
       renderMarket(appData.market_listings || []);
       initMap();
+      initTCOCalculator();
       updateCalculator();
     }
 
@@ -991,6 +1185,40 @@
         extraDiv.classList.add('hidden');
       }
 
+      // Datos de TCO, Patente SUCIVE, Seguro BSE y Service Oficial en el Modal
+      const patenteVal = v.patente_anual_estimada_uyu || 0;
+      const seguroVal = v.seguro_anual_estimado_uyu || 0;
+      const serviceUsd = v.service_costo_usd || 140;
+      const serviceKm = v.service_intervalo_km || 20000;
+      const taller = v.service_taller_oficial || 'Taller Oficial del Importador';
+
+      const elPat = document.getElementById('modal-patente-val');
+      if (elPat) elPat.textContent = (patenteVal > 0) ? `$${Math.round(patenteVal).toLocaleString()} UYU / año` : 'Exento (0 UYU)';
+      
+      const elSeg = document.getElementById('modal-seguro-val');
+      if (elSeg) elSeg.textContent = `$${Math.round(seguroVal).toLocaleString()} UYU / año`;
+
+      const elServ = document.getElementById('modal-service-val');
+      if (elServ) elServ.textContent = `USD $${serviceUsd} (~$${Math.round(serviceUsd * 41).toLocaleString()} UYU)`;
+
+      const elServFreq = document.getElementById('modal-service-freq');
+      if (elServFreq) elServFreq.textContent = `Cada ${serviceKm.toLocaleString()} km o 1 año`;
+
+      const elTaller = document.getElementById('modal-taller-val');
+      if (elTaller) elTaller.textContent = taller;
+
+      let tareasText = 'Diagnóstico computarizado de batería de alto voltaje, filtro de habitáculo, líquido de frenos y actualización de software.';
+      if (v.mantenimiento_detalle_json) {
+        try {
+          const mDet = (typeof v.mantenimiento_detalle_json === 'string') 
+            ? JSON.parse(v.mantenimiento_detalle_json) 
+            : v.mantenimiento_detalle_json;
+          tareasText = mDet.tareas_incluidas || tareasText;
+        } catch(e) {}
+      }
+      const elTasks = document.getElementById('modal-service-tasks');
+      if (elTasks) elTasks.textContent = tareasText;
+
       document.getElementById('vehicle-modal').classList.remove('hidden');
       document.body.style.overflow = 'hidden';
     }
@@ -1089,9 +1317,12 @@
     }
 
     let calcState = {
+      vehicleId: 'byd-seagull-surf',
       fuel: 'nafta_super_95',
       tariff: 'ute_valle_trt',
-      km: 1200
+      km: 1200,
+      patente_mode: 'contado',
+      seguro_mode: 'todo_riesgo'
     };
 
     const DEFAULT_TARIFFS = {
@@ -1105,21 +1336,110 @@
       ute_mueve_publico: { nombre: 'Red Pública UTE Mueve DC', precio: 11.800, consumo_100: 16.5, unidad: '$/kWh', desc: 'Cargadores rápidos de corriente continua (50 kW a 120 kW) en rutas nacionales de Uruguay.' }
     };
 
+    function initTCOCalculator() {
+      const vSelect = document.getElementById('calc-vehicle-select');
+      const leadersContainer = document.getElementById('calc-quick-leaders');
+      if (!vSelect || !appData.vehicles || appData.vehicles.length === 0) return;
+
+      // 1. Agrupar vehículos por categoría para el <select>
+      const categories = [
+        { key: 'auto', label: '🚗 Automóviles & SUV' },
+        { key: 'moto', label: '🛵 Motos & Scooters' },
+        { key: 'triciclo', label: '🛺 Triciclos & Utilitarios' },
+        { key: 'bicicleta', label: '🚲 Bicicletas Eléctricas' }
+      ];
+
+      let selectHtml = '';
+      categories.forEach(cat => {
+        const inCat = appData.vehicles.filter(v => v.tipo === cat.key)
+          .sort((a, b) => (a.es_top_ventas ? a.ventas_rank : 99) - (b.es_top_ventas ? b.ventas_rank : 99) || a.precio_usd - b.precio_usd);
+        if (inCat.length > 0) {
+          selectHtml += `<optgroup label="${cat.label}">`;
+          inCat.forEach(v => {
+            const isTop = v.es_top_ventas ? `[TOP #${v.ventas_rank}] ` : '';
+            selectHtml += `<option value="${v.id}">${isTop}${v.marca} ${v.modelo} ${v.version || ''} — USD $${v.precio_usd.toLocaleString()}</option>`;
+          });
+          selectHtml += `</optgroup>`;
+        }
+      });
+      vSelect.innerHTML = selectHtml;
+
+      // 2. Poblar accesos rápidos de Líderes de Ventas
+      if (leadersContainer) {
+        const top5 = (appData.top_sales && appData.top_sales.length > 0)
+          ? appData.top_sales.slice(0, 5)
+          : appData.vehicles.filter(v => v.es_top_ventas === 1).slice(0, 5);
+
+        leadersContainer.innerHTML = top5.map(v => `
+          <button type="button" onclick="setCalcVehicle('${v.id}')" class="text-[11px] font-medium bg-white hover:bg-neutral-900 hover:text-white px-2.5 py-1 rounded border border-line transition shadow-2xs flex items-center gap-1">
+            <span>🏆</span> <span>${v.marca} ${v.modelo}</span>
+          </button>
+        `).join('');
+      }
+
+      // 3. Seleccionar líder inicial
+      const defaultV = appData.vehicles.find(v => v.id === 'byd-seagull-surf') || 
+                       appData.vehicles.find(v => v.id === 'byd-yuan-pro') || 
+                       appData.vehicles[0];
+      if (defaultV) {
+        setCalcVehicle(defaultV.id);
+      }
+    }
+
+    function setCalcVehicle(vehicleId) {
+      calcState.vehicleId = vehicleId;
+      const vSelect = document.getElementById('calc-vehicle-select');
+      if (vSelect && vSelect.value !== vehicleId) {
+        vSelect.value = vehicleId;
+      }
+
+      const v = (appData.vehicles || []).find(item => item.id === vehicleId);
+      if (!v) return;
+
+      // Actualizar Chip Visual del Vehículo Seleccionado
+      const chipThumb = document.getElementById('calc-v-thumb');
+      if (chipThumb) {
+        chipThumb.src = v.especificaciones?.badge_circular_url || v.imagen_oficial_url;
+        chipThumb.alt = `${v.marca} ${v.modelo}`;
+      }
+
+      const chipBrand = document.getElementById('calc-v-brand');
+      if (chipBrand) chipBrand.textContent = v.marca;
+
+      const chipType = document.getElementById('calc-v-type');
+      if (chipType) chipType.textContent = v.tipo;
+
+      const chipName = document.getElementById('calc-v-name');
+      if (chipName) chipName.textContent = `${v.modelo} ${v.version || ''}`;
+
+      const chipPrice = document.getElementById('calc-v-price');
+      if (chipPrice) chipPrice.textContent = `USD $${v.precio_usd.toLocaleString()}`;
+
+      const chipBat = document.getElementById('calc-v-bat');
+      if (chipBat) chipBat.textContent = `${v.bateria_kwh} kWh`;
+
+      const chipRange = document.getElementById('calc-v-range');
+      if (chipRange) chipRange.textContent = `${v.autonomia_km} km`;
+
+      updateCalculator();
+    }
+
     function setCalcOption(type, value) {
       if (type === 'fuel') {
         calcState.fuel = value;
         document.querySelectorAll('.calc-opt-btn').forEach(btn => {
-          btn.className = 'calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700';
+          btn.className = 'calc-opt-btn p-1.5 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700';
         });
         const activeBtn = document.getElementById(`btn-fuel-${value}`);
         if (activeBtn) {
-          activeBtn.className = 'calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-neutral-900 bg-white font-bold text-neutral-950 shadow-xs';
+          activeBtn.className = 'calc-opt-btn p-1.5 rounded-lg border text-center transition flex flex-col justify-between border-neutral-900 bg-white font-bold text-neutral-950 shadow-xs';
         }
       } else if (type === 'tariff') {
         calcState.tariff = value;
-        const descEl = document.getElementById('calc-tariff-desc');
-        const desc = DEFAULT_TARIFFS[value]?.desc || '';
-        if (descEl) descEl.textContent = desc;
+      } else if (type === 'patente_mode') {
+        calcState.patente_mode = value;
+      } else if (type === 'seguro_mode') {
+        calcState.seguro_mode = value;
       }
       updateCalculator();
     }
@@ -1144,7 +1464,14 @@
         sliderVal.textContent = `${km.toLocaleString()} km`;
       }
 
-      // Obtener mapa de tarifas dinámicas (desde appData.energy_tariffs o fallback)
+      // Vehículo seleccionado
+      const v = (appData.vehicles || []).find(item => item.id === calcState.vehicleId) || (appData.vehicles ? appData.vehicles[0] : null);
+      if (!v) return;
+
+      const precioUsd = v.precio_usd || 20000;
+      const cotiz = 41.0;
+
+      // Tarifas dinámicas
       const tariffsMap = {};
       if (appData.energy_tariffs && appData.energy_tariffs.length > 0) {
         appData.energy_tariffs.forEach(t => {
@@ -1152,8 +1479,7 @@
             nombre: t.nombre,
             precio: t.precio,
             consumo_100: t.consumo_tipico_100km,
-            unidad: t.unidad,
-            desc: t.descripcion
+            unidad: t.unidad
           };
         });
       }
@@ -1161,46 +1487,187 @@
       const fuelData = tariffsMap[calcState.fuel] || DEFAULT_TARIFFS[calcState.fuel];
       const uteData = tariffsMap[calcState.tariff] || DEFAULT_TARIFFS[calcState.tariff];
 
-      // Cálculo de consumo
-      const litrosCombustible = (km / 100) * fuelData.consumo_100;
-      const costoCombustion = Math.round(litrosCombustible * fuelData.precio);
-      const costoCombustionPorKm = (costoCombustion / km).toFixed(2);
+      // 1. Consumo Eléctrico UTE
+      let evConsumo100 = uteData.consumo_100 || 15.0;
+      if (v.tipo === 'moto') evConsumo100 = 4.5;
+      else if (v.tipo === 'triciclo') evConsumo100 = 7.0;
+      else if (v.tipo === 'bicicleta') evConsumo100 = 1.2;
 
-      const kwhElectricidad = (km / 100) * uteData.consumo_100;
-      const costoUte = Math.round(kwhElectricidad * uteData.precio);
-      const costoUtePorKm = (costoUte / km).toFixed(2);
+      const kwhMes = (km / 100) * evConsumo100;
+      const gastoUteMes = Math.round(kwhMes * uteData.precio);
 
-      const ahorro = Math.max(0, costoCombustion - costoUte);
-      const ahorroAnual = ahorro * 12;
-      const porcentajeAhorro = costoCombustion > 0 ? Math.round((ahorro / costoCombustion) * 100) : 0;
+      // 2. Patente SUCIVE:
+      // EV: 3% sin IVA (con 20% descuento contado en enero o 10% cuotas)
+      // ICE: 5% sin IVA (66% más cara)
+      const factorDescPatente = (calcState.patente_mode === 'contado') ? 0.80 : 0.90;
+      let patenteEvAnual = 0;
+      let patenteIceAnual = 0;
 
-      // Actualizar DOM
+      if (v.tipo === 'auto') {
+        const valorSinIvaUsd = precioUsd / 1.22;
+        patenteEvAnual = valorSinIvaUsd * 0.03 * cotiz * factorDescPatente;
+        patenteIceAnual = valorSinIvaUsd * 0.05 * cotiz * factorDescPatente;
+      } else if (v.tipo === 'moto' || v.tipo === 'triciclo') {
+        patenteEvAnual = 2200 * factorDescPatente;
+        patenteIceAnual = 3800 * factorDescPatente;
+      } else {
+        patenteEvAnual = 0;
+        patenteIceAnual = 0;
+      }
+
+      const patenteEvMes = Math.round(patenteEvAnual / 12);
+      const patenteIceMes = Math.round(patenteIceAnual / 12);
+
+      // 3. Seguro Automotor BSE:
+      // EV: Tasa con 15% bonificación verde (Todo Riesgo 3.8% * 0.85; Terceros 2.2% * 0.85)
+      // ICE: Tasa plena sin bonificación verde (Todo Riesgo 3.8%; Terceros 2.2%)
+      const tasaSeguro = (calcState.seguro_mode === 'todo_riesgo') ? 0.038 : 0.022;
+      let seguroEvAnual = 0;
+      let seguroIceAnual = 0;
+
+      if (v.tipo === 'auto') {
+        seguroEvAnual = precioUsd * cotiz * tasaSeguro * 0.85;
+        seguroIceAnual = precioUsd * cotiz * tasaSeguro;
+      } else if (v.tipo === 'moto' || v.tipo === 'triciclo') {
+        seguroEvAnual = precioUsd * cotiz * 0.045 * 0.85;
+        seguroIceAnual = precioUsd * cotiz * 0.045;
+      } else {
+        seguroEvAnual = 3800;
+        seguroIceAnual = 3800;
+      }
+
+      const seguroEvMes = Math.round(seguroEvAnual / 12);
+      const seguroIceMes = Math.round(seguroIceAnual / 12);
+
+      // 4. Service Oficial de Marca:
+      // EV: Según intervalo oficial y costo fijado en Uruguay
+      // ICE: Service motor combustión tradicional
+      const serviceKm = v.service_intervalo_km || 20000;
+      const serviceCostoUsd = v.service_costo_usd || 140;
+      const serviceEvAnual = ((km * 12) / serviceKm) * serviceCostoUsd * cotiz;
+      const serviceEvMes = Math.round(serviceEvAnual / 12);
+
+      let serviceIceMes = Math.round(((km * 12) / 10000) * 260 * cotiz / 12);
+      if (v.tipo === 'auto') serviceIceMes = Math.max(1150, serviceIceMes);
+      else if (v.tipo === 'moto') serviceIceMes = 600;
+      else serviceIceMes = 300;
+
+      const serviceIceAnual = serviceIceMes * 12;
+
+      // 5. Combustible Fósil Comparativo
+      let fuelConsumo100 = fuelData.consumo_100;
+      if (v.tipo === 'moto') fuelConsumo100 = 3.2;
+      else if (v.tipo === 'triciclo') fuelConsumo100 = 5.0;
+
+      const litrosMes = (km / 100) * fuelConsumo100;
+      const gastoCombustionMes = Math.round(litrosMes * fuelData.precio);
+      const gastoCombustionAnual = gastoCombustionMes * 12;
+
+      // Totales Consolidados (TCO)
+      const totalEvMes = gastoUteMes + patenteEvMes + seguroEvMes + serviceEvMes;
+      const totalEvAnual = totalEvMes * 12;
+
+      const totalIceMes = gastoCombustionMes + patenteIceMes + seguroIceMes + serviceIceMes;
+      const totalIceAnual = totalIceMes * 12;
+
+      const ahorroMensual = Math.max(0, totalIceMes - totalEvMes);
+      const ahorroAnual = ahorroMensual * 12;
+
+      // Actualizar DOM Columna Eléctrico
+      const elEvTitle = document.getElementById('tco-ev-title');
+      if (elEvTitle) elEvTitle.textContent = `${v.marca} ${v.modelo}`;
+
+      const elEvUteLbl = document.getElementById('tco-ev-ute-label');
+      if (elEvUteLbl) elEvUteLbl.textContent = uteData.nombre.split('—')[0].replace('UTE', '').trim();
+
+      const elEvUte = document.getElementById('tco-ev-ute');
+      if (elEvUte) elEvUte.textContent = `$${gastoUteMes.toLocaleString()} UYU`;
+
+      const elEvPat = document.getElementById('tco-ev-patente');
+      if (elEvPat) elEvPat.textContent = (patenteEvMes > 0) ? `$${patenteEvMes.toLocaleString()} UYU` : 'Exento (0 UYU)';
+
+      const elEvSeg = document.getElementById('tco-ev-seguro');
+      if (elEvSeg) elEvSeg.textContent = `$${seguroEvMes.toLocaleString()} UYU`;
+
+      const elEvServ = document.getElementById('tco-ev-service');
+      if (elEvServ) elEvServ.textContent = `$${serviceEvMes.toLocaleString()} UYU`;
+
+      const elEvTotMes = document.getElementById('tco-ev-monthly');
+      if (elEvTotMes) elEvTotMes.textContent = `$${totalEvMes.toLocaleString()} UYU`;
+
+      const elEvTotAnual = document.getElementById('tco-ev-annual');
+      if (elEvTotAnual) elEvTotAnual.textContent = `$${totalEvAnual.toLocaleString()} UYU`;
+
+      // Actualizar DOM Columna Combustión
+      const elIceFuelLbl = document.getElementById('tco-ice-fuel-label');
+      if (elIceFuelLbl) elIceFuelLbl.textContent = fuelData.nombre;
+
+      const elIceFuel = document.getElementById('tco-ice-fuel');
+      if (elIceFuel) elIceFuel.textContent = `$${gastoCombustionMes.toLocaleString()} UYU`;
+
+      const elIcePat = document.getElementById('tco-ice-patente');
+      if (elIcePat) elIcePat.textContent = (patenteIceMes > 0) ? `$${patenteIceMes.toLocaleString()} UYU` : '0 UYU';
+
+      const elIceSeg = document.getElementById('tco-ice-seguro');
+      if (elIceSeg) elIceSeg.textContent = `$${seguroIceMes.toLocaleString()} UYU`;
+
+      const elIceServ = document.getElementById('tco-ice-service');
+      if (elIceServ) elIceServ.textContent = `$${serviceIceMes.toLocaleString()} UYU`;
+
+      const elIceTotMes = document.getElementById('tco-ice-monthly');
+      if (elIceTotMes) elIceTotMes.textContent = `$${totalIceMes.toLocaleString()} UYU`;
+
+      const elIceTotAnual = document.getElementById('tco-ice-annual');
+      if (elIceTotAnual) elIceTotAnual.textContent = `$${totalIceAnual.toLocaleString()} UYU`;
+
+      // Actualizar Banners de Ahorro Integral
+      const elSavingHero = document.getElementById('tco-annual-saving-hero');
+      if (elSavingHero) elSavingHero.textContent = `$${ahorroAnual.toLocaleString()} UYU`;
+
+      const elNetSaving = document.getElementById('tco-net-saving');
+      if (elNetSaving) elNetSaving.textContent = `$${ahorroAnual.toLocaleString()} UYU / año`;
+
+      const elMonthlySaving = document.getElementById('tco-monthly-saving');
+      if (elMonthlySaving) elMonthlySaving.textContent = `+$${ahorroMensual.toLocaleString()} UYU / mes`;
+
+      // Actualizar Ficha de Postventa y Taller Oficial
+      const elServiceBadge = document.getElementById('tco-service-interval-badge');
+      if (elServiceBadge) elServiceBadge.textContent = `Cada ${serviceKm.toLocaleString()} km o 1 año`;
+
+      const elServiceText = document.getElementById('tco-service-info-text');
+      if (elServiceText) {
+        elServiceText.innerHTML = `<b>Taller Autorizado:</b> ${v.service_taller_oficial || 'Red Oficial del Importador'} • <b>Costo por Service:</b> USD $${serviceCostoUsd} (~$${Math.round(serviceCostoUsd * cotiz).toLocaleString()} UYU).`;
+      }
+
+      // Actualizar Elementos de Resumen Energético Directo
       const elFuelLabel = document.getElementById('calc-fuel-label');
-      if (elFuelLabel) elFuelLabel.textContent = `Gasto Combustión (${fuelData.nombre})`;
+      if (elFuelLabel) elFuelLabel.textContent = `Combustión (${fuelData.nombre})`;
 
       const elUteLabel = document.getElementById('calc-ute-label');
-      if (elUteLabel) elUteLabel.textContent = `Gasto Eléctrico (${uteData.nombre.split('—')[0].trim()})`;
+      if (elUteLabel) elUteLabel.textContent = `Recarga (${uteData.nombre.split('—')[0].replace('UTE', '').trim()})`;
 
       const elNafta = document.getElementById('calc-nafta');
-      if (elNafta) elNafta.textContent = `$${costoCombustion.toLocaleString()} UYU`;
+      if (elNafta) elNafta.textContent = `$${gastoCombustionMes.toLocaleString()} UYU`;
 
       const elFuelCostKm = document.getElementById('calc-fuel-cost-km');
-      if (elFuelCostKm) elFuelCostKm.textContent = `$${costoCombustionPorKm.replace('.', ',')} por km (~${litrosCombustible.toFixed(0)} L)`;
+      if (elFuelCostKm) elFuelCostKm.textContent = `$${(gastoCombustionMes / km).toFixed(2).replace('.', ',')} por km`;
 
       const elUte = document.getElementById('calc-ute');
-      if (elUte) elUte.textContent = `$${costoUte.toLocaleString()} UYU`;
+      if (elUte) elUte.textContent = `$${gastoUteMes.toLocaleString()} UYU`;
 
       const elUteCostKm = document.getElementById('calc-ute-cost-km');
-      if (elUteCostKm) elUteCostKm.textContent = `$${costoUtePorKm.replace('.', ',')} por km (~${kwhElectricidad.toFixed(0)} kWh)`;
+      if (elUteCostKm) elUteCostKm.textContent = `$${(gastoUteMes / km).toFixed(2).replace('.', ',')} por km`;
 
+      const ahorroEnergiaDirecta = Math.max(0, gastoCombustionMes - gastoUteMes);
       const elSaving = document.getElementById('calc-saving');
-      if (elSaving) elSaving.textContent = `$${ahorro.toLocaleString()} UYU`;
+      if (elSaving) elSaving.textContent = `$${ahorroEnergiaDirecta.toLocaleString()} UYU`;
 
       const elAnnual = document.getElementById('calc-annual-saving');
-      if (elAnnual) elAnnual.innerHTML = `Proyección anual: <b>$${ahorroAnual.toLocaleString()} UYU</b>`;
+      if (elAnnual) elAnnual.innerHTML = `Proyección anual: <b>$${(ahorroEnergiaDirecta * 12).toLocaleString()} UYU</b>`;
 
+      const pctEnergia = gastoCombustionMes > 0 ? Math.round((ahorroEnergiaDirecta / gastoCombustionMes) * 100) : 0;
       const elPercent = document.getElementById('calc-percentage-saving');
-      if (elPercent) elPercent.innerHTML = `<b>${porcentajeAhorro}%</b> de ahorro directo`;
+      if (elPercent) elPercent.innerHTML = `<b>${pctEnergia}%</b> ahorro`;
     }
 
     document.addEventListener('DOMContentLoaded', init);

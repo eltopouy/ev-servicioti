@@ -247,13 +247,24 @@ def run_exhaustive_tests():
         print(f"  Ficha técnica verificada: Autonomía={spec_range}, Batería={spec_bat}, Conector={spec_conn}")
         assert "km" in spec_range and "kWh" in spec_bat
 
-        # 7. Enlace oficial con seguridad rel="noopener noreferrer"
+        # 7. Sección de Mantenimiento Oficial y TCO en Modal
+        tco_section = page.locator("#modal-tco-section")
+        assert tco_section.is_visible(), "La sección de costos y mantenimiento oficial debe estar visible en el modal"
+        mod_pat = page.locator("#modal-patente-val").inner_text()
+        mod_seg = page.locator("#modal-seguro-val").inner_text()
+        mod_serv = page.locator("#modal-service-val").inner_text()
+        mod_taller = page.locator("#modal-taller-val").inner_text()
+        print(f"  Postventa en modal: Patente={mod_pat}, Seguro={mod_seg}, Service={mod_serv}, Taller={mod_taller[:30]}...")
+        assert "$" in mod_pat and "$" in mod_seg and "$" in mod_serv
+        assert len(mod_taller) > 5
+
+        # 8. Enlace oficial con seguridad rel="noopener noreferrer"
         official_link = page.locator("#modal-official-link")
         assert official_link.get_attribute("target") == "_blank"
         assert "noopener" in official_link.get_attribute("rel")
         assert "noreferrer" in official_link.get_attribute("rel")
 
-        # 8. Cierre con tecla Escape
+        # 9. Cierre con tecla Escape
         page.keyboard.press("Escape")
         page.wait_for_timeout(300)
         assert not modal.is_visible(), "El modal debe cerrarse con Escape"
@@ -339,7 +350,29 @@ def run_exhaustive_tests():
         page.locator("button:has-text('1.200 km')").click()
         page.wait_for_timeout(200)
 
-        print("  ✔ Calculadora multifactor de combustibles y tarifas UTE aprobada.\n")
+        # 6. Verificación del Simulador Avanzado TCO (Patente SUCIVE, Seguro BSE, Service Oficial)
+        v_select = page.locator("#calc-vehicle-select")
+        assert v_select.is_visible(), "El selector de vehículos TCO debe estar visible"
+        v_options_count = page.locator("#calc-vehicle-select option").count()
+        print(f"  Opciones de vehículos en el selector TCO: {v_options_count}")
+        assert v_options_count >= 80, f"Se esperaban al menos 80 vehículos en el selector, hay {v_options_count}"
+
+        # Probar selección de BYD Yuan Pro
+        page.evaluate("setCalcVehicle('byd-yuan-pro')")
+        page.wait_for_timeout(300)
+        ev_title = page.locator("#tco-ev-title").inner_text()
+        print(f"  [TCO Selector] ev_title actual: '{ev_title}'")
+        assert "yuan pro" in ev_title.lower()
+        tco_ev_month = page.locator("#tco-ev-monthly").inner_text()
+        tco_ice_month = page.locator("#tco-ice-monthly").inner_text()
+        tco_ann_save = page.locator("#tco-annual-saving-hero").inner_text()
+        print(f"  [TCO BYD Yuan Pro] Mensual EV: {tco_ev_month} | Mensual Combustión: {tco_ice_month} | Ahorro Anual: {tco_ann_save}")
+        assert "$" in tco_ev_month
+        assert "$" in tco_ice_month
+        assert "$" in tco_ann_save
+        assert page.locator("#tco-service-interval-badge").is_visible()
+
+        print("  ✔ Calculadora multifactor de combustibles, tarifas UTE y Simulador TCO aprobados.\n")
 
         # ---------------------------------------------------------------------
         # TEST 8: Radar de Precios en Plaza
