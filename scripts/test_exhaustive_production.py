@@ -283,28 +283,63 @@ def run_exhaustive_tests():
         print("  ✔ Mapa interactivo de UTE Mueve libre de fallos aprobado.\n")
 
         # ---------------------------------------------------------------------
-        # TEST 7: Calculadora de Ahorro UTE vs Nafta
+        # TEST 7: Calculadora Multifactor de Consumo UTE vs Nafta / Diésel
         # ---------------------------------------------------------------------
-        print("▶ [Test 7/12] Verificando Calculadora de Ahorro UTE vs Nafta...")
+        print("▶ [Test 7/12] Verificando Calculadora Multifactor de Ahorro UTE vs Combustibles...")
         slider = page.locator("#slider-km")
         assert slider.is_visible(), "El slider de kilometraje debe estar visible"
 
-        # Interacción: Mover a 2.500 km
-        slider.fill("2500")
-        page.evaluate("document.getElementById('slider-km').dispatchEvent(new Event('input'))")
-        page.wait_for_timeout(200)
-
+        # 1. Verificar valor predeterminado del promedio urbano de Montevideo (1.200 km)
+        initial_km = slider.input_value()
+        assert initial_km == "1200", f"El valor por defecto debe ser 1.200 km (Montevideo), es {initial_km}"
         slider_label = page.locator("#slider-val").inner_text()
+        assert "1.200 km" in slider_label
+
         calc_nafta = page.locator("#calc-nafta").inner_text()
         calc_ute = page.locator("#calc-ute").inner_text()
         calc_saving = page.locator("#calc-saving").inner_text()
+        print(f"  [Default 1.200 km Montevideo] Nafta Súper: {calc_nafta} | UTE Valle: {calc_ute} | Ahorro: {calc_saving}")
+        assert "$8.683" in calc_nafta
+        assert "$440" in calc_ute
+        assert "$8.243" in calc_saving
 
-        print(f"  Recorrido: {slider_label} -> Nafta: {calc_nafta} | UTE Valle: {calc_ute} | Ahorro: {calc_saving}")
-        assert "2.500 km" in slider_label
-        assert "$15.400" in calc_nafta  # 2500 * 0.08 * 77 = 15400
-        assert "$938" in calc_ute       # 2500 * 0.15 * 2.5 = 937.5 -> 938
-        assert "$14.462" in calc_saving
-        print("  ✔ Calculadora matemática y reactiva aprobada.\n")
+        # 2. Interacción con combustible alternativo: Gasoil 50-S (Diésel)
+        btn_diesel = page.locator("#btn-fuel-gasoil_50s")
+        assert btn_diesel.is_visible()
+        btn_diesel.click()
+        page.wait_for_timeout(200)
+
+        calc_diesel = page.locator("#calc-nafta").inner_text()
+        calc_saving_diesel = page.locator("#calc-saving").inner_text()
+        print(f"  [Con Gasoil 50-S] Gasto Diésel: {calc_diesel} | Ahorro: {calc_saving_diesel}")
+        assert "$4.898" in calc_diesel  # 1200 * 0.065 * 62.79 = 4897.62 -> 4898
+        assert "$4.458" in calc_saving_diesel
+
+        # 3. Interacción con tarifa UTE alternativa: Doble Horario Fuera de Punta
+        ute_select = page.locator("#calc-ute-tariff")
+        ute_select.select_option("ute_doble_fuera_punta")
+        page.wait_for_timeout(200)
+
+        calc_ute_doble = page.locator("#calc-ute").inner_text()
+        print(f"  [Con UTE Doble Horario Fuera de Punta] Gasto Eléctrico: {calc_ute_doble}")
+        assert "$831" in calc_ute_doble  # 1200 * 0.15 * 4.614 = 830.52 -> 831
+
+        # 4. Restaurar Nafta Súper 95 y UTE Valle
+        page.locator("#btn-fuel-nafta_super_95").click()
+        ute_select.select_option("ute_valle_trt")
+        page.wait_for_timeout(200)
+
+        # 5. Probar preset rápido de 2.000 km
+        page.locator("button:has-text('2.000 km')").click()
+        page.wait_for_timeout(200)
+        assert page.locator("#slider-val").inner_text() == "2.000 km"
+        print(f"  [Preset 2.000 km] Ahorro mensual: {page.locator('#calc-saving').inner_text()}")
+
+        # Restaurar a 1.200 km
+        page.locator("button:has-text('1.200 km')").click()
+        page.wait_for_timeout(200)
+
+        print("  ✔ Calculadora multifactor de combustibles y tarifas UTE aprobada.\n")
 
         # ---------------------------------------------------------------------
         # TEST 8: Radar de Precios en Plaza

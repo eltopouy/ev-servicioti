@@ -6,7 +6,8 @@
     "total_vehicles": 93,
     "total_market": 144,
     "total_news": 6,
-    "total_chargers": 25
+    "total_chargers": 25,
+    "total_tariffs": 8
   },
   "vehicles": [
     {
@@ -8375,6 +8376,104 @@
       "potencia_kw": 50.0,
       "tipo_carga": "DC Rápida",
       "fecha_actualizacion": "2026-10-26 02:30:53"
+    }
+  ],
+  "energy_tariffs": [
+    {
+      "id": "nafta_super_95",
+      "categoria": "combustible",
+      "nombre": "Nafta Súper 95",
+      "unidad": "$/litro",
+      "precio": 90.45,
+      "consumo_tipico_100km": 8.0,
+      "descripcion": "Combustible más utilizado en el parque automotor de Uruguay. Precio oficial regulado por MIEM/URSEA.",
+      "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
+      "fecha_vigencia": "Octubre 2026",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "nafta_premium_97",
+      "categoria": "combustible",
+      "nombre": "Nafta Premium 97",
+      "unidad": "$/litro",
+      "precio": 93.1,
+      "consumo_tipico_100km": 8.2,
+      "descripcion": "Combustible de alto octanaje con aditivos detergentes de última generación.",
+      "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
+      "fecha_vigencia": "Octubre 2026",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "gasoil_50s",
+      "categoria": "combustible",
+      "nombre": "Gasoil 50-S (Diésel)",
+      "unidad": "$/litro",
+      "precio": 62.79,
+      "consumo_tipico_100km": 6.5,
+      "descripcion": "Diésel bajo en azufre utilizado en utilitarios, camionetas y motores gasoleros.",
+      "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
+      "fecha_vigencia": "Octubre 2026",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "ute_valle_trt",
+      "categoria": "electricidad_ute",
+      "nombre": "UTE Plan Inteligente — Valle Nocturno (00 a 07 hs)",
+      "unidad": "$/kWh",
+      "precio": 2.443,
+      "consumo_tipico_100km": 15.0,
+      "descripcion": "La tarifa residencial más económica del país. Ideal para programar la carga automática en la madrugada con cargador de pared (Wallbox).",
+      "fuente_oficial": "UTE — Pliego Tarifario Residencial Triple Horario",
+      "fecha_vigencia": "Pliego Tarifario Vigente UTE",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "ute_llano_trt",
+      "categoria": "electricidad_ute",
+      "nombre": "UTE Plan Inteligente — Llano Diurno / Fin de Semana",
+      "unidad": "$/kWh",
+      "precio": 5.172,
+      "consumo_tipico_100km": 15.0,
+      "descripcion": "Carga diurna en días hábiles (fuera de punta) y durante las 24 horas de los sábados, domingos y feriados.",
+      "fuente_oficial": "UTE — Plan Inteligente Residencial",
+      "fecha_vigencia": "Pliego Tarifario Vigente UTE",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "ute_doble_fuera_punta",
+      "categoria": "electricidad_ute",
+      "nombre": "UTE Doble Horario — Fuera de Punta (20 hs al día)",
+      "unidad": "$/kWh",
+      "precio": 4.614,
+      "consumo_tipico_100km": 15.0,
+      "descripcion": "Para hogares con tarifa residencial doble horario que cargan durante las 20 horas fuera del horario punta.",
+      "fuente_oficial": "UTE — Tarifa Residencial Doble Horario",
+      "fecha_vigencia": "Pliego Tarifario Vigente UTE",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "ute_residencial_simple",
+      "categoria": "electricidad_ute",
+      "nombre": "UTE Tarifa Residencial Simple (Tarifa Plana)",
+      "unidad": "$/kWh",
+      "precio": 8.2,
+      "consumo_tipico_100km": 15.0,
+      "descripcion": "Tarifa estándar tradicional de UTE sin diferenciación horaria.",
+      "fuente_oficial": "UTE — Tarifa Residencial Simple",
+      "fecha_vigencia": "Pliego Tarifario Vigente UTE",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
+    },
+    {
+      "id": "ute_mueve_publico",
+      "categoria": "electricidad_ute",
+      "nombre": "Red Pública UTE Mueve — Carga Rápida DC (Ruta)",
+      "unidad": "$/kWh",
+      "precio": 11.8,
+      "consumo_tipico_100km": 16.5,
+      "descripcion": "Carga rápida en ruta en estaciones de 50 kW a 120 kW (CCS2 y GB/T) mediante tarjeta de recarga o app UTE Mueve.",
+      "fuente_oficial": "Red UTE Mueve / URSEA",
+      "fecha_vigencia": "Red Nacional de Carga UTE",
+      "fecha_actualizacion": "2026-10-26 13:59:29"
     }
   ]
 }

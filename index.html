@@ -267,43 +267,135 @@
 
     <!-- SECCIÓN 5: GUÍA EDITORIAL Y CALCULADORA DE AHORRO -->
     <section id="calculadora" class="space-y-6 pt-6 border-t border-line">
-      <div class="border-b border-neutral-900 pb-2">
-        <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
-          Economía & Beneficios Fiscales
-        </h2>
-        <p class="text-xs text-muted mt-1">Cálculo de costo por kilómetro y normativas tributarias vigentes en Uruguay</p>
+      <div class="border-b-2 border-neutral-900 pb-2 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+            Calculadora de Consumo & Ahorro
+          </h2>
+          <p class="text-xs text-muted mt-1">Comparativa oficial UTE (Tarifas Plan Inteligente y Triple Horario) vs Combustibles Regulados (MIEM / URSEA / ANCAP)</p>
+        </div>
+        <span class="text-[11px] font-mono bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-1 rounded self-start sm:self-auto font-medium">
+          ✓ Tarifas Vigentes: Octubre 2026
+        </span>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <div class="lg:col-span-6 bg-neutral-50 p-6 rounded-lg border border-line space-y-4">
-          <h3 class="text-lg font-bold font-editorial text-neutral-900">Calculadora de Consumo UTE vs Nafta</h3>
-          <p class="text-xs text-neutral-600 leading-relaxed">
-            Estimado con tarifa residencial de UTE en horario valle (~$2,5 por kWh) comparado con Nafta Súper 95 ($77 por litro).
-          </p>
-
-          <div class="space-y-2 pt-2">
-            <div class="flex justify-between text-xs text-neutral-700 font-medium">
-              <span>Recorrido mensual:</span>
-              <span id="slider-val" class="font-bold text-neutral-900">1.500 km</span>
+        <!-- Calculadora Interactiva Multifactor -->
+        <div class="lg:col-span-7 bg-neutral-50 p-5 sm:p-6 rounded-xl border border-line space-y-5 shadow-xs">
+          
+          <!-- Encabezado de la calculadora -->
+          <div class="flex items-center justify-between border-b border-line pb-3">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold font-editorial text-neutral-950">
+                Simulador de Ahorro Energético
+              </h3>
+              <p class="text-[11px] text-muted">Ajuste su kilometraje mensual, tipo de combustible y horario de recarga en UTE</p>
             </div>
-            <input type="range" id="slider-km" min="400" max="4000" step="100" value="1500" oninput="updateCalculator()" class="w-full accent-neutral-900">
+            <span class="text-xl">⚡</span>
           </div>
 
+          <!-- Selector 1: Tipo de Combustible Fósil a Comparar -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-semibold text-neutral-800">
+              1. Seleccione combustible a comparar (Precios Oficiales MIEM / ANCAP):
+            </label>
+            <div class="grid grid-cols-3 gap-2 text-xs" id="calc-fuel-options">
+              <button type="button" onclick="setCalcOption('fuel', 'nafta_super_95')" id="btn-fuel-nafta_super_95" class="calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-neutral-900 bg-white font-bold text-neutral-950 shadow-xs">
+                <span>⛽ Nafta Súper 95</span>
+                <span class="text-[10px] font-mono text-neutral-500 font-normal mt-0.5">$90,45 / L</span>
+              </button>
+              <button type="button" onclick="setCalcOption('fuel', 'nafta_premium_97')" id="btn-fuel-nafta_premium_97" class="calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700">
+                <span>⛽ Premium 97</span>
+                <span class="text-[10px] font-mono text-neutral-500 font-normal mt-0.5">$93,10 / L</span>
+              </button>
+              <button type="button" onclick="setCalcOption('fuel', 'gasoil_50s')" id="btn-fuel-gasoil_50s" class="calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700">
+                <span>🛢️ Gasoil 50-S</span>
+                <span class="text-[10px] font-mono text-neutral-500 font-normal mt-0.5">$62,79 / L</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Selector 2: Tarifa Eléctrica de UTE -->
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-semibold text-neutral-800">
+                2. Tarifa eléctrica UTE de recarga:
+              </label>
+              <span class="text-[10px] text-emerald-700 font-medium">Recomendado: Carga nocturna</span>
+            </div>
+            <select id="calc-ute-tariff" onchange="setCalcOption('tariff', this.value)" class="w-full text-xs p-2.5 bg-white border border-line rounded-lg font-medium text-neutral-900 focus:outline-none focus:border-neutral-900">
+              <option value="ute_valle_trt" selected>🌙 UTE Plan Inteligente — Valle Nocturno 00 a 07 hs ($2,44 / kWh) [Más económica]</option>
+              <option value="ute_llano_trt">☀️ UTE Plan Inteligente — Llano Diurno / Fin de Semana ($5,17 / kWh)</option>
+              <option value="ute_doble_fuera_punta">⚡ UTE Tarifa Doble Horario — Fuera de Punta ($4,61 / kWh)</option>
+              <option value="ute_residencial_simple">🏠 UTE Tarifa Residencial Simple Plana ($8,20 / kWh)</option>
+              <option value="ute_mueve_publico">🔋 Red Pública UTE Mueve — Carga Rápida DC en Ruta ($11,80 / kWh)</option>
+            </select>
+            <p id="calc-tariff-desc" class="text-[11px] text-neutral-500 italic px-0.5">
+              Tarifa Horario Valle de UTE: diseñada para programar la recarga nocturna mientras duermes con mínimo costo.
+            </p>
+          </div>
+
+          <!-- Selector 3: Slider de Kilometraje Mensual con Promedio de Montevideo -->
+          <div class="space-y-2 pt-1">
+            <div class="flex items-center justify-between text-xs">
+              <span class="font-semibold text-neutral-800">3. Recorrido mensual promedio:</span>
+              <div class="flex items-center gap-1.5">
+                <span id="slider-val" class="font-mono font-bold text-sm text-neutral-950 bg-white border border-line px-2 py-0.5 rounded">1.200 km</span>
+                <span class="text-[10px] text-muted font-mono">(~40 km/día)</span>
+              </div>
+            </div>
+            
+            <input type="range" id="slider-km" min="200" max="4500" step="50" value="1200" oninput="updateCalculator()" class="w-full accent-neutral-950 cursor-pointer">
+
+            <!-- Presets rápidos -->
+            <div class="flex items-center justify-between text-[11px] text-neutral-500 pt-0.5">
+              <button type="button" onclick="setPresetKm(800)" class="hover:text-black underline">800 km (Uso Ligero)</button>
+              <button type="button" onclick="setPresetKm(1200)" class="font-bold text-emerald-800 bg-emerald-100/70 px-1.5 py-0.5 rounded border border-emerald-300">★ 1.200 km (Promedio Montevideo)</button>
+              <button type="button" onclick="setPresetKm(2000)" class="hover:text-black underline">2.000 km (Metropolitano)</button>
+              <button type="button" onclick="setPresetKm(3000)" class="hover:text-black underline">3.000 km (Intensivo)</button>
+            </div>
+          </div>
+
+          <!-- Cuadrícula de Resultados -->
           <div class="grid grid-cols-2 gap-3 pt-3 border-t border-line">
-            <div class="bg-white p-3 rounded border border-line text-center">
-              <span class="text-xs text-muted block">Gasto Nafta Súper</span>
-              <span class="text-base font-bold text-neutral-900 mt-1 block" id="calc-nafta">$9.240</span>
+            <div class="bg-white p-3.5 rounded-lg border border-line flex flex-col justify-between">
+              <div>
+                <span class="text-[11px] text-muted block" id="calc-fuel-label">Gasto Combustión (Nafta Súper)</span>
+                <span class="text-xl font-bold font-editorial text-neutral-900 mt-1 block" id="calc-nafta">$8.683 UYU</span>
+              </div>
+              <span class="text-[10px] font-mono text-neutral-400 mt-1.5" id="calc-fuel-cost-km">$7,24 por km</span>
             </div>
-            <div class="bg-white p-3 rounded border border-line text-center">
-              <span class="text-xs text-muted block">Gasto UTE Valle</span>
-              <span class="text-base font-bold text-emerald-700 mt-1 block" id="calc-ute">$562</span>
+
+            <div class="bg-white p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/20 flex flex-col justify-between">
+              <div>
+                <span class="text-[11px] text-emerald-800 block" id="calc-ute-label">Gasto Eléctrico (UTE Valle)</span>
+                <span class="text-xl font-bold font-editorial text-emerald-700 mt-1 block" id="calc-ute">$440 UYU</span>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-600 mt-1.5" id="calc-ute-cost-km">$0,37 por km</span>
             </div>
           </div>
 
-          <div class="bg-emerald-50 border border-emerald-200 p-4 rounded text-center">
-            <span class="text-xs text-emerald-800 font-medium block">Ahorro mensual directo:</span>
-            <span class="text-2xl font-black font-editorial text-emerald-900 mt-0.5 block" id="calc-saving">$8.678 UYU</span>
+          <!-- Tarjeta de Ahorro Destacada -->
+          <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white p-4 rounded-xl shadow-sm space-y-1 text-center">
+            <span class="text-xs uppercase tracking-wider font-semibold opacity-90 block">
+              Ahorro Mensual Neto Directo
+            </span>
+            <div class="text-3xl sm:text-4xl font-black font-editorial tracking-tight" id="calc-saving">
+              $8.243 UYU
+            </div>
+            <div class="text-[11px] font-mono opacity-90 pt-0.5 flex items-center justify-center gap-3">
+              <span id="calc-annual-saving">Proyección anual: <b>$98.916 UYU</b></span>
+              <span>•</span>
+              <span id="calc-percentage-saving"><b>95%</b> de ahorro directo</span>
+            </div>
           </div>
+
+          <!-- Nota al pie con transparencia metodológica y precios oficiales -->
+          <div class="text-[10px] text-neutral-500 font-mono flex flex-col sm:flex-row items-center justify-between gap-1 border-t border-line pt-2">
+            <span>Fuente: Precios máximos de venta al público fijados por MIEM/URSEA y tarifario UTE.</span>
+            <span class="text-neutral-400">Actualizado mensualmente de oficio</span>
+          </div>
+
         </div>
 
         <div class="lg:col-span-6 space-y-4">
@@ -996,17 +1088,119 @@
       }, 400);
     }
 
+    let calcState = {
+      fuel: 'nafta_super_95',
+      tariff: 'ute_valle_trt',
+      km: 1200
+    };
+
+    const DEFAULT_TARIFFS = {
+      nafta_super_95: { nombre: 'Nafta Súper 95', precio: 90.45, consumo_100: 8.0, unidad: '$/L' },
+      nafta_premium_97: { nombre: 'Nafta Premium 97', precio: 93.10, consumo_100: 8.2, unidad: '$/L' },
+      gasoil_50s: { nombre: 'Gasoil 50-S (Diésel)', precio: 62.79, consumo_100: 6.5, unidad: '$/L' },
+      ute_valle_trt: { nombre: 'UTE Valle Nocturno', precio: 2.443, consumo_100: 15.0, unidad: '$/kWh', desc: 'Tarifa Horario Valle de UTE (00 a 07 hs): diseñada para programar la recarga nocturna mientras duermes con mínimo costo.' },
+      ute_llano_trt: { nombre: 'UTE Llano Diurno', precio: 5.172, consumo_100: 15.0, unidad: '$/kWh', desc: 'Horario Llano: días hábiles fuera de horario punta y durante las 24 horas de fines de semana y feriados.' },
+      ute_doble_fuera_punta: { nombre: 'UTE Doble Horario (Fuera de Punta)', precio: 4.614, consumo_100: 15.0, unidad: '$/kWh', desc: 'Tarifa residencial doble horario para usuarios que recargan durante las 20 horas fuera de punta.' },
+      ute_residencial_simple: { nombre: 'UTE Tarifa Residencial Simple', precio: 8.200, consumo_100: 15.0, unidad: '$/kWh', desc: 'Tarifa plana residencial estándar de UTE sin diferenciación horaria.' },
+      ute_mueve_publico: { nombre: 'Red Pública UTE Mueve DC', precio: 11.800, consumo_100: 16.5, unidad: '$/kWh', desc: 'Cargadores rápidos de corriente continua (50 kW a 120 kW) en rutas nacionales de Uruguay.' }
+    };
+
+    function setCalcOption(type, value) {
+      if (type === 'fuel') {
+        calcState.fuel = value;
+        document.querySelectorAll('.calc-opt-btn').forEach(btn => {
+          btn.className = 'calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-line bg-neutral-100 hover:bg-white text-neutral-700';
+        });
+        const activeBtn = document.getElementById(`btn-fuel-${value}`);
+        if (activeBtn) {
+          activeBtn.className = 'calc-opt-btn p-2 rounded-lg border text-center transition flex flex-col justify-between border-neutral-900 bg-white font-bold text-neutral-950 shadow-xs';
+        }
+      } else if (type === 'tariff') {
+        calcState.tariff = value;
+        const descEl = document.getElementById('calc-tariff-desc');
+        const desc = DEFAULT_TARIFFS[value]?.desc || '';
+        if (descEl) descEl.textContent = desc;
+      }
+      updateCalculator();
+    }
+
+    function setPresetKm(km) {
+      const slider = document.getElementById('slider-km');
+      if (slider) {
+        slider.value = km;
+        updateCalculator();
+      }
+    }
+
     function updateCalculator() {
-      const km = parseInt(document.getElementById('slider-km').value);
-      document.getElementById('slider-val').textContent = `${km.toLocaleString()} km`;
+      const slider = document.getElementById('slider-km');
+      if (!slider) return;
+      const km = parseInt(slider.value);
+      calcState.km = km;
 
-      const costoNafta = Math.round(km * 0.08 * 77);
-      const costoUte = Math.round(km * 0.15 * 2.5);
-      const ahorro = costoNafta - costoUte;
+      // Actualizar visualización del slider
+      const sliderVal = document.getElementById('slider-val');
+      if (sliderVal) {
+        sliderVal.textContent = `${km.toLocaleString()} km`;
+      }
 
-      document.getElementById('calc-nafta').textContent = `$${costoNafta.toLocaleString()}`;
-      document.getElementById('calc-ute').textContent = `$${costoUte.toLocaleString()}`;
-      document.getElementById('calc-saving').textContent = `$${ahorro.toLocaleString()} UYU`;
+      // Obtener mapa de tarifas dinámicas (desde appData.energy_tariffs o fallback)
+      const tariffsMap = {};
+      if (appData.energy_tariffs && appData.energy_tariffs.length > 0) {
+        appData.energy_tariffs.forEach(t => {
+          tariffsMap[t.id] = {
+            nombre: t.nombre,
+            precio: t.precio,
+            consumo_100: t.consumo_tipico_100km,
+            unidad: t.unidad,
+            desc: t.descripcion
+          };
+        });
+      }
+
+      const fuelData = tariffsMap[calcState.fuel] || DEFAULT_TARIFFS[calcState.fuel];
+      const uteData = tariffsMap[calcState.tariff] || DEFAULT_TARIFFS[calcState.tariff];
+
+      // Cálculo de consumo
+      const litrosCombustible = (km / 100) * fuelData.consumo_100;
+      const costoCombustion = Math.round(litrosCombustible * fuelData.precio);
+      const costoCombustionPorKm = (costoCombustion / km).toFixed(2);
+
+      const kwhElectricidad = (km / 100) * uteData.consumo_100;
+      const costoUte = Math.round(kwhElectricidad * uteData.precio);
+      const costoUtePorKm = (costoUte / km).toFixed(2);
+
+      const ahorro = Math.max(0, costoCombustion - costoUte);
+      const ahorroAnual = ahorro * 12;
+      const porcentajeAhorro = costoCombustion > 0 ? Math.round((ahorro / costoCombustion) * 100) : 0;
+
+      // Actualizar DOM
+      const elFuelLabel = document.getElementById('calc-fuel-label');
+      if (elFuelLabel) elFuelLabel.textContent = `Gasto Combustión (${fuelData.nombre})`;
+
+      const elUteLabel = document.getElementById('calc-ute-label');
+      if (elUteLabel) elUteLabel.textContent = `Gasto Eléctrico (${uteData.nombre.split('—')[0].trim()})`;
+
+      const elNafta = document.getElementById('calc-nafta');
+      if (elNafta) elNafta.textContent = `$${costoCombustion.toLocaleString()} UYU`;
+
+      const elFuelCostKm = document.getElementById('calc-fuel-cost-km');
+      if (elFuelCostKm) elFuelCostKm.textContent = `$${costoCombustionPorKm.replace('.', ',')} por km (~${litrosCombustible.toFixed(0)} L)`;
+
+      const elUte = document.getElementById('calc-ute');
+      if (elUte) elUte.textContent = `$${costoUte.toLocaleString()} UYU`;
+
+      const elUteCostKm = document.getElementById('calc-ute-cost-km');
+      if (elUteCostKm) elUteCostKm.textContent = `$${costoUtePorKm.replace('.', ',')} por km (~${kwhElectricidad.toFixed(0)} kWh)`;
+
+      const elSaving = document.getElementById('calc-saving');
+      if (elSaving) elSaving.textContent = `$${ahorro.toLocaleString()} UYU`;
+
+      const elAnnual = document.getElementById('calc-annual-saving');
+      if (elAnnual) elAnnual.innerHTML = `Proyección anual: <b>$${ahorroAnual.toLocaleString()} UYU</b>`;
+
+      const elPercent = document.getElementById('calc-percentage-saving');
+      if (elPercent) elPercent.innerHTML = `<b>${porcentajeAhorro}%</b> de ahorro directo`;
     }
 
     document.addEventListener('DOMContentLoaded', init);

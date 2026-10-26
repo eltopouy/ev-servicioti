@@ -86,6 +86,10 @@ def export_db_to_json():
     cursor.execute("SELECT * FROM charging_stations")
     chargers = [dict(row) for row in cursor.fetchall()]
 
+    # 5. Tarifas de energía y combustibles (MIEM / URSEA / UTE)
+    cursor.execute("SELECT * FROM energy_tariffs")
+    tariffs = [dict(row) for row in cursor.fetchall()]
+
     conn.close()
 
     payload = {
@@ -96,14 +100,16 @@ def export_db_to_json():
             "total_vehicles": len(vehicles),
             "total_market": len(market),
             "total_news": len(news),
-            "total_chargers": len(chargers)
+            "total_chargers": len(chargers),
+            "total_tariffs": len(tariffs)
         },
         "vehicles": vehicles,
         "top_sales": top_sales,
         "monthly_rankings": monthly_ranks,
         "market_listings": market,
         "news": news,
-        "chargers": chargers
+        "chargers": chargers,
+        "energy_tariffs": tariffs
     }
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)

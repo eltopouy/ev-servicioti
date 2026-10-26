@@ -130,6 +130,22 @@ def init_db():
     );
     """)
 
+    # 5. Tarifario Oficial de Combustibles (MIEM / URSEA) y Electricidad (UTE)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS energy_tariffs (
+        id TEXT PRIMARY KEY,
+        categoria TEXT NOT NULL,
+        nombre TEXT NOT NULL,
+        unidad TEXT NOT NULL,
+        precio REAL NOT NULL,
+        consumo_tipico_100km REAL NOT NULL,
+        descripcion TEXT,
+        fuente_oficial TEXT,
+        fecha_vigencia TEXT,
+        fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+    """)
+
     conn.commit()
     conn.close()
     print(f"[DB] Estructura SQLite verificada y actualizada en: {DB_PATH}")
