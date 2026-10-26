@@ -1,0 +1,543 @@
+[
+  {
+    "id": "audi",
+    "nombre": "Audi Uruguay",
+    "marcas_json": "[\"Audi\"]",
+    "importador_oficial": "Julio César Lestido S.A.",
+    "direccion": "Cerro Largo 1729 / Av. Italia 5300, Montevideo",
+    "sitio_oficial": "https://audi.com.uy",
+    "instagram_handle": "@audi_uy",
+    "instagram_url": "https://www.instagram.com/audi_uy/",
+    "logo_path": "assets/img/logos/audi-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:18",
+    "marcas_coincidentes": [
+      "Audi"
+    ]
+  },
+  {
+    "id": "baw",
+    "nombre": "BAW Uruguay",
+    "marcas_json": "[\"BAW\"]",
+    "importador_oficial": "Grupo Antelo",
+    "direccion": "Montevideo, Uruguay",
+    "sitio_oficial": "https://baw.com.uy",
+    "instagram_handle": "@bawuruguay",
+    "instagram_url": "https://www.instagram.com/bawuruguay/",
+    "logo_path": "assets/img/logos/baw-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:22",
+    "marcas_coincidentes": [
+      "BAW"
+    ]
+  },
+  {
+    "id": "bmw",
+    "nombre": "BMW Uruguay",
+    "marcas_json": "[\"BMW\"]",
+    "importador_oficial": "Motor Haus",
+    "direccion": "Av. Giannattasio Km 20 / Av. Italia 4200, Montevideo",
+    "sitio_oficial": "https://bmw.com.uy",
+    "instagram_handle": "@bmw.uruguay",
+    "instagram_url": "https://www.instagram.com/bmw.uruguay/",
+    "logo_path": "assets/img/logos/bmw-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:17",
+    "marcas_coincidentes": [
+      "BMW"
+    ]
+  },
+  {
+    "id": "byd",
+    "nombre": "BYD Uruguay",
+    "marcas_json": "[\"BYD\"]",
+    "importador_oficial": "Sadar",
+    "direccion": "Av. Italia 4905 / Portones Shopping, Montevideo",
+    "sitio_oficial": "https://byd.com.uy",
+    "instagram_handle": "@byd_uruguay",
+    "instagram_url": "https://www.instagram.com/byd_uruguay/",
+    "logo_path": "assets/img/logos/byd-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:11",
+    "marcas_coincidentes": [
+      "BYD"
+    ]
+  },
+  {
+    "id": "changan",
+    "nombre": "Changan Uruguay",
+    "marcas_json": "[\"Changan\"]",
+    "importador_oficial": "Grupo Santa Rosa",
+    "direccion": "Piedras 709, Montevideo",
+    "sitio_oficial": "https://changan.com.uy",
+    "instagram_handle": "@changanuruguay",
+    "instagram_url": "https://www.instagram.com/changanuruguay/",
+    "logo_path": "assets/img/logos/changan-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:21",
+    "marcas_coincidentes": [
+      "Changan"
+    ]
+  },
+  {
+    "id": "chery",
+    "nombre": "Chery Uruguay",
+    "marcas_json": "[\"Chery\"]",
+    "importador_oficial": "Asiancars / Grupo Fiancar",
+    "direccion": "Ruta Interbalnearia Km 22.500 / Montevideo",
+    "sitio_oficial": "https://chery.com.uy",
+    "instagram_handle": "@cheryuruguay",
+    "instagram_url": "https://www.instagram.com/cheryuruguay/",
+    "logo_path": "assets/img/logos/chery-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:12",
+    "marcas_coincidentes": [
+      "Chery"
+    ]
+  },
+  {
+    "id": "chevrolet",
+    "nombre": "Chevrolet Uruguay",
+    "marcas_json": "[\"Chevrolet\"]",
+    "importador_oficial": "General Motors Uruguay",
+    "direccion": "Av. Italia 4001, Montevideo",
+    "sitio_oficial": "https://chevrolet.com.uy",
+    "instagram_handle": "@chevroleturuguay",
+    "instagram_url": "https://www.instagram.com/chevroleturuguay/",
+    "logo_path": "assets/img/logos/chevrolet-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:15",
+    "marcas_coincidentes": [
+      "Chevrolet"
+    ]
+  },
+  {
+    "id": "decathlon",
+    "nombre": "Decathlon Uruguay",
+    "marcas_json": "[\"Decathlon / Riverside\", \"Decathlon / Rockrider\"]",
+    "importador_oficial": "Decathlon Car One",
+    "direccion": "Ruta Interbalnearia y C. de los Horneros, Canelones",
+    "sitio_oficial": "https://decathlon.com.uy",
+    "instagram_handle": "@decathlonuruguay",
+    "instagram_url": "https://www.instagram.com/decathlonuruguay/",
+    "logo_path": "assets/img/logos/decathlon-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:26",
+    "marcas_coincidentes": [
+      "Decathlon / Riverside",
+      "Decathlon / Rockrider"
+    ]
+  },
+  {
+    "id": "dongfeng",
+    "nombre": "Dongfeng Uruguay",
+    "marcas_json": "[\"Dongfeng\"]",
+    "importador_oficial": "Sadar / Cidef",
+    "direccion": "Av. Italia 4905, Montevideo",
+    "sitio_oficial": "https://dongfeng.com.uy",
+    "instagram_handle": "@dongfenguruguay",
+    "instagram_url": "https://www.instagram.com/dongfenguruguay/",
+    "logo_path": "assets/img/logos/dongfeng-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:22",
+    "marcas_coincidentes": [
+      "Dongfeng"
+    ]
+  },
+  {
+    "id": "farizon",
+    "nombre": "Farizon Uruguay",
+    "marcas_json": "[\"Farizon\"]",
+    "importador_oficial": "Grupo Santa Rosa",
+    "direccion": "Piedras 709 esq. Juncal / Av. Italia 4905, Montevideo",
+    "sitio_oficial": "https://farizon.com.uy",
+    "instagram_handle": "@farizonuruguay",
+    "instagram_url": "https://www.instagram.com/farizonuruguay/",
+    "logo_path": "assets/img/logos/farizon-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:11",
+    "marcas_coincidentes": [
+      "Farizon"
+    ]
+  },
+  {
+    "id": "gwm",
+    "nombre": "GWM Uruguay (ORA / Haval)",
+    "marcas_json": "[\"GWM\"]",
+    "importador_oficial": "Homero De León",
+    "direccion": "Av. Libertador 1777, Montevideo",
+    "sitio_oficial": "https://gwm.com.uy",
+    "instagram_handle": "@gwmuruguay",
+    "instagram_url": "https://www.instagram.com/gwmuruguay/",
+    "logo_path": "assets/img/logos/gwm-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:20",
+    "marcas_coincidentes": [
+      "GWM"
+    ]
+  },
+  {
+    "id": "geely",
+    "nombre": "Geely Uruguay",
+    "marcas_json": "[\"Geely\"]",
+    "importador_oficial": "Grupo Fiancar",
+    "direccion": "Av. Italia 5345, Montevideo",
+    "sitio_oficial": "https://geely.com.uy",
+    "instagram_handle": "@geelyuruguay",
+    "instagram_url": "https://www.instagram.com/geelyuruguay/",
+    "logo_path": "assets/img/logos/geely-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:11",
+    "marcas_coincidentes": [
+      "Geely"
+    ]
+  },
+  {
+    "id": "hyundai",
+    "nombre": "Hyundai Uruguay",
+    "marcas_json": "[\"Hyundai\"]",
+    "importador_oficial": "Fidocar S.A.",
+    "direccion": "Av. Italia 4620, Montevideo",
+    "sitio_oficial": "https://hyundai.com.uy",
+    "instagram_handle": "@hyundaiuruguay",
+    "instagram_url": "https://www.instagram.com/hyundaiuruguay/",
+    "logo_path": "assets/img/logos/hyundai-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:20",
+    "marcas_coincidentes": [
+      "Hyundai"
+    ]
+  },
+  {
+    "id": "jac",
+    "nombre": "JAC Uruguay",
+    "marcas_json": "[\"JAC\"]",
+    "importador_oficial": "Grupo Fiancar / Bor",
+    "direccion": "Av. Italia 5345, Montevideo",
+    "sitio_oficial": "https://jac.com.uy",
+    "instagram_handle": "@jacuruguay",
+    "instagram_url": "https://www.instagram.com/jacuruguay/",
+    "logo_path": "assets/img/logos/jac-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:13",
+    "marcas_coincidentes": [
+      "JAC"
+    ]
+  },
+  {
+    "id": "jmc",
+    "nombre": "JMC Uruguay",
+    "marcas_json": "[\"JMC\"]",
+    "importador_oficial": "Grupo Santa Rosa",
+    "direccion": "Piedras 709 esq. Juncal, Montevideo",
+    "sitio_oficial": "https://jmc.com.uy",
+    "instagram_handle": "@jmc_uruguay",
+    "instagram_url": "https://www.instagram.com/jmc_uruguay/",
+    "logo_path": "assets/img/logos/jmc-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:13",
+    "marcas_coincidentes": [
+      "JMC"
+    ]
+  },
+  {
+    "id": "kia",
+    "nombre": "Kia Uruguay",
+    "marcas_json": "[\"Kia\"]",
+    "importador_oficial": "Kia Uruguay / Grupo Fiancar",
+    "direccion": "Rambla Baltasar Brum 3764, Montevideo",
+    "sitio_oficial": "https://kia.com.uy",
+    "instagram_handle": "@kiauruguay",
+    "instagram_url": "https://www.instagram.com/kiauruguay/",
+    "logo_path": "assets/img/logos/kia-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:20",
+    "marcas_coincidentes": [
+      "Kia"
+    ]
+  },
+  {
+    "id": "loop-bikes",
+    "nombre": "Loop Bikes Uruguay",
+    "marcas_json": "[\"Loop Bikes\"]",
+    "importador_oficial": "Loop Bikes E-Mobility",
+    "direccion": "Benito Blanco 1012, Montevideo",
+    "sitio_oficial": "https://loopbikes.com.uy",
+    "instagram_handle": "@loopbikesuy",
+    "instagram_url": "https://www.instagram.com/loopbikesuy/",
+    "logo_path": "assets/img/logos/loop-bikes-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:25",
+    "marcas_coincidentes": [
+      "Loop Bikes"
+    ]
+  },
+  {
+    "id": "mini",
+    "nombre": "MINI Uruguay",
+    "marcas_json": "[\"Mini\"]",
+    "importador_oficial": "Motor Haus",
+    "direccion": "Av. Italia 4200, Montevideo",
+    "sitio_oficial": "https://mini.com.uy",
+    "instagram_handle": "@mini_uruguay",
+    "instagram_url": "https://www.instagram.com/mini_uruguay/",
+    "logo_path": "assets/img/logos/mini-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:19",
+    "marcas_coincidentes": [
+      "Mini"
+    ]
+  },
+  {
+    "id": "maxus",
+    "nombre": "Maxus Uruguay",
+    "marcas_json": "[\"Maxus\"]",
+    "importador_oficial": "Grupo Antelo / Santa Rosa",
+    "direccion": "Cerro Largo 888, Montevideo",
+    "sitio_oficial": "https://maxus.com.uy",
+    "instagram_handle": "@maxusuruguay",
+    "instagram_url": "https://www.instagram.com/maxusuruguay/",
+    "logo_path": "assets/img/logos/maxus-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:21",
+    "marcas_coincidentes": [
+      "Maxus"
+    ]
+  },
+  {
+    "id": "mercedes-benz",
+    "nombre": "Mercedes-Benz Uruguay",
+    "marcas_json": "[\"Mercedes-Benz\"]",
+    "importador_oficial": "Autolider Uruguay (Inchcape)",
+    "direccion": "Rambla Baltasar Brum 2986, Montevideo",
+    "sitio_oficial": "https://mercedes-benz.com.uy",
+    "instagram_handle": "@mercedesbenz_uy",
+    "instagram_url": "https://www.instagram.com/mercedesbenz_uy/",
+    "logo_path": "assets/img/logos/mercedes-benz-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:18",
+    "marcas_coincidentes": [
+      "Mercedes-Benz"
+    ]
+  },
+  {
+    "id": "niu",
+    "nombre": "NIU Mobility Uruguay",
+    "marcas_json": "[\"Niu\"]",
+    "importador_oficial": "NIU Uruguay",
+    "direccion": "Av. Rivera 2680, Montevideo",
+    "sitio_oficial": "https://niu.uy",
+    "instagram_handle": "@niu_uruguay",
+    "instagram_url": "https://www.instagram.com/niu_uruguay/",
+    "logo_path": "assets/img/logos/niu-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:24",
+    "marcas_coincidentes": [
+      "Niu"
+    ]
+  },
+  {
+    "id": "nissan",
+    "nombre": "Nissan Uruguay",
+    "marcas_json": "[\"Nissan\"]",
+    "importador_oficial": "Grupo Santa Rosa",
+    "direccion": "Rambla Baltasar Brum 2980, Montevideo",
+    "sitio_oficial": "https://nissan.com.uy",
+    "instagram_handle": "@nissanuruguay",
+    "instagram_url": "https://www.instagram.com/nissanuruguay/",
+    "logo_path": "assets/img/logos/nissan-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:16",
+    "marcas_coincidentes": [
+      "Nissan"
+    ]
+  },
+  {
+    "id": "omoda",
+    "nombre": "Omoda & Jaecoo Uruguay",
+    "marcas_json": "[\"Omoda\"]",
+    "importador_oficial": "Grupo Santa Rosa",
+    "direccion": "Av. Italia 4905, Montevideo",
+    "sitio_oficial": "https://omodajaecoo.com.uy",
+    "instagram_handle": "@omoda.uruguay",
+    "instagram_url": "https://www.instagram.com/omoda.uruguay/",
+    "logo_path": "assets/img/logos/omoda-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:23",
+    "marcas_coincidentes": [
+      "Omoda"
+    ]
+  },
+  {
+    "id": "renault",
+    "nombre": "Renault Uruguay",
+    "marcas_json": "[\"Renault\"]",
+    "importador_oficial": "Grupo Santa Rosa",
+    "direccion": "Cerro Largo 888 / Av. Italia 4905, Montevideo",
+    "sitio_oficial": "https://renault.com.uy",
+    "instagram_handle": "@renaulturuguay",
+    "instagram_url": "https://www.instagram.com/renaulturuguay/",
+    "logo_path": "assets/img/logos/renault-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:16",
+    "marcas_coincidentes": [
+      "Renault"
+    ]
+  },
+  {
+    "id": "specialized",
+    "nombre": "Specialized Uruguay",
+    "marcas_json": "[\"Specialized\"]",
+    "importador_oficial": "Specialized Concept Store Carrasco",
+    "direccion": "Av. Bolivia 1430, Montevideo",
+    "sitio_oficial": "https://specialized.com",
+    "instagram_handle": "@specializeduruguay",
+    "instagram_url": "https://www.instagram.com/specializeduruguay/",
+    "logo_path": "assets/img/logos/specialized-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:26",
+    "marcas_coincidentes": [
+      "Specialized"
+    ]
+  },
+  {
+    "id": "sunra",
+    "nombre": "Sunra Uruguay",
+    "marcas_json": "[\"Sunra\"]",
+    "importador_oficial": "Sunra Centro Uruguay",
+    "direccion": "Av. Brasil 2980, Pocitos, Montevideo",
+    "sitio_oficial": "https://sunra.com.uy",
+    "instagram_handle": "@sunrauruguay",
+    "instagram_url": "https://www.instagram.com/sunrauruguay/",
+    "logo_path": "assets/img/logos/sunra-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:23",
+    "marcas_coincidentes": [
+      "Sunra"
+    ]
+  },
+  {
+    "id": "super-soco",
+    "nombre": "Super Soco Uruguay",
+    "marcas_json": "[\"Super Soco\"]",
+    "importador_oficial": "VMoto Soco Uruguay",
+    "direccion": "Montevideo, Uruguay",
+    "sitio_oficial": "https://supersoco.com.uy",
+    "instagram_handle": "@supersocouruguay",
+    "instagram_url": "https://www.instagram.com/supersocouruguay/",
+    "logo_path": "assets/img/logos/super-soco-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:24",
+    "marcas_coincidentes": [
+      "Super Soco"
+    ]
+  },
+  {
+    "id": "tesla",
+    "nombre": "Tesla Uruguay",
+    "marcas_json": "[\"Tesla\"]",
+    "importador_oficial": "Importación Homologada / Servicio Especializado EV",
+    "direccion": "Montevideo, Uruguay",
+    "sitio_oficial": "https://tesla.com",
+    "instagram_handle": "@teslamotors",
+    "instagram_url": "https://www.instagram.com/teslamotors/",
+    "logo_path": "assets/img/logos/tesla-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:14",
+    "marcas_coincidentes": [
+      "Tesla"
+    ]
+  },
+  {
+    "id": "trek",
+    "nombre": "Trek Bicycle Uruguay",
+    "marcas_json": "[\"Trek\"]",
+    "importador_oficial": "Summit Sports / Motociclo Sports",
+    "direccion": "Av. Brasil 2550, Pocitos, Montevideo",
+    "sitio_oficial": "https://trekbikes.com",
+    "instagram_handle": "@trekbikesuruguay",
+    "instagram_url": "https://www.instagram.com/trekbikesuruguay/",
+    "logo_path": "assets/img/logos/trek-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:25",
+    "marcas_coincidentes": [
+      "Trek"
+    ]
+  },
+  {
+    "id": "trike",
+    "nombre": "Trike E-Mobility Uruguay",
+    "marcas_json": "[\"Trike\"]",
+    "importador_oficial": "Trike Uruguay Oficial",
+    "direccion": "Montevideo, Uruguay",
+    "sitio_oficial": "https://ev.servicioti.com.uy",
+    "instagram_handle": "@trikeuruguay",
+    "instagram_url": "https://www.instagram.com/trikeuruguay/",
+    "logo_path": "assets/img/logos/trike-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:27",
+    "marcas_coincidentes": [
+      "Trike"
+    ]
+  },
+  {
+    "id": "voltbike",
+    "nombre": "VoltBike Uruguay",
+    "marcas_json": "[\"VoltBike\"]",
+    "importador_oficial": "VoltBike UY",
+    "direccion": "Av. Centenario 2840, Montevideo",
+    "sitio_oficial": "https://voltbike.uy",
+    "instagram_handle": "@voltbike.uy",
+    "instagram_url": "https://www.instagram.com/voltbike.uy/",
+    "logo_path": "assets/img/logos/voltbike-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:25",
+    "marcas_coincidentes": [
+      "VoltBike"
+    ]
+  },
+  {
+    "id": "volvo",
+    "nombre": "Volvo Cars Uruguay",
+    "marcas_json": "[\"Volvo\"]",
+    "importador_oficial": "Camur / Grupo Gildemeister",
+    "direccion": "Av. Italia 5678, Carrasco, Montevideo",
+    "sitio_oficial": "https://volvocars.com.uy",
+    "instagram_handle": "@volvocarsuruguay",
+    "instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+    "logo_path": "assets/img/logos/volvo-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:14",
+    "marcas_coincidentes": [
+      "Volvo"
+    ]
+  },
+  {
+    "id": "wheele",
+    "nombre": "Wheele Uruguay",
+    "marcas_json": "[\"Wheele\"]",
+    "importador_oficial": "Wheele Mobility",
+    "direccion": "Canelones 1230, Montevideo",
+    "sitio_oficial": "https://wheele.uy",
+    "instagram_handle": "@wheele.uy",
+    "instagram_url": "https://www.instagram.com/wheele.uy/",
+    "logo_path": "assets/img/logos/wheele-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:25",
+    "marcas_coincidentes": [
+      "Wheele"
+    ]
+  },
+  {
+    "id": "xiaomi",
+    "nombre": "Xiaomi Uruguay / Himo",
+    "marcas_json": "[\"Xiaomi / Himo\"]",
+    "importador_oficial": "Mi Store Uruguay Oficial",
+    "direccion": "Punta Carretas Shopping / Montevideo Shopping",
+    "sitio_oficial": "https://miuruguay.com",
+    "instagram_handle": "@xiaomi.uruguay",
+    "instagram_url": "https://www.instagram.com/xiaomi.uruguay/",
+    "logo_path": "assets/img/logos/xiaomi-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:27",
+    "marcas_coincidentes": [
+      "Xiaomi / Himo"
+    ]
+  },
+  {
+    "id": "yadea",
+    "nombre": "Yadea Uruguay",
+    "marcas_json": "[\"Yadea\"]",
+    "importador_oficial": "Grupo Fiancar Motos",
+    "direccion": "Av. Italia 5345, Montevideo",
+    "sitio_oficial": "https://yadea.com.uy",
+    "instagram_handle": "@yadeauruguay",
+    "instagram_url": "https://www.instagram.com/yadeauruguay/",
+    "logo_path": "assets/img/logos/yadea-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:24",
+    "marcas_coincidentes": [
+      "Yadea"
+    ]
+  },
+  {
+    "id": "zeekr",
+    "nombre": "Zeekr Uruguay",
+    "marcas_json": "[\"Zeekr\"]",
+    "importador_oficial": "Grupo Fiancar",
+    "direccion": "Av. Italia 5345, Montevideo",
+    "sitio_oficial": "https://zeekr.com.uy",
+    "instagram_handle": "@zeekr.uruguay",
+    "instagram_url": "https://www.instagram.com/zeekr.uruguay/",
+    "logo_path": "assets/img/logos/zeekr-logo.webp",
+    "fecha_actualizacion": "2026-10-26 22:54:22",
+    "marcas_coincidentes": [
+      "Zeekr"
+    ]
+  }
+]

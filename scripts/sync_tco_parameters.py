@@ -147,6 +147,12 @@ BRAND_SERVICE_DATA = {
         "taller_oficial": "Grupo FIANCAR — Red Oficial Omoda Uruguay",
         "tareas": "Diagnóstico de batería LFP, filtro de aire acondicionado y verificación de conexiones de recarga."
     },
+    "farizon": {
+        "intervalo_km": 15000,
+        "costo_usd": 140.0,
+        "taller_oficial": "Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)",
+        "tareas": "Diagnóstico integral de pack de batería CATL/EVE con refrigeración líquida, verificación de sistema de frenos con regeneración EBS, chequeo de aislamiento de alta tensión, suspensión reforzada para carga y lubricación de reductora motriz."
+    },
     "maxus": {
         "intervalo_km": 15000,
         "costo_usd": 135.0,

@@ -16,6 +16,23 @@ def export_db_to_json():
     conn = get_connection()
     cursor = conn.cursor()
 
+    # 0. Perfiles de marcas e importadores oficiales en Uruguay
+    cursor.execute("SELECT * FROM brand_profiles ORDER BY nombre ASC")
+    raw_brands = [dict(row) for row in cursor.fetchall()]
+    brand_profiles = []
+    marca_to_profile = {}
+    for bp in raw_brands:
+        try:
+            matched_marcas = json.loads(bp.get("marcas_json") or "[]")
+        except Exception:
+            matched_marcas = []
+        bp["marcas_coincidentes"] = matched_marcas
+        brand_profiles.append(bp)
+        for m in matched_marcas:
+            marca_to_profile[m.lower().strip()] = bp
+        marca_to_profile[bp["nombre"].lower().strip()] = bp
+        marca_to_profile[bp["id"].lower().strip()] = bp
+
     # 1. Vehículos oficiales con galerías y fichas, priorizando líderes de ventas
     cursor.execute("""
         SELECT * FROM vehicles 
@@ -39,6 +56,23 @@ def export_db_to_json():
             v_dict["especificaciones"] = json.loads(v_dict.get("especificaciones_json") or "{}")
         except Exception:
             v_dict["especificaciones"] = {}
+
+        # Asociar perfil de marca oficial e Instagram verificado
+        marca_key = (v_dict.get("marca") or "").lower().strip()
+        prof = marca_to_profile.get(marca_key)
+        if not prof:
+            for k, p in marca_to_profile.items():
+                if k in marca_key or marca_key in k:
+                    prof = p
+                    break
+        prof = prof or {}
+        v_dict["brand_id"] = prof.get("id", "")
+        v_dict["brand_name"] = prof.get("nombre", v_dict.get("marca", ""))
+        v_dict["brand_logo_url"] = prof.get("logo_path", "")
+        v_dict["brand_instagram_handle"] = prof.get("instagram_handle", "")
+        v_dict["brand_instagram_url"] = prof.get("instagram_url", "")
+        v_dict["brand_importador"] = prof.get("importador_oficial", "")
+        v_dict["brand_sitio_oficial"] = prof.get("sitio_oficial", "")
             
         vehicles.append(v_dict)
 
@@ -60,6 +94,17 @@ def export_db_to_json():
             t_dict["especificaciones"] = json.loads(t_dict.get("especificaciones_json") or "{}")
         except Exception:
             t_dict["especificaciones"] = {}
+        
+        marca_key = (t_dict.get("marca") or "").lower().strip()
+        prof = marca_to_profile.get(marca_key) or {}
+        t_dict["brand_id"] = prof.get("id", "")
+        t_dict["brand_name"] = prof.get("nombre", t_dict.get("marca", ""))
+        t_dict["brand_logo_url"] = prof.get("logo_path", "")
+        t_dict["brand_instagram_handle"] = prof.get("instagram_handle", "")
+        t_dict["brand_instagram_url"] = prof.get("instagram_url", "")
+        t_dict["brand_importador"] = prof.get("importador_oficial", "")
+        t_dict["brand_sitio_oficial"] = prof.get("sitio_oficial", "")
+
         top_sales.append(t_dict)
 
     # 1.2 Histórico de rankings mensuales ACAU
@@ -98,11 +143,13 @@ def export_db_to_json():
             "subdomain": "https://ev.servicioti.com.uy",
             "author": "Andrés Franchi Ugartemendía (ServicioTI)",
             "total_vehicles": len(vehicles),
+            "total_brands": len(brand_profiles),
             "total_market": len(market),
             "total_news": len(news),
             "total_chargers": len(chargers),
             "total_tariffs": len(tariffs)
         },
+        "brand_profiles": brand_profiles,
         "vehicles": vehicles,
         "top_sales": top_sales,
         "monthly_rankings": monthly_ranks,
@@ -117,6 +164,11 @@ def export_db_to_json():
     # 1. Exportar JSON estándar
     with open(JSON_OUTPUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+
+    # 1.1 Exportar base de marcas independiente (data/brand_profiles.json)
+    brands_output = DATA_DIR / "brand_profiles.json"
+    with open(brands_output, "w", encoding="utf-8") as f:
+        json.dump(brand_profiles, f, ensure_ascii=False, indent=2)
 
     # 2. Exportar JS (ev_data.js) para compatibilidad total con file:/// sin bloqueo de CORS
     js_output = DATA_DIR / "ev_data.js"

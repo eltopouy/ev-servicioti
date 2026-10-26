@@ -3,12 +3,556 @@
     "title": "EV Uruguay - Revista & Directorio de Movilidad Eléctrica",
     "subdomain": "https://ev.servicioti.com.uy",
     "author": "Andrés Franchi Ugartemendía (ServicioTI)",
-    "total_vehicles": 93,
+    "total_vehicles": 97,
+    "total_brands": 36,
     "total_market": 144,
     "total_news": 6,
     "total_chargers": 25,
     "total_tariffs": 8
   },
+  "brand_profiles": [
+    {
+      "id": "audi",
+      "nombre": "Audi Uruguay",
+      "marcas_json": "[\"Audi\"]",
+      "importador_oficial": "Julio César Lestido S.A.",
+      "direccion": "Cerro Largo 1729 / Av. Italia 5300, Montevideo",
+      "sitio_oficial": "https://audi.com.uy",
+      "instagram_handle": "@audi_uy",
+      "instagram_url": "https://www.instagram.com/audi_uy/",
+      "logo_path": "assets/img/logos/audi-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:18",
+      "marcas_coincidentes": [
+        "Audi"
+      ]
+    },
+    {
+      "id": "baw",
+      "nombre": "BAW Uruguay",
+      "marcas_json": "[\"BAW\"]",
+      "importador_oficial": "Grupo Antelo",
+      "direccion": "Montevideo, Uruguay",
+      "sitio_oficial": "https://baw.com.uy",
+      "instagram_handle": "@bawuruguay",
+      "instagram_url": "https://www.instagram.com/bawuruguay/",
+      "logo_path": "assets/img/logos/baw-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:22",
+      "marcas_coincidentes": [
+        "BAW"
+      ]
+    },
+    {
+      "id": "bmw",
+      "nombre": "BMW Uruguay",
+      "marcas_json": "[\"BMW\"]",
+      "importador_oficial": "Motor Haus",
+      "direccion": "Av. Giannattasio Km 20 / Av. Italia 4200, Montevideo",
+      "sitio_oficial": "https://bmw.com.uy",
+      "instagram_handle": "@bmw.uruguay",
+      "instagram_url": "https://www.instagram.com/bmw.uruguay/",
+      "logo_path": "assets/img/logos/bmw-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:17",
+      "marcas_coincidentes": [
+        "BMW"
+      ]
+    },
+    {
+      "id": "byd",
+      "nombre": "BYD Uruguay",
+      "marcas_json": "[\"BYD\"]",
+      "importador_oficial": "Sadar",
+      "direccion": "Av. Italia 4905 / Portones Shopping, Montevideo",
+      "sitio_oficial": "https://byd.com.uy",
+      "instagram_handle": "@byd_uruguay",
+      "instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "logo_path": "assets/img/logos/byd-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:11",
+      "marcas_coincidentes": [
+        "BYD"
+      ]
+    },
+    {
+      "id": "changan",
+      "nombre": "Changan Uruguay",
+      "marcas_json": "[\"Changan\"]",
+      "importador_oficial": "Grupo Santa Rosa",
+      "direccion": "Piedras 709, Montevideo",
+      "sitio_oficial": "https://changan.com.uy",
+      "instagram_handle": "@changanuruguay",
+      "instagram_url": "https://www.instagram.com/changanuruguay/",
+      "logo_path": "assets/img/logos/changan-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:21",
+      "marcas_coincidentes": [
+        "Changan"
+      ]
+    },
+    {
+      "id": "chery",
+      "nombre": "Chery Uruguay",
+      "marcas_json": "[\"Chery\"]",
+      "importador_oficial": "Asiancars / Grupo Fiancar",
+      "direccion": "Ruta Interbalnearia Km 22.500 / Montevideo",
+      "sitio_oficial": "https://chery.com.uy",
+      "instagram_handle": "@cheryuruguay",
+      "instagram_url": "https://www.instagram.com/cheryuruguay/",
+      "logo_path": "assets/img/logos/chery-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:12",
+      "marcas_coincidentes": [
+        "Chery"
+      ]
+    },
+    {
+      "id": "chevrolet",
+      "nombre": "Chevrolet Uruguay",
+      "marcas_json": "[\"Chevrolet\"]",
+      "importador_oficial": "General Motors Uruguay",
+      "direccion": "Av. Italia 4001, Montevideo",
+      "sitio_oficial": "https://chevrolet.com.uy",
+      "instagram_handle": "@chevroleturuguay",
+      "instagram_url": "https://www.instagram.com/chevroleturuguay/",
+      "logo_path": "assets/img/logos/chevrolet-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:15",
+      "marcas_coincidentes": [
+        "Chevrolet"
+      ]
+    },
+    {
+      "id": "decathlon",
+      "nombre": "Decathlon Uruguay",
+      "marcas_json": "[\"Decathlon / Riverside\", \"Decathlon / Rockrider\"]",
+      "importador_oficial": "Decathlon Car One",
+      "direccion": "Ruta Interbalnearia y C. de los Horneros, Canelones",
+      "sitio_oficial": "https://decathlon.com.uy",
+      "instagram_handle": "@decathlonuruguay",
+      "instagram_url": "https://www.instagram.com/decathlonuruguay/",
+      "logo_path": "assets/img/logos/decathlon-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:26",
+      "marcas_coincidentes": [
+        "Decathlon / Riverside",
+        "Decathlon / Rockrider"
+      ]
+    },
+    {
+      "id": "dongfeng",
+      "nombre": "Dongfeng Uruguay",
+      "marcas_json": "[\"Dongfeng\"]",
+      "importador_oficial": "Sadar / Cidef",
+      "direccion": "Av. Italia 4905, Montevideo",
+      "sitio_oficial": "https://dongfeng.com.uy",
+      "instagram_handle": "@dongfenguruguay",
+      "instagram_url": "https://www.instagram.com/dongfenguruguay/",
+      "logo_path": "assets/img/logos/dongfeng-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:22",
+      "marcas_coincidentes": [
+        "Dongfeng"
+      ]
+    },
+    {
+      "id": "farizon",
+      "nombre": "Farizon Uruguay",
+      "marcas_json": "[\"Farizon\"]",
+      "importador_oficial": "Grupo Santa Rosa",
+      "direccion": "Piedras 709 esq. Juncal / Av. Italia 4905, Montevideo",
+      "sitio_oficial": "https://farizon.com.uy",
+      "instagram_handle": "@farizonuruguay",
+      "instagram_url": "https://www.instagram.com/farizonuruguay/",
+      "logo_path": "assets/img/logos/farizon-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:11",
+      "marcas_coincidentes": [
+        "Farizon"
+      ]
+    },
+    {
+      "id": "gwm",
+      "nombre": "GWM Uruguay (ORA / Haval)",
+      "marcas_json": "[\"GWM\"]",
+      "importador_oficial": "Homero De León",
+      "direccion": "Av. Libertador 1777, Montevideo",
+      "sitio_oficial": "https://gwm.com.uy",
+      "instagram_handle": "@gwmuruguay",
+      "instagram_url": "https://www.instagram.com/gwmuruguay/",
+      "logo_path": "assets/img/logos/gwm-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:20",
+      "marcas_coincidentes": [
+        "GWM"
+      ]
+    },
+    {
+      "id": "geely",
+      "nombre": "Geely Uruguay",
+      "marcas_json": "[\"Geely\"]",
+      "importador_oficial": "Grupo Fiancar",
+      "direccion": "Av. Italia 5345, Montevideo",
+      "sitio_oficial": "https://geely.com.uy",
+      "instagram_handle": "@geelyuruguay",
+      "instagram_url": "https://www.instagram.com/geelyuruguay/",
+      "logo_path": "assets/img/logos/geely-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:11",
+      "marcas_coincidentes": [
+        "Geely"
+      ]
+    },
+    {
+      "id": "hyundai",
+      "nombre": "Hyundai Uruguay",
+      "marcas_json": "[\"Hyundai\"]",
+      "importador_oficial": "Fidocar S.A.",
+      "direccion": "Av. Italia 4620, Montevideo",
+      "sitio_oficial": "https://hyundai.com.uy",
+      "instagram_handle": "@hyundaiuruguay",
+      "instagram_url": "https://www.instagram.com/hyundaiuruguay/",
+      "logo_path": "assets/img/logos/hyundai-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:20",
+      "marcas_coincidentes": [
+        "Hyundai"
+      ]
+    },
+    {
+      "id": "jac",
+      "nombre": "JAC Uruguay",
+      "marcas_json": "[\"JAC\"]",
+      "importador_oficial": "Grupo Fiancar / Bor",
+      "direccion": "Av. Italia 5345, Montevideo",
+      "sitio_oficial": "https://jac.com.uy",
+      "instagram_handle": "@jacuruguay",
+      "instagram_url": "https://www.instagram.com/jacuruguay/",
+      "logo_path": "assets/img/logos/jac-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:13",
+      "marcas_coincidentes": [
+        "JAC"
+      ]
+    },
+    {
+      "id": "jmc",
+      "nombre": "JMC Uruguay",
+      "marcas_json": "[\"JMC\"]",
+      "importador_oficial": "Grupo Santa Rosa",
+      "direccion": "Piedras 709 esq. Juncal, Montevideo",
+      "sitio_oficial": "https://jmc.com.uy",
+      "instagram_handle": "@jmc_uruguay",
+      "instagram_url": "https://www.instagram.com/jmc_uruguay/",
+      "logo_path": "assets/img/logos/jmc-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:13",
+      "marcas_coincidentes": [
+        "JMC"
+      ]
+    },
+    {
+      "id": "kia",
+      "nombre": "Kia Uruguay",
+      "marcas_json": "[\"Kia\"]",
+      "importador_oficial": "Kia Uruguay / Grupo Fiancar",
+      "direccion": "Rambla Baltasar Brum 3764, Montevideo",
+      "sitio_oficial": "https://kia.com.uy",
+      "instagram_handle": "@kiauruguay",
+      "instagram_url": "https://www.instagram.com/kiauruguay/",
+      "logo_path": "assets/img/logos/kia-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:20",
+      "marcas_coincidentes": [
+        "Kia"
+      ]
+    },
+    {
+      "id": "loop-bikes",
+      "nombre": "Loop Bikes Uruguay",
+      "marcas_json": "[\"Loop Bikes\"]",
+      "importador_oficial": "Loop Bikes E-Mobility",
+      "direccion": "Benito Blanco 1012, Montevideo",
+      "sitio_oficial": "https://loopbikes.com.uy",
+      "instagram_handle": "@loopbikesuy",
+      "instagram_url": "https://www.instagram.com/loopbikesuy/",
+      "logo_path": "assets/img/logos/loop-bikes-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:25",
+      "marcas_coincidentes": [
+        "Loop Bikes"
+      ]
+    },
+    {
+      "id": "mini",
+      "nombre": "MINI Uruguay",
+      "marcas_json": "[\"Mini\"]",
+      "importador_oficial": "Motor Haus",
+      "direccion": "Av. Italia 4200, Montevideo",
+      "sitio_oficial": "https://mini.com.uy",
+      "instagram_handle": "@mini_uruguay",
+      "instagram_url": "https://www.instagram.com/mini_uruguay/",
+      "logo_path": "assets/img/logos/mini-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:19",
+      "marcas_coincidentes": [
+        "Mini"
+      ]
+    },
+    {
+      "id": "maxus",
+      "nombre": "Maxus Uruguay",
+      "marcas_json": "[\"Maxus\"]",
+      "importador_oficial": "Grupo Antelo / Santa Rosa",
+      "direccion": "Cerro Largo 888, Montevideo",
+      "sitio_oficial": "https://maxus.com.uy",
+      "instagram_handle": "@maxusuruguay",
+      "instagram_url": "https://www.instagram.com/maxusuruguay/",
+      "logo_path": "assets/img/logos/maxus-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:21",
+      "marcas_coincidentes": [
+        "Maxus"
+      ]
+    },
+    {
+      "id": "mercedes-benz",
+      "nombre": "Mercedes-Benz Uruguay",
+      "marcas_json": "[\"Mercedes-Benz\"]",
+      "importador_oficial": "Autolider Uruguay (Inchcape)",
+      "direccion": "Rambla Baltasar Brum 2986, Montevideo",
+      "sitio_oficial": "https://mercedes-benz.com.uy",
+      "instagram_handle": "@mercedesbenz_uy",
+      "instagram_url": "https://www.instagram.com/mercedesbenz_uy/",
+      "logo_path": "assets/img/logos/mercedes-benz-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:18",
+      "marcas_coincidentes": [
+        "Mercedes-Benz"
+      ]
+    },
+    {
+      "id": "niu",
+      "nombre": "NIU Mobility Uruguay",
+      "marcas_json": "[\"Niu\"]",
+      "importador_oficial": "NIU Uruguay",
+      "direccion": "Av. Rivera 2680, Montevideo",
+      "sitio_oficial": "https://niu.uy",
+      "instagram_handle": "@niu_uruguay",
+      "instagram_url": "https://www.instagram.com/niu_uruguay/",
+      "logo_path": "assets/img/logos/niu-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:24",
+      "marcas_coincidentes": [
+        "Niu"
+      ]
+    },
+    {
+      "id": "nissan",
+      "nombre": "Nissan Uruguay",
+      "marcas_json": "[\"Nissan\"]",
+      "importador_oficial": "Grupo Santa Rosa",
+      "direccion": "Rambla Baltasar Brum 2980, Montevideo",
+      "sitio_oficial": "https://nissan.com.uy",
+      "instagram_handle": "@nissanuruguay",
+      "instagram_url": "https://www.instagram.com/nissanuruguay/",
+      "logo_path": "assets/img/logos/nissan-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:16",
+      "marcas_coincidentes": [
+        "Nissan"
+      ]
+    },
+    {
+      "id": "omoda",
+      "nombre": "Omoda & Jaecoo Uruguay",
+      "marcas_json": "[\"Omoda\"]",
+      "importador_oficial": "Grupo Santa Rosa",
+      "direccion": "Av. Italia 4905, Montevideo",
+      "sitio_oficial": "https://omodajaecoo.com.uy",
+      "instagram_handle": "@omoda.uruguay",
+      "instagram_url": "https://www.instagram.com/omoda.uruguay/",
+      "logo_path": "assets/img/logos/omoda-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:23",
+      "marcas_coincidentes": [
+        "Omoda"
+      ]
+    },
+    {
+      "id": "renault",
+      "nombre": "Renault Uruguay",
+      "marcas_json": "[\"Renault\"]",
+      "importador_oficial": "Grupo Santa Rosa",
+      "direccion": "Cerro Largo 888 / Av. Italia 4905, Montevideo",
+      "sitio_oficial": "https://renault.com.uy",
+      "instagram_handle": "@renaulturuguay",
+      "instagram_url": "https://www.instagram.com/renaulturuguay/",
+      "logo_path": "assets/img/logos/renault-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:16",
+      "marcas_coincidentes": [
+        "Renault"
+      ]
+    },
+    {
+      "id": "specialized",
+      "nombre": "Specialized Uruguay",
+      "marcas_json": "[\"Specialized\"]",
+      "importador_oficial": "Specialized Concept Store Carrasco",
+      "direccion": "Av. Bolivia 1430, Montevideo",
+      "sitio_oficial": "https://specialized.com",
+      "instagram_handle": "@specializeduruguay",
+      "instagram_url": "https://www.instagram.com/specializeduruguay/",
+      "logo_path": "assets/img/logos/specialized-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:26",
+      "marcas_coincidentes": [
+        "Specialized"
+      ]
+    },
+    {
+      "id": "sunra",
+      "nombre": "Sunra Uruguay",
+      "marcas_json": "[\"Sunra\"]",
+      "importador_oficial": "Sunra Centro Uruguay",
+      "direccion": "Av. Brasil 2980, Pocitos, Montevideo",
+      "sitio_oficial": "https://sunra.com.uy",
+      "instagram_handle": "@sunrauruguay",
+      "instagram_url": "https://www.instagram.com/sunrauruguay/",
+      "logo_path": "assets/img/logos/sunra-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:23",
+      "marcas_coincidentes": [
+        "Sunra"
+      ]
+    },
+    {
+      "id": "super-soco",
+      "nombre": "Super Soco Uruguay",
+      "marcas_json": "[\"Super Soco\"]",
+      "importador_oficial": "VMoto Soco Uruguay",
+      "direccion": "Montevideo, Uruguay",
+      "sitio_oficial": "https://supersoco.com.uy",
+      "instagram_handle": "@supersocouruguay",
+      "instagram_url": "https://www.instagram.com/supersocouruguay/",
+      "logo_path": "assets/img/logos/super-soco-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:24",
+      "marcas_coincidentes": [
+        "Super Soco"
+      ]
+    },
+    {
+      "id": "tesla",
+      "nombre": "Tesla Uruguay",
+      "marcas_json": "[\"Tesla\"]",
+      "importador_oficial": "Importación Homologada / Servicio Especializado EV",
+      "direccion": "Montevideo, Uruguay",
+      "sitio_oficial": "https://tesla.com",
+      "instagram_handle": "@teslamotors",
+      "instagram_url": "https://www.instagram.com/teslamotors/",
+      "logo_path": "assets/img/logos/tesla-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:14",
+      "marcas_coincidentes": [
+        "Tesla"
+      ]
+    },
+    {
+      "id": "trek",
+      "nombre": "Trek Bicycle Uruguay",
+      "marcas_json": "[\"Trek\"]",
+      "importador_oficial": "Summit Sports / Motociclo Sports",
+      "direccion": "Av. Brasil 2550, Pocitos, Montevideo",
+      "sitio_oficial": "https://trekbikes.com",
+      "instagram_handle": "@trekbikesuruguay",
+      "instagram_url": "https://www.instagram.com/trekbikesuruguay/",
+      "logo_path": "assets/img/logos/trek-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:25",
+      "marcas_coincidentes": [
+        "Trek"
+      ]
+    },
+    {
+      "id": "trike",
+      "nombre": "Trike E-Mobility Uruguay",
+      "marcas_json": "[\"Trike\"]",
+      "importador_oficial": "Trike Uruguay Oficial",
+      "direccion": "Montevideo, Uruguay",
+      "sitio_oficial": "https://ev.servicioti.com.uy",
+      "instagram_handle": "@trikeuruguay",
+      "instagram_url": "https://www.instagram.com/trikeuruguay/",
+      "logo_path": "assets/img/logos/trike-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:27",
+      "marcas_coincidentes": [
+        "Trike"
+      ]
+    },
+    {
+      "id": "voltbike",
+      "nombre": "VoltBike Uruguay",
+      "marcas_json": "[\"VoltBike\"]",
+      "importador_oficial": "VoltBike UY",
+      "direccion": "Av. Centenario 2840, Montevideo",
+      "sitio_oficial": "https://voltbike.uy",
+      "instagram_handle": "@voltbike.uy",
+      "instagram_url": "https://www.instagram.com/voltbike.uy/",
+      "logo_path": "assets/img/logos/voltbike-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:25",
+      "marcas_coincidentes": [
+        "VoltBike"
+      ]
+    },
+    {
+      "id": "volvo",
+      "nombre": "Volvo Cars Uruguay",
+      "marcas_json": "[\"Volvo\"]",
+      "importador_oficial": "Camur / Grupo Gildemeister",
+      "direccion": "Av. Italia 5678, Carrasco, Montevideo",
+      "sitio_oficial": "https://volvocars.com.uy",
+      "instagram_handle": "@volvocarsuruguay",
+      "instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+      "logo_path": "assets/img/logos/volvo-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:14",
+      "marcas_coincidentes": [
+        "Volvo"
+      ]
+    },
+    {
+      "id": "wheele",
+      "nombre": "Wheele Uruguay",
+      "marcas_json": "[\"Wheele\"]",
+      "importador_oficial": "Wheele Mobility",
+      "direccion": "Canelones 1230, Montevideo",
+      "sitio_oficial": "https://wheele.uy",
+      "instagram_handle": "@wheele.uy",
+      "instagram_url": "https://www.instagram.com/wheele.uy/",
+      "logo_path": "assets/img/logos/wheele-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:25",
+      "marcas_coincidentes": [
+        "Wheele"
+      ]
+    },
+    {
+      "id": "xiaomi",
+      "nombre": "Xiaomi Uruguay / Himo",
+      "marcas_json": "[\"Xiaomi / Himo\"]",
+      "importador_oficial": "Mi Store Uruguay Oficial",
+      "direccion": "Punta Carretas Shopping / Montevideo Shopping",
+      "sitio_oficial": "https://miuruguay.com",
+      "instagram_handle": "@xiaomi.uruguay",
+      "instagram_url": "https://www.instagram.com/xiaomi.uruguay/",
+      "logo_path": "assets/img/logos/xiaomi-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:27",
+      "marcas_coincidentes": [
+        "Xiaomi / Himo"
+      ]
+    },
+    {
+      "id": "yadea",
+      "nombre": "Yadea Uruguay",
+      "marcas_json": "[\"Yadea\"]",
+      "importador_oficial": "Grupo Fiancar Motos",
+      "direccion": "Av. Italia 5345, Montevideo",
+      "sitio_oficial": "https://yadea.com.uy",
+      "instagram_handle": "@yadeauruguay",
+      "instagram_url": "https://www.instagram.com/yadeauruguay/",
+      "logo_path": "assets/img/logos/yadea-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:24",
+      "marcas_coincidentes": [
+        "Yadea"
+      ]
+    },
+    {
+      "id": "zeekr",
+      "nombre": "Zeekr Uruguay",
+      "marcas_json": "[\"Zeekr\"]",
+      "importador_oficial": "Grupo Fiancar",
+      "direccion": "Av. Italia 5345, Montevideo",
+      "sitio_oficial": "https://zeekr.com.uy",
+      "instagram_handle": "@zeekr.uruguay",
+      "instagram_url": "https://www.instagram.com/zeekr.uruguay/",
+      "logo_path": "assets/img/logos/zeekr-logo.webp",
+      "fecha_actualizacion": "2026-10-26 22:54:22",
+      "marcas_coincidentes": [
+        "Zeekr"
+      ]
+    }
+  ],
   "vehicles": [
     {
       "id": "byd-yuan-pro",
@@ -61,7 +605,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-yuan-pro/badge-circular-byd-yuan-pro-ev-380-suv-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-yuan-pro/pixel-art-16bit-byd-yuan-pro-ev-380-suv-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-seagull-ev300",
@@ -116,7 +667,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seagull-ev300/badge-circular-byd-seagull-ev300-gl-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seagull-ev300/pixel-art-16bit-byd-seagull-ev300-gl-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-seagull-ev400-gs",
@@ -171,7 +729,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seagull-ev400-gs/badge-circular-byd-seagull-ev400-gs-38-88-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seagull-ev400-gs/pixel-art-16bit-byd-seagull-ev400-gs-38-88-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-seagull-surf",
@@ -226,7 +791,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seagull-surf/badge-circular-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seagull-surf/pixel-art-16bit-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "dongfeng-nammi-330",
@@ -278,7 +850,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/dongfeng-nammi-330/badge-circular-dongfeng-nammi-box-330-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/dongfeng-nammi-330/pixel-art-16bit-dongfeng-nammi-box-330-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "dongfeng",
+      "brand_name": "Dongfeng Uruguay",
+      "brand_logo_url": "assets/img/logos/dongfeng-logo.webp",
+      "brand_instagram_handle": "@dongfenguruguay",
+      "brand_instagram_url": "https://www.instagram.com/dongfenguruguay/",
+      "brand_importador": "Sadar / Cidef",
+      "brand_sitio_oficial": "https://dongfeng.com.uy"
     },
     {
       "id": "dongfeng-nammi-box",
@@ -330,7 +909,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/dongfeng-nammi-box/badge-circular-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/dongfeng-nammi-box/pixel-art-16bit-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "dongfeng",
+      "brand_name": "Dongfeng Uruguay",
+      "brand_logo_url": "assets/img/logos/dongfeng-logo.webp",
+      "brand_instagram_handle": "@dongfenguruguay",
+      "brand_instagram_url": "https://www.instagram.com/dongfenguruguay/",
+      "brand_importador": "Sadar / Cidef",
+      "brand_sitio_oficial": "https://dongfeng.com.uy"
     },
     {
       "id": "byd-e2",
@@ -382,7 +968,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-e2/badge-circular-byd-e2-hatchback-ev-405-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-e2/pixel-art-16bit-byd-e2-hatchback-ev-405-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "chevrolet-spark-euv",
@@ -435,7 +1028,14 @@
         "importador": "General Motors Uruguay",
         "badge_circular_url": "assets/img/chevrolet-spark-euv/badge-circular-chevrolet-spark-euv-city-ev-32-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chevrolet-spark-euv/pixel-art-16bit-chevrolet-spark-euv-city-ev-32-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chevrolet",
+      "brand_name": "Chevrolet Uruguay",
+      "brand_logo_url": "assets/img/logos/chevrolet-logo.webp",
+      "brand_instagram_handle": "@chevroleturuguay",
+      "brand_instagram_url": "https://www.instagram.com/chevroleturuguay/",
+      "brand_importador": "General Motors Uruguay",
+      "brand_sitio_oficial": "https://chevrolet.com.uy"
     },
     {
       "id": "jmev-ev3",
@@ -488,7 +1088,14 @@
         "importador": "JMC Uruguay",
         "badge_circular_url": "assets/img/jmev-ev3/badge-circular-jmc-jmev-ev3-3-xiaoqilin-easy-21-4-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/jmev-ev3/pixel-art-16bit-jmc-jmev-ev3-3-xiaoqilin-easy-21-4-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "jmc",
+      "brand_name": "JMC Uruguay",
+      "brand_logo_url": "assets/img/logos/jmc-logo.webp",
+      "brand_instagram_handle": "@jmc_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/jmc_uruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://jmc.com.uy"
     },
     {
       "id": "geely-ex5-pro",
@@ -541,7 +1148,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/geely-ex5-pro/badge-circular-geely-ex5-pro-ev-2026-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/geely-ex5-pro/pixel-art-16bit-geely-ex5-pro-ev-2026-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "geely",
+      "brand_name": "Geely Uruguay",
+      "brand_logo_url": "assets/img/logos/geely-logo.webp",
+      "brand_instagram_handle": "@geelyuruguay",
+      "brand_instagram_url": "https://www.instagram.com/geelyuruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://geely.com.uy"
     },
     {
       "id": "byd-yuan-plus",
@@ -594,7 +1208,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-yuan-plus/badge-circular-byd-yuan-plus-ev-500-flagship-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-yuan-plus/pixel-art-16bit-byd-yuan-plus-ev-500-flagship-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "omoda-e5",
@@ -646,7 +1267,14 @@
         "importador": "Grupo Chery UY",
         "badge_circular_url": "assets/img/omoda-e5/badge-circular-omoda-e5-premium-ev-61-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/omoda-e5/pixel-art-16bit-omoda-e5-premium-ev-61-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "omoda",
+      "brand_name": "Omoda & Jaecoo Uruguay",
+      "brand_logo_url": "assets/img/logos/omoda-logo.webp",
+      "brand_instagram_handle": "@omoda.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/omoda.uruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://omodajaecoo.com.uy"
     },
     {
       "id": "jac-e-js1",
@@ -698,7 +1326,14 @@
         "importador": "Grupo Aler",
         "badge_circular_url": "assets/img/jac-e-js1/badge-circular-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/jac-e-js1/pixel-art-16bit-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "jac",
+      "brand_name": "JAC Uruguay",
+      "brand_logo_url": "assets/img/logos/jac-logo.webp",
+      "brand_instagram_handle": "@jacuruguay",
+      "brand_instagram_url": "https://www.instagram.com/jacuruguay/",
+      "brand_importador": "Grupo Fiancar / Bor",
+      "brand_sitio_oficial": "https://jac.com.uy"
     },
     {
       "id": "baw-pony-ev",
@@ -751,7 +1386,14 @@
         "importador": "Distribuidores Plaza UY",
         "badge_circular_url": "assets/img/baw-pony-ev/badge-circular-baw-pony-ev-citycar-3-puertas-13-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/baw-pony-ev/pixel-art-16bit-baw-pony-ev-citycar-3-puertas-13-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "baw",
+      "brand_name": "BAW Uruguay",
+      "brand_logo_url": "assets/img/logos/baw-logo.webp",
+      "brand_instagram_handle": "@bawuruguay",
+      "brand_instagram_url": "https://www.instagram.com/bawuruguay/",
+      "brand_importador": "Grupo Antelo",
+      "brand_sitio_oficial": "https://baw.com.uy"
     },
     {
       "id": "chery-qq-ice-cream",
@@ -803,7 +1445,14 @@
         "importador": "Grupo Fidocar",
         "badge_circular_url": "assets/img/chery-qq-ice-cream/badge-circular-chery-qq-ice-cream-urban-kei-13-9-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chery-qq-ice-cream/pixel-art-16bit-chery-qq-ice-cream-urban-kei-13-9-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chery",
+      "brand_name": "Chery Uruguay",
+      "brand_logo_url": "assets/img/logos/chery-logo.webp",
+      "brand_instagram_handle": "@cheryuruguay",
+      "brand_instagram_url": "https://www.instagram.com/cheryuruguay/",
+      "brand_importador": "Asiancars / Grupo Fiancar",
+      "brand_sitio_oficial": "https://chery.com.uy"
     },
     {
       "id": "baw-l7-bagel-ev",
@@ -857,7 +1506,14 @@
         "importador": "Autoboulevard / Distribuidores Plaza UY",
         "badge_circular_url": "assets/img/baw-l7-bagel-ev/badge-circular-baw-l7-bagel-ev-hatchback-5-puertas-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/baw-l7-bagel-ev/pixel-art-16bit-baw-l7-bagel-ev-hatchback-5-puertas-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "baw",
+      "brand_name": "BAW Uruguay",
+      "brand_logo_url": "assets/img/logos/baw-logo.webp",
+      "brand_instagram_handle": "@bawuruguay",
+      "brand_instagram_url": "https://www.instagram.com/bawuruguay/",
+      "brand_importador": "Grupo Antelo",
+      "brand_sitio_oficial": "https://baw.com.uy"
     },
     {
       "id": "geely-panda-mini-ev",
@@ -911,7 +1567,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/geely-panda-mini-ev/badge-circular-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/geely-panda-mini-ev/pixel-art-16bit-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "geely",
+      "brand_name": "Geely Uruguay",
+      "brand_logo_url": "assets/img/logos/geely-logo.webp",
+      "brand_instagram_handle": "@geelyuruguay",
+      "brand_instagram_url": "https://www.instagram.com/geelyuruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://geely.com.uy"
     },
     {
       "id": "changan-lumin-155",
@@ -963,7 +1626,14 @@
         "importador": "Changan Uruguay",
         "badge_circular_url": "assets/img/changan-lumin-155/badge-circular-changan-lumin-155-corn-ev-12-9-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/changan-lumin-155/pixel-art-16bit-changan-lumin-155-corn-ev-12-9-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "changan",
+      "brand_name": "Changan Uruguay",
+      "brand_logo_url": "assets/img/logos/changan-logo.webp",
+      "brand_instagram_handle": "@changanuruguay",
+      "brand_instagram_url": "https://www.instagram.com/changanuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://changan.com.uy"
     },
     {
       "id": "changan-lumin-301",
@@ -1016,7 +1686,14 @@
         "importador": "Changan Uruguay",
         "badge_circular_url": "assets/img/changan-lumin-301/badge-circular-changan-lumin-301-sweet-dc-fast-charge-28-kw-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/changan-lumin-301/pixel-art-16bit-changan-lumin-301-sweet-dc-fast-charge-28-kw-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "changan",
+      "brand_name": "Changan Uruguay",
+      "brand_logo_url": "assets/img/logos/changan-logo.webp",
+      "brand_instagram_handle": "@changanuruguay",
+      "brand_instagram_url": "https://www.instagram.com/changanuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://changan.com.uy"
     },
     {
       "id": "chery-eq1",
@@ -1071,7 +1748,14 @@
         "importador": "Grupo Fidocar",
         "badge_circular_url": "assets/img/chery-eq1/badge-circular-chery-eq1-little-ant-pequena-hormiga-lfp-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chery-eq1/pixel-art-16bit-chery-eq1-little-ant-pequena-hormiga-lfp-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chery",
+      "brand_name": "Chery Uruguay",
+      "brand_logo_url": "assets/img/logos/chery-logo.webp",
+      "brand_instagram_handle": "@cheryuruguay",
+      "brand_instagram_url": "https://www.instagram.com/cheryuruguay/",
+      "brand_importador": "Asiancars / Grupo Fiancar",
+      "brand_sitio_oficial": "https://chery.com.uy"
     },
     {
       "id": "renault-kwid-e-tech",
@@ -1123,7 +1807,14 @@
         "importador": "Santa Rosa Automotores",
         "badge_circular_url": "assets/img/renault-kwid-e-tech/badge-circular-renault-kwid-e-tech-100-electrico-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/renault-kwid-e-tech/pixel-art-16bit-renault-kwid-e-tech-100-electrico-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "renault",
+      "brand_name": "Renault Uruguay",
+      "brand_logo_url": "assets/img/logos/renault-logo.webp",
+      "brand_instagram_handle": "@renaulturuguay",
+      "brand_instagram_url": "https://www.instagram.com/renaulturuguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://renault.com.uy"
     },
     {
       "id": "byd-dolphin-mini",
@@ -1176,7 +1867,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-dolphin-mini/badge-circular-byd-dolphin-mini-ev-urban-300-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-dolphin-mini/pixel-art-16bit-byd-dolphin-mini-ev-urban-300-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "geely-geometry-e",
@@ -1228,7 +1926,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/geely-geometry-e/badge-circular-geely-geometry-e-compact-city-ev-39-4-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/geely-geometry-e/pixel-art-16bit-geely-geometry-e-compact-city-ev-39-4-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "geely",
+      "brand_name": "Geely Uruguay",
+      "brand_logo_url": "assets/img/logos/geely-logo.webp",
+      "brand_instagram_handle": "@geelyuruguay",
+      "brand_instagram_url": "https://www.instagram.com/geelyuruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://geely.com.uy"
     },
     {
       "id": "byd-dolphin-gs",
@@ -1283,7 +1988,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-dolphin-gs/badge-circular-byd-dolphin-gs-ev-e-platform-3-0-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-dolphin-gs/pixel-art-16bit-byd-dolphin-gs-ev-e-platform-3-0-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-t3",
@@ -1337,7 +2049,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-t3/badge-circular-byd-t3-furgon-utilitario-el-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-t3/pixel-art-16bit-byd-t3-furgon-utilitario-el-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "gwm-ora-03",
@@ -1389,7 +2108,14 @@
         "importador": "Santa Rosa Automotores",
         "badge_circular_url": "assets/img/gwm-ora-03/badge-circular-gwm-ora-03-skin-48-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/gwm-ora-03/pixel-art-16bit-gwm-ora-03-skin-48-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "gwm",
+      "brand_name": "GWM Uruguay (ORA / Haval)",
+      "brand_logo_url": "assets/img/logos/gwm-logo.webp",
+      "brand_instagram_handle": "@gwmuruguay",
+      "brand_instagram_url": "https://www.instagram.com/gwmuruguay/",
+      "brand_importador": "Homero De León",
+      "brand_sitio_oficial": "https://gwm.com.uy"
     },
     {
       "id": "jac-e-js4",
@@ -1442,7 +2168,14 @@
         "importador": "Grupo Aler",
         "badge_circular_url": "assets/img/jac-e-js4/badge-circular-jac-e-js4-suv-compacto-ev-55-k-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/jac-e-js4/pixel-art-16bit-jac-e-js4-suv-compacto-ev-55-k-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "jac",
+      "brand_name": "JAC Uruguay",
+      "brand_logo_url": "assets/img/logos/jac-logo.webp",
+      "brand_instagram_handle": "@jacuruguay",
+      "brand_instagram_url": "https://www.instagram.com/jacuruguay/",
+      "brand_importador": "Grupo Fiancar / Bor",
+      "brand_sitio_oficial": "https://jac.com.uy"
     },
     {
       "id": "maxus-edeliver-3",
@@ -1494,7 +2227,14 @@
         "importador": "Abriley S.A.",
         "badge_circular_url": "assets/img/maxus-edeliver-3/badge-circular-maxus-edeliver-3-furgon-utilitario-4-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/maxus-edeliver-3/pixel-art-16bit-maxus-edeliver-3-furgon-utilitario-4-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "maxus",
+      "brand_name": "Maxus Uruguay",
+      "brand_logo_url": "assets/img/logos/maxus-logo.webp",
+      "brand_instagram_handle": "@maxusuruguay",
+      "brand_instagram_url": "https://www.instagram.com/maxusuruguay/",
+      "brand_importador": "Grupo Antelo / Santa Rosa",
+      "brand_sitio_oficial": "https://maxus.com.uy"
     },
     {
       "id": "byd-dolphin-plus",
@@ -1547,7 +2287,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-dolphin-plus/badge-circular-byd-dolphin-plus-ev-204-cv-60-5-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-dolphin-plus/pixel-art-16bit-byd-dolphin-plus-ev-204-cv-60-5-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "jac-e-j7",
@@ -1599,7 +2346,14 @@
         "importador": "Grupo Aler",
         "badge_circular_url": "assets/img/jac-e-j7/badge-circular-jac-e-j7-sedan-ejecutivo-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/jac-e-j7/pixel-art-16bit-jac-e-j7-sedan-ejecutivo-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "jac",
+      "brand_name": "JAC Uruguay",
+      "brand_logo_url": "assets/img/logos/jac-logo.webp",
+      "brand_instagram_handle": "@jacuruguay",
+      "brand_instagram_url": "https://www.instagram.com/jacuruguay/",
+      "brand_importador": "Grupo Fiancar / Bor",
+      "brand_sitio_oficial": "https://jac.com.uy"
     },
     {
       "id": "geely-geometry-c",
@@ -1651,7 +2405,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/geely-geometry-c/badge-circular-geely-geometry-c-pro-550-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/geely-geometry-c/pixel-art-16bit-geely-geometry-c-pro-550-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "geely",
+      "brand_name": "Geely Uruguay",
+      "brand_logo_url": "assets/img/logos/geely-logo.webp",
+      "brand_instagram_handle": "@geelyuruguay",
+      "brand_instagram_url": "https://www.instagram.com/geelyuruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://geely.com.uy"
     },
     {
       "id": "renault-kangoo-e-tech",
@@ -1704,7 +2465,14 @@
         "importador": "Santa Rosa Automotores",
         "badge_circular_url": "assets/img/renault-kangoo-e-tech/badge-circular-renault-kangoo-e-tech-furgon-comerc-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/renault-kangoo-e-tech/pixel-art-16bit-renault-kangoo-e-tech-furgon-comerc-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "renault",
+      "brand_name": "Renault Uruguay",
+      "brand_logo_url": "assets/img/logos/renault-logo.webp",
+      "brand_instagram_handle": "@renaulturuguay",
+      "brand_instagram_url": "https://www.instagram.com/renaulturuguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://renault.com.uy"
     },
     {
       "id": "nissan-leaf",
@@ -1756,7 +2524,14 @@
         "importador": "Santa Rosa Automotores",
         "badge_circular_url": "assets/img/nissan-leaf/badge-circular-nissan-leaf-acenta-40-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/nissan-leaf/pixel-art-16bit-nissan-leaf-acenta-40-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "nissan",
+      "brand_name": "Nissan Uruguay",
+      "brand_logo_url": "assets/img/logos/nissan-logo.webp",
+      "brand_instagram_handle": "@nissanuruguay",
+      "brand_instagram_url": "https://www.instagram.com/nissanuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://nissan.com.uy"
     },
     {
       "id": "volvo-ex30",
@@ -1809,7 +2584,14 @@
         "importador": "Danissa / Norden",
         "badge_circular_url": "assets/img/volvo-ex30/badge-circular-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/volvo-ex30/pixel-art-16bit-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "volvo",
+      "brand_name": "Volvo Cars Uruguay",
+      "brand_logo_url": "assets/img/logos/volvo-logo.webp",
+      "brand_instagram_handle": "@volvocarsuruguay",
+      "brand_instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+      "brand_importador": "Camur / Grupo Gildemeister",
+      "brand_sitio_oficial": "https://volvocars.com.uy"
     },
     {
       "id": "chevrolet-bolt-euv",
@@ -1862,7 +2644,14 @@
         "importador": "General Motors Uruguay",
         "badge_circular_url": "assets/img/chevrolet-bolt-euv/badge-circular-chevrolet-bolt-euv-premier-ev-65-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chevrolet-bolt-euv/pixel-art-16bit-chevrolet-bolt-euv-premier-ev-65-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chevrolet",
+      "brand_name": "Chevrolet Uruguay",
+      "brand_logo_url": "assets/img/logos/chevrolet-logo.webp",
+      "brand_instagram_handle": "@chevroleturuguay",
+      "brand_instagram_url": "https://www.instagram.com/chevroleturuguay/",
+      "brand_importador": "General Motors Uruguay",
+      "brand_sitio_oficial": "https://chevrolet.com.uy"
     },
     {
       "id": "kia-ev3",
@@ -1914,7 +2703,14 @@
         "importador": "Zenex Motors",
         "badge_circular_url": "assets/img/kia-ev3/badge-circular-kia-ev3-air-long-range-81-4-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/kia-ev3/pixel-art-16bit-kia-ev3-air-long-range-81-4-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "kia",
+      "brand_name": "Kia Uruguay",
+      "brand_logo_url": "assets/img/logos/kia-logo.webp",
+      "brand_instagram_handle": "@kiauruguay",
+      "brand_instagram_url": "https://www.instagram.com/kiauruguay/",
+      "brand_importador": "Kia Uruguay / Grupo Fiancar",
+      "brand_sitio_oficial": "https://kia.com.uy"
     },
     {
       "id": "byd-song-plus",
@@ -1967,7 +2763,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-song-plus/badge-circular-byd-song-plus-dm-i-plug-in-hybrid-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-song-plus/pixel-art-16bit-byd-song-plus-dm-i-plug-in-hybrid-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "dongfeng-rich-6-ev",
@@ -2020,7 +2823,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/dongfeng-rich-6-ev/badge-circular-dongfeng-rich-6-pick-up-100-electric-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/dongfeng-rich-6-ev/pixel-art-16bit-dongfeng-rich-6-pick-up-100-electric-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "dongfeng",
+      "brand_name": "Dongfeng Uruguay",
+      "brand_logo_url": "assets/img/logos/dongfeng-logo.webp",
+      "brand_instagram_handle": "@dongfenguruguay",
+      "brand_instagram_url": "https://www.instagram.com/dongfenguruguay/",
+      "brand_importador": "Sadar / Cidef",
+      "brand_sitio_oficial": "https://dongfeng.com.uy"
     },
     {
       "id": "renault-megane-e-tech",
@@ -2072,7 +2882,14 @@
         "importador": "Santa Rosa Automotores",
         "badge_circular_url": "assets/img/renault-megane-e-tech/badge-circular-renault-megane-e-tech-ev60-crossove-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/renault-megane-e-tech/pixel-art-16bit-renault-megane-e-tech-ev60-crossove-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "renault",
+      "brand_name": "Renault Uruguay",
+      "brand_logo_url": "assets/img/logos/renault-logo.webp",
+      "brand_instagram_handle": "@renaulturuguay",
+      "brand_instagram_url": "https://www.instagram.com/renaulturuguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://renault.com.uy"
     },
     {
       "id": "mini-cooper-se",
@@ -2124,7 +2941,14 @@
         "importador": "Motor Haus",
         "badge_circular_url": "assets/img/mini-cooper-se/badge-circular-mini-cooper-se-3-puertas-electric-5-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/mini-cooper-se/pixel-art-16bit-mini-cooper-se-3-puertas-electric-5-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "mini",
+      "brand_name": "MINI Uruguay",
+      "brand_logo_url": "assets/img/logos/mini-logo.webp",
+      "brand_instagram_handle": "@mini_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/mini_uruguay/",
+      "brand_importador": "Motor Haus",
+      "brand_sitio_oficial": "https://mini.com.uy"
     },
     {
       "id": "hyundai-kona-electric",
@@ -2176,7 +3000,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/hyundai-kona-electric/badge-circular-hyundai-kona-electric-64-8-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/hyundai-kona-electric/pixel-art-16bit-hyundai-kona-electric-64-8-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "hyundai",
+      "brand_name": "Hyundai Uruguay",
+      "brand_logo_url": "assets/img/logos/hyundai-logo.webp",
+      "brand_instagram_handle": "@hyundaiuruguay",
+      "brand_instagram_url": "https://www.instagram.com/hyundaiuruguay/",
+      "brand_importador": "Fidocar S.A.",
+      "brand_sitio_oficial": "https://hyundai.com.uy"
     },
     {
       "id": "volvo-ex30-ultra",
@@ -2229,7 +3060,14 @@
         "importador": "Danissa / Norden",
         "badge_circular_url": "assets/img/volvo-ex30-ultra/badge-circular-volvo-ex30-twin-motor-performan-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/volvo-ex30-ultra/pixel-art-16bit-volvo-ex30-twin-motor-performan-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "volvo",
+      "brand_name": "Volvo Cars Uruguay",
+      "brand_logo_url": "assets/img/logos/volvo-logo.webp",
+      "brand_instagram_handle": "@volvocarsuruguay",
+      "brand_instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+      "brand_importador": "Camur / Grupo Gildemeister",
+      "brand_sitio_oficial": "https://volvocars.com.uy"
     },
     {
       "id": "zeekr-x",
@@ -2282,7 +3120,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/zeekr-x/badge-circular-zeekr-x-urban-crossover-awd-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/zeekr-x/pixel-art-16bit-zeekr-x-urban-crossover-awd-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "zeekr",
+      "brand_name": "Zeekr Uruguay",
+      "brand_logo_url": "assets/img/logos/zeekr-logo.webp",
+      "brand_instagram_handle": "@zeekr.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/zeekr.uruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://zeekr.com.uy"
     },
     {
       "id": "byd-shark",
@@ -2335,7 +3180,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-shark/badge-circular-byd-shark-phev-pickup-doble-ca-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-shark/pixel-art-16bit-byd-shark-phev-pickup-doble-ca-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "chevrolet-equinox-ev",
@@ -2389,7 +3241,14 @@
         "importador": "General Motors Uruguay",
         "badge_circular_url": "assets/img/chevrolet-equinox-ev/badge-circular-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chevrolet-equinox-ev/pixel-art-16bit-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chevrolet",
+      "brand_name": "Chevrolet Uruguay",
+      "brand_logo_url": "assets/img/logos/chevrolet-logo.webp",
+      "brand_instagram_handle": "@chevroleturuguay",
+      "brand_instagram_url": "https://www.instagram.com/chevroleturuguay/",
+      "brand_importador": "General Motors Uruguay",
+      "brand_sitio_oficial": "https://chevrolet.com.uy"
     },
     {
       "id": "tesla-model-3-rwd",
@@ -2443,7 +3302,14 @@
         "importador": "Importación Homologada Uruguay",
         "badge_circular_url": "assets/img/tesla-model-3-rwd/badge-circular-tesla-model-3-highland-standard-rwd-60-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/tesla-model-3-rwd/pixel-art-16bit-tesla-model-3-highland-standard-rwd-60-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "tesla",
+      "brand_name": "Tesla Uruguay",
+      "brand_logo_url": "assets/img/logos/tesla-logo.webp",
+      "brand_instagram_handle": "@teslamotors",
+      "brand_instagram_url": "https://www.instagram.com/teslamotors/",
+      "brand_importador": "Importación Homologada / Servicio Especializado EV",
+      "brand_sitio_oficial": "https://tesla.com"
     },
     {
       "id": "byd-seal-awd",
@@ -2496,7 +3362,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seal-awd/badge-circular-byd-seal-excellence-awd-530-c-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seal-awd/pixel-art-16bit-byd-seal-excellence-awd-530-c-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "maxus-eterron-9",
@@ -2548,7 +3421,14 @@
         "importador": "Abriley S.A.",
         "badge_circular_url": "assets/img/maxus-eterron-9/badge-circular-maxus-eterron-9-pick-up-4x4-electric-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/maxus-eterron-9/pixel-art-16bit-maxus-eterron-9-pick-up-4x4-electric-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "maxus",
+      "brand_name": "Maxus Uruguay",
+      "brand_logo_url": "assets/img/logos/maxus-logo.webp",
+      "brand_instagram_handle": "@maxusuruguay",
+      "brand_instagram_url": "https://www.instagram.com/maxusuruguay/",
+      "brand_importador": "Grupo Antelo / Santa Rosa",
+      "brand_sitio_oficial": "https://maxus.com.uy"
     },
     {
       "id": "tesla-model-y-rwd",
@@ -2602,7 +3482,14 @@
         "importador": "Importación Homologada Uruguay",
         "badge_circular_url": "assets/img/tesla-model-y-rwd/badge-circular-tesla-model-y-standard-rwd-60-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/tesla-model-y-rwd/pixel-art-16bit-tesla-model-y-standard-rwd-60-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "tesla",
+      "brand_name": "Tesla Uruguay",
+      "brand_logo_url": "assets/img/logos/tesla-logo.webp",
+      "brand_instagram_handle": "@teslamotors",
+      "brand_instagram_url": "https://www.instagram.com/teslamotors/",
+      "brand_importador": "Importación Homologada / Servicio Especializado EV",
+      "brand_sitio_oficial": "https://tesla.com"
     },
     {
       "id": "volvo-ex40",
@@ -2655,7 +3542,14 @@
         "importador": "Danissa / Norden",
         "badge_circular_url": "assets/img/volvo-ex40/badge-circular-volvo-ex40-recharge-twin-awd-ul-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/volvo-ex40/pixel-art-16bit-volvo-ex40-recharge-twin-awd-ul-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "volvo",
+      "brand_name": "Volvo Cars Uruguay",
+      "brand_logo_url": "assets/img/logos/volvo-logo.webp",
+      "brand_instagram_handle": "@volvocarsuruguay",
+      "brand_instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+      "brand_importador": "Camur / Grupo Gildemeister",
+      "brand_sitio_oficial": "https://volvocars.com.uy"
     },
     {
       "id": "hyundai-ioniq-5",
@@ -2707,7 +3601,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/hyundai-ioniq-5/badge-circular-hyundai-ioniq-5-long-range-awd-72-6-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/hyundai-ioniq-5/pixel-art-16bit-hyundai-ioniq-5-long-range-awd-72-6-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "hyundai",
+      "brand_name": "Hyundai Uruguay",
+      "brand_logo_url": "assets/img/logos/hyundai-logo.webp",
+      "brand_instagram_handle": "@hyundaiuruguay",
+      "brand_instagram_url": "https://www.instagram.com/hyundaiuruguay/",
+      "brand_importador": "Fidocar S.A.",
+      "brand_sitio_oficial": "https://hyundai.com.uy"
     },
     {
       "id": "tesla-model-3-long-range",
@@ -2761,7 +3662,14 @@
         "importador": "Importación Homologada Uruguay",
         "badge_circular_url": "assets/img/tesla-model-3-long-range/badge-circular-tesla-model-3-highland-long-range-dual-moto-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/tesla-model-3-long-range/pixel-art-16bit-tesla-model-3-highland-long-range-dual-moto-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "tesla",
+      "brand_name": "Tesla Uruguay",
+      "brand_logo_url": "assets/img/logos/tesla-logo.webp",
+      "brand_instagram_handle": "@teslamotors",
+      "brand_instagram_url": "https://www.instagram.com/teslamotors/",
+      "brand_importador": "Importación Homologada / Servicio Especializado EV",
+      "brand_sitio_oficial": "https://tesla.com"
     },
     {
       "id": "volvo-ec40",
@@ -2814,7 +3722,14 @@
         "importador": "Danissa / Norden",
         "badge_circular_url": "assets/img/volvo-ec40/badge-circular-volvo-ec40-crossover-coupe-rech-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/volvo-ec40/pixel-art-16bit-volvo-ec40-crossover-coupe-rech-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "volvo",
+      "brand_name": "Volvo Cars Uruguay",
+      "brand_logo_url": "assets/img/logos/volvo-logo.webp",
+      "brand_instagram_handle": "@volvocarsuruguay",
+      "brand_instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+      "brand_importador": "Camur / Grupo Gildemeister",
+      "brand_sitio_oficial": "https://volvocars.com.uy"
     },
     {
       "id": "zeekr-7x",
@@ -2866,7 +3781,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/zeekr-7x/badge-circular-zeekr-7x-suv-electrico-premiu-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/zeekr-7x/pixel-art-16bit-zeekr-7x-suv-electrico-premiu-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "zeekr",
+      "brand_name": "Zeekr Uruguay",
+      "brand_logo_url": "assets/img/logos/zeekr-logo.webp",
+      "brand_instagram_handle": "@zeekr.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/zeekr.uruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://zeekr.com.uy"
     },
     {
       "id": "kia-ev6",
@@ -2918,7 +3840,14 @@
         "importador": "Zenex Motors",
         "badge_circular_url": "assets/img/kia-ev6/badge-circular-kia-ev6-gt-line-awd-77-4-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/kia-ev6/pixel-art-16bit-kia-ev6-gt-line-awd-77-4-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "kia",
+      "brand_name": "Kia Uruguay",
+      "brand_logo_url": "assets/img/logos/kia-logo.webp",
+      "brand_instagram_handle": "@kiauruguay",
+      "brand_instagram_url": "https://www.instagram.com/kiauruguay/",
+      "brand_importador": "Kia Uruguay / Grupo Fiancar",
+      "brand_sitio_oficial": "https://kia.com.uy"
     },
     {
       "id": "chevrolet-blazer-ev",
@@ -2972,7 +3901,14 @@
         "importador": "General Motors Uruguay",
         "badge_circular_url": "assets/img/chevrolet-blazer-ev/badge-circular-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chevrolet-blazer-ev/pixel-art-16bit-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chevrolet",
+      "brand_name": "Chevrolet Uruguay",
+      "brand_logo_url": "assets/img/logos/chevrolet-logo.webp",
+      "brand_instagram_handle": "@chevroleturuguay",
+      "brand_instagram_url": "https://www.instagram.com/chevroleturuguay/",
+      "brand_importador": "General Motors Uruguay",
+      "brand_sitio_oficial": "https://chevrolet.com.uy"
     },
     {
       "id": "mercedes-benz-eqa",
@@ -3024,7 +3960,14 @@
         "importador": "Autolider Uruguay / Inchcape",
         "badge_circular_url": "assets/img/mercedes-benz-eqa/badge-circular-mercedes-benz-eqa-250-progressive-70-5-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/mercedes-benz-eqa/pixel-art-16bit-mercedes-benz-eqa-250-progressive-70-5-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "mercedes-benz",
+      "brand_name": "Mercedes-Benz Uruguay",
+      "brand_logo_url": "assets/img/logos/mercedes-benz-logo.webp",
+      "brand_instagram_handle": "@mercedesbenz_uy",
+      "brand_instagram_url": "https://www.instagram.com/mercedesbenz_uy/",
+      "brand_importador": "Autolider Uruguay (Inchcape)",
+      "brand_sitio_oficial": "https://mercedes-benz.com.uy"
     },
     {
       "id": "tesla-model-y-long-range",
@@ -3077,7 +4020,14 @@
         "importador": "Importación Homologada Uruguay",
         "badge_circular_url": "assets/img/tesla-model-y-long-range/badge-circular-tesla-model-y-long-range-awd-78-1-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/tesla-model-y-long-range/pixel-art-16bit-tesla-model-y-long-range-awd-78-1-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "tesla",
+      "brand_name": "Tesla Uruguay",
+      "brand_logo_url": "assets/img/logos/tesla-logo.webp",
+      "brand_instagram_handle": "@teslamotors",
+      "brand_instagram_url": "https://www.instagram.com/teslamotors/",
+      "brand_importador": "Importación Homologada / Servicio Especializado EV",
+      "brand_sitio_oficial": "https://tesla.com"
     },
     {
       "id": "byd-han-ev",
@@ -3130,7 +4080,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-han-ev/badge-circular-byd-han-flagship-executive-a-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-han-ev/pixel-art-16bit-byd-han-flagship-executive-a-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "bmw-ix1",
@@ -3182,7 +4139,14 @@
         "importador": "Magna Motors / Motor Haus",
         "badge_circular_url": "assets/img/bmw-ix1/badge-circular-bmw-ix1-xdrive30-64-7-kwh-31-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/bmw-ix1/pixel-art-16bit-bmw-ix1-xdrive30-64-7-kwh-31-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "bmw",
+      "brand_name": "BMW Uruguay",
+      "brand_logo_url": "assets/img/logos/bmw-logo.webp",
+      "brand_instagram_handle": "@bmw.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/bmw.uruguay/",
+      "brand_importador": "Motor Haus",
+      "brand_sitio_oficial": "https://bmw.com.uy"
     },
     {
       "id": "audi-q4-e-tron",
@@ -3234,7 +4198,14 @@
         "importador": "Julio César Lestido S.A.",
         "badge_circular_url": "assets/img/audi-q4-e-tron/badge-circular-audi-q4-e-tron-45-e-tron-82-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/audi-q4-e-tron/pixel-art-16bit-audi-q4-e-tron-45-e-tron-82-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "audi",
+      "brand_name": "Audi Uruguay",
+      "brand_logo_url": "assets/img/logos/audi-logo.webp",
+      "brand_instagram_handle": "@audi_uy",
+      "brand_instagram_url": "https://www.instagram.com/audi_uy/",
+      "brand_importador": "Julio César Lestido S.A.",
+      "brand_sitio_oficial": "https://audi.com.uy"
     },
     {
       "id": "tesla-model-3-performance",
@@ -3289,7 +4260,14 @@
         "importador": "Importación Homologada Uruguay",
         "badge_circular_url": "assets/img/tesla-model-3-performance/badge-circular-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/tesla-model-3-performance/pixel-art-16bit-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "tesla",
+      "brand_name": "Tesla Uruguay",
+      "brand_logo_url": "assets/img/logos/tesla-logo.webp",
+      "brand_instagram_handle": "@teslamotors",
+      "brand_instagram_url": "https://www.instagram.com/teslamotors/",
+      "brand_importador": "Importación Homologada / Servicio Especializado EV",
+      "brand_sitio_oficial": "https://tesla.com"
     },
     {
       "id": "mercedes-benz-eqb",
@@ -3341,7 +4319,14 @@
         "importador": "Autolider Uruguay / Inchcape",
         "badge_circular_url": "assets/img/mercedes-benz-eqb/badge-circular-mercedes-benz-eqb-250-7-asientos-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/mercedes-benz-eqb/pixel-art-16bit-mercedes-benz-eqb-250-7-asientos-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "mercedes-benz",
+      "brand_name": "Mercedes-Benz Uruguay",
+      "brand_logo_url": "assets/img/logos/mercedes-benz-logo.webp",
+      "brand_instagram_handle": "@mercedesbenz_uy",
+      "brand_instagram_url": "https://www.instagram.com/mercedesbenz_uy/",
+      "brand_importador": "Autolider Uruguay (Inchcape)",
+      "brand_sitio_oficial": "https://mercedes-benz.com.uy"
     },
     {
       "id": "tesla-model-y-performance",
@@ -3396,7 +4381,14 @@
         "importador": "Importación Homologada Uruguay",
         "badge_circular_url": "assets/img/tesla-model-y-performance/badge-circular-tesla-model-y-performance-awd-534-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/tesla-model-y-performance/pixel-art-16bit-tesla-model-y-performance-awd-534-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "tesla",
+      "brand_name": "Tesla Uruguay",
+      "brand_logo_url": "assets/img/logos/tesla-logo.webp",
+      "brand_instagram_handle": "@teslamotors",
+      "brand_instagram_url": "https://www.instagram.com/teslamotors/",
+      "brand_importador": "Importación Homologada / Servicio Especializado EV",
+      "brand_sitio_oficial": "https://tesla.com"
     },
     {
       "id": "byd-tang-ev",
@@ -3449,7 +4441,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-tang-ev/badge-circular-byd-tang-7-pasajeros-awd-flag-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-tang-ev/pixel-art-16bit-byd-tang-7-pasajeros-awd-flag-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "zeekr-001",
@@ -3502,7 +4501,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/zeekr-001/badge-circular-zeekr-001-shooting-brake-awd-5-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/zeekr-001/pixel-art-16bit-zeekr-001-shooting-brake-awd-5-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "zeekr",
+      "brand_name": "Zeekr Uruguay",
+      "brand_logo_url": "assets/img/logos/zeekr-logo.webp",
+      "brand_instagram_handle": "@zeekr.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/zeekr.uruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://zeekr.com.uy"
     },
     {
       "id": "volvo-ex90",
@@ -3555,7 +4561,14 @@
         "importador": "Danissa / Norden",
         "badge_circular_url": "assets/img/volvo-ex90/badge-circular-volvo-ex90-twin-motor-ultra-7-p-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/volvo-ex90/pixel-art-16bit-volvo-ex90-twin-motor-ultra-7-p-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "volvo",
+      "brand_name": "Volvo Cars Uruguay",
+      "brand_logo_url": "assets/img/logos/volvo-logo.webp",
+      "brand_instagram_handle": "@volvocarsuruguay",
+      "brand_instagram_url": "https://www.instagram.com/volvocarsuruguay/",
+      "brand_importador": "Camur / Grupo Gildemeister",
+      "brand_sitio_oficial": "https://volvocars.com.uy"
     },
     {
       "id": "xiaomi-himo-z20",
@@ -3580,9 +4593,9 @@
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
       "link_fabricante": "https://www.himoebike.com",
-      "imagen_oficial_url": "assets/img/xiaomi-himo-z20/01-vista-isometrica-frontal-3-4-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/xiaomi-himo-z20/01-vista-isometrica-frontal-3-4-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/02-vista-trasera-cuadro-rueda-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/03-manillar-display-digital-comando-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/04-perfil-lateral-bicicleta-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/05-detalle-motor-bateria-puerto-carga-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/06-detalle-transmision-frenos-disco-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"innovacion\": \"Inflador de cubiertas oculto en caño de asiento\", \"importador\": \"Distribución Plaza Uruguay\", \"badge_circular_url\": \"assets/img/xiaomi-himo-z20/badge-circular-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/xiaomi-himo-z20/pixel-art-16bit-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp\"}",
+      "imagen_oficial_url": "assets/img/xiaomi-himo-z20/01-vista-isometrica-frontal-3-4-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/xiaomi-himo-z20/01-vista-isometrica-frontal-3-4-xiaomi-himo-z20-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/02-vista-trasera-cuadro-rueda-xiaomi-himo-z20-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/03-manillar-display-digital-comando-xiaomi-himo-z20-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/04-perfil-lateral-bicicleta-xiaomi-himo-z20-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/05-detalle-motor-bateria-puerto-carga-xiaomi-himo-z20-ev-servicioti-uruguay.webp\", \"assets/img/xiaomi-himo-z20/06-detalle-transmision-frenos-disco-xiaomi-himo-z20-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"innovacion\": \"Inflador de cubiertas oculto en caño de asiento\", \"importador\": \"Distribución Plaza Uruguay\", \"badge_circular_url\": \"assets/img/xiaomi-himo-z20/badge-circular-xiaomi-himo-z20-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/xiaomi-himo-z20/pixel-art-16bit-xiaomi-himo-z20-ev-servicioti-uruguay.webp\"}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -3595,19 +4608,26 @@
       "seguro_anual_estimado_uyu": 2800.0,
       "mantenimiento_detalle_json": "{\"intervalo_km\": 2500, \"costo_service_usd\": 30.0, \"taller_oficial\": \"Servicio Técnico Oficial Xiaomi / Himo Uruguay\", \"tareas_incluidas\": \"Ajuste de sistema de plegado inteligente, verificación de display digital, frenos mecánicos y carga de celdas.\", \"plan_por_kilometraje\": [{\"km\": 2500, \"servicio\": \"Primer Service Oficial (2,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 5000, \"servicio\": \"Segundo Service Oficial (5,000 km)\", \"costo_estimado_uyu\": 1414.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 7500, \"servicio\": \"Tercer Service Oficial (7,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 10000, \"servicio\": \"Cuarto Service Oficial (10,000 km)\", \"costo_estimado_uyu\": 1538.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
       "galeria": [
-        "assets/img/xiaomi-himo-z20/01-vista-isometrica-frontal-3-4-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/xiaomi-himo-z20/02-vista-trasera-cuadro-rueda-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/xiaomi-himo-z20/03-manillar-display-digital-comando-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/xiaomi-himo-z20/04-perfil-lateral-bicicleta-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/xiaomi-himo-z20/05-detalle-motor-bateria-puerto-carga-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/xiaomi-himo-z20/06-detalle-transmision-frenos-disco-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/xiaomi-himo-z20/01-vista-isometrica-frontal-3-4-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+        "assets/img/xiaomi-himo-z20/02-vista-trasera-cuadro-rueda-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+        "assets/img/xiaomi-himo-z20/03-manillar-display-digital-comando-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+        "assets/img/xiaomi-himo-z20/04-perfil-lateral-bicicleta-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+        "assets/img/xiaomi-himo-z20/05-detalle-motor-bateria-puerto-carga-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+        "assets/img/xiaomi-himo-z20/06-detalle-transmision-frenos-disco-xiaomi-himo-z20-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "innovacion": "Inflador de cubiertas oculto en caño de asiento",
         "importador": "Distribución Plaza Uruguay",
-        "badge_circular_url": "assets/img/xiaomi-himo-z20/badge-circular-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "pixel_art_url": "assets/img/xiaomi-himo-z20/pixel-art-16bit-xiaomi-himo-himo-z20-plegable-urbana-inte-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+        "badge_circular_url": "assets/img/xiaomi-himo-z20/badge-circular-xiaomi-himo-z20-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/xiaomi-himo-z20/pixel-art-16bit-xiaomi-himo-z20-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "xiaomi",
+      "brand_name": "Xiaomi Uruguay / Himo",
+      "brand_logo_url": "assets/img/logos/xiaomi-logo.webp",
+      "brand_instagram_handle": "@xiaomi.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/xiaomi.uruguay/",
+      "brand_importador": "Mi Store Uruguay Oficial",
+      "brand_sitio_oficial": "https://miuruguay.com"
     },
     {
       "id": "wheele-pocket-20",
@@ -3659,7 +4679,14 @@
         "fabricante": "Wheele / Green Motors Uruguay",
         "badge_circular_url": "assets/img/wheele-pocket-20/badge-circular-wheele-pocket-20-plegable-urbana-ultr-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/wheele-pocket-20/pixel-art-16bit-wheele-pocket-20-plegable-urbana-ultr-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "wheele",
+      "brand_name": "Wheele Uruguay",
+      "brand_logo_url": "assets/img/logos/wheele-logo.webp",
+      "brand_instagram_handle": "@wheele.uy",
+      "brand_instagram_url": "https://www.instagram.com/wheele.uy/",
+      "brand_importador": "Wheele Mobility",
+      "brand_sitio_oficial": "https://wheele.uy"
     },
     {
       "id": "voltbike-flex-foldable",
@@ -3684,9 +4711,9 @@
       "garantia_bateria": "1 año oficial VoltBike",
       "homologado_ursea": 1,
       "link_fabricante": "https://voltbike.uy/producto/voltbike-flex/",
-      "imagen_oficial_url": "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"plegado\": \"Mecanismo rápido en 15 segundos\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-flex-foldable/badge-circular-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-flex-foldable/pixel-art-16bit-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp\"}",
+      "imagen_oficial_url": "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-foldable-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"plegado\": \"Mecanismo rápido en 15 segundos\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-flex-foldable/badge-circular-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-flex-foldable/pixel-art-16bit-voltbike-flex-foldable-ev-servicioti-uruguay.webp\"}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -3699,19 +4726,26 @@
       "seguro_anual_estimado_uyu": 2800.0,
       "mantenimiento_detalle_json": "{\"intervalo_km\": 2500, \"costo_service_usd\": 30.0, \"taller_oficial\": \"Talleres de Ciclismo Urbano Homologados en Montevideo\", \"tareas_incluidas\": \"Revisión de sistema eléctrico, pastillas de freno, tensión de radios y engrase general.\", \"plan_por_kilometraje\": [{\"km\": 2500, \"servicio\": \"Primer Service Oficial (2,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 5000, \"servicio\": \"Segundo Service Oficial (5,000 km)\", \"costo_estimado_uyu\": 1414.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 7500, \"servicio\": \"Tercer Service Oficial (7,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 10000, \"servicio\": \"Cuarto Service Oficial (10,000 km)\", \"costo_estimado_uyu\": 1538.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
       "galeria": [
-        "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-foldable-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "plegado": "Mecanismo rápido en 15 segundos",
         "fabricante": "VoltBike Uruguay",
-        "badge_circular_url": "assets/img/voltbike-flex-foldable/badge-circular-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "pixel_art_url": "assets/img/voltbike-flex-foldable/pixel-art-16bit-voltbike-flex-plegable-urbana-350w-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+        "badge_circular_url": "assets/img/voltbike-flex-foldable/badge-circular-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/voltbike-flex-foldable/pixel-art-16bit-voltbike-flex-foldable-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "voltbike",
+      "brand_name": "VoltBike Uruguay",
+      "brand_logo_url": "assets/img/logos/voltbike-logo.webp",
+      "brand_instagram_handle": "@voltbike.uy",
+      "brand_instagram_url": "https://www.instagram.com/voltbike.uy/",
+      "brand_importador": "VoltBike UY",
+      "brand_sitio_oficial": "https://voltbike.uy"
     },
     {
       "id": "voltbike-classica",
@@ -3736,9 +4770,9 @@
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
       "link_fabricante": "https://voltbike.uy",
-      "imagen_oficial_url": "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"estilo\": \"Cuadro bajo para fácil acceso\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-classica/badge-circular-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-classica/pixel-art-16bit-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp\"}",
+      "imagen_oficial_url": "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"estilo\": \"Cuadro bajo para fácil acceso\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-classica/badge-circular-voltbike-classica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-classica/pixel-art-16bit-voltbike-classica-ev-servicioti-uruguay.webp\"}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -3751,19 +4785,26 @@
       "seguro_anual_estimado_uyu": 2800.0,
       "mantenimiento_detalle_json": "{\"intervalo_km\": 2500, \"costo_service_usd\": 30.0, \"taller_oficial\": \"Talleres de Ciclismo Urbano Homologados en Montevideo\", \"tareas_incluidas\": \"Revisión de sistema eléctrico, pastillas de freno, tensión de radios y engrase general.\", \"plan_por_kilometraje\": [{\"km\": 2500, \"servicio\": \"Primer Service Oficial (2,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 5000, \"servicio\": \"Segundo Service Oficial (5,000 km)\", \"costo_estimado_uyu\": 1414.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 7500, \"servicio\": \"Tercer Service Oficial (7,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 10000, \"servicio\": \"Cuarto Service Oficial (10,000 km)\", \"costo_estimado_uyu\": 1538.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
       "galeria": [
-        "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Cuadro bajo para fácil acceso",
         "fabricante": "VoltBike Uruguay",
-        "badge_circular_url": "assets/img/voltbike-classica/badge-circular-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "pixel_art_url": "assets/img/voltbike-classica/pixel-art-16bit-voltbike-classica-vintage-paseo-con-ca-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+        "badge_circular_url": "assets/img/voltbike-classica/badge-circular-voltbike-classica-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/voltbike-classica/pixel-art-16bit-voltbike-classica-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "voltbike",
+      "brand_name": "VoltBike Uruguay",
+      "brand_logo_url": "assets/img/logos/voltbike-logo.webp",
+      "brand_instagram_handle": "@voltbike.uy",
+      "brand_instagram_url": "https://www.instagram.com/voltbike.uy/",
+      "brand_importador": "VoltBike UY",
+      "brand_sitio_oficial": "https://voltbike.uy"
     },
     {
       "id": "wheele-manhattan-flex",
@@ -3815,7 +4856,14 @@
         "fabricante": "Wheele / Green Motors Uruguay",
         "badge_circular_url": "assets/img/wheele-manhattan-flex/badge-circular-wheele-manhattan-flex-cruiser-250w-cu-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/wheele-manhattan-flex/pixel-art-16bit-wheele-manhattan-flex-cruiser-250w-cu-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "wheele",
+      "brand_name": "Wheele Uruguay",
+      "brand_logo_url": "assets/img/logos/wheele-logo.webp",
+      "brand_instagram_handle": "@wheele.uy",
+      "brand_instagram_url": "https://www.instagram.com/wheele.uy/",
+      "brand_importador": "Wheele Mobility",
+      "brand_sitio_oficial": "https://wheele.uy"
     },
     {
       "id": "loop-bikes-classic",
@@ -3867,7 +4915,14 @@
         "fabricante": "Loop Bikes Uruguay",
         "badge_circular_url": "assets/img/loop-bikes-classic/badge-circular-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/loop-bikes-classic/pixel-art-16bit-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "loop-bikes",
+      "brand_name": "Loop Bikes Uruguay",
+      "brand_logo_url": "assets/img/logos/loop-bikes-logo.webp",
+      "brand_instagram_handle": "@loopbikesuy",
+      "brand_instagram_url": "https://www.instagram.com/loopbikesuy/",
+      "brand_importador": "Loop Bikes E-Mobility",
+      "brand_sitio_oficial": "https://loopbikes.com.uy"
     },
     {
       "id": "loop-bikes-slim-pro",
@@ -3922,7 +4977,14 @@
         "fabricante": "Loop Bikes Uruguay",
         "badge_circular_url": "assets/img/loop-bikes-slim-pro/badge-circular-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/loop-bikes-slim-pro/pixel-art-16bit-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "loop-bikes",
+      "brand_name": "Loop Bikes Uruguay",
+      "brand_logo_url": "assets/img/logos/loop-bikes-logo.webp",
+      "brand_instagram_handle": "@loopbikesuy",
+      "brand_instagram_url": "https://www.instagram.com/loopbikesuy/",
+      "brand_importador": "Loop Bikes E-Mobility",
+      "brand_sitio_oficial": "https://loopbikes.com.uy"
     },
     {
       "id": "voltbike-pioneer",
@@ -3947,9 +5009,9 @@
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
       "link_fabricante": "https://voltbike.uy/producto/voltbike-pioneer/",
-      "imagen_oficial_url": "assets/img/voltbike-pioneer/01-vista-isometrica-frontal-3-4-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-pioneer/01-vista-isometrica-frontal-3-4-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/02-vista-trasera-cuadro-rueda-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/03-manillar-display-digital-comando-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/04-perfil-lateral-bicicleta-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/05-detalle-motor-bateria-puerto-carga-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/06-detalle-transmision-frenos-disco-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"suspension\": \"Horquilla con bloqueo hidráulico\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-pioneer/badge-circular-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-pioneer/pixel-art-16bit-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp\"}",
+      "imagen_oficial_url": "assets/img/voltbike-pioneer/01-vista-isometrica-frontal-3-4-voltbike-pioneer-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/voltbike-pioneer/01-vista-isometrica-frontal-3-4-voltbike-pioneer-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/02-vista-trasera-cuadro-rueda-voltbike-pioneer-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/03-manillar-display-digital-comando-voltbike-pioneer-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/04-perfil-lateral-bicicleta-voltbike-pioneer-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/05-detalle-motor-bateria-puerto-carga-voltbike-pioneer-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-pioneer/06-detalle-transmision-frenos-disco-voltbike-pioneer-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"suspension\": \"Horquilla con bloqueo hidráulico\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-pioneer/badge-circular-voltbike-pioneer-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-pioneer/pixel-art-16bit-voltbike-pioneer-ev-servicioti-uruguay.webp\"}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -3962,19 +5024,26 @@
       "seguro_anual_estimado_uyu": 2800.0,
       "mantenimiento_detalle_json": "{\"intervalo_km\": 2500, \"costo_service_usd\": 30.0, \"taller_oficial\": \"Talleres de Ciclismo Urbano Homologados en Montevideo\", \"tareas_incluidas\": \"Revisión de sistema eléctrico, pastillas de freno, tensión de radios y engrase general.\", \"plan_por_kilometraje\": [{\"km\": 2500, \"servicio\": \"Primer Service Oficial (2,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 5000, \"servicio\": \"Segundo Service Oficial (5,000 km)\", \"costo_estimado_uyu\": 1414.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 7500, \"servicio\": \"Tercer Service Oficial (7,500 km)\", \"costo_estimado_uyu\": 1230.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 10000, \"servicio\": \"Cuarto Service Oficial (10,000 km)\", \"costo_estimado_uyu\": 1538.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
       "galeria": [
-        "assets/img/voltbike-pioneer/01-vista-isometrica-frontal-3-4-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-pioneer/02-vista-trasera-cuadro-rueda-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-pioneer/03-manillar-display-digital-comando-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-pioneer/04-perfil-lateral-bicicleta-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-pioneer/05-detalle-motor-bateria-puerto-carga-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-pioneer/06-detalle-transmision-frenos-disco-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-pioneer/01-vista-isometrica-frontal-3-4-voltbike-pioneer-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-pioneer/02-vista-trasera-cuadro-rueda-voltbike-pioneer-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-pioneer/03-manillar-display-digital-comando-voltbike-pioneer-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-pioneer/04-perfil-lateral-bicicleta-voltbike-pioneer-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-pioneer/05-detalle-motor-bateria-puerto-carga-voltbike-pioneer-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-pioneer/06-detalle-transmision-frenos-disco-voltbike-pioneer-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "suspension": "Horquilla con bloqueo hidráulico",
         "fabricante": "VoltBike Uruguay",
-        "badge_circular_url": "assets/img/voltbike-pioneer/badge-circular-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "pixel_art_url": "assets/img/voltbike-pioneer/pixel-art-16bit-voltbike-pioneer-e-mtb-500w-con-suspe-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+        "badge_circular_url": "assets/img/voltbike-pioneer/badge-circular-voltbike-pioneer-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/voltbike-pioneer/pixel-art-16bit-voltbike-pioneer-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "voltbike",
+      "brand_name": "VoltBike Uruguay",
+      "brand_logo_url": "assets/img/logos/voltbike-logo.webp",
+      "brand_instagram_handle": "@voltbike.uy",
+      "brand_instagram_url": "https://www.instagram.com/voltbike.uy/",
+      "brand_importador": "VoltBike UY",
+      "brand_sitio_oficial": "https://voltbike.uy"
     },
     {
       "id": "loop-bikes-x350",
@@ -4026,7 +5095,14 @@
         "fabricante": "Loop Bikes Uruguay",
         "badge_circular_url": "assets/img/loop-bikes-x350/badge-circular-loop-bikes-x350-urbana-potente-350w-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/loop-bikes-x350/pixel-art-16bit-loop-bikes-x350-urbana-potente-350w-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "loop-bikes",
+      "brand_name": "Loop Bikes Uruguay",
+      "brand_logo_url": "assets/img/logos/loop-bikes-logo.webp",
+      "brand_instagram_handle": "@loopbikesuy",
+      "brand_instagram_url": "https://www.instagram.com/loopbikesuy/",
+      "brand_importador": "Loop Bikes E-Mobility",
+      "brand_sitio_oficial": "https://loopbikes.com.uy"
     },
     {
       "id": "loop-bikes-soda-bike",
@@ -4079,7 +5155,14 @@
         "fabricante": "Loop Bikes Uruguay",
         "badge_circular_url": "assets/img/loop-bikes-soda-bike/badge-circular-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/loop-bikes-soda-bike/pixel-art-16bit-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "loop-bikes",
+      "brand_name": "Loop Bikes Uruguay",
+      "brand_logo_url": "assets/img/logos/loop-bikes-logo.webp",
+      "brand_instagram_handle": "@loopbikesuy",
+      "brand_instagram_url": "https://www.instagram.com/loopbikesuy/",
+      "brand_importador": "Loop Bikes E-Mobility",
+      "brand_sitio_oficial": "https://loopbikes.com.uy"
     },
     {
       "id": "decathlon-riverside-500e",
@@ -4131,7 +5214,14 @@
         "importador": "Decathlon Uruguay",
         "badge_circular_url": "assets/img/decathlon-riverside-500e/badge-circular-decathlon-riverside-500-e-trekking-hibrida-ele-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/decathlon-riverside-500e/pixel-art-16bit-decathlon-riverside-500-e-trekking-hibrida-ele-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "decathlon",
+      "brand_name": "Decathlon Uruguay",
+      "brand_logo_url": "assets/img/logos/decathlon-logo.webp",
+      "brand_instagram_handle": "@decathlonuruguay",
+      "brand_instagram_url": "https://www.instagram.com/decathlonuruguay/",
+      "brand_importador": "Decathlon Car One",
+      "brand_sitio_oficial": "https://decathlon.com.uy"
     },
     {
       "id": "decathlon-rockrider-e-expl",
@@ -4184,7 +5274,14 @@
         "importador": "Decathlon Uruguay",
         "badge_circular_url": "assets/img/decathlon-rockrider-e-expl/badge-circular-decathlon-rockrider-e-expl-520-e-mtb-29-yamaha-pw-c-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/decathlon-rockrider-e-expl/pixel-art-16bit-decathlon-rockrider-e-expl-520-e-mtb-29-yamaha-pw-c-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "decathlon",
+      "brand_name": "Decathlon Uruguay",
+      "brand_logo_url": "assets/img/logos/decathlon-logo.webp",
+      "brand_instagram_handle": "@decathlonuruguay",
+      "brand_instagram_url": "https://www.instagram.com/decathlonuruguay/",
+      "brand_importador": "Decathlon Car One",
+      "brand_sitio_oficial": "https://decathlon.com.uy"
     },
     {
       "id": "trek-allant-plus-7",
@@ -4236,7 +5333,14 @@
         "importador": "Trek Uruguay",
         "badge_circular_url": "assets/img/trek-allant-plus-7/badge-circular-trek-allant-7-gen-2-motor-bosch-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/trek-allant-plus-7/pixel-art-16bit-trek-allant-7-gen-2-motor-bosch-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "trek",
+      "brand_name": "Trek Bicycle Uruguay",
+      "brand_logo_url": "assets/img/logos/trek-logo.webp",
+      "brand_instagram_handle": "@trekbikesuruguay",
+      "brand_instagram_url": "https://www.instagram.com/trekbikesuruguay/",
+      "brand_importador": "Summit Sports / Motociclo Sports",
+      "brand_sitio_oficial": "https://trekbikes.com"
     },
     {
       "id": "specialized-turbo-vado-4",
@@ -4288,7 +5392,14 @@
         "importador": "Specialized Uruguay",
         "badge_circular_url": "assets/img/specialized-turbo-vado-4/badge-circular-specialized-turbo-vado-4-0-motor-specialize-bicicleta-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/specialized-turbo-vado-4/pixel-art-16bit-specialized-turbo-vado-4-0-motor-specialize-bicicleta-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "specialized",
+      "brand_name": "Specialized Uruguay",
+      "brand_logo_url": "assets/img/logos/specialized-logo.webp",
+      "brand_instagram_handle": "@specializeduruguay",
+      "brand_instagram_url": "https://www.instagram.com/specializeduruguay/",
+      "brand_importador": "Specialized Concept Store Carrasco",
+      "brand_sitio_oficial": "https://specialized.com"
     },
     {
       "id": "yadea-c-umi",
@@ -4340,7 +5451,14 @@
         "importador": "Yadea Uruguay",
         "badge_circular_url": "assets/img/yadea-c-umi/badge-circular-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/yadea-c-umi/pixel-art-16bit-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "yadea",
+      "brand_name": "Yadea Uruguay",
+      "brand_logo_url": "assets/img/logos/yadea-logo.webp",
+      "brand_instagram_handle": "@yadeauruguay",
+      "brand_instagram_url": "https://www.instagram.com/yadeauruguay/",
+      "brand_importador": "Grupo Fiancar Motos",
+      "brand_sitio_oficial": "https://yadea.com.uy"
     },
     {
       "id": "sunra-grace-1800",
@@ -4392,7 +5510,14 @@
         "importador": "Sunra Uruguay",
         "badge_circular_url": "assets/img/sunra-grace-1800/badge-circular-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/sunra-grace-1800/pixel-art-16bit-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "sunra",
+      "brand_name": "Sunra Uruguay",
+      "brand_logo_url": "assets/img/logos/sunra-logo.webp",
+      "brand_instagram_handle": "@sunrauruguay",
+      "brand_instagram_url": "https://www.instagram.com/sunrauruguay/",
+      "brand_importador": "Sunra Centro Uruguay",
+      "brand_sitio_oficial": "https://sunra.com.uy"
     },
     {
       "id": "sunra-hawk-3000",
@@ -4445,7 +5570,14 @@
         "importador": "Sunra Uruguay",
         "badge_circular_url": "assets/img/sunra-hawk-3000/badge-circular-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/sunra-hawk-3000/pixel-art-16bit-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "sunra",
+      "brand_name": "Sunra Uruguay",
+      "brand_logo_url": "assets/img/logos/sunra-logo.webp",
+      "brand_instagram_handle": "@sunrauruguay",
+      "brand_instagram_url": "https://www.instagram.com/sunrauruguay/",
+      "brand_importador": "Sunra Centro Uruguay",
+      "brand_sitio_oficial": "https://sunra.com.uy"
     },
     {
       "id": "yadea-g5-pro",
@@ -4497,7 +5629,14 @@
         "importador": "Yadea Uruguay",
         "badge_circular_url": "assets/img/yadea-g5-pro/badge-circular-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/yadea-g5-pro/pixel-art-16bit-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "yadea",
+      "brand_name": "Yadea Uruguay",
+      "brand_logo_url": "assets/img/logos/yadea-logo.webp",
+      "brand_instagram_handle": "@yadeauruguay",
+      "brand_instagram_url": "https://www.instagram.com/yadeauruguay/",
+      "brand_importador": "Grupo Fiancar Motos",
+      "brand_sitio_oficial": "https://yadea.com.uy"
     },
     {
       "id": "sunra-miku-super",
@@ -4549,7 +5688,14 @@
         "importador": "Sunra Uruguay",
         "badge_circular_url": "assets/img/sunra-miku-super/badge-circular-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/sunra-miku-super/pixel-art-16bit-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "sunra",
+      "brand_name": "Sunra Uruguay",
+      "brand_logo_url": "assets/img/logos/sunra-logo.webp",
+      "brand_instagram_handle": "@sunrauruguay",
+      "brand_instagram_url": "https://www.instagram.com/sunrauruguay/",
+      "brand_importador": "Sunra Centro Uruguay",
+      "brand_sitio_oficial": "https://sunra.com.uy"
     },
     {
       "id": "sunra-robo-s",
@@ -4601,7 +5747,14 @@
         "importador": "Sunra Uruguay",
         "badge_circular_url": "assets/img/sunra-robo-s/badge-circular-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/sunra-robo-s/pixel-art-16bit-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "sunra",
+      "brand_name": "Sunra Uruguay",
+      "brand_logo_url": "assets/img/logos/sunra-logo.webp",
+      "brand_instagram_handle": "@sunrauruguay",
+      "brand_instagram_url": "https://www.instagram.com/sunrauruguay/",
+      "brand_importador": "Sunra Centro Uruguay",
+      "brand_sitio_oficial": "https://sunra.com.uy"
     },
     {
       "id": "niu-nqi-gt",
@@ -4653,7 +5806,14 @@
         "importador": "NIU Uruguay",
         "badge_circular_url": "assets/img/niu-nqi-gt/badge-circular-niu-nqi-gt-pro-smart-doble-b-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/niu-nqi-gt/pixel-art-16bit-niu-nqi-gt-pro-smart-doble-b-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "niu",
+      "brand_name": "NIU Mobility Uruguay",
+      "brand_logo_url": "assets/img/logos/niu-logo.webp",
+      "brand_instagram_handle": "@niu_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/niu_uruguay/",
+      "brand_importador": "NIU Uruguay",
+      "brand_sitio_oficial": "https://niu.uy"
     },
     {
       "id": "super-soco-tc-max",
@@ -4705,7 +5865,14 @@
         "importador": "Vmoto Uruguay",
         "badge_circular_url": "assets/img/super-soco-tc-max/badge-circular-super-soco-tc-max-cafe-racer-5000w-95-moto-electrica-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/super-soco-tc-max/pixel-art-16bit-super-soco-tc-max-cafe-racer-5000w-95-moto-electrica-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "super-soco",
+      "brand_name": "Super Soco Uruguay",
+      "brand_logo_url": "assets/img/logos/super-soco-logo.webp",
+      "brand_instagram_handle": "@supersocouruguay",
+      "brand_instagram_url": "https://www.instagram.com/supersocouruguay/",
+      "brand_importador": "VMoto Soco Uruguay",
+      "brand_sitio_oficial": "https://supersoco.com.uy"
     },
     {
       "id": "trike-cargo-light-500",
@@ -4758,7 +5925,14 @@
         "importador": "Trike Uruguay",
         "badge_circular_url": "assets/img/trike-cargo-light-500/badge-circular-trike-cargo-light-gt-500-kg-utilitario-urbano-12-triciclo-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/trike-cargo-light-500/pixel-art-16bit-trike-cargo-light-gt-500-kg-utilitario-urbano-12-triciclo-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "trike",
+      "brand_name": "Trike E-Mobility Uruguay",
+      "brand_logo_url": "assets/img/logos/trike-logo.webp",
+      "brand_instagram_handle": "@trikeuruguay",
+      "brand_instagram_url": "https://www.instagram.com/trikeuruguay/",
+      "brand_importador": "Trike Uruguay Oficial",
+      "brand_sitio_oficial": "https://ev.servicioti.com.uy"
     },
     {
       "id": "sunra-cargo-triciclo",
@@ -4810,7 +5984,14 @@
         "importador": "Sunra Uruguay",
         "badge_circular_url": "assets/img/sunra-cargo-triciclo/badge-circular-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/sunra-cargo-triciclo/pixel-art-16bit-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "sunra",
+      "brand_name": "Sunra Uruguay",
+      "brand_logo_url": "assets/img/logos/sunra-logo.webp",
+      "brand_instagram_handle": "@sunrauruguay",
+      "brand_instagram_url": "https://www.instagram.com/sunrauruguay/",
+      "brand_importador": "Sunra Centro Uruguay",
+      "brand_sitio_oficial": "https://sunra.com.uy"
     },
     {
       "id": "trike-hard-work-1000",
@@ -4865,7 +6046,14 @@
         "importador": "Trike Uruguay",
         "badge_circular_url": "assets/img/trike-hard-work-1000/badge-circular-trike-hard-work-1000-kg-trekker-volcador-pesado-1500-triciclo-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/trike-hard-work-1000/pixel-art-16bit-trike-hard-work-1000-kg-trekker-volcador-pesado-1500-triciclo-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "trike",
+      "brand_name": "Trike E-Mobility Uruguay",
+      "brand_logo_url": "assets/img/logos/trike-logo.webp",
+      "brand_instagram_handle": "@trikeuruguay",
+      "brand_instagram_url": "https://www.instagram.com/trikeuruguay/",
+      "brand_importador": "Trike Uruguay Oficial",
+      "brand_sitio_oficial": "https://ev.servicioti.com.uy"
     },
     {
       "id": "trike-pasajeros-cabina",
@@ -4918,7 +6106,262 @@
         "importador": "Trike Uruguay",
         "badge_circular_url": "assets/img/trike-pasajeros-cabina/badge-circular-trike-urbano-delivery-pasajeros-cabina-cerrada-1200w-triciclo-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/trike-pasajeros-cabina/pixel-art-16bit-trike-urbano-delivery-pasajeros-cabina-cerrada-1200w-triciclo-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "trike",
+      "brand_name": "Trike E-Mobility Uruguay",
+      "brand_logo_url": "assets/img/logos/trike-logo.webp",
+      "brand_instagram_handle": "@trikeuruguay",
+      "brand_instagram_url": "https://www.instagram.com/trikeuruguay/",
+      "brand_importador": "Trike Uruguay Oficial",
+      "brand_sitio_oficial": "https://ev.servicioti.com.uy"
+    },
+    {
+      "id": "farizon-v6e",
+      "tipo": "utilitario",
+      "marca": "Farizon",
+      "modelo": "V6E",
+      "version": "Mini Van Furgón Urbano 41.86 kWh",
+      "precio_usd": 29990.0,
+      "autonomia_km": 260,
+      "bateria_kwh": 41.86,
+      "potencia": "60 kW (82 CV)",
+      "par_motor_nm": 220,
+      "aceleracion_0_100": "14.5 s",
+      "velocidad_maxima": "100 km/h",
+      "tiempo_carga_ac": "7.5 hs (6.6 kW)",
+      "tiempo_carga_dc": "35 min (20-80% 50 kW)",
+      "dimensiones": "4.845 x 1.730 x 1.985 mm",
+      "peso_kg": 1450,
+      "capacidad_baul_l": 5900,
+      "conector": "CCS2 / GB/T",
+      "garantia_vehiculo": "3 años o 100.000 km",
+      "garantia_bateria": "8 años o 200.000 km (CATL)",
+      "homologado_ursea": 1,
+      "link_fabricante": "https://farizon.com.uy/v6e",
+      "imagen_oficial_url": "assets/img/farizon-v6e/01-vista-isometrica-frontal-3-4-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/farizon-v6e/01-vista-isometrica-frontal-3-4-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-v6e/02-vista-trasera-opticas-porton-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-v6e/03-puesto-conduccion-tablero-cockpit-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-v6e/04-perfil-lateral-carroceria-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-v6e/05-detalle-bateria-puerto-carga-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-v6e/06-detalle-caja-carga-util-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"traccion\": \"Delantera FWD\", \"frenos\": \"Discos delanteros y tambor de alta carga / Regenerativos EBS\", \"neumaticos\": \"Reforzados para carga pesada\", \"carga_util_kg\": 590, \"volumen_carga_m3\": 5.9, \"badge_circular_url\": \"assets/img/farizon-v6e/badge-circular-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/farizon-v6e/pixel-art-16bit-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp\"}",
+      "es_top_ventas": 0,
+      "ventas_rank": null,
+      "unidades_anuales": null,
+      "periodo_ranking": null,
+      "fecha_actualizacion": "2026-10-26 15:31:51",
+      "service_intervalo_km": 15000,
+      "service_costo_usd": 140.0,
+      "service_taller_oficial": "Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)",
+      "patente_anual_estimada_uyu": 0.0,
+      "seguro_anual_estimado_uyu": 7500.0,
+      "mantenimiento_detalle_json": "{\"intervalo_km\": 15000, \"costo_service_usd\": 140.0, \"taller_oficial\": \"Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)\", \"tareas_incluidas\": \"Diagnóstico integral de pack de batería CATL/EVE con refrigeración líquida, verificación de sistema de frenos con regeneración EBS, chequeo de aislamiento de alta tensión, suspensión reforzada para carga y lubricación de reductora motriz.\", \"plan_por_kilometraje\": [{\"km\": 15000, \"servicio\": \"Primer Service Oficial (15,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 30000, \"servicio\": \"Segundo Service Oficial (30,000 km)\", \"costo_estimado_uyu\": 6601.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 45000, \"servicio\": \"Tercer Service Oficial (45,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 60000, \"servicio\": \"Cuarto Service Oficial (60,000 km)\", \"costo_estimado_uyu\": 7175.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
+      "galeria": [
+        "assets/img/farizon-v6e/01-vista-isometrica-frontal-3-4-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-v6e/02-vista-trasera-opticas-porton-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-v6e/03-puesto-conduccion-tablero-cockpit-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-v6e/04-perfil-lateral-carroceria-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-v6e/05-detalle-bateria-puerto-carga-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-v6e/06-detalle-caja-carga-util-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp"
+      ],
+      "especificaciones": {
+        "traccion": "Delantera FWD",
+        "frenos": "Discos delanteros y tambor de alta carga / Regenerativos EBS",
+        "neumaticos": "Reforzados para carga pesada",
+        "carga_util_kg": 590,
+        "volumen_carga_m3": 5.9,
+        "badge_circular_url": "assets/img/farizon-v6e/badge-circular-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/farizon-v6e/pixel-art-16bit-farizon-v6e-utilitario-electrico-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "farizon",
+      "brand_name": "Farizon Uruguay",
+      "brand_logo_url": "assets/img/logos/farizon-logo.webp",
+      "brand_instagram_handle": "@farizonuruguay",
+      "brand_instagram_url": "https://www.instagram.com/farizonuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://farizon.com.uy"
+    },
+    {
+      "id": "farizon-supervan",
+      "tipo": "utilitario",
+      "marca": "Farizon",
+      "modelo": "SuperVAN",
+      "version": "Furgón Gran Volumen GMA 82 kWh",
+      "precio_usd": 44990.0,
+      "autonomia_km": 330,
+      "bateria_kwh": 82.0,
+      "potencia": "170 kW (227 CV)",
+      "par_motor_nm": 300,
+      "aceleracion_0_100": "9.8 s",
+      "velocidad_maxima": "135 km/h",
+      "tiempo_carga_ac": "11 hs (7.4 kW)",
+      "tiempo_carga_dc": "30 min (20-80% 100 kW)",
+      "dimensiones": "5.490 x 1.980 x 2.180 mm",
+      "peso_kg": 2100,
+      "capacidad_baul_l": 9500,
+      "conector": "CCS2",
+      "garantia_vehiculo": "5 años o 150.000 km",
+      "garantia_bateria": "8 años o 400.000 km",
+      "homologado_ursea": 1,
+      "link_fabricante": "https://farizon.com.uy/super-van-ssta",
+      "imagen_oficial_url": "assets/img/farizon-supervan/01-vista-isometrica-frontal-3-4-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/farizon-supervan/01-vista-isometrica-frontal-3-4-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-supervan/02-vista-trasera-opticas-porton-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-supervan/03-puesto-conduccion-tablero-cockpit-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-supervan/04-perfil-lateral-carroceria-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-supervan/05-detalle-bateria-puerto-carga-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-supervan/06-detalle-caja-carga-util-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"traccion\": \"Delantera FWD\", \"frenos\": \"Discos delanteros y tambor de alta carga / Regenerativos EBS\", \"neumaticos\": \"Reforzados para carga pesada\", \"carga_util_kg\": 950, \"volumen_carga_m3\": 9.5, \"badge_circular_url\": \"assets/img/farizon-supervan/badge-circular-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/farizon-supervan/pixel-art-16bit-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp\"}",
+      "es_top_ventas": 0,
+      "ventas_rank": null,
+      "unidades_anuales": null,
+      "periodo_ranking": null,
+      "fecha_actualizacion": "2026-10-26 15:32:03",
+      "service_intervalo_km": 15000,
+      "service_costo_usd": 140.0,
+      "service_taller_oficial": "Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)",
+      "patente_anual_estimada_uyu": 0.0,
+      "seguro_anual_estimado_uyu": 7500.0,
+      "mantenimiento_detalle_json": "{\"intervalo_km\": 15000, \"costo_service_usd\": 140.0, \"taller_oficial\": \"Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)\", \"tareas_incluidas\": \"Diagnóstico integral de pack de batería CATL/EVE con refrigeración líquida, verificación de sistema de frenos con regeneración EBS, chequeo de aislamiento de alta tensión, suspensión reforzada para carga y lubricación de reductora motriz.\", \"plan_por_kilometraje\": [{\"km\": 15000, \"servicio\": \"Primer Service Oficial (15,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 30000, \"servicio\": \"Segundo Service Oficial (30,000 km)\", \"costo_estimado_uyu\": 6601.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 45000, \"servicio\": \"Tercer Service Oficial (45,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 60000, \"servicio\": \"Cuarto Service Oficial (60,000 km)\", \"costo_estimado_uyu\": 7175.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
+      "galeria": [
+        "assets/img/farizon-supervan/01-vista-isometrica-frontal-3-4-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-supervan/02-vista-trasera-opticas-porton-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-supervan/03-puesto-conduccion-tablero-cockpit-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-supervan/04-perfil-lateral-carroceria-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-supervan/05-detalle-bateria-puerto-carga-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-supervan/06-detalle-caja-carga-util-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp"
+      ],
+      "especificaciones": {
+        "traccion": "Delantera FWD",
+        "frenos": "Discos delanteros y tambor de alta carga / Regenerativos EBS",
+        "neumaticos": "Reforzados para carga pesada",
+        "carga_util_kg": 950,
+        "volumen_carga_m3": 9.5,
+        "badge_circular_url": "assets/img/farizon-supervan/badge-circular-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/farizon-supervan/pixel-art-16bit-farizon-supervan-utilitario-electrico-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "farizon",
+      "brand_name": "Farizon Uruguay",
+      "brand_logo_url": "assets/img/logos/farizon-logo.webp",
+      "brand_instagram_handle": "@farizonuruguay",
+      "brand_instagram_url": "https://www.instagram.com/farizonuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://farizon.com.uy"
+    },
+    {
+      "id": "farizon-h8e",
+      "tipo": "utilitario",
+      "marca": "Farizon",
+      "modelo": "H8E 6T",
+      "version": "Camión Ligero Eléctrico 6 Toneladas 89 kWh",
+      "precio_usd": 52990.0,
+      "autonomia_km": 250,
+      "bateria_kwh": 89.1,
+      "potencia": "110 kW (150 CV)",
+      "par_motor_nm": 350,
+      "aceleracion_0_100": "16.0 s",
+      "velocidad_maxima": "90 km/h",
+      "tiempo_carga_ac": "12 hs",
+      "tiempo_carga_dc": "45 min (20-80% 90 kW)",
+      "dimensiones": "5.995 x 2.150 x 3.100 mm",
+      "peso_kg": 2750,
+      "capacidad_baul_l": 18000,
+      "conector": "GB/T DC Dual / CCS2",
+      "garantia_vehiculo": "3 años o 150.000 km",
+      "garantia_bateria": "5 años o 200.000 km (CATL Commercial)",
+      "homologado_ursea": 1,
+      "link_fabricante": "https://farizon.com.uy/h8e6t",
+      "imagen_oficial_url": "assets/img/farizon-h8e/01-vista-isometrica-frontal-3-4-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/farizon-h8e/01-vista-isometrica-frontal-3-4-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h8e/02-vista-trasera-opticas-porton-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h8e/03-puesto-conduccion-tablero-cockpit-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h8e/04-perfil-lateral-carroceria-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h8e/05-detalle-bateria-puerto-carga-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h8e/06-detalle-caja-carga-util-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"traccion\": \"Trasera RWD\", \"frenos\": \"Discos delanteros y tambor de alta carga / Regenerativos EBS\", \"neumaticos\": \"Reforzados para carga pesada\", \"carga_util_kg\": 1800, \"volumen_carga_m3\": 18.0, \"badge_circular_url\": \"assets/img/farizon-h8e/badge-circular-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/farizon-h8e/pixel-art-16bit-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp\"}",
+      "es_top_ventas": 0,
+      "ventas_rank": null,
+      "unidades_anuales": null,
+      "periodo_ranking": null,
+      "fecha_actualizacion": "2026-10-26 15:32:22",
+      "service_intervalo_km": 15000,
+      "service_costo_usd": 140.0,
+      "service_taller_oficial": "Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)",
+      "patente_anual_estimada_uyu": 0.0,
+      "seguro_anual_estimado_uyu": 7500.0,
+      "mantenimiento_detalle_json": "{\"intervalo_km\": 15000, \"costo_service_usd\": 140.0, \"taller_oficial\": \"Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)\", \"tareas_incluidas\": \"Diagnóstico integral de pack de batería CATL/EVE con refrigeración líquida, verificación de sistema de frenos con regeneración EBS, chequeo de aislamiento de alta tensión, suspensión reforzada para carga y lubricación de reductora motriz.\", \"plan_por_kilometraje\": [{\"km\": 15000, \"servicio\": \"Primer Service Oficial (15,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 30000, \"servicio\": \"Segundo Service Oficial (30,000 km)\", \"costo_estimado_uyu\": 6601.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 45000, \"servicio\": \"Tercer Service Oficial (45,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 60000, \"servicio\": \"Cuarto Service Oficial (60,000 km)\", \"costo_estimado_uyu\": 7175.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
+      "galeria": [
+        "assets/img/farizon-h8e/01-vista-isometrica-frontal-3-4-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h8e/02-vista-trasera-opticas-porton-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h8e/03-puesto-conduccion-tablero-cockpit-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h8e/04-perfil-lateral-carroceria-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h8e/05-detalle-bateria-puerto-carga-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h8e/06-detalle-caja-carga-util-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp"
+      ],
+      "especificaciones": {
+        "traccion": "Trasera RWD",
+        "frenos": "Discos delanteros y tambor de alta carga / Regenerativos EBS",
+        "neumaticos": "Reforzados para carga pesada",
+        "carga_util_kg": 1800,
+        "volumen_carga_m3": 18.0,
+        "badge_circular_url": "assets/img/farizon-h8e/badge-circular-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/farizon-h8e/pixel-art-16bit-farizon-h8e-utilitario-electrico-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "farizon",
+      "brand_name": "Farizon Uruguay",
+      "brand_logo_url": "assets/img/logos/farizon-logo.webp",
+      "brand_instagram_handle": "@farizonuruguay",
+      "brand_instagram_url": "https://www.instagram.com/farizonuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://farizon.com.uy"
+    },
+    {
+      "id": "farizon-h9e",
+      "tipo": "utilitario",
+      "marca": "Farizon",
+      "modelo": "H9E 8T",
+      "version": "Camión Pesado Urbano 8 Toneladas 107 kWh",
+      "precio_usd": 62990.0,
+      "autonomia_km": 280,
+      "bateria_kwh": 107.0,
+      "potencia": "120 kW (163 CV)",
+      "par_motor_nm": 400,
+      "aceleracion_0_100": "18.0 s",
+      "velocidad_maxima": "90 km/h",
+      "tiempo_carga_ac": "14 hs",
+      "tiempo_carga_dc": "50 min (20-80% 120 kW)",
+      "dimensiones": "6.995 x 2.300 x 3.250 mm",
+      "peso_kg": 3500,
+      "capacidad_baul_l": 24000,
+      "conector": "GB/T DC Dual / CCS2",
+      "garantia_vehiculo": "3 años o 150.000 km",
+      "garantia_bateria": "5 años o 250.000 km (CATL Commercial)",
+      "homologado_ursea": 1,
+      "link_fabricante": "https://farizon.com.uy/h9e8t",
+      "imagen_oficial_url": "assets/img/farizon-h9e/01-vista-isometrica-frontal-3-4-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/farizon-h9e/01-vista-isometrica-frontal-3-4-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h9e/02-vista-trasera-opticas-porton-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h9e/03-puesto-conduccion-tablero-cockpit-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h9e/04-perfil-lateral-carroceria-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h9e/05-detalle-bateria-puerto-carga-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"assets/img/farizon-h9e/06-detalle-caja-carga-util-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"traccion\": \"Trasera RWD\", \"frenos\": \"Discos delanteros y tambor de alta carga / Regenerativos EBS\", \"neumaticos\": \"Reforzados para carga pesada\", \"carga_util_kg\": 2400, \"volumen_carga_m3\": 24.0, \"badge_circular_url\": \"assets/img/farizon-h9e/badge-circular-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/farizon-h9e/pixel-art-16bit-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp\"}",
+      "es_top_ventas": 0,
+      "ventas_rank": null,
+      "unidades_anuales": null,
+      "periodo_ranking": null,
+      "fecha_actualizacion": "2026-10-26 15:32:30",
+      "service_intervalo_km": 15000,
+      "service_costo_usd": 140.0,
+      "service_taller_oficial": "Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)",
+      "patente_anual_estimada_uyu": 0.0,
+      "seguro_anual_estimado_uyu": 7500.0,
+      "mantenimiento_detalle_json": "{\"intervalo_km\": 15000, \"costo_service_usd\": 140.0, \"taller_oficial\": \"Grupo Santa Rosa — División Vehículos Comerciales Eléctricos (Piedras 709 esq. Juncal / Av. Italia 4905)\", \"tareas_incluidas\": \"Diagnóstico integral de pack de batería CATL/EVE con refrigeración líquida, verificación de sistema de frenos con regeneración EBS, chequeo de aislamiento de alta tensión, suspensión reforzada para carga y lubricación de reductora motriz.\", \"plan_por_kilometraje\": [{\"km\": 15000, \"servicio\": \"Primer Service Oficial (15,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Escaneo BMS y celdas de batería, filtro de polen, líquido de frenos, torque general.\"}, {\"km\": 30000, \"servicio\": \"Segundo Service Oficial (30,000 km)\", \"costo_estimado_uyu\": 6601.0, \"operaciones\": \"Reemplazo de filtro de climatización, líquido refrigerante de batería, rotación y alineación.\"}, {\"km\": 45000, \"servicio\": \"Tercer Service Oficial (45,000 km)\", \"costo_estimado_uyu\": 5740.0, \"operaciones\": \"Diagnóstico de degradación de batería (SoH), escaneo de inversor y motor, líquido de frenos.\"}, {\"km\": 60000, \"servicio\": \"Cuarto Service Oficial (60,000 km)\", \"costo_estimado_uyu\": 7175.0, \"operaciones\": \"Revisión integral de tren de rodaje, bujes, pastillas de freno y recambio de desecante.\"}]}",
+      "galeria": [
+        "assets/img/farizon-h9e/01-vista-isometrica-frontal-3-4-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h9e/02-vista-trasera-opticas-porton-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h9e/03-puesto-conduccion-tablero-cockpit-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h9e/04-perfil-lateral-carroceria-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h9e/05-detalle-bateria-puerto-carga-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/farizon-h9e/06-detalle-caja-carga-util-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp"
+      ],
+      "especificaciones": {
+        "traccion": "Trasera RWD",
+        "frenos": "Discos delanteros y tambor de alta carga / Regenerativos EBS",
+        "neumaticos": "Reforzados para carga pesada",
+        "carga_util_kg": 2400,
+        "volumen_carga_m3": 24.0,
+        "badge_circular_url": "assets/img/farizon-h9e/badge-circular-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp",
+        "pixel_art_url": "assets/img/farizon-h9e/pixel-art-16bit-farizon-h9e-utilitario-electrico-ev-servicioti-uruguay.webp"
+      },
+      "brand_id": "farizon",
+      "brand_name": "Farizon Uruguay",
+      "brand_logo_url": "assets/img/logos/farizon-logo.webp",
+      "brand_instagram_handle": "@farizonuruguay",
+      "brand_instagram_url": "https://www.instagram.com/farizonuruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://farizon.com.uy"
     }
   ],
   "top_sales": [
@@ -4973,7 +6416,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-yuan-pro/badge-circular-byd-yuan-pro-ev-380-suv-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-yuan-pro/pixel-art-16bit-byd-yuan-pro-ev-380-suv-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-seagull-ev300",
@@ -5028,7 +6478,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seagull-ev300/badge-circular-byd-seagull-ev300-gl-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seagull-ev300/pixel-art-16bit-byd-seagull-ev300-gl-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-seagull-ev400-gs",
@@ -5083,7 +6540,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seagull-ev400-gs/badge-circular-byd-seagull-ev400-gs-38-88-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seagull-ev400-gs/pixel-art-16bit-byd-seagull-ev400-gs-38-88-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "byd-seagull-surf",
@@ -5138,7 +6602,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-seagull-surf/badge-circular-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-seagull-surf/pixel-art-16bit-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "dongfeng-nammi-box",
@@ -5190,7 +6661,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/dongfeng-nammi-box/badge-circular-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/dongfeng-nammi-box/pixel-art-16bit-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "dongfeng",
+      "brand_name": "Dongfeng Uruguay",
+      "brand_logo_url": "assets/img/logos/dongfeng-logo.webp",
+      "brand_instagram_handle": "@dongfenguruguay",
+      "brand_instagram_url": "https://www.instagram.com/dongfenguruguay/",
+      "brand_importador": "Sadar / Cidef",
+      "brand_sitio_oficial": "https://dongfeng.com.uy"
     },
     {
       "id": "dongfeng-nammi-330",
@@ -5242,7 +6720,14 @@
         "importador": "Fidocar S.A.",
         "badge_circular_url": "assets/img/dongfeng-nammi-330/badge-circular-dongfeng-nammi-box-330-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/dongfeng-nammi-330/pixel-art-16bit-dongfeng-nammi-box-330-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "dongfeng",
+      "brand_name": "Dongfeng Uruguay",
+      "brand_logo_url": "assets/img/logos/dongfeng-logo.webp",
+      "brand_instagram_handle": "@dongfenguruguay",
+      "brand_instagram_url": "https://www.instagram.com/dongfenguruguay/",
+      "brand_importador": "Sadar / Cidef",
+      "brand_sitio_oficial": "https://dongfeng.com.uy"
     },
     {
       "id": "byd-e2",
@@ -5294,7 +6779,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-e2/badge-circular-byd-e2-hatchback-ev-405-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-e2/pixel-art-16bit-byd-e2-hatchback-ev-405-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "chevrolet-spark-euv",
@@ -5347,7 +6839,14 @@
         "importador": "General Motors Uruguay",
         "badge_circular_url": "assets/img/chevrolet-spark-euv/badge-circular-chevrolet-spark-euv-city-ev-32-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/chevrolet-spark-euv/pixel-art-16bit-chevrolet-spark-euv-city-ev-32-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "chevrolet",
+      "brand_name": "Chevrolet Uruguay",
+      "brand_logo_url": "assets/img/logos/chevrolet-logo.webp",
+      "brand_instagram_handle": "@chevroleturuguay",
+      "brand_instagram_url": "https://www.instagram.com/chevroleturuguay/",
+      "brand_importador": "General Motors Uruguay",
+      "brand_sitio_oficial": "https://chevrolet.com.uy"
     },
     {
       "id": "jmev-ev3",
@@ -5400,7 +6899,14 @@
         "importador": "JMC Uruguay",
         "badge_circular_url": "assets/img/jmev-ev3/badge-circular-jmc-jmev-ev3-3-xiaoqilin-easy-21-4-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/jmev-ev3/pixel-art-16bit-jmc-jmev-ev3-3-xiaoqilin-easy-21-4-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "jmc",
+      "brand_name": "JMC Uruguay",
+      "brand_logo_url": "assets/img/logos/jmc-logo.webp",
+      "brand_instagram_handle": "@jmc_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/jmc_uruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://jmc.com.uy"
     },
     {
       "id": "geely-ex5-pro",
@@ -5453,7 +6959,14 @@
         "importador": "Grupo Fiancar",
         "badge_circular_url": "assets/img/geely-ex5-pro/badge-circular-geely-ex5-pro-ev-2026-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/geely-ex5-pro/pixel-art-16bit-geely-ex5-pro-ev-2026-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "geely",
+      "brand_name": "Geely Uruguay",
+      "brand_logo_url": "assets/img/logos/geely-logo.webp",
+      "brand_instagram_handle": "@geelyuruguay",
+      "brand_instagram_url": "https://www.instagram.com/geelyuruguay/",
+      "brand_importador": "Grupo Fiancar",
+      "brand_sitio_oficial": "https://geely.com.uy"
     },
     {
       "id": "byd-yuan-plus",
@@ -5506,7 +7019,14 @@
         "importador": "SADAR S.A.",
         "badge_circular_url": "assets/img/byd-yuan-plus/badge-circular-byd-yuan-plus-ev-500-flagship-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/byd-yuan-plus/pixel-art-16bit-byd-yuan-plus-ev-500-flagship-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "byd",
+      "brand_name": "BYD Uruguay",
+      "brand_logo_url": "assets/img/logos/byd-logo.webp",
+      "brand_instagram_handle": "@byd_uruguay",
+      "brand_instagram_url": "https://www.instagram.com/byd_uruguay/",
+      "brand_importador": "Sadar",
+      "brand_sitio_oficial": "https://byd.com.uy"
     },
     {
       "id": "omoda-e5",
@@ -5558,7 +7078,14 @@
         "importador": "Grupo Chery UY",
         "badge_circular_url": "assets/img/omoda-e5/badge-circular-omoda-e5-premium-ev-61-kwh-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/omoda-e5/pixel-art-16bit-omoda-e5-premium-ev-61-kwh-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "omoda",
+      "brand_name": "Omoda & Jaecoo Uruguay",
+      "brand_logo_url": "assets/img/logos/omoda-logo.webp",
+      "brand_instagram_handle": "@omoda.uruguay",
+      "brand_instagram_url": "https://www.instagram.com/omoda.uruguay/",
+      "brand_importador": "Grupo Santa Rosa",
+      "brand_sitio_oficial": "https://omodajaecoo.com.uy"
     },
     {
       "id": "jac-e-js1",
@@ -5610,7 +7137,14 @@
         "importador": "Grupo Aler",
         "badge_circular_url": "assets/img/jac-e-js1/badge-circular-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
         "pixel_art_url": "assets/img/jac-e-js1/pixel-art-16bit-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp"
-      }
+      },
+      "brand_id": "jac",
+      "brand_name": "JAC Uruguay",
+      "brand_logo_url": "assets/img/logos/jac-logo.webp",
+      "brand_instagram_handle": "@jacuruguay",
+      "brand_instagram_url": "https://www.instagram.com/jacuruguay/",
+      "brand_importador": "Grupo Fiancar / Bor",
+      "brand_sitio_oficial": "https://jac.com.uy"
     }
   ],
   "monthly_rankings": [

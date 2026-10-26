@@ -587,9 +587,15 @@
       <!-- Modal Header -->
       <div class="p-4 sm:p-6 border-b border-line flex items-start justify-between bg-neutral-50 sticky top-0 z-10">
         <div class="flex items-center gap-3">
-          <img id="modal-circular-badge" src="" alt="Badge Oficial" class="w-12 h-12 rounded-full border border-neutral-300 object-cover shadow-sm shrink-0">
+          <div class="relative shrink-0">
+            <img id="modal-circular-badge" src="" alt="Badge Oficial" class="w-12 h-12 rounded-full border border-neutral-300 object-cover shadow-sm">
+            <img id="modal-brand-logo" src="" alt="Logo Oficial" class="w-5 h-5 rounded-full bg-white p-0.5 border border-line absolute -bottom-1 -right-1 shadow-xs object-contain">
+          </div>
           <div>
-            <span class="text-[10px] uppercase font-mono tracking-wider text-muted block" id="modal-brand">MARCA</span>
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-[10px] uppercase font-mono tracking-wider text-muted block" id="modal-brand">MARCA</span>
+              <span id="modal-brand-instagram-container"></span>
+            </div>
             <h3 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-950" id="modal-title">Modelo del Vehículo</h3>
             <span class="text-xs text-muted" id="modal-version">Versión y acabado</span>
           </div>
@@ -606,6 +612,15 @@
       <!-- Modal Body -->
       <div class="p-4 sm:p-6 space-y-6">
         
+        <!-- Representación Oficial en Uruguay -->
+        <div id="modal-representation-box" class="bg-neutral-50 border border-neutral-200 rounded-lg p-3 flex flex-wrap items-center justify-between gap-2.5 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="text-emerald-800 font-bold">🇺🇾 Importación & Postventa:</span>
+            <span id="modal-importer-name" class="font-medium text-neutral-800">Distribuidor Oficial</span>
+          </div>
+          <div class="flex items-center gap-2" id="modal-brand-actions"></div>
+        </div>
+
         <!-- Badge de Top Ventas Oficial -->
         <div id="modal-top-sales-badge" class="hidden"></div>
 
@@ -1041,9 +1056,20 @@
             ` : ''}
 
             <div class="flex items-start gap-2.5">
-              <img src="${badgeSrc}" alt="Badge ${v.marca} ${v.modelo}" class="w-8 h-8 rounded-full border border-neutral-300 object-cover shrink-0 mt-0.5 shadow-xs">
+              <div class="relative shrink-0 mt-0.5">
+                <img src="${badgeSrc}" alt="Badge ${v.marca} ${v.modelo}" class="w-9 h-9 rounded-full border border-neutral-300 object-cover shadow-xs">
+                ${v.brand_logo_url ? `<img src="${v.brand_logo_url}" alt="Logo ${v.marca}" class="w-4 h-4 rounded-full bg-white p-0.5 border border-line absolute -bottom-1 -right-1 shadow-xs object-contain">` : ''}
+              </div>
               <div class="min-w-0 flex-1">
-                <div class="text-[11px] uppercase font-mono tracking-wider text-muted">${v.marca}</div>
+                <div class="flex items-center justify-between gap-1">
+                  <div class="text-[11px] uppercase font-mono tracking-wider text-muted truncate">${v.marca}</div>
+                  ${v.brand_instagram_handle ? `
+                    <a href="${v.brand_instagram_url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="text-[10px] font-mono font-medium text-pink-700 bg-pink-50 hover:bg-pink-100 border border-pink-200 px-1.5 py-0.5 rounded flex items-center gap-1 transition shrink-0" title="Ver Instagram Oficial en Uruguay">
+                      <svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                      ${v.brand_instagram_handle}
+                    </a>
+                  ` : ''}
+                </div>
                 <h3 class="text-xl font-bold font-editorial text-neutral-950 group-hover:text-accent transition truncate">${v.modelo} <span class="text-sm font-normal text-muted">${v.version || ''}</span></h3>
                 <div class="text-lg font-extrabold text-neutral-900 font-editorial mt-0.5">USD $${v.precio_usd.toLocaleString()}</div>
               </div>
@@ -1089,10 +1115,59 @@
       document.getElementById('modal-version').textContent = v.version || '';
       document.getElementById('modal-price').textContent = `USD $${v.precio_usd.toLocaleString()}`;
 
-      // Configurar Badge Circular Oficial en el Header del Modal
+      // Configurar Badge Circular Oficial y Logo de Marca en el Header del Modal
       const badgeImg = document.getElementById('modal-circular-badge');
       if (badgeImg) {
         badgeImg.src = v.especificaciones?.badge_circular_url || v.imagen_oficial_url;
+      }
+      const brandLogoImg = document.getElementById('modal-brand-logo');
+      if (brandLogoImg) {
+        if (v.brand_logo_url) {
+          brandLogoImg.src = v.brand_logo_url;
+          brandLogoImg.classList.remove('hidden');
+        } else {
+          brandLogoImg.classList.add('hidden');
+        }
+      }
+
+      // Instagram Oficial en el Header
+      const instaHeader = document.getElementById('modal-brand-instagram-container');
+      if (instaHeader) {
+        if (v.brand_instagram_handle) {
+          instaHeader.innerHTML = `
+            <a href="${v.brand_instagram_url}" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono font-medium text-pink-700 bg-pink-50 hover:bg-pink-100 border border-pink-200 px-1.5 py-0.5 rounded flex items-center gap-1 transition">
+              <svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              ${v.brand_instagram_handle}
+            </a>
+          `;
+        } else {
+          instaHeader.innerHTML = '';
+        }
+      }
+
+      // Box de Representación Oficial
+      const impName = document.getElementById('modal-importer-name');
+      if (impName) {
+        impName.textContent = v.brand_importador || 'Distribución y garantía oficial homologada en Uruguay';
+      }
+      const brandActions = document.getElementById('modal-brand-actions');
+      if (brandActions) {
+        let actHtml = '';
+        if (v.brand_instagram_handle) {
+          actHtml += `
+            <a href="${v.brand_instagram_url}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-pink-700 bg-pink-50 hover:bg-pink-100 border border-pink-200 px-2 py-0.5 rounded flex items-center gap-1 transition">
+              Instagram Oficial ↗
+            </a>
+          `;
+        }
+        if (v.brand_sitio_oficial) {
+          actHtml += `
+            <a href="${v.brand_sitio_oficial}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-neutral-700 bg-white hover:bg-neutral-100 border border-neutral-300 px-2 py-0.5 rounded flex items-center gap-1 transition">
+              Web Marca ↗
+            </a>
+          `;
+        }
+        brandActions.innerHTML = actHtml;
       }
 
       // Badge de Líder en Ventas en el Modal

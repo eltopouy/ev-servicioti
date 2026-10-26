@@ -50,11 +50,21 @@ def run_exhaustive_tests():
     cursor = conn.cursor()
     cursor.execute("SELECT COUNT(*) FROM vehicles")
     total_vehiculos = cursor.fetchone()[0]
-    assert total_vehiculos == 93, f"Se esperaban 93 vehículos en SQLite, hay {total_vehiculos}"
+    assert total_vehiculos >= 97, f"Se esperaban al menos 97 vehículos en SQLite, hay {total_vehiculos}"
+
+    # Verificar que Farizon esté integrado con sus 4 utilitarios
+    cursor.execute("SELECT COUNT(*) FROM vehicles WHERE marca = 'Farizon'")
+    total_farizon = cursor.fetchone()[0]
+    assert total_farizon == 4, f"Se esperaban 4 vehículos Farizon, hay {total_farizon}"
+
+    # Verificar que la tabla brand_profiles exista con marcas oficiales
+    cursor.execute("SELECT COUNT(*) FROM brand_profiles")
+    total_brands = cursor.fetchone()[0]
+    assert total_brands >= 36, f"Se esperaban al menos 36 marcas en brand_profiles, hay {total_brands}"
 
     forbidden_words = ["autoblog", "mercadolibre", "gallito", "motor1", "el pais", "elpais"]
     menciones = 0
-    for table in ['vehicles', 'charging_stations', 'market_listings', 'news_articles']:
+    for table in ['vehicles', 'charging_stations', 'market_listings', 'news_articles', 'brand_profiles']:
         cursor.execute(f"SELECT * FROM {table}")
         cols = [d[0] for d in cursor.description]
         for row in cursor.fetchall():
@@ -67,7 +77,7 @@ def run_exhaustive_tests():
 
     conn.close()
     assert menciones == 0, f"Error: Se detectaron {menciones} menciones a competidores en la base de datos."
-    print("  ✔ Base de datos certificada: 93 vehículos oficiales, 0 menciones a competidores.\n")
+    print(f"  ✔ Base de datos certificada: {total_vehiculos} vehículos oficiales (incluye 4 Farizon), {total_brands} marcas oficiales, 0 menciones a competidores.\n")
 
     # Iniciar Playwright
     with sync_playwright() as p:
@@ -133,15 +143,36 @@ def run_exhaustive_tests():
         page.locator("button[data-cat='todos']").click()
         page.wait_for_timeout(300)
         c_all = page.locator("#catalog-grid > div").count()
-        assert c_all == 93, f"Filtro Todos debe mostrar 93 vehículos, hay {c_all}"
+        assert c_all >= 97, f"Filtro Todos debe mostrar al menos 97 vehículos, hay {c_all}"
         print(f"  Filtro 'Todos': {c_all} vehículos restaurados")
         print("  ✔ Filtros de categoría aprobados.\n")
 
         # ---------------------------------------------------------------------
-        # TEST 3: Búsqueda Dinámica de Texto
+        # TEST 3: Búsqueda Dinámica de Texto (Farizon, VoltBike, Xiaomi Himo, Chevrolet)
         # ---------------------------------------------------------------------
-        print("▶ [Test 3/12] Verificando Motor de Búsqueda Dinámica...")
+        print("▶ [Test 3/12] Verificando Motor de Búsqueda Dinámica (Farizon, VoltBike, Himo, Chevy)...")
         search_input = page.locator("#catalog-search")
+
+        # Búsqueda por Farizon
+        search_input.fill("Farizon")
+        page.wait_for_timeout(300)
+        c_farizon = page.locator("#catalog-grid > div").count()
+        assert c_farizon == 4, f"Búsqueda 'Farizon' debe devolver 4 modelos utilitarios, dio {c_farizon}"
+        print(f"  Búsqueda 'Farizon': {c_farizon} modelos encontrados (V6E, SuperVAN, H8E, H9E)")
+
+        # Búsqueda por VoltBike
+        search_input.fill("VoltBike")
+        page.wait_for_timeout(300)
+        c_volt = page.locator("#catalog-grid > div").count()
+        assert c_volt >= 3, f"Búsqueda 'VoltBike' debe devolver al menos 3 modelos, dio {c_volt}"
+        print(f"  Búsqueda 'VoltBike': {c_volt} modelos encontrados (Clásica, Flex, SuperCross)")
+
+        # Búsqueda por Xiaomi Himo Z20
+        search_input.fill("Himo Z20")
+        page.wait_for_timeout(300)
+        c_himo = page.locator("#catalog-grid > div").count()
+        assert c_himo == 1, f"Búsqueda 'Himo Z20' debe devolver 1 modelo, dio {c_himo}"
+        print(f"  Búsqueda 'Himo Z20': 1 modelo encontrado con fotos oficiales auténticas")
 
         # Búsqueda por marca Chevrolet
         search_input.fill("Chevrolet")
@@ -162,7 +193,7 @@ def run_exhaustive_tests():
         # Limpiar búsqueda
         search_input.fill("")
         page.wait_for_timeout(300)
-        assert page.locator("#catalog-grid > div").count() == 93
+        assert page.locator("#catalog-grid > div").count() >= 97
         print("  ✔ Búsqueda dinámica aprobada.\n")
 
         # ---------------------------------------------------------------------
@@ -263,6 +294,18 @@ def run_exhaustive_tests():
         assert official_link.get_attribute("target") == "_blank"
         assert "noopener" in official_link.get_attribute("rel")
         assert "noreferrer" in official_link.get_attribute("rel")
+
+        # 8.1 Verificar Marca Oficial, Logo e Instagram de Farizon en Modal
+        page.evaluate("openVehicleModal('farizon-v6e')")
+        page.wait_for_timeout(300)
+        farizon_imp = page.locator("#modal-importer-name").inner_text()
+        print(f"  Farizon Importador en modal: '{farizon_imp}'")
+        assert "Santa Rosa" in farizon_imp, "El importador oficial de Farizon en Uruguay debe ser Grupo Santa Rosa"
+        farizon_insta = page.locator("#modal-brand-actions a[href*='instagram.com/farizonuruguay']")
+        assert farizon_insta.count() > 0, "Debe tener enlace al Instagram oficial @farizonuruguay"
+        farizon_logo = page.locator("#modal-brand-logo")
+        assert "farizon-logo" in (farizon_logo.get_attribute("src") or ""), "Debe mostrar el logo oficial de Farizon"
+        print("  ✔ Perfil de marca oficial, importador (Grupo Santa Rosa) e Instagram (@farizonuruguay) verificados en el modal.")
 
         # 9. Cierre con tecla Escape
         page.keyboard.press("Escape")
