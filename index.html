@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Uruguay | Revista & Catálogo de Movilidad Eléctrica</title>
+  <meta name="description" content="Directorio definitivo, crónicas, catálogo homologado con galerías de 6 fotos en 4:5, pixel art 16-bit, precios en plaza y red de cargadores de vehículos eléctricos en Uruguay. Una publicación de ServicioTI.">
+  <meta name="author" content="Andrés Franchi Ugartemendía - ServicioTI">
+  <link rel="canonical" href="https://ev.servicioti.com.uy/">
+
+  <!-- OpenGraph y Twitter Cards para indexación social y Google Discover -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EV Uruguay | Revista & Catálogo de Movilidad Eléctrica">
+  <meta property="og:description" content="Información técnica completa, galerías de 6 fotos de estudio 4:5, badges, precios y red de carga de autos, motos y e-bikes en Uruguay.">
+  <meta property="og:url" content="https://ev.servicioti.com.uy/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EV Uruguay | Movilidad Eléctrica">
+  <meta name="twitter:description" content="Catálogo homologado, galerías fotográficas y precios en plaza uruguaya.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111827">
+
+  <!-- Tipografías de Revista Editorial: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Datos embebidos para compatibilidad local (file:///) sin bloqueo de CORS -->
+  <script src="data/ev_data.js"></script>
+
+  <!-- Schema.org Datos Estructurados JSON-LD para Google Search Console e Inteligencias Artificiales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ev.servicioti.com.uy/#website",
+        "url": "https://ev.servicioti.com.uy/",
+        "name": "EV Uruguay",
+        "description": "Revista, catálogo y radar de vehículos eléctricos en Uruguay.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ServicioTI",
+          "url": "https://servicioti.com.uy",
+          "founder": {
+            "@type": "Person",
+            "name": "Andrés Franchi Ugartemendía"
+          }
+        }
+      },
+      {
+        "@type": "Car",
+        "name": "BYD Seagull EV",
+        "manufacturer": "BYD",
+        "vehicleEngine": {
+          "@type": "EngineSpecification",
+          "fuelType": "Electric"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "19990",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            paper: '#ffffff',
+            ink: '#111827',
+            muted: '#6b7280',
+            line: '#e5e7eb',
+            accent: '#047857'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #111827;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    h1, h2, h3, h4, .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    #map {
+      height: 440px;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    .thumb-active {
+      border-color: #111827 !important;
+      opacity: 1 !important;
+    }
+    .image-pixelated {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink min-h-screen flex flex-col antialiased selection:bg-neutral-900 selection:text-white">
+
+  <!-- Barra Superior Minimalista -->
+  <div class="border-b border-line text-xs text-muted py-2 px-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+        <span class="font-medium text-neutral-800">Montevideo, Uruguay</span>
+        <span class="text-neutral-300">•</span>
+        <span>Publicación Oficial de ServicioTI</span>
+      </div>
+      <div class="font-mono text-neutral-500">https://ev.servicioti.com.uy</div>
+    </div>
+  </div>
+
+  <!-- Cabecera de Revista (Masthead) -->
+  <header class="border-b-2 border-neutral-900 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-4 sm:py-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div>
+        <a href="#" class="text-3xl sm:text-5xl font-black tracking-tight text-neutral-950 font-editorial block">
+          EV Uruguay
+        </a>
+        <p class="text-xs sm:text-sm text-neutral-500 italic mt-0.5 font-editorial tracking-wide">
+          Revista, Catálogo Homologado & Radar de Movilidad Eléctrica
+        </p>
+      </div>
+
+      <nav class="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm font-medium tracking-wide uppercase">
+        <a href="#cronicas" class="text-neutral-700 hover:text-accent transition">Crónicas</a>
+        <a href="#catalogo" class="text-neutral-700 hover:text-accent transition">Catálogo</a>
+        <a href="#plaza" class="text-neutral-700 hover:text-accent transition">Precios</a>
+        <a href="#cargadores" class="text-neutral-700 hover:text-accent transition">Red UTE</a>
+        <a href="#calculadora" class="text-neutral-700 hover:text-accent transition">Ahorro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="max-w-6xl mx-auto px-4 py-8 flex-1 w-full space-y-16">
+
+    <!-- SECCIÓN 1: CRÓNICAS Y LANZAMIENTOS -->
+    <section id="cronicas" class="space-y-6">
+      <div class="border-b border-neutral-900 pb-2 flex items-baseline justify-between">
+        <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+          Crónicas & Novedades
+        </h2>
+        <span class="text-xs uppercase tracking-wider text-muted font-mono" id="news-count">Cargando...</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7 space-y-4" id="featured-article"></div>
+        <div class="lg:col-span-5 space-y-6 divide-y divide-line" id="secondary-articles"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: CATÁLOGO DE VEHÍCULOS CON BÚSQUEDA Y GALERÍA -->
+    <section id="catalogo" class="space-y-6 pt-6 border-t border-line">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-neutral-900 pb-2">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+            Catálogo Homologado
+          </h2>
+          <p class="text-xs text-muted mt-1">Haga clic en cualquier modelo para ver su galería oficial de 6 fotos en formato vertical 4:5, badges, ficha técnica profunda y enlace oficial</p>
+        </div>
+
+        <!-- Filtros de categoría -->
+        <div class="flex flex-wrap items-center gap-1 text-xs border border-line rounded-lg p-1 bg-neutral-50 self-start sm:self-auto">
+          <button onclick="filterCatalog('top_ventas')" class="cat-btn px-3 py-1 font-bold rounded bg-amber-400 text-neutral-950 flex items-center gap-1 shadow-sm" data-cat="top_ventas">⭐ Más Vendidos</button>
+          <button onclick="filterCatalog('todos')" class="cat-btn px-3 py-1 font-semibold rounded bg-neutral-900 text-white" data-cat="todos">Todos</button>
+          <button onclick="filterCatalog('auto')" class="cat-btn px-3 py-1 text-neutral-600 hover:text-black rounded" data-cat="auto">Autos & SUVs</button>
+          <button onclick="filterCatalog('triciclo')" class="cat-btn px-3 py-1 text-neutral-600 hover:text-black rounded" data-cat="triciclo">Triciclos & Utilitarios</button>
+          <button onclick="filterCatalog('moto')" class="cat-btn px-3 py-1 text-neutral-600 hover:text-black rounded" data-cat="moto">Motos</button>
+          <button onclick="filterCatalog('bicicleta')" class="cat-btn px-3 py-1 text-neutral-600 hover:text-black rounded" data-cat="bicicleta">E-Bikes</button>
+        </div>
+      </div>
+
+      <!-- Showcase de Top Ventas Oficiales en Uruguay (ACAU / SUCIVE) -->
+      <div id="top-sales-showcase" class="bg-gradient-to-r from-neutral-900 via-neutral-950 to-neutral-900 text-white rounded-xl p-5 border border-neutral-800 shadow-md">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-neutral-800 pb-3 mb-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">🏆</span>
+            <div>
+              <h3 class="text-base sm:text-lg font-bold font-editorial text-amber-300">
+                Líderes de Ventas en Uruguay — Ranking Oficial de Empadronamiento (ACAU / SUCIVE)
+              </h3>
+              <p class="text-[11px] text-neutral-400">
+                Modelos 100% eléctricos líderes de mercado con actualización mensual periódica
+              </p>
+            </div>
+          </div>
+          <span class="text-[10px] font-mono uppercase bg-amber-400/20 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded self-start sm:self-auto">
+            Datos Oficiales de Plaza
+          </span>
+        </div>
+
+        <div id="top-sales-cards" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          <!-- Renderizado dinámico de los líderes con click directo al modal -->
+        </div>
+      </div>
+
+      <!-- Barra de búsqueda interna en el blog/catálogo y selector de modo de vista -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <div class="max-w-md flex-1">
+          <input type="text" id="catalog-search" oninput="searchCatalog(this.value)" placeholder="Buscar por marca, modelo o tipo de vehículo..." class="w-full text-xs px-3.5 py-2.5 border border-line rounded-md bg-neutral-50 focus:bg-white focus:outline-none focus:border-neutral-900 transition">
+        </div>
+        <div class="flex items-center gap-2 self-start sm:self-auto">
+          <span class="text-[11px] text-muted font-mono uppercase">Vista:</span>
+          <button id="view-mode-photo" onclick="setViewMode('photo')" class="view-mode-btn px-3 py-1.5 text-xs font-semibold rounded bg-neutral-900 text-white flex items-center gap-1.5 shadow-sm">
+            <span>📸</span> <span>Fotos Estudio 4:5</span>
+          </button>
+          <button id="view-mode-pixel" onclick="setViewMode('pixel')" class="view-mode-btn px-3 py-1.5 text-xs font-semibold rounded bg-white text-neutral-700 border border-line hover:border-black flex items-center gap-1.5 transition">
+            <span>👾</span> <span>Pixel Art 16-Bit</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid de Vehículos -->
+      <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Renderizado dinámico -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: RADAR DE PRECIOS EN PLAZA URUGUAY -->
+    <section id="plaza" class="space-y-6 pt-6 border-t border-line">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-neutral-900 pb-2">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+            Radar de Ofertas en Plaza
+          </h2>
+          <p class="text-xs text-muted mt-1">Relevamiento periódico de unidades 0km y usadas disponibles en concesionarias y salones en Uruguay</p>
+        </div>
+        <div class="w-full sm:w-72">
+          <input type="text" id="market-search" oninput="searchMarket(this.value)" placeholder="Buscar por modelo o zona..." class="w-full text-xs px-3 py-2 border border-line rounded-md bg-neutral-50 focus:bg-white focus:outline-none focus:border-neutral-900 transition">
+        </div>
+      </div>
+
+      <div id="market-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Renderizado dinámico -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: RED DE CARGA UTE MUEVE -->
+    <section id="cargadores" class="space-y-6 pt-6 border-t border-line">
+      <div class="border-b border-neutral-900 pb-2">
+        <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+          Red Oficial de Carga UTE Mueve
+        </h2>
+        <p class="text-xs text-muted mt-1">Estaciones de recarga en los 19 departamentos (Mennekes Type 2, CCS2 y cargadores rápidos DC)</p>
+      </div>
+
+      <div class="border border-line rounded-lg overflow-hidden bg-neutral-50 p-2 shadow-sm">
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: GUÍA EDITORIAL Y CALCULADORA DE AHORRO -->
+    <section id="calculadora" class="space-y-6 pt-6 border-t border-line">
+      <div class="border-b border-neutral-900 pb-2">
+        <h2 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-900">
+          Economía & Beneficios Fiscales
+        </h2>
+        <p class="text-xs text-muted mt-1">Cálculo de costo por kilómetro y normativas tributarias vigentes en Uruguay</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-6 bg-neutral-50 p-6 rounded-lg border border-line space-y-4">
+          <h3 class="text-lg font-bold font-editorial text-neutral-900">Calculadora de Consumo UTE vs Nafta</h3>
+          <p class="text-xs text-neutral-600 leading-relaxed">
+            Estimado con tarifa residencial de UTE en horario valle (~$2,5 por kWh) comparado con Nafta Súper 95 ($77 por litro).
+          </p>
+
+          <div class="space-y-2 pt-2">
+            <div class="flex justify-between text-xs text-neutral-700 font-medium">
+              <span>Recorrido mensual:</span>
+              <span id="slider-val" class="font-bold text-neutral-900">1.500 km</span>
+            </div>
+            <input type="range" id="slider-km" min="400" max="4000" step="100" value="1500" oninput="updateCalculator()" class="w-full accent-neutral-900">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 pt-3 border-t border-line">
+            <div class="bg-white p-3 rounded border border-line text-center">
+              <span class="text-xs text-muted block">Gasto Nafta Súper</span>
+              <span class="text-base font-bold text-neutral-900 mt-1 block" id="calc-nafta">$9.240</span>
+            </div>
+            <div class="bg-white p-3 rounded border border-line text-center">
+              <span class="text-xs text-muted block">Gasto UTE Valle</span>
+              <span class="text-base font-bold text-emerald-700 mt-1 block" id="calc-ute">$562</span>
+            </div>
+          </div>
+
+          <div class="bg-emerald-50 border border-emerald-200 p-4 rounded text-center">
+            <span class="text-xs text-emerald-800 font-medium block">Ahorro mensual directo:</span>
+            <span class="text-2xl font-black font-editorial text-emerald-900 mt-0.5 block" id="calc-saving">$8.678 UYU</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-4">
+          <div class="p-4 border border-line rounded-lg bg-white">
+            <h4 class="text-base font-bold font-editorial text-neutral-900">Patente SUCIVE Reducida al 3%</h4>
+            <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+              En Uruguay los vehículos 100% eléctricos cero kilómetro pagan una alícuota anual del 3% sobre el valor de mercado sin IVA, frente al 5% que abonan los vehículos tradicionales a combustión. Se aplica de oficio en Montevideo y Canelones.
+            </p>
+          </div>
+
+          <div class="p-4 border border-line rounded-lg bg-white">
+            <h4 class="text-base font-bold font-editorial text-neutral-900">Bonificación del 15% en BSE</h4>
+            <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+              El Banco de Seguros del Estado otorga un 15% de bonificación en pólizas integrales para automóviles y utilitarios eléctricos, contemplando la reposición de la batería de alto voltaje.
+            </p>
+          </div>
+
+          <div class="p-4 border border-line rounded-lg bg-white">
+            <h4 class="text-base font-bold font-editorial text-neutral-900">Asistencia de Autonomía en Carretera</h4>
+            <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+              Compañías como SURA ofrecen auxilio mecánico con grúa de plataforma plana hasta el punto de carga más próximo en caso de agotamiento completo de la batería en rutas nacionales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL EDITORIAL: GALERÍA DE 5 FOTOS Y FICHA TÉCNICA PROFUNDA -->
+  <div id="vehicle-modal" class="fixed inset-0 bg-neutral-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-white border border-neutral-900 rounded-xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl flex flex-col my-auto">
+      
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-6 border-b border-line flex items-start justify-between bg-neutral-50 sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <img id="modal-circular-badge" src="" alt="Badge Oficial" class="w-12 h-12 rounded-full border border-neutral-300 object-cover shadow-sm shrink-0">
+          <div>
+            <span class="text-[10px] uppercase font-mono tracking-wider text-muted block" id="modal-brand">MARCA</span>
+            <h3 class="text-2xl sm:text-3xl font-bold font-editorial text-neutral-950" id="modal-title">Modelo del Vehículo</h3>
+            <span class="text-xs text-muted" id="modal-version">Versión y acabado</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-right">
+            <span class="text-[10px] text-muted block">Precio Oficial</span>
+            <span class="text-xl sm:text-2xl font-black font-editorial text-neutral-950" id="modal-price">USD $0</span>
+          </div>
+          <button onclick="closeModal()" class="w-8 h-8 rounded-full border border-line flex items-center justify-center text-neutral-500 hover:text-black hover:border-black transition text-lg font-bold">✕</button>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-4 sm:p-6 space-y-6">
+        
+        <!-- Badge de Top Ventas Oficial -->
+        <div id="modal-top-sales-badge" class="hidden"></div>
+
+        <!-- Galería Fotográfica (6 fotos formato vertical 4:5 + Pixel Art) -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-xs font-mono text-muted px-1">
+            <span id="modal-view-title" class="font-bold text-neutral-900 truncate">01 • Vista Isométrica Frontal 3/4</span>
+            <span id="modal-view-counter" class="text-[11px] bg-neutral-100 text-neutral-700 font-semibold px-2 py-0.5 rounded border border-line shrink-0">Foto 1 de 6</span>
+          </div>
+          <div class="max-h-[55vh] sm:max-h-[65vh] aspect-[4/5] sm:aspect-[16/10] w-full rounded-lg overflow-hidden bg-neutral-50 border border-line mx-auto flex items-center justify-center p-1">
+            <img id="modal-main-img" src="" class="w-full h-full object-contain sm:object-cover">
+          </div>
+          <!-- Tira de 6 Miniaturas + Badge Pixel Art con soporte táctil fluido -->
+          <div class="flex gap-2 overflow-x-auto pb-2 snap-x items-center" id="modal-thumbs">
+            <!-- Miniaturas dinámicas -->
+          </div>
+        </div>
+
+        <!-- Ficha Técnica Dividida en 2 Columnas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-line text-xs">
+          
+          <!-- Columna 1: Rendimiento y Batería -->
+          <div class="space-y-3">
+            <h4 class="font-bold font-editorial text-sm text-neutral-900 uppercase tracking-wide border-b border-line pb-1">
+              Rendimiento & Batería
+            </h4>
+            <div class="space-y-2 text-neutral-700">
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Autonomía declarada:</span>
+                <b id="spec-range">0 km</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Capacidad de batería:</span>
+                <b id="spec-battery">0 kWh</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Potencia y motor:</span>
+                <b id="spec-power">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Par motor:</span>
+                <b id="spec-torque">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Aceleración 0-100 km/h:</span>
+                <b id="spec-accel">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Velocidad máxima:</span>
+                <b id="spec-topspeed">-</b>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2: Carga, Medidas y Garantías -->
+          <div class="space-y-3">
+            <h4 class="font-bold font-editorial text-sm text-neutral-900 uppercase tracking-wide border-b border-line pb-1">
+              Carga, Medidas & Garantías
+            </h4>
+            <div class="space-y-2 text-neutral-700">
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Tipo de conector:</span>
+                <b id="spec-connector">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Tiempo de carga AC:</span>
+                <b id="spec-ac">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Tiempo de carga DC rápida:</span>
+                <b id="spec-dc">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Dimensiones:</span>
+                <b id="spec-dims">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Capacidad de baúl:</span>
+                <b id="spec-trunk">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Garantía de vehículo:</span>
+                <b id="spec-warranty-car">-</b>
+              </div>
+              <div class="flex justify-between py-1 border-b border-neutral-100">
+                <span class="text-muted">Garantía de batería:</span>
+                <b id="spec-warranty-battery">-</b>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Atributos adicionales de importación -->
+        <div id="modal-extra-specs" class="bg-neutral-50 p-4 rounded-lg border border-line text-xs space-y-1.5 text-neutral-700">
+          <!-- Detalles adicionales dinámicos -->
+        </div>
+
+      </div>
+
+      <!-- Modal Footer con Enlace Oficial al Fabricante -->
+      <div class="p-4 sm:p-6 border-t border-line bg-neutral-50 flex flex-col sm:flex-row items-center justify-between gap-3 sticky bottom-0">
+        <span class="text-xs text-emerald-800 font-medium">✓ Modelo con homologación oficial en Uruguay</span>
+        <a id="modal-official-link" href="#" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-neutral-950 text-white rounded-md text-xs font-semibold hover:bg-emerald-800 transition shadow">
+          <span>Visitar Sitio Oficial del Fabricante / Importador</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pie de Página Editorial -->
+  <footer class="border-t-2 border-neutral-900 bg-white py-8 text-neutral-600 text-xs mt-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="space-y-1 text-center sm:text-left">
+        <div class="font-bold font-editorial text-sm text-neutral-900">EV Uruguay</div>
+        <p class="text-neutral-500">Un proyecto de desarrollo e investigación de <a href="https://servicioti.com.uy" target="_blank" class="text-neutral-900 underline font-medium">ServicioTI</a>.</p>
+      </div>
+
+      <div class="text-center sm:text-right font-mono text-neutral-500">
+        <span>https://ev.servicioti.com.uy</span><br>
+        <span>Montevideo, Uruguay · Todos los derechos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lógica de Aplicación -->
+  <script>
+    let appData = { vehicles: [], market_listings: [], news: [], chargers: [] };
+    let currentFilter = 'todos';
+    let currentViewMode = 'photo';
+    let leafletMap = null;
+
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      const btnPhoto = document.getElementById('view-mode-photo');
+      const btnPixel = document.getElementById('view-mode-pixel');
+      if (!btnPhoto || !btnPixel) return;
+      if (mode === 'pixel') {
+        btnPixel.className = 'view-mode-btn px-3 py-1.5 text-xs font-semibold rounded bg-neutral-900 text-white flex items-center gap-1.5 shadow-sm';
+        btnPhoto.className = 'view-mode-btn px-3 py-1.5 text-xs font-semibold rounded bg-white text-neutral-700 border border-line hover:border-black flex items-center gap-1.5 transition';
+      } else {
+        btnPhoto.className = 'view-mode-btn px-3 py-1.5 text-xs font-semibold rounded bg-neutral-900 text-white flex items-center gap-1.5 shadow-sm';
+        btnPixel.className = 'view-mode-btn px-3 py-1.5 text-xs font-semibold rounded bg-white text-neutral-700 border border-line hover:border-black flex items-center gap-1.5 transition';
+      }
+      renderCatalog();
+    }
+
+    async function init() {
+      if (window.EV_DATA) {
+        appData = window.EV_DATA;
+      } else {
+        try {
+          const response = await fetch('data/ev_data.json');
+          appData = await response.json();
+        } catch (err) {
+          console.error("Error al cargar ev_data.json", err);
+        }
+      }
+
+      renderTopSalesShowcase();
+      renderNews();
+      renderCatalog();
+      renderMarket(appData.market_listings || []);
+      initMap();
+      updateCalculator();
+    }
+
+    function renderTopSalesShowcase() {
+      const showcaseEl = document.getElementById('top-sales-cards');
+      if (!showcaseEl) return;
+      const topList = (appData.top_sales && appData.top_sales.length > 0)
+        ? appData.top_sales
+        : (appData.vehicles || []).filter(v => v.es_top_ventas === 1).sort((a, b) => (a.ventas_rank || 99) - (b.ventas_rank || 99));
+
+      if (topList.length === 0) {
+        const sc = document.getElementById('top-sales-showcase');
+        if (sc) sc.classList.add('hidden');
+        return;
+      }
+
+      const medals = { 1: '🥇', 2: '🥈', 3: '🥉' };
+
+      // Mostrar modelos únicos líderes de ventas
+      const seen = new Set();
+      const uniqueTop = [];
+      for (const item of topList) {
+        const key = `${item.marca}-${item.modelo}`.toLowerCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          uniqueTop.push(item);
+        }
+        if (uniqueTop.length >= 10) break;
+      }
+
+      showcaseEl.innerHTML = uniqueTop.map(v => {
+        const medal = medals[v.ventas_rank] || `#${v.ventas_rank}`;
+        return `
+          <div onclick="openVehicleModal('${v.id}')" class="bg-neutral-800/90 hover:bg-neutral-800 border border-neutral-700/80 hover:border-amber-400 p-2.5 rounded-lg transition cursor-pointer group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-[11px] font-bold text-amber-300 mb-1">
+                <span class="flex items-center gap-1">${medal} Top #${v.ventas_rank}</span>
+                <span class="text-[9px] font-mono font-normal opacity-80">${v.unidades_anuales ? v.unidades_anuales.toLocaleString() + ' u.' : ''}</span>
+              </div>
+              <div class="h-20 w-full rounded overflow-hidden bg-neutral-900 mb-2">
+                <img src="${v.imagen_oficial_url}" alt="${v.marca} ${v.modelo} - Líder de Ventas Uruguay" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              </div>
+              <div class="text-[10px] text-neutral-400 uppercase font-mono tracking-wider">${v.marca}</div>
+              <h4 class="text-xs font-bold font-editorial text-white group-hover:text-amber-300 transition truncate">${v.modelo}</h4>
+              <div class="text-[11px] font-extrabold text-amber-400 mt-0.5">USD $${v.precio_usd.toLocaleString()}</div>
+            </div>
+            <div class="mt-2 pt-1 border-t border-neutral-700 text-[10px] text-neutral-300 flex justify-between">
+              <span>🔋 ${v.bateria_kwh} kWh</span>
+              <span>⚡ ${v.autonomia_km} km</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderNews() {
+      const news = appData.news || [];
+      document.getElementById('news-count').textContent = `${news.length} crónicas`;
+
+      if (news.length === 0) return;
+
+      const main = news[0];
+      const featEl = document.getElementById('featured-article');
+      featEl.innerHTML = `
+        <article class="space-y-3">
+          ${main.imagen_portada ? `<img src="${main.imagen_portada}" alt="${main.titulo}" class="w-full h-72 sm:h-96 object-cover rounded-lg border border-line">` : ''}
+          <div class="flex items-center gap-2 text-xs font-mono text-muted uppercase">
+            <span class="text-accent font-semibold">${main.marcas_mencionadas || 'Plaza Uruguay'}</span>
+            <span>•</span>
+            <span>Crónica Editorial</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-bold font-editorial leading-tight text-neutral-950">
+            ${main.titulo}
+          </h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            ${main.resumen}
+          </p>
+          <a href="${main.url}" target="_blank" class="inline-block text-xs uppercase tracking-wider font-semibold text-neutral-900 hover:text-accent border-b border-neutral-900 hover:border-accent pb-0.5 transition">
+            Leer crónica completa →
+          </a>
+        </article>
+      `;
+
+      const secEl = document.getElementById('secondary-articles');
+      secEl.innerHTML = news.slice(1, 6).map(item => `
+        <article class="pt-4 first:pt-0 space-y-2">
+          <span class="text-[11px] font-mono text-muted uppercase tracking-wider">${item.marcas_mencionadas || 'Novedades'}</span>
+          <h4 class="text-lg font-bold font-editorial text-neutral-900 leading-snug hover:text-accent transition">
+            <a href="${item.url}" target="_blank">${item.titulo}</a>
+          </h4>
+          <p class="text-xs text-neutral-600 line-clamp-2 leading-relaxed">
+            ${item.resumen}
+          </p>
+          <a href="${item.url}" target="_blank" class="text-xs text-neutral-800 font-medium hover:underline inline-block pt-1">
+            Ver detalle →
+          </a>
+        </article>
+      `).join('');
+    }
+
+    function filterCatalog(category) {
+      currentFilter = category;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.cat === category) {
+          if (category === 'top_ventas') {
+            btn.className = 'cat-btn px-3 py-1 font-bold rounded bg-amber-400 text-neutral-950 shadow-sm';
+          } else {
+            btn.className = 'cat-btn px-3 py-1 font-semibold rounded bg-neutral-900 text-white';
+          }
+        } else {
+          btn.className = 'cat-btn px-3 py-1 text-neutral-600 hover:text-black rounded';
+        }
+      });
+      renderCatalog();
+    }
+
+    function searchCatalog(query) {
+      const q = query.toLowerCase().trim();
+      let list = (appData.vehicles || []).filter(v => {
+        let matchesCategory = true;
+        if (currentFilter === 'top_ventas') {
+          matchesCategory = (v.es_top_ventas === 1);
+        } else if (currentFilter !== 'todos') {
+          matchesCategory = (v.tipo === currentFilter);
+        }
+        const matchesText = !q || 
+          v.marca.toLowerCase().includes(q) || 
+          v.modelo.toLowerCase().includes(q) || 
+          (v.version && v.version.toLowerCase().includes(q)) ||
+          v.tipo.toLowerCase().includes(q);
+        return matchesCategory && matchesText;
+      });
+
+      // En la visualización principal los más vendidos siempre encabezan la lista
+      list = [...list].sort((a, b) => {
+        const rankA = a.es_top_ventas ? (a.ventas_rank || 99) : 999;
+        const rankB = b.es_top_ventas ? (b.ventas_rank || 99) : 999;
+        if (rankA !== rankB) return rankA - rankB;
+        return (a.precio_usd || 0) - (b.precio_usd || 0);
+      });
+
+      renderCatalogWithList(list);
+    }
+
+    function renderCatalog() {
+      let list = appData.vehicles || [];
+      if (currentFilter === 'top_ventas') {
+        list = list.filter(v => v.es_top_ventas === 1).sort((a, b) => (a.ventas_rank || 99) - (b.ventas_rank || 99));
+      } else if (currentFilter !== 'todos') {
+        list = list.filter(v => v.tipo === currentFilter);
+      }
+
+      // En la visualización principal siempre se priorizan los más vendidos en el top
+      list = [...list].sort((a, b) => {
+        const rankA = a.es_top_ventas ? (a.ventas_rank || 99) : 999;
+        const rankB = b.es_top_ventas ? (b.ventas_rank || 99) : 999;
+        if (rankA !== rankB) return rankA - rankB;
+        return (a.precio_usd || 0) - (b.precio_usd || 0);
+      });
+
+      renderCatalogWithList(list);
+    }
+
+    function renderCatalogWithList(list) {
+      const grid = document.getElementById('catalog-grid');
+      if (!list || list.length === 0) {
+        grid.innerHTML = `<div class="col-span-3 py-12 text-center text-muted text-sm">No se encontraron vehículos que coincidan con la búsqueda.</div>`;
+        return;
+      }
+
+      grid.innerHTML = list.map(v => {
+        const isPixel = (currentViewMode === 'pixel');
+        const imgSrc = isPixel 
+          ? (v.especificaciones?.pixel_art_url || v.imagen_oficial_url)
+          : v.imagen_oficial_url;
+        const badgeSrc = v.especificaciones?.badge_circular_url || v.imagen_oficial_url;
+        const imgClass = isPixel 
+          ? 'w-full h-full object-contain image-pixelated p-4 group-hover:scale-110 transition duration-300' 
+          : 'w-full h-full object-cover group-hover:scale-105 transition duration-300';
+
+        return `
+        <div onclick="openVehicleModal('${v.id}')" class="bg-white rounded-lg border ${v.es_top_ventas ? 'border-amber-300 shadow-amber-100' : 'border-line'} p-4 space-y-3 hover:border-neutral-900 transition flex flex-col justify-between cursor-pointer group shadow-sm hover:shadow-md">
+          <div class="space-y-3">
+            <div class="aspect-[4/5] sm:aspect-[4/3] w-full bg-neutral-100 rounded overflow-hidden relative">
+              <img src="${imgSrc}" alt="${v.marca} ${v.modelo} ${v.version || ''} - Vehículo Eléctrico en Uruguay - EV ServicioTI" loading="lazy" class="${imgClass}">
+              <span class="absolute top-2 left-2 bg-white/95 px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider text-neutral-900 rounded border border-line">
+                ${v.tipo}
+              </span>
+              <span class="absolute bottom-2 right-2 bg-neutral-900/90 text-white text-[10px] font-medium px-2 py-0.5 rounded backdrop-blur">
+                📸 ${v.galeria ? v.galeria.length : 6} fotos
+              </span>
+            </div>
+
+            ${v.es_top_ventas ? `
+              <div class="bg-gradient-to-r from-amber-400 to-amber-300 text-neutral-950 px-2.5 py-1 rounded text-[10px] font-bold tracking-wide flex items-center justify-between shadow-sm">
+                <span>🏆 #${v.ventas_rank} MÁS VENDIDO EN URUGUAY</span>
+                <span class="font-normal opacity-90">${v.unidades_anuales ? v.unidades_anuales.toLocaleString() + ' empadronados' : 'Oficial ACAU'}</span>
+              </div>
+            ` : ''}
+
+            <div class="flex items-start gap-2.5">
+              <img src="${badgeSrc}" alt="Badge ${v.marca} ${v.modelo}" class="w-8 h-8 rounded-full border border-neutral-300 object-cover shrink-0 mt-0.5 shadow-xs">
+              <div class="min-w-0 flex-1">
+                <div class="text-[11px] uppercase font-mono tracking-wider text-muted">${v.marca}</div>
+                <h3 class="text-xl font-bold font-editorial text-neutral-950 group-hover:text-accent transition truncate">${v.modelo} <span class="text-sm font-normal text-muted">${v.version || ''}</span></h3>
+                <div class="text-lg font-extrabold text-neutral-900 font-editorial mt-0.5">USD $${v.precio_usd.toLocaleString()}</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 text-xs py-2 border-y border-line text-neutral-700">
+              <div><span class="text-muted block text-[10px]">Autonomía:</span> <b>${v.autonomia_km} km</b></div>
+              <div><span class="text-muted block text-[10px]">Batería:</span> <b>${v.bateria_kwh} kWh</b></div>
+            </div>
+
+            <div class="text-xs text-neutral-600 space-y-1">
+              <div><span class="font-medium text-neutral-800">Conector:</span> ${v.conector}</div>
+              <div><span class="font-medium text-neutral-800">Garantía:</span> ${v.garantia_bateria}</div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-line flex items-center justify-between text-xs">
+            <span class="text-emerald-700 font-semibold text-[11px]">✓ Homologado URSEA</span>
+            <span class="font-semibold text-neutral-900 group-hover:text-accent flex items-center gap-1">
+              Ver 6 Vistas & Ficha →
+            </span>
+          </div>
+        </div>
+      `;
+      }).join('');
+    }
+
+    const VISTA_LABELS = [
+      "01 • Vista Isométrica Frontal 3/4 (Hero)",
+      "02 • Vista Trasera Ópticas y Portón",
+      "03 • Interior, Cockpit y Pantallas",
+      "04 • Perfil Lateral y Carrocería",
+      "05 • Detalle de Batería y Puerto de Carga",
+      "06 • Detalle Frontal y Firma Lumínica LED"
+    ];
+
+    function openVehicleModal(vehicleId) {
+      const v = (appData.vehicles || []).find(item => item.id === vehicleId);
+      if (!v) return;
+
+      document.getElementById('modal-brand').textContent = v.marca;
+      document.getElementById('modal-title').textContent = `${v.marca} ${v.modelo}`;
+      document.getElementById('modal-version').textContent = v.version || '';
+      document.getElementById('modal-price').textContent = `USD $${v.precio_usd.toLocaleString()}`;
+
+      // Configurar Badge Circular Oficial en el Header del Modal
+      const badgeImg = document.getElementById('modal-circular-badge');
+      if (badgeImg) {
+        badgeImg.src = v.especificaciones?.badge_circular_url || v.imagen_oficial_url;
+      }
+
+      // Badge de Líder en Ventas en el Modal
+      const topBadge = document.getElementById('modal-top-sales-badge');
+      if (v.es_top_ventas) {
+        topBadge.innerHTML = `
+          <div class="bg-amber-50 border border-amber-300 rounded-lg p-3 text-xs text-amber-950 font-medium flex items-center justify-between shadow-sm">
+            <div class="flex items-center gap-2.5">
+              <span class="text-xl">🏆</span>
+              <div>
+                <span class="font-bold text-amber-900 block text-sm">Líder de Ventas Oficial en Uruguay — Puesto #${v.ventas_rank}</span>
+                <span class="text-[11px] text-amber-800">
+                  Ranking oficial de empadronamientos ACAU / SUCIVE con <b>${v.unidades_anuales ? v.unidades_anuales.toLocaleString() : ''} unidades registradas</b> en plaza.
+                </span>
+              </div>
+            </div>
+            <span class="bg-amber-400 text-neutral-950 text-[10px] font-black uppercase px-2 py-1 rounded tracking-wide">
+              TOP VENTAS
+            </span>
+          </div>
+        `;
+        topBadge.classList.remove('hidden');
+      } else {
+        topBadge.classList.add('hidden');
+      }
+
+      // Configurar imagen principal y miniaturas de galería de 6 vistas + Pixel Art
+      const galeria = v.galeria && v.galeria.length > 0 ? v.galeria : [v.imagen_oficial_url];
+      const mainImg = document.getElementById('modal-main-img');
+      mainImg.src = galeria[0];
+      mainImg.alt = `${v.marca} ${v.modelo} ${v.version || ''} - Galería Oficial - EV Uruguay`;
+      mainImg.classList.remove('image-pixelated');
+
+      // Título y Contador inicial
+      document.getElementById('modal-view-title').textContent = VISTA_LABELS[0];
+      document.getElementById('modal-view-counter').textContent = `Foto 1 de ${galeria.length}`;
+
+      const thumbsContainer = document.getElementById('modal-thumbs');
+      let thumbsHtml = galeria.map((imgUrl, idx) => {
+        const lbl = VISTA_LABELS[idx] || `Vista 0${idx + 1}`;
+        return `
+          <button onclick="changeModalImage('${imgUrl}', this, '${lbl}', ${idx + 1}, ${galeria.length}, false)" aria-label="Ver foto ${idx + 1}" class="modal-thumb w-20 h-16 rounded overflow-hidden border-2 border-transparent opacity-75 hover:opacity-100 transition shrink-0 relative ${idx === 0 ? 'thumb-active' : ''}">
+            <img src="${imgUrl}" alt="${v.marca} ${v.modelo} - ${lbl} - EV Uruguay" loading="lazy" class="w-full h-full object-cover">
+            <span class="absolute bottom-0.5 right-0.5 bg-neutral-900/85 text-white text-[9px] font-mono px-1 rounded font-bold">${idx + 1}</span>
+          </button>
+        `;
+      }).join('');
+
+      if (v.especificaciones?.pixel_art_url) {
+        thumbsHtml += `
+          <button onclick="changeModalImage('${v.especificaciones.pixel_art_url}', this, '👾 Icono Coleccionable Pixel Art 16-Bit', 'Pixel', 'Retro', true)" aria-label="Ver Pixel Art" class="modal-thumb w-20 h-16 rounded overflow-hidden border-2 border-transparent bg-neutral-900 p-1 opacity-75 hover:opacity-100 transition shrink-0 relative flex flex-col items-center justify-center text-center">
+            <img src="${v.especificaciones.pixel_art_url}" alt="Pixel Art ${v.marca} ${v.modelo}" class="w-10 h-10 object-contain image-pixelated">
+            <span class="text-[8px] font-mono font-bold text-amber-300">16-BIT</span>
+          </button>
+        `;
+      }
+
+      thumbsContainer.innerHTML = thumbsHtml;
+
+      // Ficha técnica
+      document.getElementById('spec-range').textContent = `${v.autonomia_km} km`;
+      document.getElementById('spec-battery').textContent = `${v.bateria_kwh} kWh`;
+      document.getElementById('spec-power').textContent = v.potencia || '-';
+      document.getElementById('spec-torque').textContent = v.par_motor_nm ? `${v.par_motor_nm} Nm` : '-';
+      document.getElementById('spec-accel').textContent = v.aceleracion_0_100 || '-';
+      document.getElementById('spec-topspeed').textContent = v.velocidad_maxima || '-';
+
+      document.getElementById('spec-connector').textContent = v.conector || '-';
+      document.getElementById('spec-ac').textContent = v.tiempo_carga_ac || '-';
+      document.getElementById('spec-dc').textContent = v.tiempo_carga_dc || '-';
+      document.getElementById('spec-dims').textContent = v.dimensiones || '-';
+      document.getElementById('spec-trunk').textContent = v.capacidad_baul_l ? `${v.capacidad_baul_l} L` : '-';
+      document.getElementById('spec-warranty-car').textContent = v.garantia_vehiculo || '-';
+      document.getElementById('spec-warranty-battery').textContent = v.garantia_bateria || '-';
+
+      // Enlace oficial
+      const officialBtn = document.getElementById('modal-official-link');
+      officialBtn.href = v.link_fabricante;
+
+      // Especificaciones extra
+      const extraDiv = document.getElementById('modal-extra-specs');
+      const specs = v.especificaciones || {};
+      const keys = Object.keys(specs).filter(k => k !== 'badge_circular_url' && k !== 'pixel_art_url');
+      if (keys.length > 0) {
+        extraDiv.innerHTML = keys.map(k => `
+          <div><b class="capitalize text-neutral-900">${k.replace(/_/g, ' ')}:</b> ${specs[k]}</div>
+        `).join('');
+        extraDiv.classList.remove('hidden');
+      } else {
+        extraDiv.classList.add('hidden');
+      }
+
+      document.getElementById('vehicle-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function changeModalImage(imgUrl, btn, viewTitle, currIdx, total, isPixel = false) {
+      const mainImg = document.getElementById('modal-main-img');
+      mainImg.src = imgUrl;
+      if (isPixel) {
+        mainImg.classList.add('image-pixelated');
+      } else {
+        mainImg.classList.remove('image-pixelated');
+      }
+      document.getElementById('modal-view-title').textContent = viewTitle || '';
+      document.getElementById('modal-view-counter').textContent = (typeof currIdx === 'number') 
+        ? `Foto ${currIdx} de ${total}` 
+        : 'Pixel Art 16-Bit';
+
+      document.querySelectorAll('.modal-thumb').forEach(b => b.classList.remove('thumb-active'));
+      if (btn) btn.classList.add('thumb-active');
+    }
+
+    function closeModal() {
+      document.getElementById('vehicle-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cerrar modal con tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    function renderMarket(items) {
+      const grid = document.getElementById('market-grid');
+      grid.innerHTML = items.slice(0, 24).map(m => `
+        <div class="p-3 border border-line rounded-lg bg-white flex items-center gap-3 hover:border-neutral-900 transition">
+          <img src="${m.thumbnail || 'https://via.placeholder.com/70'}" alt="${m.titulo}" loading="lazy" class="w-16 h-16 object-cover rounded bg-neutral-100 shrink-0">
+          <div class="min-w-0 flex-1">
+            <h4 class="text-xs font-bold text-neutral-900 truncate">${m.titulo}</h4>
+            <div class="text-sm font-black text-neutral-950 mt-0.5">USD $${m.precio.toLocaleString()}</div>
+            <div class="text-[11px] text-muted truncate">Vendedor: ${m.vendedor}</div>
+            <div class="flex items-center justify-between text-[10px] text-muted mt-1">
+              <span>📍 ${m.ubicacion}</span>
+              <a href="mailto:contacto@servicioti.com.uy?subject=Consulta%20Unidad%20Plaza%20-%20${encodeURIComponent(m.titulo)}" class="text-neutral-900 font-semibold hover:underline">Consultar unidad ✉️</a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function searchMarket(query) {
+      const q = query.toLowerCase();
+      const filtered = (appData.market_listings || []).filter(m => 
+        m.titulo.toLowerCase().includes(q) || 
+        m.vendedor.toLowerCase().includes(q) || 
+        m.ubicacion.toLowerCase().includes(q)
+      );
+      renderMarket(filtered);
+    }
+
+    function initMap() {
+      if (leafletMap) return;
+      leafletMap = L.map('map').setView([-32.8, -56.0], 7);
+
+      // OpenStreetMap oficial 100% gratuito sin requerir clave de API
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+      }).addTo(leafletMap);
+
+      const markers = [];
+      (appData.chargers || []).forEach(ch => {
+        const m = L.marker([ch.latitud, ch.longitud])
+          .bindPopup(`
+            <div style="font-size: 12px; line-height: 1.4;">
+              <b style="font-size: 13px; color: #111827;">${ch.nombre}</b><br>
+              <span style="color: #047857; font-weight: 600;">Red: ${ch.operador}</span><br>
+              <span style="color: #6b7280;">${ch.direccion} (${ch.departamento})</span><br>
+              <b>Conectores:</b> ${ch.conectores}<br>
+              <b>Potencia:</b> ${ch.potencia_kw} kW (${ch.tipo_carga})
+            </div>
+          `);
+        markers.push(m);
+      });
+
+      if (markers.length > 0) {
+        const group = L.featureGroup(markers).addTo(leafletMap);
+        leafletMap.fitBounds(group.getBounds().pad(0.05));
+      }
+
+      window.addEventListener('resize', () => {
+        if (leafletMap) leafletMap.invalidateSize();
+      });
+      setTimeout(() => {
+        if (leafletMap) leafletMap.invalidateSize();
+      }, 400);
+    }
+
+    function updateCalculator() {
+      const km = parseInt(document.getElementById('slider-km').value);
+      document.getElementById('slider-val').textContent = `${km.toLocaleString()} km`;
+
+      const costoNafta = Math.round(km * 0.08 * 77);
+      const costoUte = Math.round(km * 0.15 * 2.5);
+      const ahorro = costoNafta - costoUte;
+
+      document.getElementById('calc-nafta').textContent = `$${costoNafta.toLocaleString()}`;
+      document.getElementById('calc-ute').textContent = `$${costoUte.toLocaleString()}`;
+      document.getElementById('calc-saving').textContent = `$${ahorro.toLocaleString()} UYU`;
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

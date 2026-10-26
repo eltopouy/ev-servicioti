@@ -1,0 +1,18 @@
+# EV Uruguay — Directorio y Radar de Movilidad Eléctrica
+> Publicación oficial de ServicioTI (https://ev.servicioti.com.uy)
+
+EV Uruguay es la plataforma centralizada y radar de información pública sobre movilidad eléctrica en la República Oriental del Uruguay, cubriendo automóviles, motocicletas y bicicletas eléctricas (e-bikes).
+
+## Contenidos Clave Disponibles
+- Catálogo de vehículos eléctricos homologados ante URSEA bajo norma UNIT 1130:2020.
+- Galería fotográfica detallada de 6 vistas en formato vertical 4:5 Mobile-First (isométrica 3/4 hero, trasera, cockpit, perfil lateral, conector/batería y firma LED delantera), badges circulares y sprites Pixel Art 16-Bit.
+- Fichas técnicas completas: autonomía (WLTP y ciclo real en rutas uruguayas), capacidad de batería (kWh), potencia, aceleración, tiempos de recarga.
+- Enlaces oficiales a fabricantes e importadores en Uruguay (SADAR/BYD, Volvo Cars Uruguay, Fidocar/Dongfeng, Grupo Aler/JAC, Loop Bikes, VoltBike, Wheele, Sunra, Yadea, Decathlon).
+- Relevamiento de precios de plaza y unidades 0km en venta en Uruguay en dólares (USD).
+- Red de estaciones de carga de UTE Mueve en los 19 departamentos (conectores Type 2 Mennekes, CCS2 y compatibilidad GB/T).
+- Calculadora de ahorro mensual de recarga domiciliaria con tarifas de UTE (Plan Inteligente y Tarifa Residencial Triple Horario) frente a combustible fósil.
+- Guía fiscal: Alícuota reducida de patente SUCIVE al 3% sobre valor de mercado sin IVA y bonificación directa del 15% en pólizas de seguros del Banco de Seguros del Estado (BSE).
+
+## Documentación Completa para Modelos de IA
+- Documento exhaustivo: https://ev.servicioti.com.uy/llms-full.txt
+- Mapa del sitio: https://ev.servicioti.com.uy/sitemap.xml

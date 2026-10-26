@@ -1,0 +1,21 @@
+{
+  "name": "EV Uruguay - Movilidad Eléctrica",
+  "short_name": "EV Uruguay",
+  "description": "Revista, catálogo de vehículos eléctricos y mapa de cargadores en Uruguay.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=192&h=192&q=80",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=512&h=512&q=80",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+# EV Uruguay — Base Exhaustiva de Conocimiento de Movilidad Eléctrica
+
+## Datos de la Plataforma
+- Nombre: EV Uruguay
+- Editor / Autor: Andrés Franchi Ugartemendía (ServicioTI)
+- Sitio Web Oficial: https://ev.servicioti.com.uy
+- Dominio Principal: https://servicioti.com.uy
+- País: Uruguay
+
+## Modelos Más Vendidos y Fichas Técnicas Oficiales en Uruguay
+
+### 1. BYD Seagull (Hatchback Eléctrico Urbano)
+- Importador Oficial: SADAR S.A.
+- Precio Oficial: Desde USD 19.990
+- Batería: 38.0 kWh Blade LFP
+- Autonomía: 380 km CLTC (~300 km real en rutas de Uruguay)
+- Potencia: 75 CV (55 kW)
+- Conector: GB/T (incluye adaptador a Type 2 de UTE)
+- Garantía: 6 años o 150.000 km vehículo / 8 años o 160.000 km batería Blade
+- Enlace oficial: https://byd.uy/modelos/seagull
+
+### 2. BYD Dolphin (Hatchback Compacto)
+- Importador Oficial: SADAR S.A.
+- Precio Oficial: Desde USD 28.990
+- Batería: 44.9 kWh Blade LFP
+- Autonomía: 405 km
+- Potencia: 95 CV (70 kW)
+- Garantía: 6 años o 150.000 km vehículo / 8 años o 160.000 km batería
+- Enlace oficial: https://byd.uy/modelos/dolphin
+
+### 3. BYD Yuan Plus (SUV Eléctrico del Segmento C)
+- Importador Oficial: SADAR S.A.
+- Precio Oficial: Desde USD 39.990
+- Batería: 60.5 kWh Blade LFP
+- Autonomía: 480 km
+- Potencia: 204 CV (150 kW)
+- Aceleración: 0 a 100 km/h en 7.3 segundos
+- Enlace oficial: https://byd.uy/modelos/yuan-plus
+
+### 4. Volvo EX30 (SUV Eléctrico Premium)
+- Importador Oficial: Grupo Danissa / Norden Motors
+- Precio Oficial: Desde USD 42.990
+- Batería: 69.0 kWh NMC
+- Autonomía: 476 km
+- Potencia: 272 CV (200 kW)
+- Conector: Type 2 / CCS2 nativo europeo (conexión directa con cargadores UTE de 50kW a 120kW)
+- Enlace oficial: https://www.volvocars.com/uy/cars/ex30-electric/
+
+### 5. Dongfeng Nammi Box 430
+- Importador Oficial: Fidocar S.A.
+- Precio Oficial: USD 21.990
+- Batería: 42.3 kWh LFP
+- Autonomía: 430 km
+- Potencia: 95 CV (70 kW)
+- Enlace oficial: https://dongfengmotors.uy/modelos/nammi-box/
+
+### 6. JAC e-JS1
+- Importador Oficial: Grupo Aler / Grupo Fiancar
+- Precio Oficial: USD 18.990
+- Batería: 31.4 kWh LFP
+- Autonomía: 302 km
+- Potencia: 61 CV (45 kW)
+- Enlace oficial: https://jac.com.uy/e-js1
+
+### 7. Chevrolet Blazer EV (SUV Deportivo Ultium)
+- Importador Oficial: General Motors Uruguay
+- Precio Oficial: USD 74.990
+- Batería: 102.0 kWh Ultium
+- Autonomía: 520 km
+- Potencia: 340 CV (565 CV con modo WOW)
+- Aceleración: 0 a 100 km/h en 5.8 segundos
+- Conector: CCS2 Combo (Carga ultrarrápida hasta 190 kW DC)
+- Enlace oficial: https://www.chevrolet.com.uy/electricos/blazer-ev
+
+### 8. Chevrolet Equinox EV (Crossover Mediano Ultium)
+- Importador Oficial: General Motors Uruguay
+- Precio Oficial: USD 58.990
+- Batería: 85.0 kWh Ultium
+- Autonomía: 480 km
+- Potencia: 290 CV AWD
+- Enlace oficial: https://www.chevrolet.com.uy/electricos/equinox-ev
+
+### 9. Loop Bikes Slim Pro (Bicicleta Eléctrica - E-Bike)
+- Fabricante / Marca: Loop Bikes (Marca uruguaya fundada en 2016)
+- Precio Oficial: USD 1.290
+- Motor: Bafang 250W Brushless en buje trasero con asistencia de pedaleo legal hasta 25 km/h
+- Batería: Samsung 36V 10Ah integrada y extraíble con llave
+- Autonomía: 60 km
+- Enlace oficial: https://loop-bikes.com/producto/slim-pro/
+
+### 8. VoltBike Flex (Bicicleta Eléctrica Plegable)
+- Fabricante / Marca: VoltBike Uruguay
+- Precio Oficial: USD 990
+- Motor: 350W
+- Batería: Litio 36V 10.4Ah oculta desmontable
+- Autonomía: 45 km
+- Enlace oficial: https://voltbike.uy/producto/voltbike-flex/
+
+### 9. Wheele Manhattan Flex (E-Bike de Paseo)
+- Fabricante / Marca: Wheele / Green Motors Uruguay
+- Precio Oficial: USD 1.150
+- Motor: 250W Brushless
+- Batería: 36V 10.4Ah
+- Autonomía: 50 km
+- Enlace oficial: https://wheele.com.uy/producto/manhattan-flex/
+
+### 10. Decathlon Rockrider E-Expl 520 (E-MTB)
+- Fabricante / Marca: Decathlon Uruguay
+- Precio Oficial: USD 2.490
+- Motor: Motor central Yamaha PW-CE 250W con par motor de 70 Nm
+- Batería: 500 Wh desmontable
+- Autonomía: 80 km
+- Enlace oficial: https://www.decathlon.com.uy/bicicletas-electricas/
+
+### 11. Sunra Hawk 3000 (Motocicleta Eléctrica Urbana)
+- Importador Oficial: Sunra Uruguay
+- Precio Oficial: USD 2.490
+- Motor: Bosch 3000W
+- Batería: Doble pack de Litio 72V extraíble (para cargar en domicilio o trabajo)
+- Autonomía: 100 km
+- Enlace oficial: https://sunra.com.uy/productos/hawk-3000/
+
+### 12. Yadea G5 Pro (Scooter Inteligente)
+- Importador Oficial: Yadea Uruguay
+- Precio Oficial: USD 2.890
+- Motor: 2300W
+- Batería: Celdas Panasonic 18650 extraíbles
+- Autonomía: 80 km
+- Enlace oficial: https://yadea.com.uy/modelos/g5/
+
+## Normativas Tributarias y Seguros en Uruguay
+1. Patente de Rodados (SUCIVE): Los vehículos 100% eléctricos cero kilómetro tributan una alícuota anual del 3% calculada sobre el valor de mercado sin IVA, frente al 5% que abonan los vehículos térmicos a combustión.
+2. Seguros Estatales (BSE): Bonificación directa del 15% en pólizas integrales para vehículos eléctricos particulares y utilitarios.
+3. Carga Pública (UTE Mueve): Red con más de 300 puntos en todo el país con conectores Type 2 Mennekes (AC 22 kW) y conectores rápidos CCS2 (DC 43 kW a 120 kW).
