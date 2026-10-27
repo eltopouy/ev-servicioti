@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-10-26 21:22:14",
+  "total_vehiculos_auditados": 96,
+  "alertas_noticias_encontradas": 0,
+  "discrepancias_plaza_detectadas": 5,
+  "alertas_noticias": [],
+  "discrepancias_mercado": [
+    {
+      "vehicle_id": "byd-han-ev",
+      "marca": "BYD",
+      "modelo": "Han",
+      "precio_catalogo_usd": 79990.0,
+      "precio_plaza_min_usd": 23990.0,
+      "precio_plaza_prom_usd": 23990.0,
+      "variacion_pct": -70.0,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "dongfeng-nammi-330",
+      "marca": "Dongfeng",
+      "modelo": "Nammi",
+      "precio_catalogo_usd": 18990.0,
+      "precio_plaza_min_usd": 17990.0,
+      "precio_plaza_prom_usd": 20490.0,
+      "variacion_pct": 7.9,
+      "estado_alerta": "Precio en plaza superior a lista oficial"
+    },
+    {
+      "vehicle_id": "dongfeng-nammi-box",
+      "marca": "Dongfeng",
+      "modelo": "Nammi",
+      "precio_catalogo_usd": 21990.0,
+      "precio_plaza_min_usd": 17990.0,
+      "precio_plaza_prom_usd": 20490.0,
+      "variacion_pct": -6.8,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "geely-ex5-pro",
+      "marca": "Geely",
+      "modelo": "EX5",
+      "precio_catalogo_usd": 33990.0,
+      "precio_plaza_min_usd": 27990.0,
+      "precio_plaza_prom_usd": 32240.0,
+      "variacion_pct": -5.1,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "zeekr-x",
+      "marca": "Zeekr",
+      "modelo": "X",
+      "precio_catalogo_usd": 54990.0,
+      "precio_plaza_min_usd": 10000.0,
+      "precio_plaza_prom_usd": 26549.84,
+      "variacion_pct": -51.7,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    }
+  ],
+  "recomendacion_editorial": "Catálogo 100% BEV alineado con listas oficiales de importadores y valores SUCIVE/BSE actualizados."
+}

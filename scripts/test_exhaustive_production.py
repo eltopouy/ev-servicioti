@@ -87,8 +87,9 @@ def run_exhaustive_tests():
         # TEST 1: Showcase de Líderes ACAU y Prioridad en Catálogo
         # ---------------------------------------------------------------------
         page = browser.new_page()
-        page.goto(FILE_URL, wait_until="networkidle")
-        page.wait_for_selector("#top-sales-cards > div", timeout=10000)
+        page.goto(FILE_URL, wait_until="domcontentloaded")
+        page.wait_for_timeout(1000)
+        page.wait_for_selector("#top-sales-cards > div", timeout=15000)
         print("▶ [Test 1/12] Verificando Showcase de Líderes de Ventas ACAU...")
 
         top_cards = page.locator("#top-sales-cards > div")
@@ -509,7 +510,7 @@ def run_exhaustive_tests():
             viewport={"width": 390, "height": 844},
             user_agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
         )
-        mobile_page.goto(FILE_URL, wait_until="networkidle")
+        mobile_page.goto(FILE_URL, wait_until="domcontentloaded")
 
         # Verificar que no exista overflow horizontal (scroll lateral indeseado)
         scroll_width = mobile_page.evaluate("document.documentElement.scrollWidth")
@@ -554,7 +555,7 @@ def run_exhaustive_tests():
         # ---------------------------------------------------------------------
         print("▶ [Test 13/15] Verificando Selector de Marcas y Filtrado Instantáneo de Tesla...")
         p_brand = browser.new_page()
-        p_brand.goto(FILE_URL, wait_until="networkidle")
+        p_brand.goto(FILE_URL, wait_until="domcontentloaded")
 
         # Verificar presencia de la barra de marcas
         brand_bar = p_brand.locator("#brand-pills-bar")

@@ -115,8 +115,8 @@ def export_db_to_json():
     cursor.execute("SELECT * FROM market_listings ORDER BY precio ASC")
     market = [dict(row) for row in cursor.fetchall()]
 
-    # 3. Noticias / Crónicas
-    cursor.execute("SELECT * FROM news_articles ORDER BY fecha_publicacion DESC")
+    # 3. Noticias / Crónicas Editoriales (Exclusivas de portada con galerías de 4 fotos)
+    cursor.execute("SELECT * FROM news_articles WHERE id LIKE 'cronica-%' ORDER BY fecha_publicacion DESC")
     raw_news = [dict(row) for row in cursor.fetchall()]
     news = []
     for n in raw_news:

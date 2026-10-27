@@ -5,7 +5,7 @@
     "author": "Andrés Franchi Ugartemendía (ServicioTI)",
     "total_vehicles": 96,
     "total_brands": 36,
-    "total_market": 144,
+    "total_market": 192,
     "total_news": 6,
     "total_chargers": 25,
     "total_tariffs": 8
@@ -8461,6 +8461,19 @@
       "fecha_registro": "2026-10-26 12:18:03"
     },
     {
+      "id": 51,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 1,
+      "vehicle_id": "byd-yuan-pro",
+      "marca": "BYD",
+      "modelo": "Yuan Pro",
+      "unidades_mes": 280,
+      "unidades_acumuladas": 3362,
+      "cuota_mercado_pct": 24.0,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
+    },
+    {
       "id": 2,
       "periodo": "2026-10 (Oficial ACAU)",
       "posicion": 2,
@@ -8524,6 +8537,19 @@
       "cuota_mercado_pct": 14.7,
       "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
       "fecha_registro": "2026-10-26 12:18:03"
+    },
+    {
+      "id": 52,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 2,
+      "vehicle_id": "byd-seagull-ev300",
+      "marca": "BYD",
+      "modelo": "Seagull",
+      "unidades_mes": 195,
+      "unidades_acumuladas": 2061,
+      "cuota_mercado_pct": 14.7,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
     },
     {
       "id": 3,
@@ -8591,6 +8617,19 @@
       "fecha_registro": "2026-10-26 12:18:03"
     },
     {
+      "id": 53,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 3,
+      "vehicle_id": "dongfeng-nammi-box",
+      "marca": "Dongfeng",
+      "modelo": "Nammi Box",
+      "unidades_mes": 110,
+      "unidades_acumuladas": 1196,
+      "cuota_mercado_pct": 8.5,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
+    },
+    {
       "id": 4,
       "periodo": "2026-10 (Oficial ACAU)",
       "posicion": 4,
@@ -8654,6 +8693,19 @@
       "cuota_mercado_pct": 5.9,
       "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
       "fecha_registro": "2026-10-26 12:18:03"
+    },
+    {
+      "id": 54,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 4,
+      "vehicle_id": "byd-e2",
+      "marca": "BYD",
+      "modelo": "New e2",
+      "unidades_mes": 78,
+      "unidades_acumuladas": 832,
+      "cuota_mercado_pct": 5.9,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
     },
     {
       "id": 5,
@@ -8721,6 +8773,19 @@
       "fecha_registro": "2026-10-26 12:18:03"
     },
     {
+      "id": 55,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 5,
+      "vehicle_id": "chevrolet-spark-euv",
+      "marca": "Chevrolet",
+      "modelo": "Spark EUV",
+      "unidades_mes": 69,
+      "unidades_acumuladas": 737,
+      "cuota_mercado_pct": 5.3,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
+    },
+    {
       "id": 6,
       "periodo": "2026-10 (Oficial ACAU)",
       "posicion": 6,
@@ -8784,6 +8849,19 @@
       "cuota_mercado_pct": 4.2,
       "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
       "fecha_registro": "2026-10-26 12:18:03"
+    },
+    {
+      "id": 56,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 6,
+      "vehicle_id": "jmev-ev3",
+      "marca": "JMC",
+      "modelo": "JMEV EV3",
+      "unidades_mes": 54,
+      "unidades_acumuladas": 589,
+      "cuota_mercado_pct": 4.2,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
     },
     {
       "id": 7,
@@ -8851,6 +8929,19 @@
       "fecha_registro": "2026-10-26 12:18:03"
     },
     {
+      "id": 57,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 7,
+      "vehicle_id": "geely-ex5-pro",
+      "marca": "Geely",
+      "modelo": "EX5 Pro",
+      "unidades_mes": 48,
+      "unidades_acumuladas": 515,
+      "cuota_mercado_pct": 3.7,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
+    },
+    {
       "id": 8,
       "periodo": "2026-10 (Oficial ACAU)",
       "posicion": 8,
@@ -8914,6 +9005,19 @@
       "cuota_mercado_pct": 3.4,
       "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
       "fecha_registro": "2026-10-26 12:18:03"
+    },
+    {
+      "id": 58,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 8,
+      "vehicle_id": "byd-yuan-plus",
+      "marca": "BYD",
+      "modelo": "Yuan Plus",
+      "unidades_mes": 42,
+      "unidades_acumuladas": 475,
+      "cuota_mercado_pct": 3.4,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
     },
     {
       "id": 9,
@@ -8981,6 +9085,19 @@
       "fecha_registro": "2026-10-26 12:18:03"
     },
     {
+      "id": 59,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 9,
+      "vehicle_id": "omoda-e5",
+      "marca": "Omoda",
+      "modelo": "Omoda E5",
+      "unidades_mes": 39,
+      "unidades_acumuladas": 469,
+      "cuota_mercado_pct": 3.3,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
+    },
+    {
       "id": 10,
       "periodo": "2026-10 (Oficial ACAU)",
       "posicion": 10,
@@ -9044,6 +9161,19 @@
       "cuota_mercado_pct": 2.8,
       "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
       "fecha_registro": "2026-10-26 12:18:03"
+    },
+    {
+      "id": 60,
+      "periodo": "2026-10 (Oficial ACAU)",
+      "posicion": 10,
+      "vehicle_id": "jac-e-js1",
+      "marca": "JAC",
+      "modelo": "e-JS1",
+      "unidades_mes": 35,
+      "unidades_acumuladas": 394,
+      "cuota_mercado_pct": 2.8,
+      "fuente": "Asociación del Comercio Automotor del Uruguay (ACAU)",
+      "fecha_registro": "2026-10-27 00:22:16"
     }
   ],
   "market_listings": [
@@ -9144,6 +9274,38 @@
       "fecha_registro": "2026-10-26 01:47:49"
     },
     {
+      "id": "a6b206525fbb87fdb235e4ea807d56f1",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Citroën Berlingo Furgon 2018 1.6 Furgon P.lat. 2abag Abs Faros 3 Asiento",
+      "precio": 10600.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/a6b206525fbb87fdb235e4ea807d56f1",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_969597-MLU120101338089_102026-E.webp",
+      "ubicacion": "Rivera - Rivera",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "6d4586bb1729c74fa7b827eb2aee5b50",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Sandero Stepway 2018 1.6 Privilege 105cv",
+      "precio": 11890.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "PAK AUTOMOVILES",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/6d4586bb1729c74fa7b827eb2aee5b50",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_685600-MLU118569768156_102026-E.webp",
+      "ubicacion": "Montevideo - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "807a726df99921f2d46b4cc6f8db083d",
       "tipo": "auto",
       "marca": null,
@@ -9190,6 +9352,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_612130-MLU118428465632_102026-E.webp",
       "ubicacion": "Malvin - Montevideo",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "100ab7ea038c6933560f17221756b3c7",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Nissan Note 2018 1.6 Advance Mt",
+      "precio": 12490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Gonzalo Garage Automoviles",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/100ab7ea038c6933560f17221756b3c7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_612130-MLU118428465632_102026-E.webp",
+      "ubicacion": "Malvin - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "d92c5c6bef6e8dbf85f125f8ebeea548",
@@ -9576,6 +9754,118 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "5a4e692b652142183346d1d3c8810c95",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 0.0 Ev (18,72 Kwh)",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Gonzalo Garage Automoviles",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/5a4e692b652142183346d1d3c8810c95",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_885707-MLU118436024000_102026-E.webp",
+      "ubicacion": "Malvin - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "85aceb6cacd86243208221803c7f3dd6",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 Baw L7 Eléctrico",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/85aceb6cacd86243208221803c7f3dd6",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_964490-MLU105991211065_012026-E.webp",
+      "ubicacion": "Cordón - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "1f4fe219789f2a7f1e0f1fd10b954db2",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 0.0 Ev",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/1f4fe219789f2a7f1e0f1fd10b954db2",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_628689-MLU115479957516_082026-E.webp",
+      "ubicacion": "Brazo Oriental - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "a2ba7e6443f2b884e1c5969993a42254",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 0.0 Ev",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/a2ba7e6443f2b884e1c5969993a42254",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_814224-MLU117937656966_102026-E.webp",
+      "ubicacion": "Sayago - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "697dd0d81996fc50ef64f4e4d23f6272",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 -",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/697dd0d81996fc50ef64f4e4d23f6272",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_876314-MLU112639849651_062026-E.webp",
+      "ubicacion": "Montevideo - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "e0380877b9279a842f19a98bc1c36f2f",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 Mini Ev Bagel",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Vipercar",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/e0380877b9279a842f19a98bc1c36f2f",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_770164-MLU111003301879_042026-E.webp",
+      "ubicacion": "Montevideo - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "554a433b330fe31f842a2180c25d3ff4",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "BAW L7 2026 Ev Electrico - 5 Puertas 250km Carplay Camara",
+      "precio": 12990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/554a433b330fe31f842a2180c25d3ff4",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_628841-MLU119375305799_102026-E.webp",
+      "ubicacion": "Pocitos - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "b5a0358d1b8b55b659941d1a7f07bdc5",
       "tipo": "auto",
       "marca": null,
@@ -9622,6 +9912,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_866156-MLU114217201669_072026-E.webp",
       "ubicacion": "Prado - Montevideo",
       "fecha_registro": "2026-10-26 01:47:49"
+    },
+    {
+      "id": "5f13cf21d2f00d429ee2b186a0e49861",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "JMC Jmev 2 2027 -",
+      "precio": 13990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/5f13cf21d2f00d429ee2b186a0e49861",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_866156-MLU114217201669_072026-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "7909499d3d59830cfd628068902d75a5",
@@ -9672,6 +9978,22 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "91a4cbadf3c0fb5770ca099dd8d1f2e9",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Victory Auto Doble Cabina 2026 Pick Up",
+      "precio": 14990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/91a4cbadf3c0fb5770ca099dd8d1f2e9",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_840456-MLU89475276853_082025-E.webp",
+      "ubicacion": "Cordón - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "cdcdc0e3b73b0d26b48f5f28c9f6df7d",
       "tipo": "auto",
       "marca": null,
@@ -9720,6 +10042,22 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "ee29e87b4433521fd0a2f232b7d34579",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Grand Captur 2022 1.6 16v Intens",
+      "precio": 16000.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/ee29e87b4433521fd0a2f232b7d34579",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_659925-MLU118800108735_102026-E.webp",
+      "ubicacion": "Libertad - San José",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "b9730131a112298f752edbf072c350aa",
       "tipo": "auto",
       "marca": null,
@@ -9766,6 +10104,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_694249-MLU117440023936_102026-E.webp",
       "ubicacion": "Ciudad De La Costa - Canelones",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "3ac50ecb57b9765276a2b2fd5fc69f5e",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Dongfeng Nammi 2026 330 Pro",
+      "precio": 17990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/3ac50ecb57b9765276a2b2fd5fc69f5e",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_694249-MLU117440023936_102026-E.webp",
+      "ubicacion": "Ciudad De La Costa - Canelones",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "d151f0ef15ea9878e548df9aa0136979",
@@ -9864,6 +10218,38 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "3beab295d77294b4274276f598c381bc",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Dongfeng Nammi 2026 330 (31,4 Kwh)",
+      "precio": 18990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Dongfeng",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/3beab295d77294b4274276f598c381bc",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_712483-MLU111707892461_052026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "ae052c3e9b483b227e1924209f79760c",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Dongfeng Nammi 2026 330 - Auto Eléctrico Carga Rápida Ccs2",
+      "precio": 18990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/ae052c3e9b483b227e1924209f79760c",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_951572-MLU117753305024_102026-E.webp",
+      "ubicacion": "Pocitos - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "b0862136dfdc74ad6ec5027b9104df2a",
       "tipo": "auto",
       "marca": null,
@@ -9912,6 +10298,22 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "dbda679d115f7479d942942455b1a59c",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Cargo",
+      "precio": 19990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/dbda679d115f7479d942942455b1a59c",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_993801-MLU117026486625_092026-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "47a1bef72453a7d2834702adf7d1ab86",
       "tipo": "auto",
       "marca": null,
@@ -9958,6 +10360,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_861379-MLU115551851468_082026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "09f81155eb9a41f9aab5281b893b7744",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Geely Ex2 2026 0.0 Pro (39,4 Kwh)",
+      "precio": 20790.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Geely",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/09f81155eb9a41f9aab5281b893b7744",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_861379-MLU115551851468_082026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "842465dc4273e5291b99ea20230c5c3a",
@@ -10200,6 +10618,86 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "06cc627a38db8da49dc88764e7a0c221",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Xtreme",
+      "precio": 20990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/06cc627a38db8da49dc88764e7a0c221",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_941997-MLU115587100770_092026-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "fd87bc4925949501843eedc5adb2b88b",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Dongfeng Nammi 2026 0.0 330 Eu (31,4 Kwh)",
+      "precio": 20990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Dongfeng",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/fd87bc4925949501843eedc5adb2b88b",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_680102-MLU111520184516_062026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "ce169d534a66179b308224b64d971f01",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Pro",
+      "precio": 20990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/ce169d534a66179b308224b64d971f01",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_763855-MLU115864871408_092026-E.webp",
+      "ubicacion": "La Blanqueada - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "1de7e0b1e5a8e868af45eb25d60256c3",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Xtreme",
+      "precio": 20990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Moreira Automoviles",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/1de7e0b1e5a8e868af45eb25d60256c3",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_755484-MLU115685698628_092026-E.webp",
+      "ubicacion": "Atlántida - Canelones",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "544271ba387393a3e84154f51b91cb9f",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Suzuki Dzire 2026 Hybrid Glx Automático",
+      "precio": 20990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Vipercar",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/544271ba387393a3e84154f51b91cb9f",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_755758-MLU90753574290_082025-E.webp",
+      "ubicacion": "Montevideo - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "85c9b7deaab6c7752c2312dfa7ac4cac",
       "tipo": "auto",
       "marca": null,
@@ -10246,6 +10744,38 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_647577-MLU116308753410_092026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:49"
+    },
+    {
+      "id": "9b378d3a98830ccd745c91a42a080af4",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "MG Mg4 ev urban 2027 0.0 Comfort",
+      "precio": 21490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "MG",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/9b378d3a98830ccd745c91a42a080af4",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_647577-MLU116308753410_092026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "8feaf04f921962ac8b0ddaf9f5c2e074",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "MG Mg4 2027 Urban Comfort",
+      "precio": 21490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Califano Automóviles",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/8feaf04f921962ac8b0ddaf9f5c2e074",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_955267-MLU116704189724_092026-E.webp",
+      "ubicacion": "Montevideo - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "361264ac6cba5674f9de3ffd575868d6",
@@ -10392,6 +10922,54 @@
       "fecha_registro": "2026-10-26 01:47:49"
     },
     {
+      "id": "e1b34237c4a86e2032a66c4804a3f300",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Dongfeng Nammi 2026 0.0 430 Eu (42,3 Kwh)",
+      "precio": 22990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Dongfeng",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/e1b34237c4a86e2032a66c4804a3f300",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_752903-MLU112581381489_062026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "24476c2828c40c2700a696761e940970",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Geely Ex2 2026 0.0 Max (39,4 Kwh)",
+      "precio": 22990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Geely",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/24476c2828c40c2700a696761e940970",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_938802-MLU116988969695_082026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "e44ae91482d51ab023252d4607fb7e66",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Dongfeng Nammi 2025 Ev",
+      "precio": 22990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Dongfeng",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/e44ae91482d51ab023252d4607fb7e66",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_777309-MLU96061090774_102025-E.webp",
+      "ubicacion": "Malvin - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "d66e9f0390d2478d80932ed989d7c536",
       "tipo": "auto",
       "marca": null,
@@ -10486,6 +11064,38 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_847830-MLU117803356009_092026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:49"
+    },
+    {
+      "id": "e79657599a21d1568ab3ed656e12ccce",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Changan Q05 2027 Confort",
+      "precio": 23990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/e79657599a21d1568ab3ed656e12ccce",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_787007-MLU118467023341_092026-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "b6e711051d58232f05eed1aa5cdb69f4",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "MG Mg4 ev urban 2027 0.0 Deluxe",
+      "precio": 23990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "MG",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/b6e711051d58232f05eed1aa5cdb69f4",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_847830-MLU117803356009_092026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "77b9399f1e8468332b82f42914294cfa",
@@ -10584,6 +11194,38 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "625ca4ca0acf43d5317cba4c0b3b6962",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Oroch Outsider 0km",
+      "precio": 24490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/625ca4ca0acf43d5317cba4c0b3b6962",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_897856-MLU82474291925_022025-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "3eeaf6ddf11ed57acfb82220daa16a9c",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Inense Outsider Manual",
+      "precio": 24490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/3eeaf6ddf11ed57acfb82220daa16a9c",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_643274-MLU115594445140_092026-E.webp",
+      "ubicacion": "La Blanqueada - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "326ed83b59f199a0b273e8bfa48727c8",
       "tipo": "auto",
       "marca": null,
@@ -10680,6 +11322,38 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "9fd41cc15f461b00470cb4cf09030b94",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Intens 1.3 Turbo 0km",
+      "precio": 25990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/9fd41cc15f461b00470cb4cf09030b94",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_998517-MLU82474390311_022025-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "15cb2771ccc8947d2098b9156cb05dfc",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Intens 1.3t Cvt",
+      "precio": 25990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/15cb2771ccc8947d2098b9156cb05dfc",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_781293-MLU115594449750_092026-E.webp",
+      "ubicacion": "La Blanqueada - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "2579a13b6a7cf6162e8ef1f6ea5e306b",
       "tipo": "auto",
       "marca": null,
@@ -10726,6 +11400,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_799719-MLU115355257073_072026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "5c07bed1d7577e56155e3347bcbc66e1",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "MG Mgs5 2026 0.0 Comfort (49 Kwh)",
+      "precio": 26990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "MG",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/5c07bed1d7577e56155e3347bcbc66e1",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_799719-MLU115355257073_072026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "06bb1d2cbc321d57c9a76d589c2d6a01",
@@ -10824,6 +11514,38 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "b99617d2ccd5596a3cdb9168703c167c",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Oroch Outsider 0km",
+      "precio": 27490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/b99617d2ccd5596a3cdb9168703c167c",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_719160-MLU82190914258_022025-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "90a0fda78c76a4d02ffeec9998cdf210",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Outsider 1.3t Cvt",
+      "precio": 27490.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/90a0fda78c76a4d02ffeec9998cdf210",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_906204-MLU115594473958_092026-E.webp",
+      "ubicacion": "La Blanqueada - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "b75b11e583891909be98f29f66bee200",
       "tipo": "auto",
       "marca": null,
@@ -10870,6 +11592,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_902131-MLU118620437611_102026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:49"
+    },
+    {
+      "id": "85e1b861a94ebe3ee3b34cd8a25f1da3",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Geely EX5 2026 0.0 Urban (49,52 Kwh)",
+      "precio": 27990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Geely",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/85e1b861a94ebe3ee3b34cd8a25f1da3",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_902131-MLU118620437611_102026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "99cda16245c06491cd6a383f52d99746",
@@ -10968,6 +11706,38 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "4930590a4700af75ca14ff42afc13c9e",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 Renault Oroch 4x4",
+      "precio": 28990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/4930590a4700af75ca14ff42afc13c9e",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_995763-MLU111247604592_052026-E.webp",
+      "ubicacion": "La Blanqueada - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "58011d0abef88d841c57336a062a09c3",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Renault Oroch 2026 4x4",
+      "precio": 28990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/58011d0abef88d841c57336a062a09c3",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_896305-MLU117035496523_092026-E.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "45c29625049ec8db3f57c2c939085f8a",
       "tipo": "auto",
       "marca": null,
@@ -11014,6 +11784,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_906741-MLU115355257069_072026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "d6a862e4bbe14abf2867275c42ea122e",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "MG Mgs5 2026 0.0 Luxury (49 Kwh)",
+      "precio": 29990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "MG",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/d6a862e4bbe14abf2867275c42ea122e",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_906741-MLU115355257069_072026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "3084e63fbef835240e6e270a6ac73e31",
@@ -11112,6 +11898,38 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "074a6e7efd1110c54225d161be21c8b2",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "JAECOO 5 ev 2026 0.0 Luxury 2Wd (58,9 Kwh)",
+      "precio": 30990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Omoda | Jaecoo",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/074a6e7efd1110c54225d161be21c8b2",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_740990-MLU116988425403_082026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "89080bce1dae3a21f794b0264b602095",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Geely EX5 2026 0.0 Pro (60,22 Kwh)",
+      "precio": 30990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Geely",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/89080bce1dae3a21f794b0264b602095",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_602422-MLU116988444623_082026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "bae75c6d92779c951fc64585281df397",
       "tipo": "auto",
       "marca": null,
@@ -11160,6 +11978,22 @@
       "fecha_registro": "2026-10-26 01:47:48"
     },
     {
+      "id": "54182f5dda0e9b8d4a6be1218abf5c93",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Toyota Hilux Pick-up 2015 2.5 Cd Dx Pack Tdi 120cv 4x2 - H3",
+      "precio": 32000.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/54182f5dda0e9b8d4a6be1218abf5c93",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_803061-MLU119771110245_102026-E.webp",
+      "ubicacion": "Paysandú - Paysandú",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "d2609b28f03ef1e41526031b1b5d5fad",
       "tipo": "auto",
       "marca": null,
@@ -11206,6 +12040,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_657872-MLU113350052813_062026-E.webp",
       "ubicacion": "Uruguay",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "fc577e48b643da6570216f2799ec3159",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Lynk & Co 02 2026 0.0 Pro Ev (66 Kwh)",
+      "precio": 33990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Lynk & Co",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/fc577e48b643da6570216f2799ec3159",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_657872-MLU113350052813_062026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
     },
     {
       "id": "5b62cc71b11775f4f3094889e6401bda",
@@ -11304,6 +12154,38 @@
       "fecha_registro": "2026-10-26 01:47:49"
     },
     {
+      "id": "cd66a7a6948679dec870f6149faca090",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Geely EX5 2026 0.0 Max (60,22 Kwh)",
+      "precio": 34990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Geely",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/cd66a7a6948679dec870f6149faca090",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_625995-MLU116988999337_082026-E.webp",
+      "ubicacion": "Uruguay",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
+      "id": "523c212865a1e9088258015e2e818338",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Geely Ex5 2026 Em-i Pro Phev",
+      "precio": 34990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/523c212865a1e9088258015e2e818338",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_915375-MLU116505336639_082026-E.webp",
+      "ubicacion": "Las Piedras - Canelones",
+      "fecha_registro": "2026-10-27 00:22:14"
+    },
+    {
       "id": "6f16c66d331d82bbbd0ee82b79a7bec0",
       "tipo": "auto",
       "marca": null,
@@ -11350,6 +12232,22 @@
       "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_912839-MLU116944656183_082026-E.webp",
       "ubicacion": "Shangrilá - Canelones",
       "fecha_registro": "2026-10-26 01:47:48"
+    },
+    {
+      "id": "929eec64b8daef246bb90c86a1b66e58",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Mercedes-Benz Clase Cle 2025 2.0 Cle 200 4matic Coupe Avantgarde",
+      "precio": 74900.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Particular / Concesionaria",
+      "es_tienda_oficial": 0,
+      "permalink": "https://ev.servicioti.com.uy/plaza/929eec64b8daef246bb90c86a1b66e58",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_912839-MLU116944656183_082026-E.webp",
+      "ubicacion": "Shangrilá - Canelones",
+      "fecha_registro": "2026-10-27 00:22:14"
     }
   ],
   "news": [
@@ -11806,7 +12704,7 @@
       "descripcion": "Combustible más utilizado en el parque automotor de Uruguay. Precio oficial regulado por MIEM/URSEA.",
       "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
       "fecha_vigencia": "Octubre 2026",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "nafta_premium_97",
@@ -11818,7 +12716,7 @@
       "descripcion": "Combustible de alto octanaje con aditivos detergentes de última generación.",
       "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
       "fecha_vigencia": "Octubre 2026",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "gasoil_50s",
@@ -11830,7 +12728,7 @@
       "descripcion": "Diésel bajo en azufre utilizado en utilitarios, camionetas y motores gasoleros.",
       "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
       "fecha_vigencia": "Octubre 2026",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "ute_valle_trt",
@@ -11842,7 +12740,7 @@
       "descripcion": "La tarifa residencial más económica del país. Ideal para programar la carga automática en la madrugada con cargador de pared (Wallbox).",
       "fuente_oficial": "UTE — Pliego Tarifario Residencial Triple Horario",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "ute_llano_trt",
@@ -11854,7 +12752,7 @@
       "descripcion": "Carga diurna en días hábiles (fuera de punta) y durante las 24 horas de los sábados, domingos y feriados.",
       "fuente_oficial": "UTE — Plan Inteligente Residencial",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "ute_doble_fuera_punta",
@@ -11866,7 +12764,7 @@
       "descripcion": "Para hogares con tarifa residencial doble horario que cargan durante las 20 horas fuera del horario punta.",
       "fuente_oficial": "UTE — Tarifa Residencial Doble Horario",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "ute_residencial_simple",
@@ -11878,7 +12776,7 @@
       "descripcion": "Tarifa estándar tradicional de UTE sin diferenciación horaria.",
       "fuente_oficial": "UTE — Tarifa Residencial Simple",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     },
     {
       "id": "ute_mueve_publico",
@@ -11890,7 +12788,7 @@
       "descripcion": "Carga rápida en ruta en estaciones de 50 kW a 120 kW (CCS2 y GB/T) mediante tarjeta de recarga o app UTE Mueve.",
       "fuente_oficial": "Red UTE Mueve / URSEA",
       "fecha_vigencia": "Red Nacional de Carga UTE",
-      "fecha_actualizacion": "2026-10-26 13:59:29"
+      "fecha_actualizacion": "2026-10-27 00:22:16"
     }
   ]
 }

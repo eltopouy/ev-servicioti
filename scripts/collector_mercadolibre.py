@@ -70,6 +70,7 @@ def fetch_mlu_ev_listings():
         img_tag = it.find('img')
         img_url = img_tag.get('src') or img_tag.get('data-src') or '' if img_tag else ''
 
+        clean_permalink = f"https://ev.servicioti.com.uy/plaza/{item_id}"
         cursor.execute("""
         INSERT INTO market_listings (id, tipo, titulo, precio, moneda, es_0km, vendedor, es_tienda_oficial, permalink, thumbnail, ubicacion)
         VALUES (?, 'auto', ?, ?, ?, 1, ?, 0, ?, ?, ?)
@@ -77,8 +78,9 @@ def fetch_mlu_ev_listings():
             precio=excluded.precio,
             moneda=excluded.moneda,
             thumbnail=excluded.thumbnail,
-            ubicacion=excluded.ubicacion
-        """, (item_id, title, price, currency, seller, permalink, img_url, location))
+            ubicacion=excluded.ubicacion,
+            permalink=excluded.permalink
+        """, (item_id, title, price, currency, seller, clean_permalink, img_url, location))
         saved += 1
         listings.append({"titulo": title, "precio": price, "vendedor": seller, "ubicacion": location})
 

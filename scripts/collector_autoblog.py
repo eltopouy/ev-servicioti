@@ -87,22 +87,37 @@ def fetch_autoblog_ev_news():
         snippet_clean = re.sub(r'(?i)autoblog\s*(uruguay)?', 'EV Uruguay', snippet).strip()
 
         article_id = hashlib.md5(link.encode('utf-8')).hexdigest()
+        clean_url = f"https://ev.servicioti.com.uy/noticias/{article_id}"
         brands = detect_brands(f"{title_clean} {snippet_clean}")
 
         cursor.execute("""
-        INSERT INTO news_articles (id, medio, titulo, url, fecha_publicacion, resumen, marcas_mencionadas, imagen_portada, contenido_html)
-        VALUES (?, 'Lanzamientos Uruguay', ?, ?, datetime('now'), ?, ?, ?, ?)
+        CREATE TABLE IF NOT EXISTS market_news_feed (
+            id TEXT PRIMARY KEY,
+            medio TEXT,
+            titulo TEXT,
+            url TEXT UNIQUE,
+            fecha_publicacion TEXT,
+            resumen TEXT,
+            marcas_mencionadas TEXT,
+            imagen_portada TEXT,
+            contenido_html TEXT
+        )
+        """)
+
+        cursor.execute("""
+        INSERT INTO market_news_feed (id, medio, titulo, url, fecha_publicacion, resumen, marcas_mencionadas, imagen_portada, contenido_html)
+        VALUES (?, 'Crónica EV Uruguay', ?, ?, datetime('now'), ?, ?, ?, ?)
         ON CONFLICT(url) DO UPDATE SET
             titulo=excluded.titulo,
             resumen=excluded.resumen,
             marcas_mencionadas=excluded.marcas_mencionadas,
-            imagen_portada=COALESCE(excluded.imagen_portada, news_articles.imagen_portada)
-        """, (article_id, title_clean, link, snippet_clean, brands, img_url, snippet_clean))
+            imagen_portada=COALESCE(excluded.imagen_portada, market_news_feed.imagen_portada)
+        """, (article_id, title_clean, clean_url, snippet_clean, brands, img_url, snippet_clean))
         
         saved_count += 1
         ev_articles.append({
             "titulo": title_clean,
-            "link": link,
+            "link": clean_url,
             "marcas": brands,
             "imagen": img_url
         })
