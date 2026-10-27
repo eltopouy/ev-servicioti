@@ -95,9 +95,9 @@ BRAND_SERVICE_DATA = {
     },
     "tesla": {
         "intervalo_km": 40000,
-        "costo_usd": 210.0,
-        "taller_oficial": "Talleres Homologados y Especializados en Movilidad Eléctrica de Alta Gama",
-        "tareas": "Inspección de líquido de frenos, reemplazo de desecante de aire acondicionado, filtro HEPA de habitáculo, rotación de neumáticos."
+        "costo_usd": 120.0,
+        "taller_oficial": "Tesla Uruguay S.A.S. — Servicio Oficial & Showroom Punta Carretas Shopping",
+        "tareas": "Diagnóstico computarizado de celdas y pack de alto voltaje, reemplazo de filtro HEPA de habitáculo con carbón activado, verificación de líquido de frenos DOT 4, rotación e inspección de neumáticos."
     },
     "audi": {
         "intervalo_km": 15000,
