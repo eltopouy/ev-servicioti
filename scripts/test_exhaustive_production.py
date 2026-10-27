@@ -460,8 +460,9 @@ def run_exhaustive_tests():
         assert "text-white" in (top_sales_title.get_attribute("class") or ""), "El título de líderes de ventas debe ser text-white"
 
         # Verificar que la barra ServicioTI está al final de la página (no en la parte superior)
-        subbar = page.locator("body > div.border-t.border-line:has-text('Publicación Oficial de ServicioTI')")
-        assert subbar.count() > 0, "La barra oficial ServicioTI debe estar ubicada abajo del todo"
+        # Verificar que el pie editorial unificado de ServicioTI está al final de la página
+        subbar = page.locator("footer:has-text('ServicioTI')")
+        assert subbar.count() > 0, "El pie editorial unificado ServicioTI debe estar ubicado abajo del todo"
 
         print("  ✔ Sección editorial con carruseles swipeables y estilos aprobados.\n")
 

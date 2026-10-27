@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sunra-hawk-3000",
+    "marca": "Sunra",
+    "modelo": "Hawk 3000W",
+    "motivo": "Modelo no listado en el catálogo activo de sunra.com.uy (discontinuado o fuera de stock en plaza)",
+    "url_monitoreada": "https://sunra.com.uy",
+    "fecha": "2026-10-27"
+  },
+  {
+    "id": "sunra-grace-1800",
+    "marca": "Sunra",
+    "modelo": "Grace 1800W",
+    "motivo": "Modelo no listado en el catálogo activo de sunra.com.uy (discontinuado o fuera de stock en plaza)",
+    "url_monitoreada": "https://sunra.com.uy",
+    "fecha": "2026-10-27"
+  },
+  {
+    "id": "sunra-robo-s",
+    "marca": "Sunra",
+    "modelo": "Robo-S",
+    "motivo": "Modelo no listado en el catálogo activo de sunra.com.uy (discontinuado o fuera de stock en plaza)",
+    "url_monitoreada": "https://sunra.com.uy",
+    "fecha": "2026-10-27"
+  }
+]

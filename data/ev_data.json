@@ -5465,9 +5465,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "1 año oficial VoltBike",
       "homologado_ursea": 1,
-      "link_fabricante": "https://voltbike.uy/producto/voltbike-flex/",
+      "link_fabricante": "https://voltbike.uy/products/flex",
       "imagen_oficial_url": "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-foldable-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/02-detalle-vista-voltbike-flex-foldable-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"plegado\": \"Mecanismo rápido en 15 segundos\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-flex-foldable/badge-circular-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-flex-foldable/pixel-art-16bit-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Batería de Litio Extraíble Integrada en Cuadro Plegable\", \"quimica_bateria\": \"Celdas de ion de litio 18650\", \"fabricante_bateria\": \"VoltBike UY / Samsung SDI celdas\", \"refrigeracion_bateria\": \"Pasiva estanca en bisagra de cuadro\", \"voltaje_arquitectura\": \"36V 10Ah (360 Wh)\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5488,11 +5488,7 @@
       "anio_origen": 2022,
       "galeria": [
         "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-foldable-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-flex-foldable/02-detalle-vista-voltbike-flex-foldable-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "plegado": "Mecanismo rápido en 15 segundos",
@@ -5536,9 +5532,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
-      "link_fabricante": "https://voltbike.uy",
+      "link_fabricante": "https://voltbike.uy/products/clasica",
       "imagen_oficial_url": "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/02-detalle-vista-voltbike-classica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"estilo\": \"Cuadro bajo para fácil acceso\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-classica/badge-circular-voltbike-classica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-classica/pixel-art-16bit-voltbike-classica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Batería de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas de ion de litio de alta densidad\", \"fabricante_bateria\": \"VoltBike UY / DLG Power\", \"refrigeracion_bateria\": \"Pasiva montada sobre portaequipajes trasero\", \"voltaje_arquitectura\": \"36V 10.4Ah (374 Wh)\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5559,11 +5555,7 @@
       "anio_origen": 2022,
       "galeria": [
         "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-classica/02-detalle-vista-voltbike-classica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Cuadro bajo para fácil acceso",
@@ -5678,9 +5670,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
-      "link_fabricante": "https://loop-bikes.com",
-      "imagen_oficial_url": "assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/02-vista-trasera-cuadro-rueda-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/03-manillar-display-digital-comando-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/04-perfil-lateral-bicicleta-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/05-detalle-motor-bateria-puerto-carga-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/06-detalle-transmision-frenos-disco-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://shop.loop-bikes.com/products/loop-bikes-cruiser",
+      "imagen_oficial_url": "assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/02-detalle-vista-loop-bikes-classic-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"accesorios\": \"Guardabarros, canasto delantero y luces LED\", \"fabricante\": \"Loop Bikes Uruguay\", \"badge_circular_url\": \"assets/img/loop-bikes-classic/badge-circular-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/loop-bikes-classic/pixel-art-16bit-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas cilíndricas 18650 / 21700 de litio\", \"fabricante_bateria\": \"Celdas de grado automotriz Samsung / LG / DLG\", \"refrigeracion_bateria\": \"Disipación pasiva protegida en cuadro estanco\", \"voltaje_arquitectura\": \"36V - 48V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5700,12 +5692,8 @@
       "bateria_voltaje": "36V - 48V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-classic/02-vista-trasera-cuadro-rueda-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-classic/03-manillar-display-digital-comando-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-classic/04-perfil-lateral-bicicleta-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-classic/05-detalle-motor-bateria-puerto-carga-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-classic/06-detalle-transmision-frenos-disco-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-classic/02-detalle-vista-loop-bikes-classic-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "accesorios": "Guardabarros, canasto delantero y luces LED",
@@ -5749,9 +5737,9 @@
       "garantia_vehiculo": "1 año oficial",
       "garantia_bateria": "1 año oficial Loop Bikes UY",
       "homologado_ursea": 1,
-      "link_fabricante": "https://loop-bikes.com/producto/slim-pro/",
-      "imagen_oficial_url": "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/02-vista-trasera-cuadro-rueda-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/03-manillar-display-digital-comando-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/04-perfil-lateral-bicicleta-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/05-detalle-motor-bateria-puerto-carga-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/06-detalle-transmision-frenos-disco-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://shop.loop-bikes.com/products/loop-slim-pro",
+      "imagen_oficial_url": "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/02-detalle-vista-loop-bikes-slim-pro-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"motor\": \"Bafang 250W integrado en maza trasera\", \"bateria\": \"Samsung Li-Ion oculta en cuadro\", \"cuadro\": \"Aluminio hidroformado 6061\", \"frenos\": \"Discos mecánicos Tektro\", \"fabricante\": \"Loop Bikes Uruguay\", \"badge_circular_url\": \"assets/img/loop-bikes-slim-pro/badge-circular-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/loop-bikes-slim-pro/pixel-art-16bit-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas cilíndricas 18650 / 21700 de litio\", \"fabricante_bateria\": \"Celdas de grado automotriz Samsung / LG / DLG\", \"refrigeracion_bateria\": \"Disipación pasiva protegida en cuadro estanco\", \"voltaje_arquitectura\": \"36V - 48V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5771,12 +5759,8 @@
       "bateria_voltaje": "36V - 48V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-slim-pro/02-vista-trasera-cuadro-rueda-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-slim-pro/03-manillar-display-digital-comando-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-slim-pro/04-perfil-lateral-bicicleta-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-slim-pro/05-detalle-motor-bateria-puerto-carga-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-slim-pro/06-detalle-transmision-frenos-disco-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/02-detalle-vista-loop-bikes-slim-pro-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "motor": "Bafang 250W integrado en maza trasera",
@@ -5965,9 +5949,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
-      "link_fabricante": "https://loop-bikes.com/producto/soda-bike/",
-      "imagen_oficial_url": "assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/02-vista-trasera-cuadro-rueda-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/03-manillar-display-digital-comando-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/04-perfil-lateral-bicicleta-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/05-detalle-motor-bateria-puerto-carga-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/06-detalle-transmision-frenos-disco-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://shop.loop-bikes.com/products/soda-bike",
+      "imagen_oficial_url": "assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/02-detalle-vista-loop-bikes-soda-bike-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"cubiertas\": \"Kenda 20x4.0 anchas para arena y asfalto\", \"asiento\": \"Largo estilo ciclomotor años 70 para dos\", \"fabricante\": \"Loop Bikes Uruguay\", \"badge_circular_url\": \"assets/img/loop-bikes-soda-bike/badge-circular-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/loop-bikes-soda-bike/pixel-art-16bit-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas cilíndricas 18650 / 21700 de litio\", \"fabricante_bateria\": \"Celdas de grado automotriz Samsung / LG / DLG\", \"refrigeracion_bateria\": \"Disipación pasiva protegida en cuadro estanco\", \"voltaje_arquitectura\": \"36V - 48V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5987,12 +5971,8 @@
       "bateria_voltaje": "36V - 48V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-soda-bike/02-vista-trasera-cuadro-rueda-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-soda-bike/03-manillar-display-digital-comando-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-soda-bike/04-perfil-lateral-bicicleta-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-soda-bike/05-detalle-motor-bateria-puerto-carga-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-soda-bike/06-detalle-transmision-frenos-disco-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-soda-bike/02-detalle-vista-loop-bikes-soda-bike-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "cubiertas": "Kenda 20x4.0 anchas para arena y asfalto",
@@ -6322,9 +6302,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
-      "link_fabricante": "https://yadea.com.uy",
-      "imagen_oficial_url": "assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/02-vista-trasera-opticas-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/03-puesto-conduccion-manillar-tablero-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/04-perfil-lateral-completo-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/05-detalle-bateria-motor-hub-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/06-detalle-faro-led-frenos-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://motosyadea.com.uy",
+      "imagen_oficial_url": "assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/02-detalle-vista-yadea-c-umi-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"estilo\": \"Diseño retro vintage europeo\", \"importador\": \"Yadea Uruguay\", \"badge_circular_url\": \"assets/img/yadea-c-umi/badge-circular-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/yadea-c-umi/pixel-art-16bit-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6344,12 +6324,8 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-c-umi/02-vista-trasera-opticas-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-c-umi/03-puesto-conduccion-manillar-tablero-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-c-umi/04-perfil-lateral-completo-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-c-umi/05-detalle-bateria-motor-hub-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-c-umi/06-detalle-faro-led-frenos-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-c-umi/02-detalle-vista-yadea-c-umi-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Diseño retro vintage europeo",
@@ -6394,8 +6370,8 @@
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
       "link_fabricante": "https://sunra.com.uy/productos/grace/",
-      "imagen_oficial_url": "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/02-vista-trasera-opticas-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/03-puesto-conduccion-manillar-tablero-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/04-perfil-lateral-completo-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/05-detalle-bateria-motor-hub-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/06-detalle-faro-led-frenos-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "imagen_oficial_url": "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"frenos\": \"Disco delantero y tambor trasero\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-grace-1800/badge-circular-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-grace-1800/pixel-art-16bit-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6415,12 +6391,7 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-grace-1800/02-vista-trasera-opticas-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-grace-1800/03-puesto-conduccion-manillar-tablero-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-grace-1800/04-perfil-lateral-completo-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-grace-1800/05-detalle-bateria-motor-hub-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-grace-1800/06-detalle-faro-led-frenos-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "frenos": "Disco delantero y tambor trasero",
@@ -6465,8 +6436,8 @@
       "garantia_bateria": "2 años oficial Sunra UY",
       "homologado_ursea": 1,
       "link_fabricante": "https://sunra.com.uy/productos/hawk-3000/",
-      "imagen_oficial_url": "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/02-vista-trasera-opticas-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/03-puesto-conduccion-manillar-tablero-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/04-perfil-lateral-completo-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/05-detalle-bateria-motor-hub-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/06-detalle-faro-led-frenos-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "imagen_oficial_url": "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"bateria\": \"Litio extraíble para cargar en apartamento\", \"bluetooth\": \"Parlante Bluetooth integrado y alarma\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-hawk-3000/badge-circular-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-hawk-3000/pixel-art-16bit-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6486,12 +6457,7 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-hawk-3000/02-vista-trasera-opticas-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-hawk-3000/03-puesto-conduccion-manillar-tablero-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-hawk-3000/04-perfil-lateral-completo-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-hawk-3000/05-detalle-bateria-motor-hub-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-hawk-3000/06-detalle-faro-led-frenos-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "bateria": "Litio extraíble para cargar en apartamento",
@@ -6536,9 +6502,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
-      "link_fabricante": "https://yadea.com.uy/modelos/g5/",
-      "imagen_oficial_url": "assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/02-vista-trasera-opticas-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/03-puesto-conduccion-manillar-tablero-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/04-perfil-lateral-completo-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/05-detalle-bateria-motor-hub-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/06-detalle-faro-led-frenos-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://motosyadea.com.uy",
+      "imagen_oficial_url": "assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/02-detalle-vista-yadea-g5-pro-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"pantalla\": \"LCD de 7 pulgadas antirreflejo\", \"importador\": \"Yadea Uruguay\", \"badge_circular_url\": \"assets/img/yadea-g5-pro/badge-circular-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/yadea-g5-pro/pixel-art-16bit-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Panasonic 18650 Extraíble\", \"quimica_bateria\": \"NMC celdas cilíndricas de grado automotriz\", \"fabricante_bateria\": \"Panasonic\", \"refrigeracion_bateria\": \"Carcasa sellada de magnesio y aluminio\", \"voltaje_arquitectura\": \"60V 32Ah\", \"anio_origen\": 2020}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6558,12 +6524,8 @@
       "bateria_voltaje": "60V 32Ah",
       "anio_origen": 2020,
       "galeria": [
-        "assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-g5-pro/02-vista-trasera-opticas-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-g5-pro/03-puesto-conduccion-manillar-tablero-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-g5-pro/04-perfil-lateral-completo-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-g5-pro/05-detalle-bateria-motor-hub-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-g5-pro/06-detalle-faro-led-frenos-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-g5-pro/02-detalle-vista-yadea-g5-pro-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "pantalla": "LCD de 7 pulgadas antirreflejo",
@@ -6607,9 +6569,9 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
-      "link_fabricante": "https://sunra.com.uy/productos/miku-super/",
-      "imagen_oficial_url": "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/02-vista-trasera-opticas-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/03-puesto-conduccion-manillar-tablero-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/04-perfil-lateral-completo-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/05-detalle-bateria-motor-hub-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/06-detalle-faro-led-frenos-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://sunra.com.uy/moto-electrica-miku-super/",
+      "imagen_oficial_url": "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/02-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/03-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/04-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/05-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"estilo\": \"Chasis flotante deportivo naked\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-miku-super/badge-circular-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-miku-super/pixel-art-16bit-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6629,12 +6591,11 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/02-vista-trasera-opticas-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/03-puesto-conduccion-manillar-tablero-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/04-perfil-lateral-completo-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/05-detalle-bateria-motor-hub-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/06-detalle-faro-led-frenos-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/02-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/03-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/04-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/05-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Chasis flotante deportivo naked",
@@ -6679,8 +6640,8 @@
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
       "link_fabricante": "https://sunra.com.uy",
-      "imagen_oficial_url": "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/02-vista-trasera-opticas-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/03-puesto-conduccion-manillar-tablero-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/04-perfil-lateral-completo-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/05-detalle-bateria-motor-hub-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/06-detalle-faro-led-frenos-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "imagen_oficial_url": "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"encendido\": \"Huella dactilar biométrica\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-robo-s/badge-circular-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-robo-s/pixel-art-16bit-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Litio-Ion Extraíble Dual (2 x 72V 20Ah)\", \"quimica_bateria\": \"Celdas de litio de ciclo profundo\", \"fabricante_bateria\": \"Sunra Micro Power\", \"refrigeracion_bateria\": \"Aire / disipación sellada\", \"voltaje_arquitectura\": \"72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6700,12 +6661,7 @@
       "bateria_voltaje": "72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-robo-s/02-vista-trasera-opticas-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-robo-s/03-puesto-conduccion-manillar-tablero-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-robo-s/04-perfil-lateral-completo-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-robo-s/05-detalle-bateria-motor-hub-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-robo-s/06-detalle-faro-led-frenos-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "encendido": "Huella dactilar biométrica",
@@ -6963,9 +6919,9 @@
       "garantia_vehiculo": "1 año oficial",
       "garantia_bateria": "1 año",
       "homologado_ursea": 1,
-      "link_fabricante": "https://sunra.com.uy",
-      "imagen_oficial_url": "assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-cabina-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-cabina-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/02-vista-trasera-caja-carga-volcadora-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/03-puesto-conduccion-manillar-comandos-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/04-perfil-lateral-chasis-reforzado-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/05-detalle-motor-baterias-transmision-fuerza-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/06-detalle-caja-mecanismo-volcador-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\"]",
+      "link_fabricante": "https://sunra.com.uy/moto-eletrica-cargo-king-kong/",
+      "imagen_oficial_url": "assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/02-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/03-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/04-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/05-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"caja\": \"Caja volcadora manual con compuertas rebatibles laterales y trasera\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-cargo-triciclo/badge-circular-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-cargo-triciclo/pixel-art-16bit-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Plomo-Ácido Gel Sellado / Litio LFP de Tracción\", \"quimica_bateria\": \"Gel Silicio / LiFePO4 de ciclo profundo para carga pesada\", \"fabricante_bateria\": \"Chilwee / Tianneng / EVE\", \"refrigeracion_bateria\": \"Pasiva en compartimento reforzado de carga\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6985,12 +6941,11 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-cabina-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/02-vista-trasera-caja-carga-volcadora-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/03-puesto-conduccion-manillar-comandos-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/04-perfil-lateral-chasis-reforzado-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/05-detalle-motor-baterias-transmision-fuerza-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/06-detalle-caja-mecanismo-volcador-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/02-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/03-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/04-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/05-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "caja": "Caja volcadora manual con compuertas rebatibles laterales y trasera",
