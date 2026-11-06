@@ -62,21 +62,52 @@ class GeminiEVImageService:
                     user_data_dir=user_data_dir,
                     channel="chrome",
                     headless=headless,
-                    args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+                    args=[
+                        "--disable-blink-features=AutomationControlled",
+                        "--disable-breakpad",
+                        "--disable-crash-reporter",
+                        "--no-sandbox"
+                    ]
                 )
                 page = await context.new_page()
-                await page.goto("https://gemini.google.com/app", wait_until="networkidle", timeout=30000)
+                await page.goto("https://gemini.google.com/app", wait_until="domcontentloaded", timeout=30000)
+                await asyncio.sleep(3)
+
+                # Validar sesión activa en Google (sin default-user)
+                avatar = page.locator("a[aria-label*='Cuenta de Google' i]:not([href*='default-user']), button[aria-label*='Cuenta de Google' i], img[src*='googleusercontent.com/a/']:not([src*='default-user'])").first
+                login_btn = page.locator("button:has-text('Iniciar sesión'), button:has-text('Inicia sesión'), a:has-text('Iniciar sesión'):visible").first
+                if await login_btn.count() > 0 and await login_btn.is_visible():
+                    logger.warning("[Gemini EV] ⚠ Sesión expirada o no iniciada en ~/.gemini_automation_profile. Ejecuta 'iniciar_sesion_gemini.bat'.")
+                    await context.close()
+                    return {"success": False, "error": "REQUIERE_LOGIN_MANUAL"}
+
+                # Iniciar chat limpio si es necesario
+                nuevo_chat = page.locator("a[aria-label*='Nueva conversación'], button[aria-label*='Nueva conversación'], a[aria-label*='Nuevo chat'], button[aria-label*='Nuevo chat']").first
+                if await nuevo_chat.count() > 0 and await nuevo_chat.is_visible():
+                    try:
+                        await nuevo_chat.click(timeout=3000)
+                        await asyncio.sleep(1.5)
+                    except Exception:
+                        pass
 
                 # Localizar caja de entrada de prompt
-                input_selector = "div[contenteditable='true'], textarea, rich-textarea"
-                await page.wait_for_selector(input_selector, timeout=15000)
-                await page.fill(input_selector, f"Genera una imagen: {prompt}")
-                await page.keyboard.press("Enter")
+                input_selector = "div[role='textbox'], rich-textarea div[contenteditable='true'], div[contenteditable='true']"
+                textbox = page.locator(input_selector).first
+                await textbox.wait_for(state="visible", timeout=15000)
+                await textbox.click()
+                await page.keyboard.type(f"Genera una imagen: {prompt}", delay=10)
+                await asyncio.sleep(1)
+
+                send_btn = page.locator("button[aria-label*='Enviar mensaje'], button[aria-label*='Enviar'], button[aria-label*='Send'], button.send-button").first
+                if await send_btn.count() > 0 and await send_btn.is_visible():
+                    await send_btn.click()
+                else:
+                    await page.keyboard.press("Enter")
 
                 logger.info("[Gemini Imagen] Esperando respuesta y generación de imagen...")
-                # Esperar a que aparezca la imagen generada
-                img_selector = "img[src*='googleusercontent.com/gg/'], img[alt*='imagen']"
-                await page.wait_for_selector(img_selector, timeout=45000)
+                # Esperar a que aparezca la imagen generada real (filtrando default-user)
+                img_selector = "model-response img, single-image img, generated-image img, button.preview-image-button img, img[src*='googleusercontent.com/gg/']"
+                await page.wait_for_selector(img_selector, timeout=60000)
                 
                 # Extraer imagen con in-browser canvas para máxima pureza
                 img_element = await page.query_selector(img_selector)

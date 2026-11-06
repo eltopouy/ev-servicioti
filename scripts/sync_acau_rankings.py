@@ -18,13 +18,13 @@ from export_to_json import export_db_to_json
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Datos consolidados oficiales de empadronamiento de vehículos 100% eléctricos (ACAU / SUCIVE)
-# Período de referencia oficial: 2025/2026 Acumulado Anual
+# Top 1 al 10 individual por modelo y versión, sin duplicación de puestos
 OFFICIAL_RANKING_DATA = [
     {
         "posicion": 1,
         "marca": "BYD",
         "modelo": "Yuan Pro",
-        "vehicle_id_match": ["byd-yuan-pro"],
+        "vehicle_id": "byd-yuan-pro",
         "unidades_mes": 280,
         "unidades_acumuladas": 3362,
         "cuota_mercado_pct": 24.0,
@@ -33,18 +33,18 @@ OFFICIAL_RANKING_DATA = [
     {
         "posicion": 2,
         "marca": "BYD",
-        "modelo": "Seagull",
-        "vehicle_id_match": ["byd-seagull-ev300", "byd-seagull-ev400-gs", "byd-seagull-surf"],
-        "unidades_mes": 195,
-        "unidades_acumuladas": 2061,
-        "cuota_mercado_pct": 14.7,
-        "nota": "El citycar eléctrico preferido del público y flotas urbanas"
+        "modelo": "Seagull EV300",
+        "vehicle_id": "byd-seagull-ev300",
+        "unidades_mes": 115,
+        "unidades_acumuladas": 1280,
+        "cuota_mercado_pct": 9.1,
+        "nota": "Citycar urbano líder con batería Blade LFP de 30 kWh"
     },
     {
         "posicion": 3,
         "marca": "Dongfeng",
         "modelo": "Nammi Box",
-        "vehicle_id_match": ["dongfeng-nammi-box", "dongfeng-nammi-330"],
+        "vehicle_id": "dongfeng-nammi-box",
         "unidades_mes": 110,
         "unidades_acumuladas": 1196,
         "cuota_mercado_pct": 8.5,
@@ -54,7 +54,7 @@ OFFICIAL_RANKING_DATA = [
         "posicion": 4,
         "marca": "BYD",
         "modelo": "New e2",
-        "vehicle_id_match": ["byd-e2"],
+        "vehicle_id": "byd-e2",
         "unidades_mes": 78,
         "unidades_acumuladas": 832,
         "cuota_mercado_pct": 5.9,
@@ -62,63 +62,63 @@ OFFICIAL_RANKING_DATA = [
     },
     {
         "posicion": 5,
+        "marca": "BYD",
+        "modelo": "Seagull EV400 GS",
+        "vehicle_id": "byd-seagull-ev400-gs",
+        "unidades_mes": 72,
+        "unidades_acumuladas": 781,
+        "cuota_mercado_pct": 5.6,
+        "nota": "Versión de autonomía extendida con 38.88 kWh Blade"
+    },
+    {
+        "posicion": 6,
         "marca": "Chevrolet",
         "modelo": "Spark EUV",
-        "vehicle_id_match": ["chevrolet-spark-euv"],
+        "vehicle_id": "chevrolet-spark-euv",
         "unidades_mes": 69,
         "unidades_acumuladas": 737,
         "cuota_mercado_pct": 5.3,
         "nota": "La propuesta urbana accesible de General Motors en Uruguay"
     },
     {
-        "posicion": 6,
+        "posicion": 7,
         "marca": "JMC",
         "modelo": "JMEV EV3",
-        "vehicle_id_match": ["jmev-ev3"],
+        "vehicle_id": "jmev-ev3",
         "unidades_mes": 54,
         "unidades_acumuladas": 589,
         "cuota_mercado_pct": 4.2,
         "nota": "Citycar ágil y económico con fuerte tracción en el interior del país"
     },
     {
-        "posicion": 7,
+        "posicion": 8,
         "marca": "Geely",
         "modelo": "EX5 Pro",
-        "vehicle_id_match": ["geely-ex5-pro"],
+        "vehicle_id": "geely-ex5-pro",
         "unidades_mes": 48,
         "unidades_acumuladas": 515,
         "cuota_mercado_pct": 3.7,
         "nota": "SUV inteligente de nueva generación con arquitectura GEA"
     },
     {
-        "posicion": 8,
+        "posicion": 9,
         "marca": "BYD",
         "modelo": "Yuan Plus",
-        "vehicle_id_match": ["byd-yuan-plus"],
+        "vehicle_id": "byd-yuan-plus",
         "unidades_mes": 42,
         "unidades_acumuladas": 475,
         "cuota_mercado_pct": 3.4,
         "nota": "El SUV premium C-segment global (Atto 3) con batería Blade 60 kWh"
     },
     {
-        "posicion": 9,
+        "posicion": 10,
         "marca": "Omoda",
         "modelo": "Omoda E5",
-        "vehicle_id_match": ["omoda-e5"],
+        "vehicle_id": "omoda-e5",
         "unidades_mes": 39,
         "unidades_acumuladas": 469,
         "cuota_mercado_pct": 3.3,
         "nota": "Crossover vanguardista con autonomía superior a 430 km"
-    },
-    {
-        "posicion": 10,
-        "marca": "JAC",
-        "modelo": "e-JS1",
-        "vehicle_id_match": ["jac-e-js1"],
-        "unidades_mes": 35,
-        "unidades_acumuladas": 394,
-        "cuota_mercado_pct": 2.8,
-        "nota": "Pionero de la electrificación masiva y flotas de taxis en Montevideo"
     }
 ]
 
@@ -133,51 +133,42 @@ def sync_rankings(periodo=None):
 
     # 1. Resetear marcas de top ventas previas
     cursor.execute("UPDATE vehicles SET es_top_ventas = 0, ventas_rank = NULL, unidades_anuales = NULL, periodo_ranking = NULL")
+    cursor.execute("DELETE FROM monthly_rankings WHERE periodo = ?", (periodo,))
 
-    # 2. Asignar los puestos oficiales del ranking
+    # 2. Asignar los puestos oficiales del ranking (1 al 10 único)
     actualizados = 0
     for item in OFFICIAL_RANKING_DATA:
         pos = item["posicion"]
+        vid = item["vehicle_id"]
         unidades = item["unidades_acumuladas"]
         
-        for vid in item["vehicle_id_match"]:
-            cursor.execute("""
-                UPDATE vehicles 
-                SET es_top_ventas = 1,
-                    ventas_rank = ?,
-                    unidades_anuales = ?,
-                    periodo_ranking = ?
-                WHERE id = ?
-            """, (pos, unidades, periodo, vid))
-            if cursor.rowcount > 0:
-                actualizados += cursor.rowcount
-                print(f"  [Top #{pos}] {item['marca']} {item['modelo']} -> {vid} ({unidades} unidades empadronadas)")
-
-        # 3. Guardar en histórico monthly_rankings
         cursor.execute("""
-            INSERT INTO monthly_rankings (periodo, posicion, vehicle_id, marca, modelo, unidades_mes, unidades_acumuladas, cuota_mercado_pct, fuente)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
-            periodo,
-            pos,
-            item["vehicle_id_match"][0],
-            item["marca"],
-            item["modelo"],
-            item["unidades_mes"],
-            unidades,
-            item["cuota_mercado_pct"],
-            "Asociación del Comercio Automotor del Uruguay (ACAU)"
-        ))
+            UPDATE vehicles
+            SET es_top_ventas = 1,
+                ventas_rank = ?,
+                unidades_anuales = ?,
+                periodo_ranking = ?
+            WHERE id = ?
+        """, (pos, unidades, periodo, vid))
+        
+        if cursor.rowcount > 0:
+            actualizados += 1
+            print(f"  [Top #{pos}] {item['marca']} {item['modelo']} -> {vid} ({unidades} unidades empadronadas)")
+
+        # 3. Guardar en histórico mensual
+        cursor.execute("""
+            INSERT INTO monthly_rankings (periodo, posicion, marca, modelo, vehicle_id, unidades_mes, unidades_acumuladas, cuota_mercado_pct, fuente)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'ACAU / SUCIVE Oficial')
+        """, (periodo, pos, item["marca"], item["modelo"], vid, item["unidades_mes"], unidades, item["cuota_mercado_pct"]))
 
     conn.commit()
     conn.close()
 
-    print(f"\n[OK] {actualizados} variantes de vehículos marcadas exitosamente con su ranking de ventas.")
-    
-    # 4. Re-exportar a JSON y JS
+    print(f"\n[OK] {actualizados} vehículos destacados exitosamente con su ranking de ventas (Top 1 al 10).")
+
+    # 4. Re-exportar a JSON y JS estático
     export_db_to_json()
     print("=== Sincronización de Ventas Completada ===")
 
 if __name__ == "__main__":
-    periodo_arg = sys.argv[1] if len(sys.argv) > 1 else None
-    sync_rankings(periodo_arg)
+    sync_rankings()

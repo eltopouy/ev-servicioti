@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-10-26 21:22:14",
+  "timestamp": "2026-11-06 17:02:15",
   "total_vehiculos_auditados": 96,
   "alertas_noticias_encontradas": 0,
-  "discrepancias_plaza_detectadas": 5,
+  "discrepancias_plaza_detectadas": 11,
   "alertas_noticias": [],
   "discrepancias_mercado": [
     {
@@ -10,9 +10,9 @@
       "marca": "BYD",
       "modelo": "Han",
       "precio_catalogo_usd": 79990.0,
-      "precio_plaza_min_usd": 23990.0,
-      "precio_plaza_prom_usd": 23990.0,
-      "variacion_pct": -70.0,
+      "precio_plaza_min_usd": 13990.0,
+      "precio_plaza_prom_usd": 15490.0,
+      "variacion_pct": -80.6,
       "estado_alerta": "Oportunidad de rebaja en plaza"
     },
     {
@@ -21,8 +21,8 @@
       "modelo": "Nammi",
       "precio_catalogo_usd": 18990.0,
       "precio_plaza_min_usd": 17990.0,
-      "precio_plaza_prom_usd": 20490.0,
-      "variacion_pct": 7.9,
+      "precio_plaza_prom_usd": 19990.0,
+      "variacion_pct": 5.3,
       "estado_alerta": "Precio en plaza superior a lista oficial"
     },
     {
@@ -31,8 +31,8 @@
       "modelo": "Nammi",
       "precio_catalogo_usd": 21990.0,
       "precio_plaza_min_usd": 17990.0,
-      "precio_plaza_prom_usd": 20490.0,
-      "variacion_pct": -6.8,
+      "precio_plaza_prom_usd": 19990.0,
+      "variacion_pct": -9.1,
       "estado_alerta": "Oportunidad de rebaja en plaza"
     },
     {
@@ -41,8 +41,68 @@
       "modelo": "EX5",
       "precio_catalogo_usd": 33990.0,
       "precio_plaza_min_usd": 27990.0,
-      "precio_plaza_prom_usd": 32240.0,
-      "variacion_pct": -5.1,
+      "precio_plaza_prom_usd": 27990.0,
+      "variacion_pct": -17.7,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "kia-ev3",
+      "marca": "Kia",
+      "modelo": "EV3",
+      "precio_catalogo_usd": 43990.0,
+      "precio_plaza_min_usd": 13990.0,
+      "precio_plaza_prom_usd": 16490.0,
+      "variacion_pct": -62.5,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "tesla-model-3-long-range",
+      "marca": "Tesla",
+      "modelo": "Model 3 Highland",
+      "precio_catalogo_usd": 37990.0,
+      "precio_plaza_min_usd": 32990.0,
+      "precio_plaza_prom_usd": 32990.0,
+      "variacion_pct": -13.2,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "tesla-model-3-performance",
+      "marca": "Tesla",
+      "modelo": "Model 3 Highland",
+      "precio_catalogo_usd": 49990.0,
+      "precio_plaza_min_usd": 32990.0,
+      "precio_plaza_prom_usd": 32990.0,
+      "variacion_pct": -34.0,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "tesla-model-y-long-range",
+      "marca": "Tesla",
+      "modelo": "Model Y",
+      "precio_catalogo_usd": 41490.0,
+      "precio_plaza_min_usd": 36490.0,
+      "precio_plaza_prom_usd": 36490.0,
+      "variacion_pct": -12.1,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "tesla-model-y-performance",
+      "marca": "Tesla",
+      "modelo": "Model Y",
+      "precio_catalogo_usd": 53990.0,
+      "precio_plaza_min_usd": 36490.0,
+      "precio_plaza_prom_usd": 36490.0,
+      "variacion_pct": -32.4,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "volvo-ex30-ultra",
+      "marca": "Volvo",
+      "modelo": "EX30",
+      "precio_catalogo_usd": 52990.0,
+      "precio_plaza_min_usd": 42990.0,
+      "precio_plaza_prom_usd": 42990.0,
+      "variacion_pct": -18.9,
       "estado_alerta": "Oportunidad de rebaja en plaza"
     },
     {
@@ -50,9 +110,9 @@
       "marca": "Zeekr",
       "modelo": "X",
       "precio_catalogo_usd": 54990.0,
-      "precio_plaza_min_usd": 10000.0,
-      "precio_plaza_prom_usd": 26549.84,
-      "variacion_pct": -51.7,
+      "precio_plaza_min_usd": 13990.0,
+      "precio_plaza_prom_usd": 23990.0,
+      "variacion_pct": -56.4,
       "estado_alerta": "Oportunidad de rebaja en plaza"
     }
   ],

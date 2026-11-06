@@ -30,8 +30,8 @@ sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_PATH = BASE_DIR / "data" / "ev_uruguay.db"
 
-# Tarifas oficiales vigentes certificadas (Octubre 2026)
-# Basadas en resoluciones MIEM / URSEA / UTE Oficial
+# Tarifas oficiales vigentes certificadas (Noviembre 2026)
+# Basadas en resoluciones MIEM / URSEA / ANCAP / UTE Oficial
 OFFICIAL_DEFAULT_TARIFFS = [
     # Combustibles Líquidos Regulados
     {
@@ -43,18 +43,18 @@ OFFICIAL_DEFAULT_TARIFFS = [
         "consumo_tipico_100km": 8.0,  # 8.0 L/100km (consumo promedio urbano hatchback/sedan segmento B/C)
         "descripcion": "Combustible más utilizado en el parque automotor de Uruguay. Precio oficial regulado por MIEM/URSEA.",
         "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
-        "fecha_vigencia": "Octubre 2026"
+        "fecha_vigencia": "Noviembre 2026"
     },
     {
         "id": "nafta_premium_97",
         "categoria": "combustible",
         "nombre": "Nafta Premium 97",
         "unidad": "$/litro",
-        "precio": 93.10,
+        "precio": 93.01,
         "consumo_tipico_100km": 8.2,  # 8.2 L/100km
         "descripcion": "Combustible de alto octanaje con aditivos detergentes de última generación.",
         "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
-        "fecha_vigencia": "Octubre 2026"
+        "fecha_vigencia": "Noviembre 2026"
     },
     {
         "id": "gasoil_50s",
@@ -65,7 +65,7 @@ OFFICIAL_DEFAULT_TARIFFS = [
         "consumo_tipico_100km": 6.5,  # 6.5 L/100km (mayor eficiencia térmica de ciclo diésel)
         "descripcion": "Diésel bajo en azufre utilizado en utilitarios, camionetas y motores gasoleros.",
         "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
-        "fecha_vigencia": "Octubre 2026"
+        "fecha_vigencia": "Noviembre 2026"
     },
 
     # Tarifas Eléctricas UTE para Movilidad Eléctrica
