@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-11-06 17:02:15",
+  "timestamp": "2026-11-10 20:46:31",
   "total_vehiculos_auditados": 96,
   "alertas_noticias_encontradas": 0,
-  "discrepancias_plaza_detectadas": 11,
+  "discrepancias_plaza_detectadas": 12,
   "alertas_noticias": [],
   "discrepancias_mercado": [
     {
@@ -53,6 +53,16 @@
       "precio_plaza_min_usd": 13990.0,
       "precio_plaza_prom_usd": 16490.0,
       "variacion_pct": -62.5,
+      "estado_alerta": "Oportunidad de rebaja en plaza"
+    },
+    {
+      "vehicle_id": "omoda-e5",
+      "marca": "Omoda",
+      "modelo": "E5",
+      "precio_catalogo_usd": 38990.0,
+      "precio_plaza_min_usd": 25990.0,
+      "precio_plaza_prom_usd": 25990.0,
+      "variacion_pct": -33.3,
       "estado_alerta": "Oportunidad de rebaja en plaza"
     },
     {

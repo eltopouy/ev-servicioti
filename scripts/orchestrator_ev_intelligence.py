@@ -27,6 +27,7 @@ if sys.platform.startswith('win'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Importar módulos especializados del pipeline
+from auto_news_updater import run_auto_news_update
 from collector_autoblog import fetch_autoblog_ev_news
 from collector_ursea_homologaciones import sync_ursea_homologaciones
 from collector_mercadolibre import fetch_mlu_ev_listings
@@ -43,11 +44,15 @@ def run_ev_intelligence_pipeline():
     print("   Titular: Andrés Franchi Ugartemendía (ServicioTI)")
     print("=====================================================================\n")
 
-    print("▶ PASO 1/7: Rastreo de Novedades y Bajas de Precio en Autoblog Uruguay...")
+    print("▶ PASO 1/7: Actualizador Automatizado de Noticias y Crónicas 100% BEV...")
     try:
-        fetch_autoblog_ev_news()
+        run_auto_news_update()
     except Exception as e:
-        print(f"  ⚠ Advertencia en colector de Autoblog: {e}")
+        print(f"  ⚠ Advertencia en actualizador de noticias: {e}")
+        try:
+            fetch_autoblog_ev_news()
+        except Exception as fe:
+            print(f"  ⚠ Advertencia en fallback Autoblog: {fe}")
 
     print("\n▶ PASO 2/7: Auditoría de Homologaciones y Etiquetado URSEA (UNIT 1130:2020)...")
     try:

@@ -26,12 +26,25 @@ MARCAS_LIST = [
     "BMW", "Audi", "Mercedes-Benz", "Tesla", "Chevrolet", "Volkswagen", "Toyota", "Mazda"
 ]
 
+# Importar lógica estricta de filtrado 100% BEV y sanitización
+try:
+    from auto_news_updater import is_strictly_100_percent_bev, sanitize_text
+except ImportError:
+    def is_strictly_100_percent_bev(title, categories, snippet, content_html=""):
+        text = f"{title} {snippet}".lower()
+        if any(h in text for h in ["mhev", "mild hybrid", "híbrido suave", "t200"]):
+            return False, "Híbrido no BEV"
+        return any(k in text for k in ["eléctrico", "eléctrica", "bev", "100%"]), "BEV"
+
+    def sanitize_text(text):
+        return re.sub(r'(?i)autoblog\s*(uruguay)?', 'EV Uruguay', text).strip()
+
 def clean_html(raw_html):
     return re.sub(r'<.*?>', '', raw_html).strip()
 
 def is_ev_related(title, snippet):
-    text = f"{title} {snippet}".lower()
-    return any(keyword in text for keyword in EV_KEYWORDS)
+    is_bev, _ = is_strictly_100_percent_bev(title, [], snippet)
+    return is_bev
 
 def detect_brands(text):
     text_lower = text.lower()
@@ -83,8 +96,8 @@ def fetch_autoblog_ev_news():
         if not is_ev_related(title, snippet):
             continue
 
-        title_clean = re.sub(r'(?i)autoblog\s*(uruguay)?', 'EV Uruguay', title).strip()
-        snippet_clean = re.sub(r'(?i)autoblog\s*(uruguay)?', 'EV Uruguay', snippet).strip()
+        title_clean = sanitize_text(title)
+        snippet_clean = sanitize_text(snippet)
 
         article_id = hashlib.md5(link.encode('utf-8')).hexdigest()
         clean_url = f"https://ev.servicioti.com.uy/noticias/{article_id}"

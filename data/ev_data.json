@@ -6,7 +6,7 @@
     "total_vehicles": 96,
     "total_brands": 36,
     "total_market": 27,
-    "total_news": 6,
+    "total_news": 8,
     "total_chargers": 25,
     "total_tariffs": 8
   },
@@ -5467,7 +5467,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://voltbike.uy/products/flex",
       "imagen_oficial_url": "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/02-detalle-vista-voltbike-flex-foldable-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/voltbike-flex-foldable/01-vista-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-foldable-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"plegado\": \"Mecanismo rápido en 15 segundos\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-flex-foldable/badge-circular-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-flex-foldable/pixel-art-16bit-voltbike-flex-foldable-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Batería de Litio Extraíble Integrada en Cuadro Plegable\", \"quimica_bateria\": \"Celdas de ion de litio 18650\", \"fabricante_bateria\": \"VoltBike UY / Samsung SDI celdas\", \"refrigeracion_bateria\": \"Pasiva estanca en bisagra de cuadro\", \"voltaje_arquitectura\": \"36V 10Ah (360 Wh)\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5487,8 +5487,12 @@
       "bateria_voltaje": "36V 10Ah (360 Wh)",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/voltbike-flex-foldable/01-vista-isometrica-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-flex-foldable/02-detalle-vista-voltbike-flex-foldable-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-flex-foldable/01-vista-frontal-3-4-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/02-vista-trasera-cuadro-rueda-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/03-manillar-display-digital-comando-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/04-perfil-lateral-bicicleta-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/05-detalle-motor-bateria-puerto-carga-voltbike-flex-foldable-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-flex-foldable/06-detalle-transmision-frenos-disco-voltbike-flex-foldable-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "plegado": "Mecanismo rápido en 15 segundos",
@@ -5534,7 +5538,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://voltbike.uy/products/clasica",
       "imagen_oficial_url": "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/02-detalle-vista-voltbike-classica-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/voltbike-classica/01-vista-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-ev-servicioti-uruguay.webp\", \"assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"estilo\": \"Cuadro bajo para fácil acceso\", \"fabricante\": \"VoltBike Uruguay\", \"badge_circular_url\": \"assets/img/voltbike-classica/badge-circular-voltbike-classica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/voltbike-classica/pixel-art-16bit-voltbike-classica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Batería de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas de ion de litio de alta densidad\", \"fabricante_bateria\": \"VoltBike UY / DLG Power\", \"refrigeracion_bateria\": \"Pasiva montada sobre portaequipajes trasero\", \"voltaje_arquitectura\": \"36V 10.4Ah (374 Wh)\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5554,8 +5558,12 @@
       "bateria_voltaje": "36V 10.4Ah (374 Wh)",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/voltbike-classica/01-vista-isometrica-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
-        "assets/img/voltbike-classica/02-detalle-vista-voltbike-classica-ev-servicioti-uruguay.webp"
+        "assets/img/voltbike-classica/01-vista-frontal-3-4-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/02-vista-trasera-cuadro-rueda-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/03-manillar-display-digital-comando-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/04-perfil-lateral-bicicleta-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/05-detalle-motor-bateria-puerto-carga-voltbike-classica-ev-servicioti-uruguay.webp",
+        "assets/img/voltbike-classica/06-detalle-transmision-frenos-disco-voltbike-classica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Cuadro bajo para fácil acceso",
@@ -5672,7 +5680,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://shop.loop-bikes.com/products/loop-bikes-cruiser",
       "imagen_oficial_url": "assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/02-detalle-vista-loop-bikes-classic-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/loop-bikes-classic/01-vista-frontal-3-4-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/02-vista-trasera-cuadro-rueda-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/03-manillar-display-digital-comando-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/04-perfil-lateral-bicicleta-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/05-detalle-motor-bateria-puerto-carga-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-classic/06-detalle-transmision-frenos-disco-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"accesorios\": \"Guardabarros, canasto delantero y luces LED\", \"fabricante\": \"Loop Bikes Uruguay\", \"badge_circular_url\": \"assets/img/loop-bikes-classic/badge-circular-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/loop-bikes-classic/pixel-art-16bit-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas cilíndricas 18650 / 21700 de litio\", \"fabricante_bateria\": \"Celdas de grado automotriz Samsung / LG / DLG\", \"refrigeracion_bateria\": \"Disipación pasiva protegida en cuadro estanco\", \"voltaje_arquitectura\": \"36V - 48V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5692,8 +5700,12 @@
       "bateria_voltaje": "36V - 48V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/loop-bikes-classic/01-vista-isometrica-frontal-3-4-loop-bikes-classic-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-classic/02-detalle-vista-loop-bikes-classic-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-classic/01-vista-frontal-3-4-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-classic/02-vista-trasera-cuadro-rueda-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-classic/03-manillar-display-digital-comando-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-classic/04-perfil-lateral-bicicleta-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-classic/05-detalle-motor-bateria-puerto-carga-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-classic/06-detalle-transmision-frenos-disco-loop-bikes-classic-paseo-vintage-holand-bicicleta-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "accesorios": "Guardabarros, canasto delantero y luces LED",
@@ -5739,7 +5751,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://shop.loop-bikes.com/products/loop-slim-pro",
       "imagen_oficial_url": "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/02-detalle-vista-loop-bikes-slim-pro-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/02-vista-trasera-cuadro-rueda-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/03-manillar-display-digital-comando-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/04-perfil-lateral-bicicleta-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/05-detalle-motor-bateria-puerto-carga-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/06-detalle-transmision-frenos-disco-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"motor\": \"Bafang 250W integrado en maza trasera\", \"bateria\": \"Samsung Li-Ion oculta en cuadro\", \"cuadro\": \"Aluminio hidroformado 6061\", \"frenos\": \"Discos mecánicos Tektro\", \"fabricante\": \"Loop Bikes Uruguay\", \"badge_circular_url\": \"assets/img/loop-bikes-slim-pro/badge-circular-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/loop-bikes-slim-pro/pixel-art-16bit-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas cilíndricas 18650 / 21700 de litio\", \"fabricante_bateria\": \"Celdas de grado automotriz Samsung / LG / DLG\", \"refrigeracion_bateria\": \"Disipación pasiva protegida en cuadro estanco\", \"voltaje_arquitectura\": \"36V - 48V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5759,8 +5771,12 @@
       "bateria_voltaje": "36V - 48V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-slim-pro/02-detalle-vista-loop-bikes-slim-pro-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-slim-pro/01-vista-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/02-vista-trasera-cuadro-rueda-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/03-manillar-display-digital-comando-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/04-perfil-lateral-bicicleta-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/05-detalle-motor-bateria-puerto-carga-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/06-detalle-transmision-frenos-disco-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "motor": "Bafang 250W integrado en maza trasera",
@@ -5951,7 +5967,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://shop.loop-bikes.com/products/soda-bike",
       "imagen_oficial_url": "assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/02-detalle-vista-loop-bikes-soda-bike-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/loop-bikes-soda-bike/01-vista-frontal-3-4-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/02-vista-trasera-cuadro-rueda-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/03-manillar-display-digital-comando-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/04-perfil-lateral-bicicleta-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/05-detalle-motor-bateria-puerto-carga-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-soda-bike/06-detalle-transmision-frenos-disco-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"cubiertas\": \"Kenda 20x4.0 anchas para arena y asfalto\", \"asiento\": \"Largo estilo ciclomotor años 70 para dos\", \"fabricante\": \"Loop Bikes Uruguay\", \"badge_circular_url\": \"assets/img/loop-bikes-soda-bike/badge-circular-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/loop-bikes-soda-bike/pixel-art-16bit-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Extraíble con Cerradura de Seguridad\", \"quimica_bateria\": \"Celdas cilíndricas 18650 / 21700 de litio\", \"fabricante_bateria\": \"Celdas de grado automotriz Samsung / LG / DLG\", \"refrigeracion_bateria\": \"Disipación pasiva protegida en cuadro estanco\", \"voltaje_arquitectura\": \"36V - 48V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -5971,8 +5987,12 @@
       "bateria_voltaje": "36V - 48V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/loop-bikes-soda-bike/01-vista-isometrica-frontal-3-4-loop-bikes-soda-bike-ev-servicioti-uruguay.webp",
-        "assets/img/loop-bikes-soda-bike/02-detalle-vista-loop-bikes-soda-bike-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-soda-bike/01-vista-frontal-3-4-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-soda-bike/02-vista-trasera-cuadro-rueda-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-soda-bike/03-manillar-display-digital-comando-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-soda-bike/04-perfil-lateral-bicicleta-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-soda-bike/05-detalle-motor-bateria-puerto-carga-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-soda-bike/06-detalle-transmision-frenos-disco-loop-bikes-soda-bike-fat-bike-retro-cruis-bicicleta-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "cubiertas": "Kenda 20x4.0 anchas para arena y asfalto",
@@ -6304,7 +6324,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://motosyadea.com.uy",
       "imagen_oficial_url": "assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/02-detalle-vista-yadea-c-umi-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/yadea-c-umi/01-vista-frontal-3-4-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/02-vista-trasera-opticas-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/03-puesto-conduccion-manillar-tablero-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/04-perfil-lateral-completo-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/05-detalle-bateria-motor-hub-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-c-umi/06-detalle-faro-led-frenos-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"estilo\": \"Diseño retro vintage europeo\", \"importador\": \"Yadea Uruguay\", \"badge_circular_url\": \"assets/img/yadea-c-umi/badge-circular-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/yadea-c-umi/pixel-art-16bit-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6324,8 +6344,12 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/yadea-c-umi/01-vista-isometrica-frontal-3-4-yadea-c-umi-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-c-umi/02-detalle-vista-yadea-c-umi-ev-servicioti-uruguay.webp"
+        "assets/img/yadea-c-umi/01-vista-frontal-3-4-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-c-umi/02-vista-trasera-opticas-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-c-umi/03-puesto-conduccion-manillar-tablero-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-c-umi/04-perfil-lateral-completo-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-c-umi/05-detalle-bateria-motor-hub-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-c-umi/06-detalle-faro-led-frenos-yadea-c-umi-scooter-urbano-clasi-moto-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Diseño retro vintage europeo",
@@ -6369,10 +6393,10 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
-      "link_fabricante": "https://sunra.com.uy/productos/grace/",
-      "imagen_oficial_url": "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"frenos\": \"Disco delantero y tambor trasero\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-grace-1800/badge-circular-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-grace-1800/pixel-art-16bit-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
+      "link_fabricante": "https://www.sunraev.com/pro/Moped/63.html",
+      "imagen_oficial_url": "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/02-vista-trasera-opticas-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/03-puesto-conduccion-manillar-tablero-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/04-perfil-lateral-completo-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/05-detalle-bateria-motor-hub-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-grace-1800/06-detalle-faro-led-frenos-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"frenos\": \"Disco delantero y tambor trasero\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-grace-1800/badge-circular-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-grace-1800/pixel-art-16bit-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extra\\u00edble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipaci\\u00f3n pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -6391,7 +6415,12 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-grace-1800/01-vista-isometrica-frontal-3-4-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-grace-1800/02-vista-trasera-opticas-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-grace-1800/03-puesto-conduccion-manillar-tablero-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-grace-1800/04-perfil-lateral-completo-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-grace-1800/05-detalle-bateria-motor-hub-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-grace-1800/06-detalle-faro-led-frenos-sunra-grace-1800w-litio-extraibl-moto-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "frenos": "Disco delantero y tambor trasero",
@@ -6435,10 +6464,10 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "2 años oficial Sunra UY",
       "homologado_ursea": 1,
-      "link_fabricante": "https://sunra.com.uy/productos/hawk-3000/",
-      "imagen_oficial_url": "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"bateria\": \"Litio extraíble para cargar en apartamento\", \"bluetooth\": \"Parlante Bluetooth integrado y alarma\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-hawk-3000/badge-circular-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-hawk-3000/pixel-art-16bit-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
+      "link_fabricante": "https://www.sunraev.com/pro/Moped/61.html",
+      "imagen_oficial_url": "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/02-vista-trasera-opticas-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/03-puesto-conduccion-manillar-tablero-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/04-perfil-lateral-completo-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/05-detalle-bateria-motor-hub-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/06-detalle-faro-led-frenos-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"bateria\": \"Litio extra\\u00edble para cargar en apartamento\", \"bluetooth\": \"Parlante Bluetooth integrado y alarma\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-hawk-3000/badge-circular-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-hawk-3000/pixel-art-16bit-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extra\\u00edble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipaci\\u00f3n pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -6457,7 +6486,12 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-hawk-3000/02-vista-trasera-opticas-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-hawk-3000/03-puesto-conduccion-manillar-tablero-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-hawk-3000/04-perfil-lateral-completo-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-hawk-3000/05-detalle-bateria-motor-hub-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-hawk-3000/06-detalle-faro-led-frenos-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "bateria": "Litio extraíble para cargar en apartamento",
@@ -6504,7 +6538,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://motosyadea.com.uy",
       "imagen_oficial_url": "assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/02-detalle-vista-yadea-g5-pro-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/yadea-g5-pro/01-vista-frontal-3-4-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/02-vista-trasera-opticas-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/03-puesto-conduccion-manillar-tablero-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/04-perfil-lateral-completo-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/05-detalle-bateria-motor-hub-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/yadea-g5-pro/06-detalle-faro-led-frenos-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"pantalla\": \"LCD de 7 pulgadas antirreflejo\", \"importador\": \"Yadea Uruguay\", \"badge_circular_url\": \"assets/img/yadea-g5-pro/badge-circular-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/yadea-g5-pro/pixel-art-16bit-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio Panasonic 18650 Extraíble\", \"quimica_bateria\": \"NMC celdas cilíndricas de grado automotriz\", \"fabricante_bateria\": \"Panasonic\", \"refrigeracion_bateria\": \"Carcasa sellada de magnesio y aluminio\", \"voltaje_arquitectura\": \"60V 32Ah\", \"anio_origen\": 2020}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6524,8 +6558,12 @@
       "bateria_voltaje": "60V 32Ah",
       "anio_origen": 2020,
       "galeria": [
-        "assets/img/yadea-g5-pro/01-vista-isometrica-frontal-3-4-yadea-g5-pro-ev-servicioti-uruguay.webp",
-        "assets/img/yadea-g5-pro/02-detalle-vista-yadea-g5-pro-ev-servicioti-uruguay.webp"
+        "assets/img/yadea-g5-pro/01-vista-frontal-3-4-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-g5-pro/02-vista-trasera-opticas-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-g5-pro/03-puesto-conduccion-manillar-tablero-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-g5-pro/04-perfil-lateral-completo-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-g5-pro/05-detalle-bateria-motor-hub-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/yadea-g5-pro/06-detalle-faro-led-frenos-yadea-g5-pro-smart-ev-2300w-moto-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "pantalla": "LCD de 7 pulgadas antirreflejo",
@@ -6571,7 +6609,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://sunra.com.uy/moto-electrica-miku-super/",
       "imagen_oficial_url": "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/02-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/03-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/04-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/05-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/sunra-miku-super/01-vista-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/02-vista-trasera-opticas-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/03-puesto-conduccion-manillar-tablero-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/04-perfil-lateral-completo-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/05-detalle-bateria-motor-hub-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/06-detalle-faro-led-frenos-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"estilo\": \"Chasis flotante deportivo naked\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-miku-super/badge-circular-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-miku-super/pixel-art-16bit-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Iones de Litio / Grafeno Extraíble\", \"quimica_bateria\": \"NMC / LFP de alta descarga\", \"fabricante_bateria\": \"Panasonic / EVE Energy / Sunra\", \"refrigeracion_bateria\": \"Disipación pasiva estanca IP67\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6591,11 +6629,12 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/02-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/03-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/04-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/05-detalle-vista-sunra-miku-super-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-miku-super/01-vista-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/02-vista-trasera-opticas-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/03-puesto-conduccion-manillar-tablero-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/04-perfil-lateral-completo-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/05-detalle-bateria-motor-hub-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-miku-super/06-detalle-faro-led-frenos-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "estilo": "Chasis flotante deportivo naked",
@@ -6639,10 +6678,10 @@
       "garantia_vehiculo": "1 año",
       "garantia_bateria": "2 años",
       "homologado_ursea": 1,
-      "link_fabricante": "https://sunra.com.uy",
-      "imagen_oficial_url": "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-ev-servicioti-uruguay.webp\"]",
-      "especificaciones_json": "{\"encendido\": \"Huella dactilar biométrica\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-robo-s/badge-circular-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-robo-s/pixel-art-16bit-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Litio-Ion Extraíble Dual (2 x 72V 20Ah)\", \"quimica_bateria\": \"Celdas de litio de ciclo profundo\", \"fabricante_bateria\": \"Sunra Micro Power\", \"refrigeracion_bateria\": \"Aire / disipación sellada\", \"voltaje_arquitectura\": \"72V\", \"anio_origen\": 2021}",
+      "link_fabricante": "https://www.sunraev.com/pro/High_speed/60.html",
+      "imagen_oficial_url": "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
+      "galeria_json": "[\"assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/02-vista-trasera-opticas-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/03-puesto-conduccion-manillar-tablero-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/04-perfil-lateral-completo-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/05-detalle-bateria-motor-hub-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-robo-s/06-detalle-faro-led-frenos-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "especificaciones_json": "{\"encendido\": \"Huella dactilar biom\\u00e9trica\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-robo-s/badge-circular-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-robo-s/pixel-art-16bit-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Litio-Ion Extra\\u00edble Dual (2 x 72V 20Ah)\", \"quimica_bateria\": \"Celdas de litio de ciclo profundo\", \"fabricante_bateria\": \"Sunra Micro Power\", \"refrigeracion_bateria\": \"Aire / disipaci\\u00f3n sellada\", \"voltaje_arquitectura\": \"72V\", \"anio_origen\": 2021}",
       "es_top_ventas": 0,
       "ventas_rank": null,
       "unidades_anuales": null,
@@ -6661,7 +6700,12 @@
       "bateria_voltaje": "72V",
       "anio_origen": 2021,
       "galeria": [
-        "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-robo-s/01-vista-isometrica-frontal-3-4-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-robo-s/02-vista-trasera-opticas-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-robo-s/03-puesto-conduccion-manillar-tablero-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-robo-s/04-perfil-lateral-completo-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-robo-s/05-detalle-bateria-motor-hub-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-robo-s/06-detalle-faro-led-frenos-sunra-robo-s-smart-scooter-4000w-moto-electrica-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "encendido": "Huella dactilar biométrica",
@@ -6921,7 +6965,7 @@
       "homologado_ursea": 1,
       "link_fabricante": "https://sunra.com.uy/moto-eletrica-cargo-king-kong/",
       "imagen_oficial_url": "assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
-      "galeria_json": "[\"assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/02-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/03-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/04-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/05-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/sunra-cargo-triciclo/01-vista-frontal-3-4-cabina-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/02-vista-trasera-caja-carga-volcadora-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/03-puesto-conduccion-manillar-comandos-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/04-perfil-lateral-chasis-reforzado-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/05-detalle-motor-baterias-transmision-fuerza-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"assets/img/sunra-cargo-triciclo/06-detalle-caja-mecanismo-volcador-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\"]",
       "especificaciones_json": "{\"caja\": \"Caja volcadora manual con compuertas rebatibles laterales y trasera\", \"importador\": \"Sunra Uruguay\", \"badge_circular_url\": \"assets/img/sunra-cargo-triciclo/badge-circular-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"pixel_art_url\": \"assets/img/sunra-cargo-triciclo/pixel-art-16bit-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp\", \"tipo_bateria\": \"Plomo-Ácido Gel Sellado / Litio LFP de Tracción\", \"quimica_bateria\": \"Gel Silicio / LiFePO4 de ciclo profundo para carga pesada\", \"fabricante_bateria\": \"Chilwee / Tianneng / EVE\", \"refrigeracion_bateria\": \"Pasiva en compartimento reforzado de carga\", \"voltaje_arquitectura\": \"60V - 72V\", \"anio_origen\": 2022}",
       "es_top_ventas": 0,
       "ventas_rank": null,
@@ -6941,11 +6985,12 @@
       "bateria_voltaje": "60V - 72V",
       "anio_origen": 2022,
       "galeria": [
-        "assets/img/sunra-cargo-triciclo/01-vista-isometrica-frontal-3-4-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/02-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/03-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/04-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-cargo-triciclo/05-detalle-vista-sunra-cargo-triciclo-ev-servicioti-uruguay.webp"
+        "assets/img/sunra-cargo-triciclo/01-vista-frontal-3-4-cabina-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/02-vista-trasera-caja-carga-volcadora-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/03-puesto-conduccion-manillar-comandos-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/04-perfil-lateral-chasis-reforzado-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/05-detalle-motor-baterias-transmision-fuerza-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/sunra-cargo-triciclo/06-detalle-caja-mecanismo-volcador-sunra-cargo-king-tricar-utilitario-15-triciclo-electrico-ev-servicioti-uruguay.webp"
       ],
       "especificaciones": {
         "caja": "Caja volcadora manual con compuertas rebatibles laterales y trasera",
@@ -8135,7 +8180,7 @@
   ],
   "monthly_rankings": [
     {
-      "id": 81,
+      "id": 91,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 1,
       "vehicle_id": "byd-yuan-pro",
@@ -8145,10 +8190,10 @@
       "unidades_acumuladas": 3362,
       "cuota_mercado_pct": 24.0,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 82,
+      "id": 92,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 2,
       "vehicle_id": "byd-seagull-ev300",
@@ -8158,10 +8203,10 @@
       "unidades_acumuladas": 1280,
       "cuota_mercado_pct": 9.1,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 83,
+      "id": 93,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 3,
       "vehicle_id": "dongfeng-nammi-box",
@@ -8171,10 +8216,10 @@
       "unidades_acumuladas": 1196,
       "cuota_mercado_pct": 8.5,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 84,
+      "id": 94,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 4,
       "vehicle_id": "byd-e2",
@@ -8184,10 +8229,10 @@
       "unidades_acumuladas": 832,
       "cuota_mercado_pct": 5.9,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 85,
+      "id": 95,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 5,
       "vehicle_id": "byd-seagull-ev400-gs",
@@ -8197,10 +8242,10 @@
       "unidades_acumuladas": 781,
       "cuota_mercado_pct": 5.6,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 86,
+      "id": 96,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 6,
       "vehicle_id": "chevrolet-spark-euv",
@@ -8210,10 +8255,10 @@
       "unidades_acumuladas": 737,
       "cuota_mercado_pct": 5.3,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 87,
+      "id": 97,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 7,
       "vehicle_id": "jmev-ev3",
@@ -8223,10 +8268,10 @@
       "unidades_acumuladas": 589,
       "cuota_mercado_pct": 4.2,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 88,
+      "id": 98,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 8,
       "vehicle_id": "geely-ex5-pro",
@@ -8236,10 +8281,10 @@
       "unidades_acumuladas": 515,
       "cuota_mercado_pct": 3.7,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 89,
+      "id": 99,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 9,
       "vehicle_id": "byd-yuan-plus",
@@ -8249,10 +8294,10 @@
       "unidades_acumuladas": 475,
       "cuota_mercado_pct": 3.4,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
-      "id": 90,
+      "id": 100,
       "periodo": "2026-11 (Oficial ACAU)",
       "posicion": 10,
       "vehicle_id": "omoda-e5",
@@ -8262,7 +8307,7 @@
       "unidades_acumuladas": 469,
       "cuota_mercado_pct": 3.3,
       "fuente": "ACAU / SUCIVE Oficial",
-      "fecha_registro": "2026-11-06 20:02:17"
+      "fecha_registro": "2026-11-10 23:46:32"
     },
     {
       "id": 1,
@@ -9319,6 +9364,22 @@
       "fecha_registro": "2026-10-27 00:56:57"
     },
     {
+      "id": "mlu-omoda-e5",
+      "tipo": "auto",
+      "marca": null,
+      "modelo": null,
+      "titulo": "Omoda E5 (Premium EV 61 kWh)",
+      "precio": 25990.0,
+      "moneda": "USD",
+      "es_0km": 1,
+      "vendedor": "Concesionaria Oficial",
+      "es_tienda_oficial": 1,
+      "permalink": "https://ev.servicioti.com.uy/plaza/mlu-omoda-e5",
+      "thumbnail": "assets/img/omoda-e5/01-vista-isometrica-frontal-3-4-omoda-e5-premium-ev-61-kwh-auto-electrico-ev-servicioti-uruguay.webp",
+      "ubicacion": "Prado - Montevideo",
+      "fecha_registro": "2026-10-27 00:56:57"
+    },
+    {
       "id": "mlu-byd-yuan-pro",
       "tipo": "auto",
       "marca": null,
@@ -9431,22 +9492,6 @@
       "fecha_registro": "2026-10-27 00:56:57"
     },
     {
-      "id": "mlu-omoda-e5",
-      "tipo": "auto",
-      "marca": null,
-      "modelo": null,
-      "titulo": "Omoda E5 (Premium EV 61 kWh)",
-      "precio": 38990.0,
-      "moneda": "USD",
-      "es_0km": 1,
-      "vendedor": "Red Oficial de Concesionarios",
-      "es_tienda_oficial": 1,
-      "permalink": "https://ev.servicioti.com.uy/plaza/mlu-omoda-e5",
-      "thumbnail": "assets/img/omoda-e5/01-vista-isometrica-frontal-3-4-omoda-e5-premium-ev-61-kwh-auto-electrico-ev-servicioti-uruguay.webp",
-      "ubicacion": "Montevideo, Uruguay",
-      "fecha_registro": "2026-10-27 00:56:57"
-    },
-    {
       "id": "mlu-byd-yuan-plus",
       "tipo": "auto",
       "marca": null,
@@ -9481,15 +9526,53 @@
   ],
   "news": [
     {
+      "id": "cronica-hongqi-ehs5-uruguay",
+      "medio": "Crónica EV Uruguay",
+      "titulo": "Lanzamiento oficial en Uruguay: Hongqi EHS5, el SUV 100% eléctrico de lujo con tracción integral y batería de 82 kWh",
+      "url": "https://www.servicioti.com.uy/2026/11/lanzamiento-oficial-en-uruguay-hongqi.html",
+      "fecha_publicacion": "2026-11-10T11:31:00",
+      "resumen": "La prestigiosa firma Hongqi hace su estreno en el mercado uruguayo presentando el EHS5, un SUV premium 100% eléctrico a batería que combina arquitectura de alta tensión, interiores confeccionados en cuero Nappa y una autonomía homologada superior a los 500 kilómetros.",
+      "marcas_mencionadas": "Hongqi",
+      "imagen_portada": "assets/img/hongqi-ehs5/01-hongqi-ehs5-foto-1.webp",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        La prestigiosa firma Hongqi hace su estreno en el mercado uruguayo presentando el EHS5, un SUV premium 100% eléctrico a batería que combina arquitectura de alta tensión, interiores confeccionados en cuero Nappa y una autonomía homologada superior a los 500 kilómetros.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Batería y química:</strong> 82,5 kWh útiles de iones de litio de alta densidad energética.</li>\n<li><strong>Tracción y potencia:</strong> Doble motor eléctrico e-AWD con 485 CV combinados.</li>\n<li><strong>Tiempo de recarga:</strong> Carga rápida DC 10% a 80% en 28 minutos con conector GB/T y CCS2.</li>\n<li><strong>Respaldo oficial:</strong> Garantía de 8 años en batería y servicio posventa integral en Car One.</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
+      "fecha_registro": "2026-11-10 23:41:29",
+      "galeria_json": "[\"assets/img/hongqi-ehs5/01-hongqi-ehs5-foto-1.webp\", \"assets/img/hongqi-ehs5/02-hongqi-ehs5-foto-2.webp\", \"assets/img/hongqi-ehs5/03-hongqi-ehs5-foto-3.webp\", \"assets/img/hongqi-ehs5/04-hongqi-ehs5-foto-4.webp\"]",
+      "galeria": [
+        "assets/img/hongqi-ehs5/01-hongqi-ehs5-foto-1.webp",
+        "assets/img/hongqi-ehs5/02-hongqi-ehs5-foto-2.webp",
+        "assets/img/hongqi-ehs5/03-hongqi-ehs5-foto-3.webp",
+        "assets/img/hongqi-ehs5/04-hongqi-ehs5-foto-4.webp"
+      ]
+    },
+    {
+      "id": "cronica-tesla-model-3-performance-uruguay",
+      "medio": "Crónica EV Uruguay",
+      "titulo": "Tesla Model 3 Highland Performance en Uruguay: un muscle car de la era 100% eléctrica",
+      "url": "https://www.servicioti.com.uy/2026/11/tesla-model-3-highland-performance-en.html",
+      "fecha_publicacion": "2026-11-05T15:20:00",
+      "resumen": "Ensayamos en ruta y circuito uruguayo la variante más radical del sedán eléctrico más vendido del planeta: el nuevo Tesla Model 3 Performance con amortiguación adaptativa y aceleración de 0 a 100 km/h en apenas 3,1 segundos.",
+      "marcas_mencionadas": "Tesla",
+      "imagen_portada": "assets/img/tesla-model-3-performance/01-vista-isometrica-frontal-3-4-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        Ensayamos en ruta y circuito uruguayo la variante más radical del sedán eléctrico más vendido del planeta: el nuevo Tesla Model 3 Performance con amortiguación adaptativa y aceleración de 0 a 100 km/h en apenas 3,1 segundos.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Aceleración 0-100:</strong> 3,1 segundos con tracción integral Dual Motor de 510 CV.</li>\n<li><strong>Batería:</strong> Packs de 82 kWh con soporte de Supercarga Tesla hasta 250 kW.</li>\n<li><strong>Autonomía WLTP:</strong> 528 km en ciclo mixto.</li>\n<li><strong>Precio en plaza:</strong> Desde USD $58.990 homologado ante URSEA.</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
+      "fecha_registro": "2026-11-10 23:41:29",
+      "galeria_json": "[\"assets/img/tesla-model-3-performance/01-vista-isometrica-frontal-3-4-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/tesla-model-3-performance/02-vista-trasera-opticas-porton-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/tesla-model-3-performance/03-interior-tablero-consola-cockpit-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/tesla-model-3-performance/04-perfil-lateral-carroceria-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria": [
+        "assets/img/tesla-model-3-performance/01-vista-isometrica-frontal-3-4-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/tesla-model-3-performance/02-vista-trasera-opticas-porton-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/tesla-model-3-performance/03-interior-tablero-consola-cockpit-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/tesla-model-3-performance/04-perfil-lateral-carroceria-tesla-model-3-highland-performance-ludicrou-auto-electrico-ev-servicioti-uruguay.webp"
+      ]
+    },
+    {
       "id": "cronica-byd-liderazgo-2026",
       "medio": "EV Uruguay Editorial",
       "titulo": "BYD consolida su liderazgo en Uruguay: el Seagull encabeza las ventas de vehículos 100% eléctricos",
-      "url": "https://www.servicioti.com.uy/2026/10/byd-consolida-su-liderazgo-en-uruguay.html",
+      "url": "https://www.servicioti.com.uy/2026/11/byd-consolida-su-liderazgo-en-uruguay.html",
       "fecha_publicacion": "2026-10-25 18:00:00",
-      "resumen": "El segmento de hatchbacks urbanos eléctricos supera el 60% de penetración de ventas en Montevideo y el interior. Analizamos por qué la arquitectura Blade LFP y el costo por kilómetro con tarifa triple horario de UTE están transformando la plaza uruguaya.",
-      "marcas_mencionadas": "BYD • SADAR",
+      "resumen": "El mercado uruguayo de vehículos livianos atraviesa una transformación histórica: más del 15% de los empadronamientos totales de cero kilómetros ya corresponden a modelos 100% eléctricos a batería (BEV), liderados contundentemente por la gama Ocean de BYD a través de su representante oficial SADAR S.A.",
+      "marcas_mencionadas": "BYD",
       "imagen_portada": "assets/img/byd-seagull-surf/01-vista-isometrica-frontal-3-4-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp",
-      "contenido_html": "<p>Crónica de análisis sobre el fenómeno de penetración de BYD en Uruguay.</p>",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        El mercado uruguayo de vehículos livianos atraviesa una transformación histórica: más del 15% de los empadronamientos totales de cero kilómetros ya corresponden a modelos 100% eléctricos a batería (BEV), liderados contundentemente por la gama Ocean de BYD a través de su representante oficial SADAR S.A.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Líder absoluto:</strong> BYD Seagull (versiones EV300, EV400 GS y Surf) con más de 2.060 unidades registradas.</li>\n<li><strong>SUV más vendido:</strong> BYD Yuan Pro EV 380 con 3.362 unidades empadronadas.</li>\n<li><strong>Tecnología de celdas:</strong> Blade LFP (Fosfato de Hierro y Litio) Cell-to-Body.</li>\n<li><strong>Costo de recarga:</strong> Aproximadamente $0,45 UYU/km en Tarifa Inteligente UTE (Valle).</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
       "fecha_registro": "2026-10-26 12:18:03",
       "galeria_json": "[\"assets/img/byd-seagull-surf/01-vista-isometrica-frontal-3-4-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-seagull-surf/02-vista-trasera-opticas-porton-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-seagull-surf/03-interior-tablero-consola-cockpit-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-seagull-surf/04-perfil-lateral-carroceria-byd-seagull-surf-tope-de-gama-43-2-kw-auto-electrico-ev-servicioti-uruguay.webp\"]",
       "galeria": [
@@ -9503,31 +9586,31 @@
       "id": "cronica-chevrolet-ultium-uruguay",
       "medio": "EV Uruguay Editorial",
       "titulo": "General Motors desembarca con su arquitectura Ultium: Blazer EV y Equinox EV aceleran la plaza",
-      "url": "https://www.servicioti.com.uy/2026/10/general-motors-desembarca-con-su.html",
+      "url": "https://www.servicioti.com.uy/2026/11/general-motors-desembarca-con-su.html",
       "fecha_publicacion": "2026-10-25 15:00:00",
-      "resumen": "Chevrolet consolida su ofensiva eléctrica nacional con potencias de hasta 565 CV en modo WOW, plataformas modulares Ultium y autonomías que superan holgadamente los 500 km en ruta.",
-      "marcas_mencionadas": "Chevrolet • General Motors",
+      "resumen": "General Motors Uruguay ha puesto en marcha su mayor ofensiva tecnológica hasta la fecha: el despliegue comercial de sus SUVs eléctricos de última generación sobre la plataforma modular Ultium, integrando las nuevas Blazer EV y Equinox EV en la red oficial de concesionarios.",
+      "marcas_mencionadas": "Chevrolet",
       "imagen_portada": "assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
-      "contenido_html": "<p>Análisis del arribo de la plataforma Ultium de Chevrolet a Uruguay.</p>",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        General Motors Uruguay ha puesto en marcha su mayor ofensiva tecnológica hasta la fecha: el despliegue comercial de sus SUVs eléctricos de última generación sobre la plataforma modular Ultium, integrando las nuevas Blazer EV y Equinox EV en la red oficial de concesionarios.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Capacidad de batería:</strong> Packs de 85 kWh a 102 kWh útiles con química NCMA.</li>\n<li><strong>Potencia máxima:</strong> Hasta 565 CV en modo Wide Open Watts (WOW) e-AWD.</li>\n<li><strong>Autonomía homologada:</strong> Más de 480 km en ciclo mixto uruguayo.</li>\n<li><strong>Carga ultrarrápida:</strong> Soporte DC hasta 190 kW (120 km recuperados en 10 min).</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
       "fecha_registro": "2026-10-26 12:18:03",
-      "galeria_json": "[\"assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-blazer-ev/02-vista-trasera-opticas-porton-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-equinox-ev/01-vista-isometrica-frontal-3-4-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-equinox-ev/02-vista-trasera-opticas-porton-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-blazer-ev/02-vista-trasera-opticas-porton-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-blazer-ev/03-interior-tablero-consola-cockpit-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chevrolet-blazer-ev/04-perfil-lateral-carroceria-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp\"]",
       "galeria": [
         "assets/img/chevrolet-blazer-ev/01-vista-isometrica-frontal-3-4-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
         "assets/img/chevrolet-blazer-ev/02-vista-trasera-opticas-porton-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/chevrolet-equinox-ev/01-vista-isometrica-frontal-3-4-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/chevrolet-equinox-ev/02-vista-trasera-opticas-porton-chevrolet-equinox-ev-rs-awd-ultium-85-kwh-auto-electrico-ev-servicioti-uruguay.webp"
+        "assets/img/chevrolet-blazer-ev/03-interior-tablero-consola-cockpit-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/chevrolet-blazer-ev/04-perfil-lateral-carroceria-chevrolet-blazer-ev-rs-awd-ultium-102-kw-auto-electrico-ev-servicioti-uruguay.webp"
       ]
     },
     {
       "id": "cronica-volvo-ex30-uruguay",
       "medio": "EV Uruguay Editorial",
       "titulo": "Volvo EX30: anatomía del SUV compacto de lujo que batió récords de matriculación",
-      "url": "https://www.servicioti.com.uy/2026/10/volvo-ex30-anatomia-del-suv-compacto-de.html",
+      "url": "https://www.servicioti.com.uy/2026/11/volvo-ex30-anatomia-del-suv-compacto-de.html",
       "fecha_publicacion": "2026-10-24 14:30:00",
-      "resumen": "Con autonomías homologadas de hasta 476 km y aceleración de superdeportivo en su versión Twin Motor de 428 CV, el modelo nórdico redefine el estándar entre diseño minimalista, seguridad integral y eficiencia energética en las rutas uruguayas.",
-      "marcas_mencionadas": "Volvo • Danissa",
+      "resumen": "Importado por Danissa S.A. y comercializado a través de su red oficial en Montevideo y Car One, el Volvo EX30 se ha transformado en el vehículo eléctrico premium más vendido del país, combinando la huella de carbono más reducida en la historia del fabricante sueco con prestaciones de superdeportivo.",
+      "marcas_mencionadas": "Volvo",
       "imagen_portada": "assets/img/volvo-ex30/01-vista-isometrica-frontal-3-4-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp",
-      "contenido_html": "<p>Análisis exhaustivo del Volvo EX30 en el mercado nacional.</p>",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        Importado por Danissa S.A. y comercializado a través de su red oficial en Montevideo y Car One, el Volvo EX30 se ha transformado en el vehículo eléctrico premium más vendido del país, combinando la huella de carbono más reducida en la historia del fabricante sueco con prestaciones de superdeportivo.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Extended Range:</strong> 272 CV, batería NMC de 69 kWh, 476 km de autonomía homologada URSEA.</li>\n<li><strong>Performance Ultra:</strong> 428 CV, tracción integral AWD, 0 a 100 km/h en 3,6 segundos.</li>\n<li><strong>Sustentabilidad:</strong> 25% de aluminio reciclado, 17% de acero reciclado y biomateriales.</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
       "fecha_registro": "2026-10-26 12:18:03",
       "galeria_json": "[\"assets/img/volvo-ex30/01-vista-isometrica-frontal-3-4-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/volvo-ex30/02-vista-trasera-opticas-porton-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/volvo-ex30/03-interior-tablero-consola-cockpit-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/volvo-ex30/04-perfil-lateral-carroceria-volvo-ex30-single-motor-extende-auto-electrico-ev-servicioti-uruguay.webp\"]",
       "galeria": [
@@ -9541,57 +9624,57 @@
       "id": "cronica-red-ute-mueve-expansion",
       "medio": "EV Uruguay Editorial",
       "titulo": "La Red UTE Mueve expande sus cargadores ultrarrápidos de corriente continua a todo el país",
-      "url": "https://www.servicioti.com.uy/2026/10/la-red-ute-mueve-expande-sus-cargadores.html",
+      "url": "https://www.servicioti.com.uy/2026/11/la-red-ute-mueve-expande-sus-cargadores.html",
       "fecha_publicacion": "2026-10-23 11:15:00",
-      "resumen": "La red nacional de carga pública supera los 300 puntos operativos desde Colonia hasta el Chuy. Guía práctica para planificar viajes interdepartamentales utilizando los conectores CCS2 y GB/T en las rutas nacionales 1, 2, 8 y 9.",
-      "marcas_mencionadas": "UTE Mueve • Infraestructura",
+      "resumen": "Con más de 300 puntos de carga operativos a lo largo de las rutas nacionales 1, 2, 3, 5, 8, 9 e Interbalnearia, la empresa estatal UTE consolida una de las redes de carga pública más densas de América Latina por habitante, garantizando un punto de recarga cada menos de 60 kilómetros.",
+      "marcas_mencionadas": "UTE Mueve",
       "imagen_portada": "assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
-      "contenido_html": "<p>Informe técnico sobre la red nacional de cargadores rápidos de UTE.</p>",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        Con más de 300 puntos de carga operativos a lo largo de las rutas nacionales 1, 2, 3, 5, 8, 9 e Interbalnearia, la empresa estatal UTE consolida una de las redes de carga pública más densas de América Latina por habitante, garantizando un punto de recarga cada menos de 60 kilómetros.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Conectores estándar:</strong> GB/T y CCS2 de 50 kW a 120 kW en corriente continua.</li>\n<li><strong>Gestión móvil:</strong> Activación y cobro instantáneo mediante app UTE Mueve y tarjeta RFID.</li>\n<li><strong>Tarifa oficial:</strong> $11,80 UYU por kWh en postes DC de alta velocidad.</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
       "fecha_registro": "2026-10-26 12:18:03",
-      "galeria_json": "[\"assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/geely-panda-mini-ev/01-vista-isometrica-frontal-3-4-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/chery-eq1/01-vista-isometrica-frontal-3-4-chery-eq1-little-ant-pequena-hormiga-lfp-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/byd-dolphin-gs/01-vista-isometrica-frontal-3-4-byd-dolphin-gs-ev-e-platform-3-0-auto-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/dongfeng-nammi-box/02-vista-trasera-opticas-porton-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/dongfeng-nammi-box/03-interior-tablero-consola-cockpit-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/dongfeng-nammi-box/04-perfil-lateral-carroceria-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp\"]",
       "galeria": [
         "assets/img/dongfeng-nammi-box/01-vista-isometrica-frontal-3-4-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/geely-panda-mini-ev/01-vista-isometrica-frontal-3-4-geely-panda-mini-ev-citycar-go-17-kwh-lf-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/chery-eq1/01-vista-isometrica-frontal-3-4-chery-eq1-little-ant-pequena-hormiga-lfp-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/byd-dolphin-gs/01-vista-isometrica-frontal-3-4-byd-dolphin-gs-ev-e-platform-3-0-auto-electrico-ev-servicioti-uruguay.webp"
+        "assets/img/dongfeng-nammi-box/02-vista-trasera-opticas-porton-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/dongfeng-nammi-box/03-interior-tablero-consola-cockpit-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/dongfeng-nammi-box/04-perfil-lateral-carroceria-dongfeng-nammi-box-430-ev-auto-electrico-ev-servicioti-uruguay.webp"
       ]
     },
     {
       "id": "cronica-micromovilidad-ebikes-motos",
       "medio": "EV Uruguay Editorial",
       "titulo": "Revolución urbana sobre dos ruedas: e-bikes de ingeniería nacional y scooters lideran la movilidad diaria",
-      "url": "https://www.servicioti.com.uy/2026/10/revolucion-urbana-sobre-dos-ruedas-e.html",
+      "url": "https://www.servicioti.com.uy/2026/11/revolucion-urbana-sobre-dos-ruedas-e.html",
       "fecha_publicacion": "2026-10-22 09:00:00",
-      "resumen": "Marcas nacionales como Loop Bikes y VoltBike, junto a Sunra y Yadea, impulsan la micromovilidad eléctrica en la Rambla de Montevideo y Ciudad Vieja con costos de recarga inferiores a $5 por trayecto de 30 km.",
-      "marcas_mencionadas": "Loop Bikes • VoltBike • Sunra",
-      "imagen_portada": "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-      "contenido_html": "<p>Investigación sobre el auge de las bicicletas y motos eléctricas en el área metropolitana.</p>",
+      "resumen": "La Rambla de Montevideo y las principales avenidas del interior han adoptado masivamente las bicicletas asistidas y motocicletas 100% eléctricas. Empresas nacionales como Loop Bikes y VoltBike, junto a referentes globales como Sunra y Yadea, han demostrado que la transición ecológica es accesible y enormemente rentable.",
+      "marcas_mencionadas": "Loop Bikes, Sunra, Yadea",
+      "imagen_portada": "assets/img/loop-bikes-slim-pro/01-vista-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        La Rambla de Montevideo y las principales avenidas del interior han adoptado masivamente las bicicletas asistidas y motocicletas 100% eléctricas. Empresas nacionales como Loop Bikes y VoltBike, junto a referentes globales como Sunra y Yadea, han demostrado que la transición ecológica es accesible y enormemente rentable.\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Costo de recarga:</strong> Menos de $15 UYU por recarga completa doméstica (40 a 70 km).</li>\n<li><strong>Mantenimiento:</strong> Cero filtros, bujías o aceites; baterías de litio extraíbles Schuko 220V.</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
       "fecha_registro": "2026-10-26 12:18:03",
-      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp\", \"assets/img/trek-allant-plus-7/01-vista-isometrica-frontal-3-4-trek-allant-7-gen-2-motor-bosch-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/loop-bikes-slim-pro/01-vista-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/02-vista-trasera-cuadro-rueda-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/03-manillar-display-digital-comando-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\", \"assets/img/loop-bikes-slim-pro/04-perfil-lateral-bicicleta-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp\"]",
       "galeria": [
-        "assets/img/loop-bikes-slim-pro/01-vista-isometrica-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-hawk-3000/01-vista-isometrica-frontal-3-4-sunra-hawk-3000w-doble-bateria-moto-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/trek-allant-plus-7/01-vista-isometrica-frontal-3-4-trek-allant-7-gen-2-motor-bosch-bicicleta-electrica-ev-servicioti-uruguay.webp",
-        "assets/img/sunra-miku-super/01-vista-isometrica-frontal-3-4-sunra-miku-super-3000w-naked-sport-80-moto-electrica-ev-servicioti-uruguay.webp"
+        "assets/img/loop-bikes-slim-pro/01-vista-frontal-3-4-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/02-vista-trasera-cuadro-rueda-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/03-manillar-display-digital-comando-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp",
+        "assets/img/loop-bikes-slim-pro/04-perfil-lateral-bicicleta-loop-bikes-slim-pro-urbana-bafang-250w-bicicleta-electrica-ev-servicioti-uruguay.webp"
       ]
     },
     {
       "id": "cronica-beneficios-fiscales-sucive",
       "medio": "EV Uruguay Editorial",
       "titulo": "Régimen fiscal y exoneración de patente SUCIVE: el beneficio económico de pasarse a cero emisiones",
-      "url": "https://www.servicioti.com.uy/2026/10/regimen-fiscal-y-exoneracion-de-patente.html",
+      "url": "https://www.servicioti.com.uy/2026/11/regimen-fiscal-y-exoneracion-de-patente.html",
       "fecha_publicacion": "2026-10-21 16:45:00",
-      "resumen": "Exoneración de IMESI, reducciones tributarias para empresas mediante proyectos COMAP y descuentos sustanciales en la patente de rodados departamental hacen que la amortización de un EV se alcance en tiempo récord.",
-      "marcas_mencionadas": "SUCIVE • DGI • Movilidad",
+      "resumen": "Uruguay cuenta con uno de los marcos de incentivos fiscales más favorables de la región para la adquisición y posesión de vehículos 100% eléctricos a batería. Analizamos los beneficios tributarios directos fijados por el Congreso de Intendentes (SUCIVE), la DGI y el Ministerio de Economía y Finanzas (MEF).",
+      "marcas_mencionadas": "SUCIVE, DGI, MIEM",
       "imagen_portada": "assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
-      "contenido_html": "<p>Guía de incentivos y costos operativos comparativos para Uruguay.</p>",
+      "contenido_html": "<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.8; font-size: 16px;\">\n    <p style=\"font-size: 18px; color: #475569; font-weight: 500;\">\n        Uruguay cuenta con uno de los marcos de incentivos fiscales más favorables de la región para la adquisición y posesión de vehículos 100% eléctricos a batería. Analizamos los beneficios tributarios directos fijados por el Congreso de Intendentes (SUCIVE), la DGI y el Ministerio de Economía y Finanzas (MEF).\n    </p>\n\n    <div style=\"background: #f8fafc; border-left: 4px solid #0284c7; padding: 18px 24px; margin: 24px 0; border-radius: 0 8px 8px 0;\">\n        <h4 style=\"margin: 0 0 8px 0; color: #0369a1; font-size: 17px;\">⚡ Ficha Técnica &amp; Cifras Homologadas (Uruguay)</h4>\n        <ul style=\"margin: 0; padding-left: 20px; color: #334155;\">\n            <li><strong>Patente SUCIVE:</strong> Alícuota reducida del 3% con hasta 50% de bonificación inicial.</li>\n<li><strong>IMESI:</strong> 0% para vehículos 100% eléctricos frente a 23%-46% en nafteros.</li>\n<li><strong>COMAP:</strong> Desgravación de IRAE para proyectos de movilidad corporativa.</li>\n\n        </ul>\n    </div>\n\n    <h3 style=\"color: #0f172a; margin-top: 30px; font-size: 22px;\">Análisis de Desempeño y Costo de Propiedad en Plaza</h3>\n    <p>\n        La incorporación de nuevas alternativas 100% eléctricas a batería en Uruguay continúa consolidando la descarbonización del parque automotor. Al beneficiarse de una alícuota bonificada de Patente de Rodados en el SUCIVE (3% del valor de mercado) e IMESI del 0%, los vehículos cero emisiones ofrecen un costo de funcionamiento mensual drásticamente inferior frente a los motores térmicos.\n    </p>\n    <p>\n        Recargando bajo la Tarifa Inteligente Residencial de UTE (horario valle nocturno), el costo estimado por cada 100 km se sitúa por debajo de los $45 UYU, garantizando amortizaciones aceleradas para usuarios particulares y flotas corporativas.\n    </p>\n\n    <div style=\"text-align: center; margin: 35px 0;\">\n        <a href=\"https://ev.servicioti.com.uy\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(15,23,42,0.25);\">\n            ⚡ Consultar Ficha Técnica Completa y Simulador TCO en EV Uruguay →\n        </a>\n    </div>\n\n    <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;\" />\n    <p style=\"font-size: 13px; color: #64748b;\">\n        <em>Informe técnico editorial elaborado por Andrés Franchi Ugartemendía para el ecosistema ServicioTI. Datos oficiales homologados ante URSEA, SUCIVE y ACAU.</em>\n    </p>\n</div>",
       "fecha_registro": "2026-10-26 12:18:03",
-      "galeria_json": "[\"assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/baw-pony-ev/01-vista-isometrica-frontal-3-4-baw-pony-ev-citycar-3-puertas-13-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/baw-l7-bagel-ev/01-vista-isometrica-frontal-3-4-baw-l7-bagel-ev-hatchback-5-puertas-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/trike-cargo-light-500/01-vista-isometrica-frontal-3-4-cabina-trike-cargo-light-gt-500-kg-utilitario-urbano-12-triciclo-electrico-ev-servicioti-uruguay.webp\"]",
+      "galeria_json": "[\"assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/jac-e-js1/02-vista-trasera-opticas-porton-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/jac-e-js1/03-interior-tablero-consola-cockpit-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp\", \"assets/img/jac-e-js1/04-perfil-lateral-carroceria-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp\"]",
       "galeria": [
         "assets/img/jac-e-js1/01-vista-isometrica-frontal-3-4-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/baw-pony-ev/01-vista-isometrica-frontal-3-4-baw-pony-ev-citycar-3-puertas-13-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/baw-l7-bagel-ev/01-vista-isometrica-frontal-3-4-baw-l7-bagel-ev-hatchback-5-puertas-auto-electrico-ev-servicioti-uruguay.webp",
-        "assets/img/trike-cargo-light-500/01-vista-isometrica-frontal-3-4-cabina-trike-cargo-light-gt-500-kg-utilitario-urbano-12-triciclo-electrico-ev-servicioti-uruguay.webp"
+        "assets/img/jac-e-js1/02-vista-trasera-opticas-porton-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/jac-e-js1/03-interior-tablero-consola-cockpit-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp",
+        "assets/img/jac-e-js1/04-perfil-lateral-carroceria-jac-e-js1-city-luxury-ev-auto-electrico-ev-servicioti-uruguay.webp"
       ]
     }
   ],
@@ -9933,7 +10016,7 @@
       "descripcion": "Combustible más utilizado en el parque automotor de Uruguay. Precio oficial regulado por MIEM/URSEA.",
       "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
       "fecha_vigencia": "Noviembre 2026",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "nafta_premium_97",
@@ -9945,7 +10028,7 @@
       "descripcion": "Combustible de alto octanaje con aditivos detergentes de última generación.",
       "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
       "fecha_vigencia": "Noviembre 2026",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "gasoil_50s",
@@ -9957,7 +10040,7 @@
       "descripcion": "Diésel bajo en azufre utilizado en utilitarios, camionetas y motores gasoleros.",
       "fuente_oficial": "Poder Ejecutivo / MIEM / ANCAP / URSEA",
       "fecha_vigencia": "Noviembre 2026",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "ute_valle_trt",
@@ -9969,7 +10052,7 @@
       "descripcion": "La tarifa residencial más económica del país. Ideal para programar la carga automática en la madrugada con cargador de pared (Wallbox).",
       "fuente_oficial": "UTE — Pliego Tarifario Residencial Triple Horario",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "ute_llano_trt",
@@ -9981,7 +10064,7 @@
       "descripcion": "Carga diurna en días hábiles (fuera de punta) y durante las 24 horas de los sábados, domingos y feriados.",
       "fuente_oficial": "UTE — Plan Inteligente Residencial",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "ute_doble_fuera_punta",
@@ -9993,7 +10076,7 @@
       "descripcion": "Para hogares con tarifa residencial doble horario que cargan durante las 20 horas fuera del horario punta.",
       "fuente_oficial": "UTE — Tarifa Residencial Doble Horario",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "ute_residencial_simple",
@@ -10005,7 +10088,7 @@
       "descripcion": "Tarifa estándar tradicional de UTE sin diferenciación horaria.",
       "fuente_oficial": "UTE — Tarifa Residencial Simple",
       "fecha_vigencia": "Pliego Tarifario Vigente UTE",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     },
     {
       "id": "ute_mueve_publico",
@@ -10017,7 +10100,7 @@
       "descripcion": "Carga rápida en ruta en estaciones de 50 kW a 120 kW (CCS2 y GB/T) mediante tarjeta de recarga o app UTE Mueve.",
       "fuente_oficial": "Red UTE Mueve / URSEA",
       "fecha_vigencia": "Red Nacional de Carga UTE",
-      "fecha_actualizacion": "2026-11-06 20:02:17"
+      "fecha_actualizacion": "2026-11-10 23:46:32"
     }
   ]
 }
